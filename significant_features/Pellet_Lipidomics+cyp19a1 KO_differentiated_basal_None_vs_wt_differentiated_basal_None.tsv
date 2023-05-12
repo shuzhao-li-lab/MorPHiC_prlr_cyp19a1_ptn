@@ -1,0 +1,15 @@
+m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
+288.2893	34.42	0.00919028190030728	9.377939507969238	C17H37NO2	1.5477013754290603	Isoheptadecasphinganine,C17 Sphinganine	kp605_287.282	{'Sphingolipids [SP]'}	{'Sphingoid bases [SP01]'}
+288.2893	36.39	0.010320266558145469	8.902493836896651	C18H33NO	1.2984614440058309	Linoleamide	kp604_279.2556	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+289.2926	36.39	0.02642236807560829	6.85937249217343	C18H33NO	1.524352804277914	Linoleamide	kp604_279.2556	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+244.2632	36.39	0.025944120626813567	7.023522049632481		1.1144491103471381				
+381.3147	243.95	0.03563191417888665	6.282556079362973	C27H40O	2.746218082210028	Sibogol F,Pentalinonsterol	kp2244_380.3075	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
+388.3935	171.37	0.028318540706798054	6.609871317773922		0.9332706472063705				
+399.3253	193.22	0.04446243048723922	5.98156890706142	C27H42O2	0.9850964544000362	Chabrosterol,7-oxo-cholestenone,(22E)-1beta-hydroxy-22,23-didehydrovitamin D3,(22Z)-1beta-hydroxy-22,23-didehydrovitamin D3 / (22Z)-1beta-hydroxy-22,23-didehydrocholecalciferol,Subergosterone A,1alpha-hydroxy-24,25-didehydrovitamin D3 / 1alpha-hydroxy-24,25-didehydrocholecalciferol,1-oxoprevitamin D3 / 1-oxoprecholecalciferol,23,24-didehydro-25-hydroxyvitamin D3 / 23,24-didehydro-25-hydroxycholecalciferol,calicoferol E,1alpha,25-dihydroxy-9,11-didehydro-3-deoxyvitamin D3 / 1alpha,25-dihydroxy-9,11-didehydro-3-deoxycholecalciferol,24-keto-25dehydrocholesterol,(22E)-1alpha-hydroxy-22,23-didehydrovitamin D3 / (22E)-1alpha-hydroxy-22,23-didehydrocholecalciferol,25-hydroxy-16,17-didehydrovitamin D3,(22Z)-1alpha-hydroxy-22,23-didehydrovitamin D3 / (22Z)-1alpha-hydroxy-22,23-didehydrocholecalciferol,13E,15E,18Z,20Z-pentacosatetraen-11-ynyl acetate	kp2958_398.3181	{'Sterol Lipids [ST]', 'Fatty Acyls [FA]'}	{'Secosteroids [ST03]', 'Sterols [ST01]', 'Fatty esters [FA07]'}
+361.3653	119.68	0.013425531414815143	8.309480872741018		1.493815883433772				
+362.3685	119.68	0.00626493395076281	10.384252724178355		1.7179999556656185				
+543.3887	192.96	0.02561570891830785	-7.172010289541182		-1.3507056501020038				
+518.3686	176.12	0.02642236807560829	6.77984000642865		0.8750576906179042				
+518.4563	317.07	0.0003040763766216607	17.25427913517797		5.1857419997675755				
+519.4598	317.07	0.0003040763766216607	18.333205797137666		4.816486616325157				
+546.399	176.12	0.014770781921749838	7.991854507605284		0.8658450846501715				

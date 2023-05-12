@@ -1,0 +1,22 @@
+m/z	rtime	p-value	t-score	custom_id	log2fc	name
+209.0968	29.39	0.0333483359561554	-9.313382703772717		-0.7575943985835458	
+128.9585	22.67	0.048349625010739285	7.48441180472227		1.0527936057015452	
+130.9565	22.8	0.0385653358297257	8.553810224250077		1.1329322436187645	
+193.0864	25.69	0.048349625010739285	-7.2958475563405285		-0.4764370762847854	
+379.9314	22.41	0.0333483359561554	-9.974112023944707		-2.1956098842142424	
+439.3216	199.23	0.016733798076079005	-13.56669976776266	C29H44O3	-1.7720276495081286	(22E,24E)-1alpha,25-dihydroxy-22,23,24,24a-tetradehydro-24a,24b-dihomovitamin D3,Pfaffic acid,24a,24b-Dihomo-9,10-secocholesta-5,7,10(19),24a-tetraen-1alpha,3,25-triol,(20S)-20-cyclopropyl-1alpha,25-dihydroxy-16,17-didehydro-21-norvitamin D3 / (20S)-20-cyclopropyl-1alpha,25-dihydroxy-16,17-didehydro-21-norcholecalciferol,Stoloniferone D,Aragusterol D,1alpha,25-dihydroxy-26,27-dimethyl-22,22,23,23-tetradehydrovitamin D3,1alpha,25-dihydroxy-26,27-dimethyl-22,22,23,23-tetradehydro-20-epivitamin D3,11alpha-ethynyl-1alpha,25-dihydroxyvitamin D3 / 11alpha-ethynyl-1alpha,25-dihydroxycholecalciferol,Stoloniferone Q
+440.325	199.23	0.016733798076079005	-12.772574050833068	C29H44O3	-1.7882797315220245	(22E,24E)-1alpha,25-dihydroxy-22,23,24,24a-tetradehydro-24a,24b-dihomovitamin D3,Pfaffic acid,24a,24b-Dihomo-9,10-secocholesta-5,7,10(19),24a-tetraen-1alpha,3,25-triol,(20S)-20-cyclopropyl-1alpha,25-dihydroxy-16,17-didehydro-21-norvitamin D3 / (20S)-20-cyclopropyl-1alpha,25-dihydroxy-16,17-didehydro-21-norcholecalciferol,Stoloniferone D,Aragusterol D,1alpha,25-dihydroxy-26,27-dimethyl-22,22,23,23-tetradehydrovitamin D3,1alpha,25-dihydroxy-26,27-dimethyl-22,22,23,23-tetradehydro-20-epivitamin D3,11alpha-ethynyl-1alpha,25-dihydroxyvitamin D3 / 11alpha-ethynyl-1alpha,25-dihydroxycholecalciferol,Stoloniferone Q
+492.3463	212.28	0.048349625010739285	-7.451171086960268	C25H52NO6P	-1.3289279087225125	PC(P-17:0/0:0),PE(P-20:0/0:0)
+441.3282	199.23	0.0029890855312981177	-24.460556015429837	C29H44O3	-4.207580554009553	(22E,24E)-1alpha,25-dihydroxy-22,23,24,24a-tetradehydro-24a,24b-dihomovitamin D3,Pfaffic acid,24a,24b-Dihomo-9,10-secocholesta-5,7,10(19),24a-tetraen-1alpha,3,25-triol,(20S)-20-cyclopropyl-1alpha,25-dihydroxy-16,17-didehydro-21-norvitamin D3 / (20S)-20-cyclopropyl-1alpha,25-dihydroxy-16,17-didehydro-21-norcholecalciferol,Stoloniferone D,Aragusterol D,1alpha,25-dihydroxy-26,27-dimethyl-22,22,23,23-tetradehydrovitamin D3,1alpha,25-dihydroxy-26,27-dimethyl-22,22,23,23-tetradehydro-20-epivitamin D3,11alpha-ethynyl-1alpha,25-dihydroxyvitamin D3 / 11alpha-ethynyl-1alpha,25-dihydroxycholecalciferol,Stoloniferone Q
+447.9723	37.71	0.0385653358297257	8.47560616502129		3.1750827423409866	
+392.8958	23.59	0.016733798076079005	-14.240677892031043		-4.150220460437165	
+507.3091	199.23	0.019459495533596993	-11.877342255375638	C30H46O5	-1.697977653843438	Gypsogenic acid,Cincholic acid,Quillaic acid,Bassic acid,Actinidic acid
+404.9292	23.07	0.0385653358297257	-8.460870466568805		-4.670277117346869	
+463.1615	26.9	0.016733798076079005	-13.258122736600303	C23H28O10	-0.4905921707142227	Diffutin,Isomucronulator 7-O-glucoside
+517.0768	26.9	0.000728454777977449	-45.90852667448659		-1.8271030739359269	
+417.1559	26.9	0.048349625010739285	-7.295435622308938		-0.5417053059142276	
+422.3279	77.89	0.0029890855312981177	-26.421242748546405	C25H45NO4	-7.74714774911665	Linoelaidyl carnitine,9,12-Octadecadienoyl carnitine,O-linoleoylcarnitine
+425.3064	186.99	0.0333483359561554	-9.41571906655159	C28H42O3	-4.004200433073443	9,11-dehydroergosterol peroxide,(22E,24E)-1alpha,25-dihydroxy-22,23,24,24a-tetradehydro-24a-homovitamin D3 / (22E,24E)-1alpha,25-dihydroxy-22,23,24,24a-tetradehydro-24a-homocholecalciferol,Stoloniferone B,25-hydroxy-1beta-hydroxymethyl-23,23,24,24-tetradehydro-3-epivitamin D3 / 25-hydroxy-1beta-hydroxymethyl-23,23,24,24-tetradehydro-3-epicholecalciferol,Stoloniferone O,Yalongsterol A,25-hydroxy-1alpha-hydroxymethyl-23,23,24,24-tetradehydrovitamin D3 / 25-hydroxy-1alpha-hydroxymethyl-23,23,24,24-tetradehydrocholecalciferol,Stoloniferone A,Subergorgiaol K,Subergorgiaol L,Stoloniferone P
+480.3777	262.88	0.04615928004541169	-7.810000196238335		-0.45403901959977233	
+556.875	22.41	0.04509032035055104	7.9847480505358694		2.853340421548129	
+734.8296	22.94	0.0333483359561554	-9.684524426463952		-5.923542270260073	
