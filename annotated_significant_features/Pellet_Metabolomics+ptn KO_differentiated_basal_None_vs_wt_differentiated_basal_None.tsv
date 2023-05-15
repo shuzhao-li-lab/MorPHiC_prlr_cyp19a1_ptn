@@ -1,8 +1,8 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 85.0289	325.05	0.025085491216747694	17.040497769950427		2.993894537926817		
-137.0709	200.99	0.037344509380331195	13.918405591767174	C7H8N2O	1.8885379481102547	2-Acetyl-3-methylpyrazine,5-Methylnicotinamide,4-Aminobenzamide,2-Methylnicotinamide,3-Aminobenzamide,4-Hydroxy-benzamidine,2-Aminobenzamide,Benzohydrazide,Benzamidoxime,4-Acetyl-2-methylpyrimidine,1,2-Diacylglycerol-Bile-PC-pool,N-Methylnicotinamide	kp286_136.0636
-138.0742	201.12	0.024279564157094178	19.906322650673534	C7H8N2O	1.8039091959635805	2-Acetyl-3-methylpyrazine,5-Methylnicotinamide,4-Aminobenzamide,2-Methylnicotinamide,3-Aminobenzamide,4-Hydroxy-benzamidine,2-Aminobenzamide,Benzohydrazide,Benzamidoxime,4-Acetyl-2-methylpyrimidine,1,2-Diacylglycerol-Bile-PC-pool,N-Methylnicotinamide	kp286_136.0636
+137.0709	200.99	0.037344509380331195	13.918405591767174	C7H8N2O	1.8885379481102547	2-Methylnicotinamide,3-Aminobenzamide,4-Aminobenzamide,Benzohydrazide,2-Acetyl-3-methylpyrazine,2-Aminobenzamide,4-Acetyl-2-methylpyrimidine,4-Hydroxy-benzamidine,Benzamidoxime,5-Methylnicotinamide,N-Methylnicotinamide,1,2-Diacylglycerol-Bile-PC-pool	kp286_136.0636
+138.0742	201.12	0.024279564157094178	19.906322650673534	C7H8N2O	1.8039091959635805	2-Methylnicotinamide,3-Aminobenzamide,4-Aminobenzamide,Benzohydrazide,2-Acetyl-3-methylpyrazine,2-Aminobenzamide,4-Acetyl-2-methylpyrimidine,4-Hydroxy-benzamidine,Benzamidoxime,5-Methylnicotinamide,N-Methylnicotinamide,1,2-Diacylglycerol-Bile-PC-pool	kp286_136.0636
 149.0575	324.4	0.037344509380331195	13.29697403213934		1.3669181052783692		
 150.0645	324.4	0.03866848528999801	12.31016186814362		1.2476605061007007		
-232.1291	281.76	0.024279564157094178	-19.034417534232468	C9H17N3O4	-1.0318151974590393	Ala-Ala-Ala,Asparaginyl-Valine,Valylasparagine	kp820_231.1218
+232.1291	281.76	0.024279564157094178	-19.034417534232468	C9H17N3O4	-1.0318151974590393	Ala-Ala-Ala,Valylasparagine,Asparaginyl-Valine	kp820_231.1218
 511.1196	296.92	0.037344509380331195	-12.918496545926127		-0.5323195400336509		
