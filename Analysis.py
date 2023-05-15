@@ -33,6 +33,7 @@ metadata = pd.read_csv(sys.argv[3], sep=",")
 empCpds = json.load(open(sys.argv[4]))
 annot_source = json.load(open(sys.argv[5]))
 interactive = False
+save_figs = True
 
 formula_name_map = {}
 formula_category_map = {}
@@ -72,8 +73,9 @@ for emp_id, emp_cpd in empCpds.items():
                 names_for_formula = formula_name_map[formula]
                 formulas.append(formula)
                 names.append(','.join(names_for_formula))
-                categories = categories.union(formula_category_map[formula])
-                classes = classes.union(formula_class_map[formula])
+                if category_class_annots:
+                    categories = categories.union(formula_category_map[formula])
+                    classes = classes.union(formula_class_map[formula])
             feature_id_to_emp_cpd_id_map[peak['id_number']] = ','.join(formulas)
             feature_id_to_cpd_name[peak['id_number']] = ','.join(names)
             feature_id_to_category[peak['id_number']] = categories
@@ -136,7 +138,7 @@ additives_str = {
 }
 
 # do PCA
-if interactive:
+if interactive or save_figs:
     scaler = StandardScaler()
     transformed = scaler.fit_transform(np.log2(feature_table[sample_names].T+1))
     model = PCA(n_components=2)
@@ -149,7 +151,11 @@ if interactive:
     plt.xlabel("PC 1 " + str(round(explained_vars[0] * 100, 1)) + "%", fontsize=14)
     plt.ylabel("PC 2 " + str(round(explained_vars[1] * 100, 1)) + "%", fontsize=14)
     plt.title(table_name)
-    plt.show()
+    if save_figs:
+        plt.savefig("./figures/" + table_name + "_PCA")
+    if interactive:
+        plt.show()
+    plt.clf()
 
     # do TSNE 
     scaler = StandardScaler()
@@ -162,7 +168,11 @@ if interactive:
         plt.text(x,y,additives_str[additive])
         plt.scatter(x, y, s=40, marker=genotype_marker[genotype], edgecolors=differentation_color[differentiation], facecolor='none' if media_fill[media_type] is None else differentation_color[differentiation])
     plt.title(table_name)
-    plt.show()
+    if save_figs:
+        plt.savefig("./figures/" + table_name + "_TSNE")
+    if interactive:
+        plt.show()
+    plt.clf()
 
 significant_features = {}
 all_significant_features = []
@@ -223,15 +233,23 @@ for name in sample_names:
     new_name = ','.join([genotype, differentiation, media_type])
     new_names.append(new_name)
 
-if interactive:
+if interactive or save_figs:
     #g = sns.clustermap(new, xticklabels=new_names, yticklabels=master_table.loc[all_significant_features]["annot"], col_colors=[media_colors, genotype_colors, differentation_colors])
     g = sns.clustermap(np.log2(feature_table.iloc[omnibus_features, :][sample_names]), cmap='vlag', xticklabels=new_names, yticklabels=feature_table.iloc[omnibus_features, :]['annot'], z_score=0, col_colors=[media_colors, genotype_colors, differentation_colors])
     g.fig.suptitle(table_name + " all significant OMNIBUS features,\n p-adj(bonferroni) < .05")
-    plt.show()
+    if save_figs:
+        plt.savefig("./figures/" + table_name + "_OMNI_clustermap")
+    if interactive:
+        plt.show()
+    plt.clf()
 
     g = sns.clustermap(np.log2(feature_table.iloc[all_significant_features, :][sample_names]), cmap='vlag', xticklabels=new_names, yticklabels=feature_table.iloc[all_significant_features, :]['annot'], z_score=0, col_colors=[media_colors, genotype_colors, differentation_colors])
     g.fig.suptitle(table_name + " all significant TERM features,\n p-adj(bonferroni) < .05")
-    plt.show()
+    if save_figs:
+        plt.savefig("./figures/" + table_name + "_TERM_clustermap")
+    if interactive:
+        plt.show()
+    plt.clf()
 
 groups = [
     # cyp19a1 comparisons
@@ -317,7 +335,7 @@ for group_A_params, group_B_params in groups:
         for_mummichog['p-value'] = table['corrected']
         for_mummichog['t-score'] = table["t-score"]
         for_mummichog['custom_id'] = table['annot']
-        for_mummichog.to_csv("./mummichog_results/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".txt", sep="\t", index=False)
+        for_mummichog.to_csv("./mummichog_data/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".txt", sep="\t", index=False)
 
         significant_features = pd.DataFrame()
         significant_features['m/z'] = table[table['significant'] == True]['mz']
@@ -331,7 +349,7 @@ for group_A_params, group_B_params in groups:
         if category_class_annots:
             significant_features['categories'] = table[table['significant'] == True]['categories'] 
             significant_features['classes'] = table[table['significant'] == True]['classes'] 
-        significant_features.to_csv("./significant_features/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".tsv", sep="\t", index=False)
+        significant_features.to_csv("./annotated_significant_features/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".tsv", sep="\t", index=False)
 
         new_table = pd.DataFrame()
         new_table['m/z'] = table['mz']
@@ -402,5 +420,5 @@ for group_A_params, group_B_params in groups:
                 else:
                     results[r_index]['pval_up_corr'] = pval
                     fold_change_results.append(results[r_index])
-        fold_change_results = pd.DataFrame(fold_change_results)
-        fold_change_results.to_csv("./analyzed_feature_tables/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".txt", sep="\t", index=False)
+            fold_change_results = pd.DataFrame(fold_change_results)
+            fold_change_results.to_csv("./lipidomics_differential_abundance_analysis/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".txt", sep="\t", index=False)

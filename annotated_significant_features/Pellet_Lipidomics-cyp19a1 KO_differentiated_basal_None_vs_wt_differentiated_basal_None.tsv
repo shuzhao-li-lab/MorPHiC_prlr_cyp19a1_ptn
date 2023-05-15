@@ -1,0 +1,4 @@
+m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
+465.3044	205.29	0.000733426319861025	12.956901960546675	C27H46O4S	0.9540074024357601	cholesterol sulfate	kp1334_466.3116	{'Sterol Lipids [ST]'}	{'Steroid conjugates [ST05]'}
+466.3077	205.16	0.000733426319861025	14.75690078160732	C27H46O4S	0.9623908977397875	cholesterol sulfate	kp1334_466.3116	{'Sterol Lipids [ST]'}	{'Steroid conjugates [ST05]'}
+533.291	205.03	0.000733426319861025	13.041192041608214	C33H42O6	0.9681182852875168	Vitixanthin	kp1612_534.2986	{'Prenol Lipids [PR]'}	{'Isoprenoids [PR01]'}
