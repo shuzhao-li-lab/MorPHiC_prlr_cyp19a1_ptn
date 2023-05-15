@@ -1,8 +1,8 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
-206.1004	166.03	0.03455224105847217	-14.551327878163974	C11H12N2O2	-0.8219898194869799	L-Tryptophan,(±)-Tryptophan,Ethotoin,3h-Indole-3-propanoic acid,a-amino-,Nirvanol,3-Hydroxymethylantipyrine,S-nirvanol,4-Hydroxyantipyrine,Idazoxan,D-Tryptophan	kp76_204.0897
+206.1004	166.03	0.03455224105847217	-14.551327878163974	C11H12N2O2	-0.8219898194869799	Idazoxan,4-Hydroxyantipyrine,D-Tryptophan,L-Tryptophan,(±)-Tryptophan,S-nirvanol,3h-Indole-3-propanoic acid,a-amino-,3-Hydroxymethylantipyrine,Nirvanol,Ethotoin	kp76_204.0897
 188.0706	166.16	0.03455224105847217	-15.275317274586527	C11H9NO2,C6H10ClN5	-0.8675470542550983	Indoleacrylic acid,6-Chloro-N-(1-methylethyl)-1,3,5-triazine-2,4-diamine	kp682_187.0633
 189.0738	166.29	0.03918805802875031	-12.268253413347361	C11H9NO2,C6H10ClN5	-0.8294450404728337	Indoleacrylic acid,6-Chloro-N-(1-methylethyl)-1,3,5-triazine-2,4-diamine	kp682_187.0633
-159.0916	166.29	0.03455224105847217	-14.351823647376328	C10H10N2	-0.6913059659869347	1,2-Diaminonaphthalene,1-Benzylimidazole,2,3-Diaminonaphthalene,Nicotyrine,1,5-Naphthalenediamine	kp696_158.0844
-305.165	422.02	0.036744738858497626	-12.97193413754646	C11H21N5O5	-0.3383824809976126	gamma-Glutamylarginine,Glutamylarginine,Arginylglutamic acid,N2-gamma-L-Glutamyl-L-arginine	kp1054_303.1542
+159.0916	166.29	0.03455224105847217	-14.351823647376328	C10H10N2	-0.6913059659869347	1-Benzylimidazole,2,3-Diaminonaphthalene,1,5-Naphthalenediamine,1,2-Diaminonaphthalene,Nicotyrine	kp696_158.0844
+305.165	422.02	0.036744738858497626	-12.97193413754646	C11H21N5O5	-0.3383824809976126	Glutamylarginine,N2-gamma-L-Glutamyl-L-arginine,gamma-Glutamylarginine,Arginylglutamic acid	kp1054_303.1542
 454.0265	325.71	0.006439034261486399	-31.634979660136317		-6.164267571236653		
 568.9236	324.4	0.03455224105847217	-13.802939831366011		-4.936740351727938		

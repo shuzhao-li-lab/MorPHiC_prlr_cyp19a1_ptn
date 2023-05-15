@@ -9,15 +9,15 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 203.0669	369.06	0.027086100210755297	-18.27139122718887		-1.7277916757217504		
 245.0432	261.35	0.027086100210755297	-19.859309664691438		-1.8568624081550382		
 208.0521	301.7	0.014714358330302844	-35.71369834108193		-3.308452265052207		
-268.0769	133.22	0.038532557343893895	-13.606229713280495	C9H16O9,C10H12N4O5	-4.340562619252573	galactose lactate,3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,Formycin b,Arabinosylhypoxanthine,Ara-HX,Inosine,Allopurinol riboside	kp1102_268.0806
-268.0769	134.8	0.03329507081885916	-14.738961121097423	C9H16O9,C10H12N4O5	-3.5157200690435637	galactose lactate,3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,Formycin b,Arabinosylhypoxanthine,Ara-HX,Inosine,Allopurinol riboside	kp1100_268.0805
+268.0769	133.22	0.038532557343893895	-13.606229713280495	C9H16O9,C10H12N4O5	-4.340562619252573	3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,galactose lactate,Ara-HX,Allopurinol riboside,Inosine,Formycin b,Arabinosylhypoxanthine	kp1102_268.0806
+268.0769	134.8	0.03329507081885916	-14.738961121097423	C9H16O9,C10H12N4O5	-3.5157200690435637	3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,galactose lactate,Ara-HX,Allopurinol riboside,Inosine,Formycin b,Arabinosylhypoxanthine	kp1100_268.0805
 226.0831	231.09	0.02839460625374554	-15.95223273703425		-2.115648673462008		
-214.0482	294.61	0.024166087633860515	-23.733353570046386	C10H11NO3	-2.865844808812593	Betamipron,n-benzoyl-d-alanine,Actarit,2-Methylhippuric acid,Methyl hippurate,N-Formyl-dl-phenylalanine,p-Methylhippuric acid,Methyl n-acetylanthranilate,3-Carbamoyl-2-phenylpropionaldehyde,Phenylacetylglycine,4-Anilino-4-oxobutanoic acid,m-Methylhippuric acid,N-Formylphenylalanine,4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one	kp958_193.0736
-277.0598	36.4	0.03463874090625169	-14.31738037520404	C10H14N2O5	-1.8276318741695796	L-Thymidine,Thymidine,Telbivudine	kp101_242.0897
+214.0482	294.61	0.024166087633860515	-23.733353570046386	C10H11NO3	-2.865844808812593	N-Formyl-dl-phenylalanine,m-Methylhippuric acid,Methyl n-acetylanthranilate,2-Methylhippuric acid,3-Carbamoyl-2-phenylpropionaldehyde,Actarit,4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one,n-benzoyl-d-alanine,4-Anilino-4-oxobutanoic acid,p-Methylhippuric acid,Betamipron,Phenylacetylglycine,N-Formylphenylalanine,Methyl hippurate	kp958_193.0736
+277.0598	36.4	0.03463874090625169	-14.31738037520404	C10H14N2O5	-1.8276318741695796	L-Thymidine,Telbivudine,Thymidine	kp101_242.0897
 256.0758	179.72	0.014714358330302844	-30.70043385447935		-0.13291230008816157		
 256.966	201.88	0.00384991992741129	-83.91229184922038		-1.6155890378273163		
-279.0569	36.4	0.027086100210755297	-19.56199444983953	C11H12N4O3S	-1.8046051297931172	Sulfamethoxypyridazine,Sulfameter,Sulfametopyrazine,Sulfamonomethoxine	kp1506_280.0642
-217.0827	340.83	0.027086100210755297	-16.757613198980955	C8H14N2O5	-2.273578807386528	Alanylglutamic acid,Serylhydroxyproline,N-gamma-L-Glutamyl-D-alanine,Glutamylalanine,gamma-Glutamylalanine,Hydroxyprolyl-Serine	kp1548_218.09
+279.0569	36.4	0.027086100210755297	-19.56199444983953	C11H12N4O3S	-1.8046051297931172	Sulfamethoxypyridazine,Sulfametopyrazine,Sulfamonomethoxine,Sulfameter	kp1506_280.0642
+217.0827	340.83	0.027086100210755297	-16.757613198980955	C8H14N2O5	-2.273578807386528	N-gamma-L-Glutamyl-D-alanine,Serylhydroxyproline,Hydroxyprolyl-Serine,Alanylglutamic acid,gamma-Glutamylalanine,Glutamylalanine	kp1548_218.09
 282.0834	167.9	0.027086100210755297	-17.621121317215444	C17H13NO4	-2.4237032103914338	Piperolactam D	kp3583_295.0837
 261.0414	155.47	0.027086100210755297	16.64069076749517	C9H12O5S	0.4765403340080283	2-(4-Methoxyphenyl)ethyl hydrogen sulfate	kp978_232.0399
 242.0799	314.7	0.027086100210755297	-17.208685336663265		-2.7898949128553205		
