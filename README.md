@@ -43,7 +43,7 @@ Analyze DnHZ and DnCl data.
 
 POTENTIAL ISSUES:
 
-
+Khipu is using the default mass search grid, this includes isotopologues that are highly unlikely. We can probably restrict the isotopologue search grid to the m, m+13C1, m+13C2 and maybe the m+13C3 isotopologues in the future.
 
 The 80% cutoff rule may eliminate features that are only in a subset of samples but also does a great job eliminating noise. It is a trade off, but some form of group filtering may be better suited for finding significant metabolites.
 
