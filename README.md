@@ -1,5 +1,8 @@
-Morphic data analysis 
+!!! RESULTS ARE NOT FINAL, SUBJECT TO CHANGE AT ANY TIME !!! 
 
+^^^ this will be removed when the analysis gets checked by Shuzhao or someone else, until then, consider results tenative and may change. ETA for completion is this Friday, May 19th ^^^
+
+Morphic data analysis 
 
 This analysis only covers the cell pellets and supernatant ran in March of 2023. For media experiments, contact Amnah Siddiqi.
 
