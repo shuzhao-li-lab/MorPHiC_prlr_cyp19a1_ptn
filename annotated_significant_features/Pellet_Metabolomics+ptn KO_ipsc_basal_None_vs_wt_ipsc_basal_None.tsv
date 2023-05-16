@@ -1,213 +1,213 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
-204.0978	332.17	0.00529476086746087	-10.284945916920748	C7H13N3O4	-1.0677692417457294	Asparaginylalanine,Alanylasparagine,Glycyl-Gamma-glutamate,Glutaminylglycine,Glycyl-Glutamine	kp34_203.0905
-204.1423	28.59	0.045867668374276305	-4.609150621662888	C9H18N2O3	-1.962988787337288	Leucyl-Alanine,Alanylleucine,N-Acetylisoputreanine,n2-Acetyl,n6-methyllysine,DL-Alanyl-DL-leucine,Alanylisoleucine,Isoleucyl-Alanine,Leucylalanine	kp1169_202.1317
+204.0978	332.17	0.00529476086746087	-10.284945916920748	C7H13N3O4	-1.0677692417457294	Asparaginylalanine,Glycyl-Gamma-glutamate,Alanylasparagine,Glycyl-Glutamine,Glutaminylglycine	kp34_203.0905
+204.1423	28.59	0.045867668374276305	-4.609150621662888	C9H18N2O3	-1.962988787337288	Leucyl-Alanine,N-Acetylisoputreanine,Alanylleucine,Alanylisoleucine,n2-Acetyl,n6-methyllysine,DL-Alanyl-DL-leucine,Leucylalanine,Isoleucyl-Alanine	kp1169_202.1317
 205.1182	261.58	0.003147678931699687	-13.088747668885752		-1.934790738507072		
 131.0702	27.67	0.03253896036097922	5.252789581529498		0.6030193827152779		
 206.1216	261.58	0.019929032956326052	-6.263237942083448		-3.61782042917517		
 132.0655	301.78	0.03862829555809364	4.908161649623453		0.2765057893725782		
-207.0798	243.37	0.0023973706177727225	-15.385192404025485	C7H14N2O3S,C15H10O	-1.519384618563901	Methionyl-Glycine,Aldicarb sulfoxide,Glycyl-Methionine,ANTHRACENECARBOXALDEHYDE,Diphenylcyclopropenone,9-Anthraldehyde	kp174_206.0724
-208.1009	301.26	0.0007005716579720378	-27.976031069789702	C7H14N2O5	-2.525356325940127	(2S)-2-Amino-3-[(2S,3R)-2-amino-3-hydroxybutanoyl]oxypropanoic acid,(2S,3R)-2-Amino-3-[(2S)-2-amino-3-hydroxypropanoyl]oxybutanoic acid,Threonylserine,Serylthreonine	kp176_206.0902
+207.0798	243.37	0.0023973706177727225	-15.385192404025485	C7H14N2O3S,C15H10O	-1.519384618563901	Methionyl-Glycine,Aldicarb sulfoxide,Glycyl-Methionine,9-Anthraldehyde,ANTHRACENECARBOXALDEHYDE,Diphenylcyclopropenone	kp174_206.0724
+208.1009	301.26	0.0007005716579720378	-27.976031069789702	C7H14N2O5	-2.525356325940127	Threonylserine,Serylthreonine,(2S,3R)-2-Amino-3-[(2S)-2-amino-3-hydroxypropanoyl]oxybutanoic acid,(2S)-2-Amino-3-[(2S,3R)-2-amino-3-hydroxybutanoyl]oxypropanoic acid	kp176_206.0902
 139.0977	202.43	0.010084740583213275	-8.091901895873503	C6H10N4	-0.7452926420633155	Pentenyltetrazol,Pentetrazol	kp336_138.0904
-175.1077	246.43	0.0021769163253796816	-16.86674351986402	C7H14N2O3	-2.317788904246079	N2-Acetylornithine,N(5)-Acetylornithine,L-Theanine,Formyllysine,val-gly,Valylglycine,Gly-Norvaline,N5-Acetylornithine,Glycylvaline	kp338_174.1004
+175.1077	246.43	0.0021769163253796816	-16.86674351986402	C7H14N2O3	-2.317788904246079	Valylglycine,Gly-Norvaline,Formyllysine,L-Theanine,N(5)-Acetylornithine,Glycylvaline,N2-Acetylornithine,N5-Acetylornithine,val-gly	kp338_174.1004
 140.0106	265.26	0.01470918858737035	-7.0381439453549515	H3O4P,C2H3KO2	-0.5472244134893387	Phosphate,Potassium acetate	kp3740_97.977
-176.111	246.3	0.007090531169212469	-9.310756950972491	C7H14N2O3	-3.2324284744445038	N2-Acetylornithine,N(5)-Acetylornithine,L-Theanine,Formyllysine,val-gly,Valylglycine,Gly-Norvaline,N5-Acetylornithine,Glycylvaline	kp338_174.1004
-97.0652	27.8	0.018560847752960553	6.423811675990066	C6H8O	0.31677630728503203	Hexa-trans-2-cis-4-dien-1-al,3-Methyl-2-cyclopenten-1-one,(E,E)-2,4-Hexadienal,2,4-Dimethylfuran,3-Ethylfuran,2,5-Dimethylfuran,2-Cyclohexen-1-one,2-Ethylfuran,2-Methyl-2-cyclopenten-1-one,2,3-Dimethylfuran	kp399_96.0579
-215.139	242.19	0.0022373324467944242	-16.30967580869369	C10H18N2O3	-1.4107520634576183	Tert-butyl N-[2-(prop-2-enamido)ethyl]carbamate,Valylproline,Dethiobiotin,Prolyl-Valine	kp411_214.1317
+176.111	246.3	0.007090531169212469	-9.310756950972491	C7H14N2O3	-3.2324284744445038	Valylglycine,Gly-Norvaline,Formyllysine,L-Theanine,N(5)-Acetylornithine,Glycylvaline,N2-Acetylornithine,N5-Acetylornithine,val-gly	kp338_174.1004
+97.0652	27.8	0.018560847752960553	6.423811675990066	C6H8O	0.31677630728503203	2-Methyl-2-cyclopenten-1-one,Hexa-trans-2-cis-4-dien-1-al,2,5-Dimethylfuran,3-Methyl-2-cyclopenten-1-one,2-Ethylfuran,2-Cyclohexen-1-one,(E,E)-2,4-Hexadienal,2,4-Dimethylfuran,2,3-Dimethylfuran,3-Ethylfuran	kp399_96.0579
+215.139	242.19	0.0022373324467944242	-16.30967580869369	C10H18N2O3	-1.4107520634576183	Valylproline,Dethiobiotin,Tert-butyl N-[2-(prop-2-enamido)ethyl]carbamate,Prolyl-Valine	kp411_214.1317
 98.9846	265.26	0.020268616083035377	-6.220636048501624	H3O4P,C2H3KO2	-0.5993991572204997	Phosphate,Potassium acetate	kp3740_97.977
-216.0631	299.55	0.00321033367212481	-12.904237478811549	C5H14NO6P	-1.3079832222372936	sn-glycero-3-Phosphoethanolamine,Glycerylphosphorylethanolamine	kp417_215.0557
+216.0631	299.55	0.00321033367212481	-12.904237478811549	C5H14NO6P	-1.3079832222372936	Glycerylphosphorylethanolamine,sn-glycero-3-Phosphoethanolamine	kp417_215.0557
 217.0616	276.23	0.0037779067425881044	-11.8441876786855		-0.7811746151009054		
-217.0664	299.55	0.0037779067425881044	-11.783790381306787	C5H14NO6P	-1.3388137633246195	sn-glycero-3-Phosphoethanolamine,Glycerylphosphorylethanolamine	kp417_215.0557
+217.0664	299.55	0.0037779067425881044	-11.783790381306787	C5H14NO6P	-1.3388137633246195	Glycerylphosphorylethanolamine,sn-glycero-3-Phosphoethanolamine	kp417_215.0557
 217.0818	359.32	0.029463656737858935	-5.436723472625523		-1.0624025267928552		
-217.1182	289.41	0.004096508691797392	-11.341909821548118	C9H16N2O4	-0.9871526428467554	[(2S,3R)-2-Amino-3-hydroxybutanoyl] (2S)-pyrrolidine-2-carboxylate,Threonylproline,N2,N5-Diacetylornithine,2,5-Bis(acetylamino)pentanoic acid,Sakacin P,Prolyl-Threonine	kp455_216.1107
+217.1182	289.41	0.004096508691797392	-11.341909821548118	C9H16N2O4	-0.9871526428467554	2,5-Bis(acetylamino)pentanoic acid,Threonylproline,Sakacin P,[(2S,3R)-2-Amino-3-hydroxybutanoyl] (2S)-pyrrolidine-2-carboxylate,Prolyl-Threonine,N2,N5-Diacetylornithine	kp455_216.1107
 180.0879	349.41	0.011976689701821521	-7.579530876449736	C7H9N5O	-1.440071467432272	7-Aminomethyl-7-carbaguanine,9-Ethylguanine	kp462_179.0807
 146.1175	27.67	0.009631027604439783	-8.2221561960493		-0.5853124309332358		
-146.1175	330.99	0.015600208107532284	-6.8629831941330615	C7H15NO2	-0.8512798185903669	4-(3-Hydroxypropyl)morpholine,Methyl L-leucinate,2-Aminoheptanoic acid,4-Trimethylammoniobutanoic acid,[(3-Methylbutyl)amino]acetic acid,7-Aminoheptanoic acid,2-Aminoheptanoate	kp466_145.1102
-218.1134	307.95	0.0006297601444571943	-33.68952164800725	C6H12N2O4	-1.6617960535628704	Serylalanine,Threonylglycine,Alanylserine,Glycyl-Threonine,(2S)-2-Amino-3-[(2S)-2-aminopropanoyl]oxypropanoic acid,Ethylenediamine-N,N'-diacetic acid,N5-formyl-N5-hydroxy-L-ornithine	kp468_176.0796
+146.1175	330.99	0.015600208107532284	-6.8629831941330615	C7H15NO2	-0.8512798185903669	2-Aminoheptanoate,[(3-Methylbutyl)amino]acetic acid,4-Trimethylammoniobutanoic acid,2-Aminoheptanoic acid,Methyl L-leucinate,7-Aminoheptanoic acid,4-(3-Hydroxypropyl)morpholine	kp466_145.1102
+218.1134	307.95	0.0006297601444571943	-33.68952164800725	C6H12N2O4	-1.6617960535628704	Glycyl-Threonine,Serylalanine,Alanylserine,(2S)-2-Amino-3-[(2S)-2-aminopropanoyl]oxypropanoic acid,N5-formyl-N5-hydroxy-L-ornithine,Threonylglycine,Ethylenediamine-N,N'-diacetic acid	kp468_176.0796
 219.0716	246.04	0.0015352101759075931	-19.62880199771267		-2.3362999890110636		
 181.105	26.62	0.03587625197173129	-5.070318517625474		-0.7742660932387757		
-219.0975	361.56	0.0182554728086406	-6.462561057730999	C8H14N2O5	-1.1685600283739852	N-gamma-L-Glutamyl-D-alanine,Hydroxyprolyl-Serine,Alanylglutamic acid,gamma-Glutamylalanine,Serylhydroxyproline,Glutamylalanine	kp495_218.0902
+219.0975	361.56	0.0182554728086406	-6.462561057730999	C8H14N2O5	-1.1685600283739852	Alanylglutamic acid,gamma-Glutamylalanine,Serylhydroxyproline,N-gamma-L-Glutamyl-D-alanine,Glutamylalanine,Hydroxyprolyl-Serine	kp495_218.0902
 147.1208	27.67	0.004425151007738299	-11.057652084654483		-0.6536212978413722		
-219.1168	307.82	3.205985429084722e-05	-100.29396427255662	C6H12N2O4	-2.606545017790925	Serylalanine,Threonylglycine,Alanylserine,Glycyl-Threonine,(2S)-2-Amino-3-[(2S)-2-aminopropanoyl]oxypropanoic acid,Ethylenediamine-N,N'-diacetic acid,N5-formyl-N5-hydroxy-L-ornithine	kp468_176.0796
-219.1168	318.59	0.00013223363036382477	-63.57697265950493	C8H15N3O4	-6.188706557879609	Alanylglutamine,Alanyl-Gamma-glutamate,Glutaminylalanine,N-alpha-Acetyl-L-citrulline,2-(2-Aminopropanylamino)-4-carbamoylbutyric acid	kp470_217.1061
-219.1338	232.44	0.00231179745515589	-16.055183243240123	C9H18N2O4	-2.406119302378638	Leucyl-Serine,Ser-Leu,Valylthreonine,Serylleucine,1,3-Propanediol, 2,2-diethyl-, dicarbamate,N(6)-(1-Carboxyethyl)-L-lysine,Carboxyethyllysine,Threonylvaline,Serylisoleucine,(2R)-2-Amino-2-[[(1S)-1-carboxyethyl]amino]-4-methylpentanoic acid,epsilon-(Carboxyethyl)lysine,N(epsilon)-(carboxyethyl)lysine,Threoninyl-Valine,Meprobamate,Isoleucyl-Serine,L-Lysopine,Pantothenamide	kp505_218.1265
-220.0927	333.88	0.0012479713598178193	-23.114013433049855	C7H13N3O5	-2.0787269015400014	Asparaginyl-Serine,Serylasparagine	kp540_219.0855
-220.1178	185.07	0.04216184919391611	-4.763186662112178	C9H17NO5	-0.6448262027207363	Pantothenic acid,3-[[(2S)-2,4-Dihydroxy-3,3-dimethylbutanoyl]amino]propanoic acid	kp548_219.1104
-150.0773	204.93	0.00231179745515589	-15.716492196684932	C6H7N5	-1.4512153562243277	3-Methyladenine,1-Methyladenine,7-Methyladenine,6-Methyladenine,9-Methyladenine	kp559_149.07
-221.0178	318.72	0.027115029803998863	-5.586155054084377	C5H10N2O3S	-0.9880035468176409	Cysteinylglycine,S-Nitrosopenicillamine,Glycyl-Cysteine,2-[[(2S)-2-Amino-3-sulfanylpropanoyl]amino]acetic acid	kp424_178.0412
-221.0768	376.29	0.008761719507969933	-8.565193688495013	C7H12N2O6	-1.1426769224033535	Serylaspartic acid,Aspartyl-Serine,Glycine glutamate,L-beta-aspartyl-L-serine	kp571_220.0695
-221.0956	252.61	0.034538944287269516	-5.145103646516965	C8H16N2O3S,C8H16N2O3S	-0.24728480714476575	Alanylmethionine,Methionyl-Alanine,Cysteinyl-Valine,Valylcysteine,Alanylmethionine,Methionyl-Alanine,Cysteinyl-Valine,Valylcysteine	kp576_220.0882
-221.1131	280.58	0.00035208014234328213	-43.78391028687868	C8H16N2O5	-3.757283401734938	Threonylthreonine,N(epsilon)-(Carboxymethyl)hydroxylysine,N-Acetyl-b-glucosaminylamine	kp577_220.1058
+219.1168	307.82	3.205985429084722e-05	-100.29396427255662	C6H12N2O4	-2.606545017790925	Glycyl-Threonine,Serylalanine,Alanylserine,(2S)-2-Amino-3-[(2S)-2-aminopropanoyl]oxypropanoic acid,N5-formyl-N5-hydroxy-L-ornithine,Threonylglycine,Ethylenediamine-N,N'-diacetic acid	kp468_176.0796
+219.1168	318.59	0.00013223363036382477	-63.57697265950493	C8H15N3O4	-6.188706557879609	Glutaminylalanine,2-(2-Aminopropanylamino)-4-carbamoylbutyric acid,Alanylglutamine,N-alpha-Acetyl-L-citrulline,Alanyl-Gamma-glutamate	kp470_217.1061
+219.1338	232.44	0.00231179745515589	-16.055183243240123	C9H18N2O4	-2.406119302378638	Threoninyl-Valine,Pantothenamide,epsilon-(Carboxyethyl)lysine,Meprobamate,(2R)-2-Amino-2-[[(1S)-1-carboxyethyl]amino]-4-methylpentanoic acid,Carboxyethyllysine,Ser-Leu,Valylthreonine,N(6)-(1-Carboxyethyl)-L-lysine,Serylisoleucine,Threonylvaline,1,3-Propanediol, 2,2-diethyl-, dicarbamate,Leucyl-Serine,N(epsilon)-(carboxyethyl)lysine,L-Lysopine,Isoleucyl-Serine,Serylleucine	kp505_218.1265
+220.0927	333.88	0.0012479713598178193	-23.114013433049855	C7H13N3O5	-2.0787269015400014	Serylasparagine,Asparaginyl-Serine	kp540_219.0855
+220.1178	185.07	0.04216184919391611	-4.763186662112178	C9H17NO5	-0.6448262027207363	3-[[(2S)-2,4-Dihydroxy-3,3-dimethylbutanoyl]amino]propanoic acid,Pantothenic acid	kp548_219.1104
+150.0773	204.93	0.00231179745515589	-15.716492196684932	C6H7N5	-1.4512153562243277	7-Methyladenine,9-Methyladenine,1-Methyladenine,6-Methyladenine,3-Methyladenine	kp559_149.07
+221.0178	318.72	0.027115029803998863	-5.586155054084377	C5H10N2O3S	-0.9880035468176409	Glycyl-Cysteine,Cysteinylglycine,2-[[(2S)-2-Amino-3-sulfanylpropanoyl]amino]acetic acid,S-Nitrosopenicillamine	kp424_178.0412
+221.0768	376.29	0.008761719507969933	-8.565193688495013	C7H12N2O6	-1.1426769224033535	L-beta-aspartyl-L-serine,Aspartyl-Serine,Glycine glutamate,Serylaspartic acid	kp571_220.0695
+221.0956	252.61	0.034538944287269516	-5.145103646516965	C8H16N2O3S,C8H16N2O3S	-0.24728480714476575	Valylcysteine,Alanylmethionine,Methionyl-Alanine,Cysteinyl-Valine,Valylcysteine,Alanylmethionine,Methionyl-Alanine,Cysteinyl-Valine	kp576_220.0882
+221.1131	280.58	0.00035208014234328213	-43.78391028687868	C8H16N2O5	-3.757283401734938	N(epsilon)-(Carboxymethyl)hydroxylysine,Threonylthreonine,N-Acetyl-b-glucosaminylamine	kp577_220.1058
 152.0373	252.61	0.03851445955986426	-4.918517314895339	C4H9NO3S	-0.35611344327478633	(S)C(S)S-S-Methylcysteine sulfoxide	kp3803_151.0302
 221.9047	209.13	0.04820837970137175	4.51028391823414		0.34456306039621154		
-224.1109	177.59	0.009918390773854447	-8.143079585777592	C9H11NO3	-1.877618345154989	D-Tyrosine,L-Threo-3-Phenylserine,4-Hydroxy-4-(3-pyridyl)-butanoic acid,2-Amino-3-hydroxy-3-phenylpropanoic acid,Beta-Tyrosine,L-Tyrosine,4,6,7-Trihydroxy-1,2,3,4-tetrahydroisoquinoline,Meta-Tyrosine,o-Tyrosine	kp618_181.0738
+224.1109	177.59	0.009918390773854447	-8.143079585777592	C9H11NO3	-1.877618345154989	Meta-Tyrosine,4,6,7-Trihydroxy-1,2,3,4-tetrahydroisoquinoline,D-Tyrosine,L-Threo-3-Phenylserine,2-Amino-3-hydroxy-3-phenylpropanoic acid,Beta-Tyrosine,o-Tyrosine,4-Hydroxy-4-(3-pyridyl)-butanoic acid,L-Tyrosine	kp618_181.0738
 186.0872	318.59	0.04789995896542295	-4.529609787157642		-1.6450749901191237		
 114.0664	259.45	0.005913238614677296	-9.897940734464813	C4H7N3O	-0.5595942243141501	Creatinine	kp3837_113.0592
-187.0713	318.46	0.02277074006145455	-5.886877431520955	C8H9NO4,C9H5N5	-1.5695392782548616	2-((3,5-Dihydroxyphenyl)amino)acetic acid,3,5-Dihydroxyphenylglycine,4-Pyridoxic acid,triazolobenzodiazepine	kp581_183.0536
+187.0713	318.46	0.02277074006145455	-5.886877431520955	C8H9NO4,C9H5N5	-1.5695392782548616	2-((3,5-Dihydroxyphenyl)amino)acetic acid,4-Pyridoxic acid,3,5-Dihydroxyphenylglycine,triazolobenzodiazepine	kp581_183.0536
 115.0756	27.8	0.044650313704677556	4.667994531893835		0.3912436504206589		
-226.0797	331.91	0.004981380776975338	-10.610653943186383	C7H13N3O4	-0.9018305178546662	Asparaginylalanine,Alanylasparagine,Glycyl-Gamma-glutamate,Glutaminylglycine,Glycyl-Glutamine	kp34_203.0905
+226.0797	331.91	0.004981380776975338	-10.610653943186383	C7H13N3O4	-0.9018305178546662	Asparaginylalanine,Glycyl-Gamma-glutamate,Alanylasparagine,Glycyl-Glutamine,Glutaminylglycine	kp34_203.0905
 227.066	370.51	0.03843055916126932	-4.934154231139321		-0.3171585201329421		
-118.0613	260.53	0.011976689701821521	7.597918881399052	C3H7N3O2	0.5100922701821737	Guanidoacetic acid,n-ethyl-n'-nitrosourea,1-Ethyl-1-nitrosourea,(Diaminomethylideneamino) acetate	kp711_117.0541
-190.0821	315.04	0.03330408291417769	-5.211760193304811	C6H11N3O4	-1.137787495080051	Glycyl-Asparagine,Caracemide,Asparaginylglycine,Citramide,Glycylglycylglycine	kp319_189.075
-190.0821	339.92	0.00850605717467923	-8.704693939730785	C6H11N3O4	-1.32677686362236	Glycyl-Asparagine,Caracemide,Asparaginylglycine,Citramide,Glycylglycylglycine	kp320_189.0748
+118.0613	260.53	0.011976689701821521	7.597918881399052	C3H7N3O2	0.5100922701821737	n-ethyl-n'-nitrosourea,Guanidoacetic acid,(Diaminomethylideneamino) acetate,1-Ethyl-1-nitrosourea	kp711_117.0541
+190.0821	315.04	0.03330408291417769	-5.211760193304811	C6H11N3O4	-1.137787495080051	Glycyl-Asparagine,Caracemide,Glycylglycylglycine,Citramide,Asparaginylglycine	kp319_189.075
+190.0821	339.92	0.00850605717467923	-8.704693939730785	C6H11N3O4	-1.32677686362236	Glycyl-Asparagine,Caracemide,Glycylglycylglycine,Citramide,Asparaginylglycine	kp320_189.0748
 190.9926	274.35	0.019226247027377543	6.3435670540577735		0.46089345195208864		
-191.1025	296.0	0.0010590842985767474	-24.43664087000358	C7H14N2O4	-1.5324793810166106	Diaminopimelic acid,(2R,6S)-2,6-Diaminoheptanedioic acid,N-(gamma-Glutamyl)ethanolamine,Alanylthreonine,Threonylalanine,2-Amino-4-[(2-hydroxy-1-oxopropyl)amino]butanoic acid	kp735_190.0953
-161.092	293.87	0.001318049835126577	-21.878290823280587	C6H12N2O3	-1.6120412618817923	4-Acetamido-2-aminobutanoic acid,Daminozide,D-Alanyl-D-alanine,N-Nitroso(2-hydroxypropyl)(2-oxopropyl)amine,(S)-Methyl 2,5-diamino-5-oxopentanoate,Alanylalanine,d-Alanyl-l-alanine	kp740_160.0847
-161.1284	381.41	0.04020343500399148	-4.838595889898376	C7H16N2O2	-0.797986979086879	Isoputreanine,N2-Methyl-L-lysine,N(6)-Methyllysine,Emeriamine	kp745_160.121
+191.1025	296.0	0.0010590842985767474	-24.43664087000358	C7H14N2O4	-1.5324793810166106	Diaminopimelic acid,Alanylthreonine,2-Amino-4-[(2-hydroxy-1-oxopropyl)amino]butanoic acid,(2R,6S)-2,6-Diaminoheptanedioic acid,Threonylalanine,N-(gamma-Glutamyl)ethanolamine	kp735_190.0953
+161.092	293.87	0.001318049835126577	-21.878290823280587	C6H12N2O3	-1.6120412618817923	D-Alanyl-D-alanine,N-Nitroso(2-hydroxypropyl)(2-oxopropyl)amine,d-Alanyl-l-alanine,Daminozide,Alanylalanine,(S)-Methyl 2,5-diamino-5-oxopentanoate,4-Acetamido-2-aminobutanoic acid	kp740_160.0847
+161.1284	381.41	0.04020343500399148	-4.838595889898376	C7H16N2O2	-0.797986979086879	N2-Methyl-L-lysine,N(6)-Methyllysine,Isoputreanine,Emeriamine	kp745_160.121
 161.1284	383.78	0.02104422744852031	-6.116645994992455		-0.8724616930990585		
-192.106	295.87	0.0006664740382219852	-28.823556922350633	C7H14N2O4	-5.030622916674167	Diaminopimelic acid,(2R,6S)-2,6-Diaminoheptanedioic acid,N-(gamma-Glutamyl)ethanolamine,Alanylthreonine,Threonylalanine,2-Amino-4-[(2-hydroxy-1-oxopropyl)amino]butanoic acid	kp735_190.0953
+192.106	295.87	0.0006664740382219852	-28.823556922350633	C7H14N2O4	-5.030622916674167	Diaminopimelic acid,Alanylthreonine,2-Amino-4-[(2-hydroxy-1-oxopropyl)amino]butanoic acid,(2R,6S)-2,6-Diaminoheptanedioic acid,Threonylalanine,N-(gamma-Glutamyl)ethanolamine	kp735_190.0953
 162.05	221.77	0.03660458440880474	-5.028505251863472		-0.5301234895104621		
-229.1546	320.59	0.013392758579758678	-7.3034473931214805	C11H20N2O3	-1.777874728664873	Pro-leu,N,N,N-Trimethyl-L-alanyl-L-proline betaine,Pro-Ile,Isoleucylproline,Leucylproline	kp771_228.1473
-162.0953	293.74	0.003147678931699687	-13.289481997376516	C6H12N2O3	-2.0392296824479033	4-Acetamido-2-aminobutanoic acid,Daminozide,D-Alanyl-D-alanine,N-Nitroso(2-hydroxypropyl)(2-oxopropyl)amine,(S)-Methyl 2,5-diamino-5-oxopentanoate,Alanylalanine,d-Alanyl-l-alanine	kp740_160.0847
+229.1546	320.59	0.013392758579758678	-7.3034473931214805	C11H20N2O3	-1.777874728664873	Leucylproline,Pro-Ile,N,N,N-Trimethyl-L-alanyl-L-proline betaine,Pro-leu,Isoleucylproline	kp771_228.1473
+162.0953	293.74	0.003147678931699687	-13.289481997376516	C6H12N2O3	-2.0392296824479033	D-Alanyl-D-alanine,N-Nitroso(2-hydroxypropyl)(2-oxopropyl)amine,d-Alanyl-l-alanine,Daminozide,Alanylalanine,(S)-Methyl 2,5-diamino-5-oxopentanoate,4-Acetamido-2-aminobutanoic acid	kp740_160.0847
 230.1134	322.29	0.02104422744852031	-6.125016047735921	C9H15N3O4	-0.8227633346871492	Prolyl-Asparagine,Asparaginyl-Proline,2,4-Bis(2-methoxyethoxy)-1,3,5-triazine	kp791_229.106
 122.9246	209.39	0.0430866821404798	4.727770441738065		0.20761266463072303		
-163.0712	315.04	0.011976689701821521	-7.6471645362591945	C5H10N2O4	-1.2919010265254087	O-Glycylserine,Serylglycine,Glycyl-Serine,L-4-Hydroxyglutamine,(2S)-2-Amino-5-aminooxy-5-oxopentanoic acid,Glutamine hydroxamate	kp795_162.0636
+163.0712	315.04	0.011976689701821521	-7.6471645362591945	C5H10N2O4	-1.2919010265254087	O-Glycylserine,(2S)-2-Amino-5-aminooxy-5-oxopentanoic acid,Glutamine hydroxamate,Serylglycine,Glycyl-Serine,L-4-Hydroxyglutamine	kp795_162.0636
 231.1702	28.07	0.010258946236699068	-8.040085907307269	C12H21NO3	-1.7256820694034438	N-OCTANOYL-L-HOMOSERINE LACTONE	kp736_227.1526
 232.1291	281.76	0.00529476086746087	-10.347082576146073	C9H17N3O4	-4.01244757459331	Asparaginyl-Valine,Ala-Ala-Ala,Valylasparagine	kp820_231.1218
-164.0741	315.17	0.015600208107532284	-6.904545300139601	C5H10N2O4	-1.3490148432568851	O-Glycylserine,Serylglycine,Glycyl-Serine,L-4-Hydroxyglutamine,(2S)-2-Amino-5-aminooxy-5-oxopentanoic acid,Glutamine hydroxamate	kp795_162.0636
+164.0741	315.17	0.015600208107532284	-6.904545300139601	C5H10N2O4	-1.3490148432568851	O-Glycylserine,(2S)-2-Amino-5-aminooxy-5-oxopentanoic acid,Glutamine hydroxamate,Serylglycine,Glycyl-Serine,L-4-Hydroxyglutamine	kp795_162.0636
 124.9227	209.39	0.012556171170720321	7.455752503162466		0.19613745924497294		
 124.9998	319.51	0.00231179745515589	-15.699650864716967	C3H5ClO3,C2H5O4P	-1.5976321517229692	3-Chloro-2-hydroxypropanoic acid,phosphonoacetaldehyde	kp3886_123.9925
 233.087	231.12	0.021997541610334688	-5.999756329021112		-2.329971080588013		
-233.1494	33.84	0.00529476086746087	-10.318072148577109	C10H20N2O4	-1.7563265902049388	Threonylleucine,Leucyl-Threonine,Isoleucyl-Threonine,Thr-Leu,Spermic acid 2,Threonylisoleucine	kp831_232.1422
-195.0028	299.29	0.004096508691797392	-11.347330034248332	C3H9O6P	-1.1439971891026701	Glycerol 3-phosphate,Glycerophosphoric acid,beta-Glycerophosphoric acid	kp3676_172.0136
-195.0798	275.83	0.009631027604439783	-8.230963195580086	C14H10O	-0.73025623703289	9-Hydroxyphenanthrene,1-Hydroxyphenanthrene,4-Hydroxyphenanthrene,2-Hydroxyphenanthrene,anthracen-9-ol,3-Hydroxyphenanthrene,Anthrone	kp434_194.0724
-268.1266	274.62	0.005216016434076027	-10.457996904583478	C10H19N3O4	-2.277664386482229	Valyl-Gamma-glutamate,Asparaginyl-Leucine,Asparaginylisoleucine,Valylglutamine,Leucyl-Asparagine,Glutaminylvaline,Isoleucyl-Asparagine	kp847_245.1374
-269.113	236.11	0.00428392103138655	-11.18109787429801	C12H16N2O5	-1.3525460127339386	Musk ambrette,Seryltyrosine,Tyrosyl-Serine,Ser-Tyr	kp876_268.1057
+233.1494	33.84	0.00529476086746087	-10.318072148577109	C10H20N2O4	-1.7563265902049388	Threonylisoleucine,Isoleucyl-Threonine,Threonylleucine,Leucyl-Threonine,Spermic acid 2,Thr-Leu	kp831_232.1422
+195.0028	299.29	0.004096508691797392	-11.347330034248332	C3H9O6P	-1.1439971891026701	Glycerophosphoric acid,beta-Glycerophosphoric acid,Glycerol 3-phosphate	kp3676_172.0136
+195.0798	275.83	0.009631027604439783	-8.230963195580086	C14H10O	-0.73025623703289	4-Hydroxyphenanthrene,anthracen-9-ol,9-Hydroxyphenanthrene,1-Hydroxyphenanthrene,Anthrone,2-Hydroxyphenanthrene,3-Hydroxyphenanthrene	kp434_194.0724
+268.1266	274.62	0.005216016434076027	-10.457996904583478	C10H19N3O4	-2.277664386482229	Asparaginyl-Leucine,Isoleucyl-Asparagine,Glutaminylvaline,Valyl-Gamma-glutamate,Leucyl-Asparagine,Asparaginylisoleucine,Valylglutamine	kp847_245.1374
+269.113	236.11	0.00428392103138655	-11.18109787429801	C12H16N2O5	-1.3525460127339386	Tyrosyl-Serine,Seryltyrosine,Ser-Tyr,Musk ambrette	kp876_268.1057
 237.1233	27.93	0.017586534314810064	-6.589500223413667		-2.201661035371348		
-270.1058	308.35	0.015600208107532284	-6.864363909046458	C9H17N3O5	-1.4418882637159385	Threoninyl-Gamma-glutamate,Glutaminylthreonine,Threonylglutamine	kp902_247.1166
-270.1164	236.11	0.009214332389426944	-8.367497030611974	C12H16N2O5	-2.135380965523936	Musk ambrette,Seryltyrosine,Tyrosyl-Serine,Ser-Tyr	kp876_268.1057
+270.1058	308.35	0.015600208107532284	-6.864363909046458	C9H17N3O5	-1.4418882637159385	Threoninyl-Gamma-glutamate,Threonylglutamine,Glutaminylthreonine	kp902_247.1166
+270.1164	236.11	0.009214332389426944	-8.367497030611974	C12H16N2O5	-2.135380965523936	Tyrosyl-Serine,Seryltyrosine,Ser-Tyr,Musk ambrette	kp876_268.1057
 235.0923	371.7	0.00321033367212481	-12.931892925273472		-1.1610997884251866		
-235.1115	316.62	0.001318049835126577	-21.205868767632957	C8H15N3O5	-5.221470999312425	Serylglutamine,Threonylasparagine,Serinyl-Gamma-glutamate,Asparaginyl-Threonine,Glutaminylserine	kp859_233.1009
-238.045	299.42	0.003147678931699687	-13.315249247654632	C5H14NO6P	-0.816478483036736	sn-glycero-3-Phosphoethanolamine,Glycerylphosphorylethanolamine	kp417_215.0557
+235.1115	316.62	0.001318049835126577	-21.205868767632957	C8H15N3O5	-5.221470999312425	Serylglutamine,Serinyl-Gamma-glutamate,Glutaminylserine,Threonylasparagine,Asparaginyl-Threonine	kp859_233.1009
+238.045	299.42	0.003147678931699687	-13.315249247654632	C5H14NO6P	-0.816478483036736	Glycerylphosphorylethanolamine,sn-glycero-3-Phosphoethanolamine	kp417_215.0557
 238.1267	27.8	0.01392469272408511	-7.153747960075334		-3.144539311492114		
-238.1267	143.97	0.03228690651319213	-5.271285468562245	C12H16N2O3	-4.052337666557644	Hexobarbital,Cyclobarbital,O-Desmethyl-lacosamide,Phenylalanylalanine,Alanylphenylalanine,Phenylalanyl-Alanine,N-Acetyl-5-methoxykynuramine	kp888_236.116
-238.1267	156.32	0.04815404410112394	-4.517201758345772	C12H16N2O3	-2.5252505003788244	Hexobarbital,Cyclobarbital,O-Desmethyl-lacosamide,Phenylalanylalanine,Alanylphenylalanine,Phenylalanyl-Alanine,N-Acetyl-5-methoxykynuramine	kp890_236.116
-239.0483	299.29	0.008715433388121821	-8.631207921215841	C5H14NO6P	-0.8838600969222448	sn-glycero-3-Phosphoethanolamine,Glycerylphosphorylethanolamine	kp417_215.0557
+238.1267	143.97	0.03228690651319213	-5.271285468562245	C12H16N2O3	-4.052337666557644	Phenylalanylalanine,Phenylalanyl-Alanine,Alanylphenylalanine,Cyclobarbital,O-Desmethyl-lacosamide,N-Acetyl-5-methoxykynuramine,Hexobarbital	kp888_236.116
+238.1267	156.32	0.04815404410112394	-4.517201758345772	C12H16N2O3	-2.5252505003788244	Phenylalanylalanine,Phenylalanyl-Alanine,Alanylphenylalanine,Cyclobarbital,O-Desmethyl-lacosamide,N-Acetyl-5-methoxykynuramine,Hexobarbital	kp890_236.116
+239.0483	299.29	0.008715433388121821	-8.631207921215841	C5H14NO6P	-0.8838600969222448	Glycerylphosphorylethanolamine,sn-glycero-3-Phosphoethanolamine	kp417_215.0557
 239.1023	227.81	0.02104422744852031	-6.13359637938117		-5.857512885100991		
 198.0526	299.42	0.0026785288864913295	-14.589140152437247	C5H12NO5P,C9H9O5	-1.3253893993282766	2-Amino-5-phosphonopentanoic acid,vanillyl mandelate	kp945_197.0453
 240.0953	308.22	0.006284575954079866	-9.719847395911547		-3.257945957677155		
 240.0953	318.06	0.0006297601444571943	-33.55922042202774		-2.462203588789098		
-302.1107	198.6	0.007102179336231366	-9.285529369394062	C13H17N3O4	-2.404174960001658	Asparaginyl-Phenylalanine,Phenylalanylasparagine	kp981_279.1217
+302.1107	198.6	0.007102179336231366	-9.285529369394062	C13H17N3O4	-2.404174960001658	Phenylalanylasparagine,Asparaginyl-Phenylalanine	kp981_279.1217
 302.1107	201.38	0.0006664740382219852	-29.33183227650821	C16H13F2N3O	-2.260871541599954	Flutriafol,1H-1,2,4-Triazole-1-ethanol, alpha,alpha-bis(4-fluorophenyl)-	kp982_301.1035
 302.2071	28.07	0.0032578316165093628	-12.510357472127076	C13H25NO6	-2.955457523489539	(3R)-3,5-dihydroxy-3-methylpentanoylcarnitine	kp250_291.1669
-274.1871	339.53	0.0026785288864913295	-14.37336174480466	C11H23N5O3	-1.852540921365371	Valyl-Arginine,Arginylvaline,Valylarginine	kp1003_273.1797
-274.1871	379.97	0.0022373324467944242	-16.400662542654803	C11H23N5O3	-1.553870582954282	Valyl-Arginine,Arginylvaline,Valylarginine	kp1005_273.1799
+274.1871	339.53	0.0026785288864913295	-14.37336174480466	C11H23N5O3	-1.852540921365371	Valyl-Arginine,Valylarginine,Arginylvaline	kp1003_273.1797
+274.1871	379.97	0.0022373324467944242	-16.400662542654803	C11H23N5O3	-1.553870582954282	Valyl-Arginine,Valylarginine,Arginylvaline	kp1005_273.1799
 302.2183	332.96	0.012995153800129682	-7.3750739991852265		-2.217159120845281		
 241.1015	252.74	0.013794913049963251	-7.183795304752363		-0.32395434706868187		
 241.1095	252.61	0.020268616083035377	-6.215959456246214		-0.3227637143608071		
-275.1347	329.25	0.008761719507969933	-8.571885182430037	C10H18N4O5	-1.2273413923117857	Glutaminyl-Gamma-glutamate,N2-Succinoylarginine,Glutaminylglutamine	kp1033_274.1271
-275.1906	339.53	0.0032578316165093628	-12.59178766774003	C11H23N5O3	-2.2805280193360566	Valyl-Arginine,Arginylvaline,Valylarginine	kp1003_273.1797
-275.1906	379.58	1.7906643550022216e-05	-137.97584521749658	C11H23N5O3	-6.83630230396045	Valyl-Arginine,Arginylvaline,Valylarginine	kp1005_273.1799
-242.0746	333.75	0.001318049835126577	-21.86837510173275	C7H13N3O5	-2.1394243805438613	Asparaginyl-Serine,Serylasparagine	kp540_219.0855
+275.1347	329.25	0.008761719507969933	-8.571885182430037	C10H18N4O5	-1.2273413923117857	Glutaminyl-Gamma-glutamate,Glutaminylglutamine,N2-Succinoylarginine	kp1033_274.1271
+275.1906	339.53	0.0032578316165093628	-12.59178766774003	C11H23N5O3	-2.2805280193360566	Valyl-Arginine,Valylarginine,Arginylvaline	kp1003_273.1797
+275.1906	379.58	1.7906643550022216e-05	-137.97584521749658	C11H23N5O3	-6.83630230396045	Valyl-Arginine,Valylarginine,Arginylvaline	kp1005_273.1799
+242.0746	333.75	0.001318049835126577	-21.86837510173275	C7H13N3O5	-2.1394243805438613	Serylasparagine,Asparaginyl-Serine	kp540_219.0855
 242.1047	252.61	0.018141856281375233	-6.483461329754579		-0.3385508678496727		
-200.1029	307.95	0.0006597538069362176	-30.69972837234845	C6H10N2O3	-1.6871699893443157	N-Nitrosobis(2-oxopropyl)amine,Oxiracetam,3-Propoxy-1H-pyrazole-4,5-diol,1-(Hydroxymethyl)-5,5-dimethyl-2,4-imidazolidinedione	kp691_158.0691
-242.1848	34.11	0.04699463509746953	-4.565077159341431	C14H21NO2	-2.2691926290502167	N,N,O-Tridesmethylvenlafaxine,N,O-Didesmethyltramadol,N,N-Didesmethyltramadol	kp849_235.1568
-304.1613	288.88	0.00635342154636894	-9.646549687420574	C11H21N5O5	-1.0008234154031328	Glutamylarginine,N2-gamma-L-Glutamyl-L-arginine,gamma-Glutamylarginine,Arginylglutamic acid	kp1053_303.1542
-276.134	166.69	0.005265263723766432	-10.405458280099417	C14H17N3O3	-3.4868702145648953	Tryptophyl-Alanine,Alanyltryptophan	kp1059_275.1261
-201.0869	307.82	0.0013540505475212927	-20.740187703818602	C8H12N2O4	-1.6173949726946297	1-(2-Hydroxyethoxy)methyl-5-methyluracil,(3S,8As)-7-hydroxy-3-(hydroxymethyl)-2,3,6,7,8,8a-hexahydropyrrolo[1,2-a]pyrazine-1,4-dione	kp1051_200.0791
-201.0869	344.12	0.022277435021734415	-5.962106258404105	C8H12N2O4	-1.3985427362921818	1-(2-Hydroxyethoxy)methyl-5-methyluracil,(3S,8As)-7-hydroxy-3-(hydroxymethyl)-2,3,6,7,8,8a-hexahydropyrrolo[1,2-a]pyrazine-1,4-dione	kp1103_200.0794
-305.165	288.88	0.013738400953209485	-7.203952712532728	C11H21N5O5	-1.0142400415988853	Glutamylarginine,N2-gamma-L-Glutamyl-L-arginine,gamma-Glutamylarginine,Arginylglutamic acid	kp1053_303.1542
-305.165	422.02	0.0032578316165093628	-12.612189715477708	C11H21N5O5	-1.2983056544485727	Glutamylarginine,N2-gamma-L-Glutamyl-L-arginine,gamma-Glutamylarginine,Arginylglutamic acid	kp1054_303.1542
+200.1029	307.95	0.0006597538069362176	-30.69972837234845	C6H10N2O3	-1.6871699893443157	N-Nitrosobis(2-oxopropyl)amine,Oxiracetam,1-(Hydroxymethyl)-5,5-dimethyl-2,4-imidazolidinedione,3-Propoxy-1H-pyrazole-4,5-diol	kp691_158.0691
+242.1848	34.11	0.04699463509746953	-4.565077159341431	C14H21NO2	-2.2691926290502167	N,N-Didesmethyltramadol,N,N,O-Tridesmethylvenlafaxine,N,O-Didesmethyltramadol	kp849_235.1568
+304.1613	288.88	0.00635342154636894	-9.646549687420574	C11H21N5O5	-1.0008234154031328	N2-gamma-L-Glutamyl-L-arginine,Arginylglutamic acid,Glutamylarginine,gamma-Glutamylarginine	kp1053_303.1542
+276.134	166.69	0.005265263723766432	-10.405458280099417	C14H17N3O3	-3.4868702145648953	Alanyltryptophan,Tryptophyl-Alanine	kp1059_275.1261
+201.0869	307.82	0.0013540505475212927	-20.740187703818602	C8H12N2O4	-1.6173949726946297	(3S,8As)-7-hydroxy-3-(hydroxymethyl)-2,3,6,7,8,8a-hexahydropyrrolo[1,2-a]pyrazine-1,4-dione,1-(2-Hydroxyethoxy)methyl-5-methyluracil	kp1051_200.0791
+201.0869	344.12	0.022277435021734415	-5.962106258404105	C8H12N2O4	-1.3985427362921818	(3S,8As)-7-hydroxy-3-(hydroxymethyl)-2,3,6,7,8,8a-hexahydropyrrolo[1,2-a]pyrazine-1,4-dione,1-(2-Hydroxyethoxy)methyl-5-methyluracil	kp1103_200.0794
+305.165	288.88	0.013738400953209485	-7.203952712532728	C11H21N5O5	-1.0142400415988853	N2-gamma-L-Glutamyl-L-arginine,Arginylglutamic acid,Glutamylarginine,gamma-Glutamylarginine	kp1053_303.1542
+305.165	422.02	0.0032578316165093628	-12.612189715477708	C11H21N5O5	-1.2983056544485727	N2-gamma-L-Glutamyl-L-arginine,Arginylglutamic acid,Glutamylarginine,gamma-Glutamylarginine	kp1054_303.1542
 306.0943	375.37	0.0026785288864913295	14.404046791377306	C10H15N3O8	1.066721538999154	Convicine	kp1119_305.086
-306.1445	170.37	0.007450137761941195	-9.129529042595408	C15H19N3O4	-2.2119697677420014	Threoninyl-Tryptophan,Imazamox,Tryptophyl-Threonine,Threonyltryptophan	kp1120_305.1375
-306.1592	316.88	0.04486920448786605	-4.644167245149624	C11H23N5O3S,C11H23N5O3S,C19H19N3O	-1.739635039533031	Arginylmethionine,Methionyl-Arginine,Arginylmethionine,Methionyl-Arginine,2-((N-(1-(1H-Imidazol-4-yl)-2-propyl)imino)phenylmethyl)phenol	kp1121_305.152
+306.1445	170.37	0.007450137761941195	-9.129529042595408	C15H19N3O4	-2.2119697677420014	Threonyltryptophan,Tryptophyl-Threonine,Threoninyl-Tryptophan,Imazamox	kp1120_305.1375
+306.1592	316.88	0.04486920448786605	-4.644167245149624	C11H23N5O3S,C11H23N5O3S,C19H19N3O	-1.739635039533031	Methionyl-Arginine,Arginylmethionine,Methionyl-Arginine,Arginylmethionine,2-((N-(1-(1H-Imidazol-4-yl)-2-propyl)imino)phenylmethyl)phenol	kp1121_305.152
 244.1291	315.31	0.015600208107532284	-6.887381744683021	C10H17N3O4	-1.0492489378421261	Prolyl-Glutamine,Prolyl-Gamma-glutamate,Glutaminylproline	kp995_243.1225
-245.113	357.49	0.009214332389426944	-8.368518691306496	C8H13NO5,C9H17NS2	-0.5737193132665617	Adipoylglycine,N-acetyl-L-2-aminoadipate(2-),1-Isothiocyanato-7-(methylthio)heptane	kp28_203.0792
-245.1858	27.8	0.004478476812963323	-10.993447496232305	C14H19NO2	-2.5329396777077555	Thalictroidine,Norketobemidone,Normeperidine,Methylphenidate,Piperoxan,Dexmethylphenidate	kp96_233.1414
+245.113	357.49	0.009214332389426944	-8.368518691306496	C8H13NO5,C9H17NS2	-0.5737193132665617	N-acetyl-L-2-aminoadipate(2-),Adipoylglycine,1-Isothiocyanato-7-(methylthio)heptane	kp28_203.0792
+245.1858	27.8	0.004478476812963323	-10.993447496232305	C14H19NO2	-2.5329396777077555	Dexmethylphenidate,Piperoxan,Normeperidine,Norketobemidone,Methylphenidate,Thalictroidine	kp96_233.1414
 279.1007	287.57	0.022261925329884264	-5.971706001635485		-1.0053330397704805		
-279.1007	296.13	0.0026785288864913295	-14.42065539584506	C10H18N2O5S,C18H14O3	-2.275715031950533	gamma-Glutamylmethionine,Glutamylmethionine,Methionyl-Glutamate,N-gamma-Glutamylcysteine ethyl ester,1,2-Dihydrotanshinquinone,Dihydrotanshinone,Methylenetanshinquinone	kp4041_278.0933
-279.1007	316.49	0.02277074006145455	-5.885207464318554	C10H18N2O5S,C18H14O3	-2.4054518131252323	gamma-Glutamylmethionine,Glutamylmethionine,Methionyl-Glutamate,N-gamma-Glutamylcysteine ethyl ester,1,2-Dihydrotanshinquinone,Dihydrotanshinone,Methylenetanshinquinone	kp1157_278.093
-203.1026	307.69	0.0026785288864913295	-14.651904675897507	C8H14N2O4	-1.2032788343773078	L-Coprine,Serylproline,Hydroxyprolyl-Alanine,Prolyl-Serine,Alanylhydroxyproline	kp1163_202.0952
-280.0918	318.33	0.015600208107532284	-6.895684182916898	C8H20NO6P	-1.0045369470899068	Glycerophosphocholine,Glycerylphosphorylcholine	kp1177_257.1028
-246.1447	275.01	0.0032863023879491464	-12.442056900792158	C10H19N3O4	-1.9015063919470414	Valyl-Gamma-glutamate,Asparaginyl-Leucine,Asparaginylisoleucine,Valylglutamine,Leucyl-Asparagine,Glutaminylvaline,Isoleucyl-Asparagine	kp847_245.1374
-280.1289	198.6	0.02299456774245814	-5.86137460761249	C13H17N3O4	-2.158070310350684	Asparaginyl-Phenylalanine,Phenylalanylasparagine	kp981_279.1217
-280.1289	201.25	0.003135575990439561	-13.506752721570537	C13H17N3O4	-2.039867006175541	Asparaginyl-Phenylalanine,Phenylalanylasparagine	kp983_279.1218
+279.1007	296.13	0.0026785288864913295	-14.42065539584506	C10H18N2O5S,C18H14O3	-2.275715031950533	Methionyl-Glutamate,Glutamylmethionine,gamma-Glutamylmethionine,N-gamma-Glutamylcysteine ethyl ester,Methylenetanshinquinone,Dihydrotanshinone,1,2-Dihydrotanshinquinone	kp4041_278.0933
+279.1007	316.49	0.02277074006145455	-5.885207464318554	C10H18N2O5S,C18H14O3	-2.4054518131252323	Methionyl-Glutamate,Glutamylmethionine,gamma-Glutamylmethionine,N-gamma-Glutamylcysteine ethyl ester,Methylenetanshinquinone,Dihydrotanshinone,1,2-Dihydrotanshinquinone	kp1157_278.093
+203.1026	307.69	0.0026785288864913295	-14.651904675897507	C8H14N2O4	-1.2032788343773078	Prolyl-Serine,Serylproline,Hydroxyprolyl-Alanine,Alanylhydroxyproline,L-Coprine	kp1163_202.0952
+280.0918	318.33	0.015600208107532284	-6.895684182916898	C8H20NO6P	-1.0045369470899068	Glycerylphosphorylcholine,Glycerophosphocholine	kp1177_257.1028
+246.1447	275.01	0.0032863023879491464	-12.442056900792158	C10H19N3O4	-1.9015063919470414	Asparaginyl-Leucine,Isoleucyl-Asparagine,Glutaminylvaline,Valyl-Gamma-glutamate,Leucyl-Asparagine,Asparaginylisoleucine,Valylglutamine	kp847_245.1374
+280.1289	198.6	0.02299456774245814	-5.86137460761249	C13H17N3O4	-2.158070310350684	Phenylalanylasparagine,Asparaginyl-Phenylalanine	kp981_279.1217
+280.1289	201.25	0.003135575990439561	-13.506752721570537	C13H17N3O4	-2.039867006175541	Phenylalanylasparagine,Asparaginyl-Phenylalanine	kp983_279.1218
 331.2085	384.43	0.0037104368549195008	-12.023308571636546		-1.5876276709147028		
 246.1811	362.34	0.001318049835126577	-21.30345267660302		-1.9503114536807544		
-246.1811	411.58	0.00231179745515589	-15.82550990816604	C11H23N3O3	-1.4508360860761833	Lysylvaline,Valyllysine	kp1205_245.1734
+246.1811	411.58	0.00231179745515589	-15.82550990816604	C11H23N3O3	-1.4508360860761833	Valyllysine,Lysylvaline	kp1205_245.1734
 332.1213	247.35	0.003147678931699687	-13.070116676254495	C15H15N3O4	-1.512476115135204	2-(3,4-Dihydro-2,2-dimethyl-6-nitro-2H-1,4-benzoxazin-4-yl)pyridine N-oxide	kp1192_301.1058
-281.0952	318.46	0.01721255771477632	-6.659662512845311	C8H20NO6P	-1.0547496364489923	Glycerophosphocholine,Glycerylphosphorylcholine	kp1177_257.1028
-311.1235	314.52	0.04020343500399148	-4.834357408654871	C14H18N2O6	-1.122791541606766	Glutamyltyrosine,Phenylalanine glutamate,gamma-Glutamyltyrosine,Tyrosyl-Glutamate,Valine-betaxanthin	kp1231_310.1165
+281.0952	318.46	0.01721255771477632	-6.659662512845311	C8H20NO6P	-1.0547496364489923	Glycerylphosphorylcholine,Glycerophosphocholine	kp1177_257.1028
+311.1235	314.52	0.04020343500399148	-4.834357408654871	C14H18N2O6	-1.122791541606766	Phenylalanine glutamate,Valine-betaxanthin,gamma-Glutamyltyrosine,Glutamyltyrosine,Tyrosyl-Glutamate	kp1231_310.1165
 247.0579	265.26	0.033879650926210814	-5.17988460878069	C6H15O8P	-0.49388451381738463	Glycerophosphoglycerol	kp866_246.0503
 311.143	247.09	0.028531296319884828	-5.492930171230257	C15H15N3O4	-1.8964391454939111	2-(3,4-Dihydro-2,2-dimethyl-6-nitro-2H-1,4-benzoxazin-4-yl)pyridine N-oxide	kp1192_301.1058
 281.113	285.18	0.0006664740382219852	-29.718311932121953	C13H16N2O5	-1.507993025537946	Aspartylphenylalanine,L-beta-aspartyl-L-phenylalanine,Phenylalanylaspartic acid	kp4073_280.1058
 247.1033	335.19	0.007431277254051711	-9.156126741572548	C7H10N2O5	-1.5919107967853066	Penmacric acid	kp1133_202.059
-247.1287	330.73	0.0029173655342685794	-13.815907742784072	C10H18N2O5	-1.9669442327461972	Aspartyl-Isoleucine,Glutamylvaline,Isoleucyl-Aspartate,Aspartyl-Leucine,Valylglutamic acid,L-beta-aspartyl-L-leucine,gamma-Glutamylvaline,Leucyl-Aspartate	kp1237_246.1214
+247.1287	330.73	0.0029173655342685794	-13.815907742784072	C10H18N2O5	-1.9669442327461972	L-beta-aspartyl-L-leucine,Isoleucyl-Aspartate,Valylglutamic acid,Aspartyl-Leucine,Leucyl-Aspartate,Aspartyl-Isoleucine,Glutamylvaline,gamma-Glutamylvaline	kp1237_246.1214
 281.1493	161.96	0.00635342154636894	-9.652059274481324	C14H20N2O4	-1.6686478152585948	Valyltyrosine,4-(1,3-Dihydroxy-4,4,5,5-tetramethyl-imidazolidin-2-yl)benzoic acid,Feruloyl-2-hydroxyputrescine,Tyrosyl-Valine	kp1238_280.1421
-247.1481	274.88	0.0022373324467944242	-16.499929905287242	C10H19N3O4	-2.202833784160518	Valyl-Gamma-glutamate,Asparaginyl-Leucine,Asparaginylisoleucine,Valylglutamine,Leucyl-Asparagine,Glutaminylvaline,Isoleucyl-Asparagine	kp847_245.1374
-247.1593	384.96	0.002434045827888904	-15.24448991336796	C9H19N5O3	-1.575357420650981	Arginylalanine,Alanylarginine,beta-Alanyl-L-arginine	kp1182_245.1485
+247.1481	274.88	0.0022373324467944242	-16.499929905287242	C10H19N3O4	-2.202833784160518	Asparaginyl-Leucine,Isoleucyl-Asparagine,Glutaminylvaline,Valyl-Gamma-glutamate,Leucyl-Asparagine,Asparaginylisoleucine,Valylglutamine	kp847_245.1374
+247.1593	384.96	0.002434045827888904	-15.24448991336796	C9H19N5O3	-1.575357420650981	beta-Alanyl-L-arginine,Arginylalanine,Alanylarginine	kp1182_245.1485
 247.1844	361.95	0.02267227624827223	-5.925177703922837		-3.3090949980031574		
-247.1844	411.84	0.002866836855409768	-13.937895181053893	C11H23N3O3	-1.5080243654877599	Lysylvaline,Valyllysine	kp1205_245.1734
-333.1553	201.52	0.04671706813807785	-4.579192293286697	C16H20N4O4	-2.0231185880711315	Tryptophyl-Gamma-glutamate,Tryptophyl-Glutamine,Glutaminyltryptophan,1-p-Menthen-3-one	kp1261_332.1483
-333.1916	283.86	0.004829172671045169	-10.724266868854471	C17H24N4O3,C16H28O7	-2.0856186309474616	Tryptophyl-Lysine,Lysyltryptophan,Betulalbuside A,Angelicoidenol 2-O-beta-D-glucopyranoside,(S)-p-Menth-1-ene-4,7-diol 4-glucoside,Neomenthol-glucuronide,Menthol glucuronide,6Z-8-Hydroxygeraniol 8-O-glucoside,(1S,2S,4R)-1,8-Epoxy-p-menthan-2-ol glucoside,(1S,2S,4S,5S)-2,4-Thujanediol 4-O-beta-D-Glucopyranoside,(2E,4E,7R)-2,7-Dimethyl-2,4-octadiene-1,8-diol 8-O-b-D-glucopyranoside,7-Hydroxyterpineol 8-glucoside,(1R,3S,4S)-1,8-Epoxy-p-menthan-3-ol glucoside,(1S,2R,4R)-p-Menth-8-ene-2,10-diol 2-glucoside,(1R,2R,4S,6R)-2,6-Fenchanediol 2-O-b-D-glucoside,(4R,6S)-p-Menth-1-ene-4,6-diol 4-glucoside,(1R,2S,4R,5S)-2,5-Fenchanediol 2-O-b-D-glucoside,Unshuoside A,1,8-Epoxy-p-menthan-4-ol glucoside	kp1273_332.1841
-248.124	308.22	0.0026785288864913295	-14.743764465338732	C9H17N3O5	-1.34578371200406	Threoninyl-Gamma-glutamate,Glutaminylthreonine,Threonylglutamine	kp902_247.1166
+247.1844	411.84	0.002866836855409768	-13.937895181053893	C11H23N3O3	-1.5080243654877599	Valyllysine,Lysylvaline	kp1205_245.1734
+333.1553	201.52	0.04671706813807785	-4.579192293286697	C16H20N4O4	-2.0231185880711315	1-p-Menthen-3-one,Tryptophyl-Glutamine,Glutaminyltryptophan,Tryptophyl-Gamma-glutamate	kp1261_332.1483
+333.1916	283.86	0.004829172671045169	-10.724266868854471	C17H24N4O3,C16H28O7	-2.0856186309474616	Lysyltryptophan,Tryptophyl-Lysine,(1R,2S,4R,5S)-2,5-Fenchanediol 2-O-b-D-glucoside,(1S,2S,4R)-1,8-Epoxy-p-menthan-2-ol glucoside,(4R,6S)-p-Menth-1-ene-4,6-diol 4-glucoside,Neomenthol-glucuronide,Menthol glucuronide,Betulalbuside A,(1S,2S,4S,5S)-2,4-Thujanediol 4-O-beta-D-Glucopyranoside,(1R,3S,4S)-1,8-Epoxy-p-menthan-3-ol glucoside,6Z-8-Hydroxygeraniol 8-O-glucoside,Angelicoidenol 2-O-beta-D-glucopyranoside,7-Hydroxyterpineol 8-glucoside,1,8-Epoxy-p-menthan-4-ol glucoside,(1S,2R,4R)-p-Menth-8-ene-2,10-diol 2-glucoside,(2E,4E,7R)-2,7-Dimethyl-2,4-octadiene-1,8-diol 8-O-b-D-glucopyranoside,(S)-p-Menth-1-ene-4,7-diol 4-glucoside,Unshuoside A,(1R,2R,4S,6R)-2,6-Fenchanediol 2-O-b-D-glucoside	kp1273_332.1841
+248.124	308.22	0.0026785288864913295	-14.743764465338732	C9H17N3O5	-1.34578371200406	Threoninyl-Gamma-glutamate,Threonylglutamine,Glutaminylthreonine	kp902_247.1166
 313.0767	235.72	0.030488939269599127	-5.377945739145944	C14H17ClN2O2S	-1.8266432328070827	N-(4-Aminobutyl)-5-chloronaphthalene-2-sulfonamide	kp1279_312.0695
-282.1188	204.93	0.0026785288864913295	-14.417233715383034	C11H15N5O4,C10H19NO8	-1.4057971981224568	O(6)-Methyl-2'-deoxyguanosine,3'-O-Methyladenosine,N6-Methyladenosine,1-Methyladenosine,2'-O-Methyladenosine,1-Methyladenosin,N-(1-Deoxy-1-fructosyl)threonine	kp974_281.1111
-282.1422	239.53	0.009009384246766373	-8.485461940649094	C11H21N3O4	-2.2767315244105646	Leucyl-Gamma-glutamate,Hydroxyprolyl-Lysine,Isoleucyl-Glutamine,Glutaminylisoleucine,Glutaminylleucine,Lysylhydroxyproline,Leucyl-Glutamine,Isoleucyl-Gamma-glutamate	kp1694_259.153
-334.1394	282.81	0.015781053642278026	-6.827582541831467	C16H19N3O5	-1.1201432594775547	10-Acetoxydecarbamoylmitomycin C,Golotimod,gamma-Glutamyltryptophan,Tryptophyl-Glutamate,Glutamyltryptophan	kp1299_333.1323
+282.1188	204.93	0.0026785288864913295	-14.417233715383034	C11H15N5O4,C10H19NO8	-1.4057971981224568	N6-Methyladenosine,2'-O-Methyladenosine,3'-O-Methyladenosine,1-Methyladenosine,1-Methyladenosin,O(6)-Methyl-2'-deoxyguanosine,N-(1-Deoxy-1-fructosyl)threonine	kp974_281.1111
+282.1422	239.53	0.009009384246766373	-8.485461940649094	C11H21N3O4	-2.2767315244105646	Isoleucyl-Glutamine,Leucyl-Gamma-glutamate,Hydroxyprolyl-Lysine,Glutaminylleucine,Leucyl-Glutamine,Lysylhydroxyproline,Glutaminylisoleucine,Isoleucyl-Gamma-glutamate	kp1694_259.153
+334.1394	282.81	0.015781053642278026	-6.827582541831467	C16H19N3O5	-1.1201432594775547	gamma-Glutamyltryptophan,Golotimod,10-Acetoxydecarbamoylmitomycin C,Glutamyltryptophan,Tryptophyl-Glutamate	kp1299_333.1323
 249.082	261.45	0.013421542000466002	-7.286504013160772		-3.3019993801514005		
 249.108	345.6	0.017838046461280142	-6.523158487152261	C11H11NO5	-1.4413921263386058	N-Benzoylaspartic acid,Methyl 2,3-dihydro-3,5-dihydroxy-2-oxo-3-indoleacetic acid	kp1310_237.0639
 249.108	359.32	0.017681500029097925	-6.569524355037114	C9H16N2O6	-1.2137089710909557	Glutamylthreonine,TETRAHYDROURIDINE,gamma-Glutamylthreonine,Threonylglutamic acid	kp1311_248.1009
 249.1194	304.67	0.009246777119189096	-8.343168983626256		-2.7005178657551525		
-249.1271	307.95	0.0032578316165093628	-12.593282291048956	C9H17N3O5	-1.3479942431708416	Threoninyl-Gamma-glutamate,Glutaminylthreonine,Threonylglutamine	kp902_247.1166
+249.1271	307.95	0.0032578316165093628	-12.593282291048956	C9H17N3O5	-1.3479942431708416	Threoninyl-Gamma-glutamate,Threonylglutamine,Glutaminylthreonine	kp902_247.1166
 283.1287	203.75	0.02151897105386775	-6.070757414642208	C13H18N2O5	-1.9501408214254923	Hydroxy-lacosamide,Threonyltyrosine,Tyrosyl-Threonine	kp1329_282.1214
 283.1287	206.64	0.03711564156588275	-4.995878136160868		-1.679110186370842		
 316.1264	195.97	0.0016065781632327524	-19.234158832369854	C9H14N4O6,C12H13F3N2O2,C11H16NO7	-2.0925587831532972	5-Amino-1-[(2R,3R,4S,5R)-3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]oxyimidazole-4-carboxamide,Charine,Fluzinamide,1,6-anhydro-N-acetyl-beta-muramate	kp870_274.0927
-316.1628	277.15	0.00231179745515589	-15.84345287916225	C15H23N3O3	-3.0377360961551503	Phenylalanyllysine,Lysylphenylalanine,N-Acetyl-3-hydroxyprocainamide,Lysyl-Phenylalanine	kp1031_293.1733
+316.1628	277.15	0.00231179745515589	-15.84345287916225	C15H23N3O3	-3.0377360961551503	Phenylalanyllysine,N-Acetyl-3-hydroxyprocainamide,Lysyl-Phenylalanine,Lysylphenylalanine	kp1031_293.1733
 316.1864	255.23	0.011976689701821521	-7.612079784379984		-3.186198367116159		
 251.0427	243.37	0.004096508691797392	-11.406271276379808		-1.9804591508594704		
-336.0869	319.38	0.012556171170720321	-7.464197655311581	C11H17N3O7S,C19H13NO5	-1.8530935807252114	S-formylglutathionate(1-),S-Formylglutathione,8-Oxycoptisine,Oxonantenine	kp1368_335.0792
-317.1105	285.04	0.0006297601444571943	-32.663520388613165	C14H18N2O5	-1.4788230570987402	Phenylalanylglutamic acid,Tyrosylhydroxyproline,L-gamma-Glutamyl-beta-phenyl-beta-L-alanine,4'-tert-Butyl-2',6'-dimethyl-3',5'-dinitroacetophenone,Lidofenin,Kelatorphan,Aspartame,Hydroxyprolyl-Tyrosine,Glutamylphenylalanine,gamma-Glutamylphenylalanine	kp1387_294.1209
+336.0869	319.38	0.012556171170720321	-7.464197655311581	C11H17N3O7S,C19H13NO5	-1.8530935807252114	S-Formylglutathione,S-formylglutathionate(1-),8-Oxycoptisine,Oxonantenine	kp1368_335.0792
+317.1105	285.04	0.0006297601444571943	-32.663520388613165	C14H18N2O5	-1.4788230570987402	gamma-Glutamylphenylalanine,Tyrosylhydroxyproline,Glutamylphenylalanine,4'-tert-Butyl-2',6'-dimethyl-3',5'-dinitroacetophenone,L-gamma-Glutamyl-beta-phenyl-beta-L-alanine,Aspartame,Hydroxyprolyl-Tyrosine,Kelatorphan,Lidofenin,Phenylalanylglutamic acid	kp1387_294.1209
 252.0725	303.75	0.0068412743602621305	-9.419305052492211		-0.4383361815835407		
-318.1058	257.49	0.017427655604421957	-6.616150368072884	C13H17N3O5	-1.1434371932317866	H-Tyr-gly-gly-OH,Tyrosyl-Asparagine,Asparaginyl-Tyrosine,Glycyl-tyrosyl-glycine	kp1420_295.1163
+318.1058	257.49	0.017427655604421957	-6.616150368072884	C13H17N3O5	-1.1434371932317866	Asparaginyl-Tyrosine,H-Tyr-gly-gly-OH,Glycyl-tyrosyl-glycine,Tyrosyl-Asparagine	kp1420_295.1163
 286.1507	290.72	0.0017770958885345196	-17.881320312986993		-1.9651908854938647		
-339.1856	297.19	0.0014577909543632113	-20.069722167008134	C15H23N5O4	-2.198667372438454	Arginyltyrosine,Tyrosyl-Arginine,Kyotorphin	kp1439_337.1746
+339.1856	297.19	0.0014577909543632113	-20.069722167008134	C15H23N5O4	-2.198667372438454	Tyrosyl-Arginine,Kyotorphin,Arginyltyrosine	kp1439_337.1746
 253.2385	199.12	0.004096508691797392	11.448250173954445		0.6895088389995081		
-254.1214	182.18	0.0037456037853206914	-11.933700718665614	C12H16N2O4	-2.063605149991375	Phenylalanylserine,Epoxy-hexobarbital,3'-Hydroxyhexobarbital,Alanyl-Tyrosine,Serylphenylalanine,Tyrosyl-Alanine,Uracil analogue,Alanyltyrosine,H-beta-Ala-Tyr-OH	kp1455_252.1108
+254.1214	182.18	0.0037456037853206914	-11.933700718665614	C12H16N2O4	-2.063605149991375	Alanyl-Tyrosine,Alanyltyrosine,Serylphenylalanine,Uracil analogue,3'-Hydroxyhexobarbital,H-beta-Ala-Tyr-OH,Tyrosyl-Alanine,Epoxy-hexobarbital,Phenylalanylserine	kp1455_252.1108
 254.1598	175.62	0.03815585799779228	-4.9505571806837265		-1.6810245590828643		
-289.2063	304.54	0.009037240015176902	-8.461240350431623	C12H25N5O3	-2.0911978740054025	Arginylisoleucine,Isoleucyl-Arginine,Leucyl-Arginine,Arginylleucine	kp1200_287.1949
+289.2063	304.54	0.009037240015176902	-8.461240350431623	C12H25N5O3	-2.0911978740054025	Leucyl-Arginine,Arginylleucine,Isoleucyl-Arginine,Arginylisoleucine	kp1200_287.1949
 341.0977	179.69	0.03711564156588275	-5.001285348748652		-0.34780504114430144		
-290.1457	424.39	0.00321033367212481	-12.862257223525626	C10H19N5O5	-1.4464964887636818	Arginylaspartic acid,Aspartyl-Arginine	kp1537_289.1382
+290.1457	424.39	0.00321033367212481	-12.862257223525626	C10H19N5O5	-1.4464964887636818	Aspartyl-Arginine,Arginylaspartic acid	kp1537_289.1382
 290.1708	34.89	0.007683451630640501	-9.036421705261557		-3.68069978866707		
 290.1708	48.29	0.001666987211035101	-18.344932288952883		-4.552168414326683		
-256.1324	253.0	0.020977867220070216	-6.149023775496417	C16H17NO2	-0.5411738487267677	Maoto,N-Methylschinifoline,2,3,4,5-Tetrahydro-7,8-dihydroxy-1-phenyl-1H-3-benzazepine,Coumarin 102,2-Methoxyphenylmetyrapone	kp1687_255.1251
+256.1324	253.0	0.020977867220070216	-6.149023775496417	C16H17NO2	-0.5411738487267677	Coumarin 102,Maoto,2,3,4,5-Tetrahydro-7,8-dihydroxy-1-phenyl-1H-3-benzazepine,N-Methylschinifoline,2-Methoxyphenylmetyrapone	kp1687_255.1251
 324.0927	201.12	0.02277074006145455	-5.885519881851518	C16H13F2N3O	-1.9050771788801448	Flutriafol,1H-1,2,4-Triazole-1-ethanol, alpha,alpha-bis(4-fluorophenyl)-	kp982_301.1035
-344.0906	308.87	0.03091255889134082	5.350065019641671	C18H15O7	0.5072279695207982	caffeoyl-4'-hydroxyphenyllactate,4-coumaroyl-3',4'-dihydroxyphenyllactate	kp1589_343.0832
+344.0906	308.87	0.03091255889134082	5.350065019641671	C18H15O7	0.5072279695207982	4-coumaroyl-3',4'-dihydroxyphenyllactate,caffeoyl-4'-hydroxyphenyllactate	kp1589_343.0832
 258.1446	308.87	0.001666987211035101	-18.850167353631832		-1.708396745095417		
 345.1054	348.49	0.026052771029667687	-5.655885536989377	C9H19O11P	-1.182324172657193	Glycerophosphoinositol	kp1336_334.065
-345.144	166.95	0.007844961248589646	-8.965477165847402	C18H20N2O5	-3.4496607839027824	Tyrosyl-Tyrosine,(2S)-2-[[(2S)-2-Aminopropanoyl]-naphthalen-2-ylamino]pentanedioic acid,tyrosine-tyrosinate	kp1626_344.1369
+345.144	166.95	0.007844961248589646	-8.965477165847402	C18H20N2O5	-3.4496607839027824	(2S)-2-[[(2S)-2-Aminopropanoyl]-naphthalen-2-ylamino]pentanedioic acid,Tyrosyl-Tyrosine,tyrosine-tyrosinate	kp1626_344.1369
 294.1445	196.36	0.0012666659195154925	-22.71659568193118		-2.2325258819165867		
-294.1809	277.15	0.00529476086746087	-10.3096730962861	C15H23N3O3	-1.9780425081204065	Phenylalanyllysine,Lysylphenylalanine,N-Acetyl-3-hydroxyprocainamide,Lysyl-Phenylalanine	kp1031_293.1733
+294.1809	277.15	0.00529476086746087	-10.3096730962861	C15H23N3O3	-1.9780425081204065	Phenylalanyllysine,N-Acetyl-3-hydroxyprocainamide,Lysyl-Phenylalanine,Lysylphenylalanine	kp1031_293.1733
 328.6952	357.49	0.0023973706177727225	-15.401497609645205		-1.5613423361979386		
-295.1286	285.18	0.0013540505475212927	-20.641982871626865	C14H18N2O5	-1.4189597164273842	Phenylalanylglutamic acid,Tyrosylhydroxyproline,L-gamma-Glutamyl-beta-phenyl-beta-L-alanine,4'-tert-Butyl-2',6'-dimethyl-3',5'-dinitroacetophenone,Lidofenin,Kelatorphan,Aspartame,Hydroxyprolyl-Tyrosine,Glutamylphenylalanine,gamma-Glutamylphenylalanine	kp1387_294.1209
-295.1844	277.15	0.008335560977258776	-8.78859362647012	C15H23N3O3	-2.461278431473403	Phenylalanyllysine,Lysylphenylalanine,N-Acetyl-3-hydroxyprocainamide,Lysyl-Phenylalanine	kp1031_293.1733
-259.1131	319.38	0.001666987211035101	-18.690685816404834	C8H20NO6P	-1.5940012533350618	Glycerophosphocholine,Glycerylphosphorylcholine	kp1177_257.1028
-296.1238	257.62	0.005432897750723583	-10.191426533576996	C13H17N3O5	-1.309738813032432	H-Tyr-gly-gly-OH,Tyrosyl-Asparagine,Asparaginyl-Tyrosine,Glycyl-tyrosyl-glycine	kp1420_295.1163
-296.132	285.04	0.0006589430439193218	-31.452297889087117	C14H18N2O5	-2.2334854580169505	Phenylalanylglutamic acid,Tyrosylhydroxyproline,L-gamma-Glutamyl-beta-phenyl-beta-L-alanine,4'-tert-Butyl-2',6'-dimethyl-3',5'-dinitroacetophenone,Lidofenin,Kelatorphan,Aspartame,Hydroxyprolyl-Tyrosine,Glutamylphenylalanine,gamma-Glutamylphenylalanine	kp1387_294.1209
+295.1286	285.18	0.0013540505475212927	-20.641982871626865	C14H18N2O5	-1.4189597164273842	gamma-Glutamylphenylalanine,Tyrosylhydroxyproline,Glutamylphenylalanine,4'-tert-Butyl-2',6'-dimethyl-3',5'-dinitroacetophenone,L-gamma-Glutamyl-beta-phenyl-beta-L-alanine,Aspartame,Hydroxyprolyl-Tyrosine,Kelatorphan,Lidofenin,Phenylalanylglutamic acid	kp1387_294.1209
+295.1844	277.15	0.008335560977258776	-8.78859362647012	C15H23N3O3	-2.461278431473403	Phenylalanyllysine,N-Acetyl-3-hydroxyprocainamide,Lysyl-Phenylalanine,Lysylphenylalanine	kp1031_293.1733
+259.1131	319.38	0.001666987211035101	-18.690685816404834	C8H20NO6P	-1.5940012533350618	Glycerylphosphorylcholine,Glycerophosphocholine	kp1177_257.1028
+296.1238	257.62	0.005432897750723583	-10.191426533576996	C13H17N3O5	-1.309738813032432	Asparaginyl-Tyrosine,H-Tyr-gly-gly-OH,Glycyl-tyrosyl-glycine,Tyrosyl-Asparagine	kp1420_295.1163
+296.132	285.04	0.0006589430439193218	-31.452297889087117	C14H18N2O5	-2.2334854580169505	gamma-Glutamylphenylalanine,Tyrosylhydroxyproline,Glutamylphenylalanine,4'-tert-Butyl-2',6'-dimethyl-3',5'-dinitroacetophenone,L-gamma-Glutamyl-beta-phenyl-beta-L-alanine,Aspartame,Hydroxyprolyl-Tyrosine,Kelatorphan,Lidofenin,Phenylalanylglutamic acid	kp1387_294.1209
 347.1922	242.71	0.01063691006447007	-7.933661155165341		-2.745313974281384		
 260.1138	319.38	0.001666987211035101	-18.535518635923896		-1.5794911627958435		
 297.0819	182.18	0.011976689701821521	-7.592067166947283	C9H14N4O6,C12H13F3N2O2,C11H16NO7	-2.4577819039588675	5-Amino-1-[(2R,3R,4S,5R)-3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]oxyimidazole-4-carboxamide,Charine,Fluzinamide,1,6-anhydro-N-acetyl-beta-muramate	kp1454_274.0927
 297.1078	317.54	0.008740679469152919	-8.606472717335697	C14H17NS2	-1.0875844319759302	Dimethylthiambutene	kp1443_263.0814
-297.1267	257.62	0.004096508691797392	-11.440976503251003	C13H17N3O5	-1.9119422883781922	H-Tyr-gly-gly-OH,Tyrosyl-Asparagine,Asparaginyl-Tyrosine,Glycyl-tyrosyl-glycine	kp1420_295.1163
-260.1603	239.53	0.010794189178817843	-7.888171727942184	C11H21N3O4	-2.343477061544352	Leucyl-Gamma-glutamate,Hydroxyprolyl-Lysine,Isoleucyl-Glutamine,Glutaminylisoleucine,Glutaminylleucine,Lysylhydroxyproline,Leucyl-Glutamine,Isoleucyl-Gamma-glutamate	kp1694_259.153
-260.1967	329.78	0.0032578316165093628	-12.535469622147739	C12H25N3O3	-2.0240870727447167	Leucyl-Lysine,Lysylisoleucine,Isoleucyl-Lysine,Lysylleucine	kp1698_259.1894
-261.119	335.59	0.0032578316165093628	-12.740777654763063	C7H13N3O5	-1.7372846930464902	Asparaginyl-Serine,Serylasparagine	kp540_219.0855
-261.1443	305.2	0.002851202904548576	-14.019141709388212	C11H20N2O5	-1.4410969956095272	gamma-Glutamylleucine,Isoleucyl-Glutamate,gamma-Glutamylisoleucine,Glutamylleucine,Leucyl-Glutamate,Glutamylisoleucine	kp1709_260.137
-261.1443	311.24	0.013738400953209485	-7.205784579932078	C11H20N2O5	-1.3420366604132212	gamma-Glutamylleucine,Isoleucyl-Glutamate,gamma-Glutamylisoleucine,Glutamylleucine,Leucyl-Glutamate,Glutamylisoleucine	kp1710_260.137
-261.1637	239.92	0.010538802638818012	-7.968145971361001	C11H21N3O4	-2.658984325894494	Leucyl-Gamma-glutamate,Hydroxyprolyl-Lysine,Isoleucyl-Glutamine,Glutaminylisoleucine,Glutaminylleucine,Lysylhydroxyproline,Leucyl-Glutamine,Isoleucyl-Gamma-glutamate	kp1694_259.153
-261.1637	247.22	0.001318049835126577	-21.6565267891385	C11H21N3O4	-4.1048981740046155	Leucyl-Gamma-glutamate,Hydroxyprolyl-Lysine,Isoleucyl-Glutamine,Glutaminylisoleucine,Glutaminylleucine,Lysylhydroxyproline,Leucyl-Glutamine,Isoleucyl-Gamma-glutamate	kp1648_259.153
-262.1184	186.25	0.02161156019138544	-6.051575436347579	C13H15N3O3	-2.8233682537765326	Glycyl-Tryptophan,Acetamide, N-[2-(5-methoxy-1-nitroso-1H-indol-3-yl)ethyl]-,Imazapyr,Tryptophyl-Glycine,N-[2-(5-Methoxy-1H-indol-3-yl)ethyl]-N-nitrosoacetamide	kp1735_261.1112
+297.1267	257.62	0.004096508691797392	-11.440976503251003	C13H17N3O5	-1.9119422883781922	Asparaginyl-Tyrosine,H-Tyr-gly-gly-OH,Glycyl-tyrosyl-glycine,Tyrosyl-Asparagine	kp1420_295.1163
+260.1603	239.53	0.010794189178817843	-7.888171727942184	C11H21N3O4	-2.343477061544352	Isoleucyl-Glutamine,Leucyl-Gamma-glutamate,Hydroxyprolyl-Lysine,Glutaminylleucine,Leucyl-Glutamine,Lysylhydroxyproline,Glutaminylisoleucine,Isoleucyl-Gamma-glutamate	kp1694_259.153
+260.1967	329.78	0.0032578316165093628	-12.535469622147739	C12H25N3O3	-2.0240870727447167	Isoleucyl-Lysine,Lysylisoleucine,Lysylleucine,Leucyl-Lysine	kp1698_259.1894
+261.119	335.59	0.0032578316165093628	-12.740777654763063	C7H13N3O5	-1.7372846930464902	Serylasparagine,Asparaginyl-Serine	kp540_219.0855
+261.1443	305.2	0.002851202904548576	-14.019141709388212	C11H20N2O5	-1.4410969956095272	Leucyl-Glutamate,gamma-Glutamylleucine,Glutamylisoleucine,Glutamylleucine,gamma-Glutamylisoleucine,Isoleucyl-Glutamate	kp1709_260.137
+261.1443	311.24	0.013738400953209485	-7.205784579932078	C11H20N2O5	-1.3420366604132212	Leucyl-Glutamate,gamma-Glutamylleucine,Glutamylisoleucine,Glutamylleucine,gamma-Glutamylisoleucine,Isoleucyl-Glutamate	kp1710_260.137
+261.1637	239.92	0.010538802638818012	-7.968145971361001	C11H21N3O4	-2.658984325894494	Isoleucyl-Glutamine,Leucyl-Gamma-glutamate,Hydroxyprolyl-Lysine,Glutaminylleucine,Leucyl-Glutamine,Lysylhydroxyproline,Glutaminylisoleucine,Isoleucyl-Gamma-glutamate	kp1694_259.153
+261.1637	247.22	0.001318049835126577	-21.6565267891385	C11H21N3O4	-4.1048981740046155	Isoleucyl-Glutamine,Leucyl-Gamma-glutamate,Hydroxyprolyl-Lysine,Glutaminylleucine,Leucyl-Glutamine,Lysylhydroxyproline,Glutaminylisoleucine,Isoleucyl-Gamma-glutamate	kp1648_259.153
+262.1184	186.25	0.02161156019138544	-6.051575436347579	C13H15N3O3	-2.8233682537765326	Glycyl-Tryptophan,N-[2-(5-Methoxy-1H-indol-3-yl)ethyl]-N-nitrosoacetamide,Acetamide, N-[2-(5-methoxy-1-nitroso-1H-indol-3-yl)ethyl]-,Imazapyr,Tryptophyl-Glycine	kp1735_261.1112
 299.0435	248.0	0.003147678931699687	13.225902986422389		0.5144268490551696		
-263.0872	396.38	0.001666987211035101	-18.30602850808096	C9H14N2O7	-1.3307487714853856	L-beta-aspartyl-L-glutamic acid,N-Acetyl-serylaspartic acid,gamma-Glutamylaspartic acid,Aspartyl-Glutamate,Glutamylaspartic acid	kp1776_262.0797
+263.0872	396.38	0.001666987211035101	-18.30602850808096	C9H14N2O7	-1.3307487714853856	N-Acetyl-serylaspartic acid,Aspartyl-Glutamate,Glutamylaspartic acid,gamma-Glutamylaspartic acid,L-beta-aspartyl-L-glutamic acid	kp1776_262.0797
 353.1452	273.17	0.0006297601444571943	-36.13116553008808		-2.559981480442925		
 366.2132	278.2	0.004096508691797392	-11.36390785571184		-1.7067690124804642		
 356.0755	388.5	0.043353849719782886	4.713512129855032		0.44461265640769554		
 401.1588	307.69	0.007844961248589646	-8.94807588926405	C17H26N4O3S2,C15H26O12	-1.2991625182970594	Fursultiamine,1-[[(2S,3S,4S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)-2-[(2R,3R,4S,5S,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyoxolan-2-yl]methoxy]propan-2-one	kp1928_398.1443
-401.1588	317.8	0.01779803752285788	-6.537303000582103	C22H24O7	-0.8687957675304645	Hemiariensin,[2-(4-Acetoxy-3-methoxy-phenyl)-7-methoxy-5-methyl-2,3-dihydrobenzofuran-3-yl]methyl acetate,Isoyatein,Italipyrone	kp1931_400.1513
+401.1588	317.8	0.01779803752285788	-6.537303000582103	C22H24O7	-0.8687957675304645	[2-(4-Acetoxy-3-methoxy-phenyl)-7-methoxy-5-methyl-2,3-dihydrobenzofuran-3-yl]methyl acetate,Isoyatein,Italipyrone,Hemiariensin	kp1931_400.1513
 267.0713	177.72	0.013738400953209485	-7.206224048601091	C9H16N4S2,C9H8N8O	-1.5750021254645645	Metiamide,4-Amino-1-(6-aminopurin-9-yl)pyrimidin-2-one	kp619_244.0821
-267.1078	273.7	0.0022373324467944242	-16.32274804212567	C11H14N4O4,C10H18O8	-1.6975830356250583	tubercidin,3-Deazaadenosine,1-(3-Carboxypropyl)-3,7-dimethylxanthine,(2S)-3-(4H-Imidazol-4-yl)-2-[[(2S)-5-oxopyrrolidine-2-carbonyl]amino]propanoic acid,2,2-Dimethylpropanal 2,4-dinitrophenylhydrazone,Doxofylline,7-Deaza-2'-deoxyguanosine,Forodesine,Glucose butyrate,Glucose 3-hydroxybutyrate,[(2R,3S,4R,5R)-3,4,5,6-Tetrahydroxy-1-oxohexan-2-yl] 3-hydroxybutanoate	kp1945_266.1007
+267.1078	273.7	0.0022373324467944242	-16.32274804212567	C11H14N4O4,C10H18O8	-1.6975830356250583	tubercidin,2,2-Dimethylpropanal 2,4-dinitrophenylhydrazone,3-Deazaadenosine,Forodesine,1-(3-Carboxypropyl)-3,7-dimethylxanthine,7-Deaza-2'-deoxyguanosine,Doxofylline,(2S)-3-(4H-Imidazol-4-yl)-2-[[(2S)-5-oxopyrrolidine-2-carbonyl]amino]propanoic acid,[(2R,3S,4R,5R)-3,4,5,6-Tetrahydroxy-1-oxohexan-2-yl] 3-hydroxybutanoate,Glucose butyrate,Glucose 3-hydroxybutyrate	kp1945_266.1007
 267.1337	159.6	0.005633257951681255	-10.07171214261802		-1.6001031218275656		
 375.1983	288.23	0.00458182938274064	-10.89951982044477	C22H30O3S	-0.5237194282239521	10,13-Dimethyl-7-sulfanylspiro[2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthrene-17,5'-oxolane]-2',3-dione	kp2012_374.1909
-406.1315	258.4	0.0028144469507675775	-14.12888221321715	C14H25NO11,C15H29NO6S2	-0.7739477117215117	beta-1,4-Mannosyl-N-acetylglucosamine,Thomsen-friedenreich antigen,N-Acetyllactosamine,Lacto-N-biose I,Poly-N-acetyllactosamine,Galbeta1-3GIcNAcbeta,N-[(2R,3R,4R,5R)-3,5,6-Trihydroxy-1-oxo-4-[(2R,3R,4S,5R,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyhexan-2-yl]acetamide,7-methylthioheptyldesulfoglucosinolate	kp1806_383.1423
+406.1315	258.4	0.0028144469507675775	-14.12888221321715	C14H25NO11,C15H29NO6S2	-0.7739477117215117	N-Acetyllactosamine,N-[(2R,3R,4R,5R)-3,5,6-Trihydroxy-1-oxo-4-[(2R,3R,4S,5R,6R)-3,4,5-trihydroxy-6-(hydroxymethyl)oxan-2-yl]oxyhexan-2-yl]acetamide,Lacto-N-biose I,Poly-N-acetyllactosamine,beta-1,4-Mannosyl-N-acetylglucosamine,Galbeta1-3GIcNAcbeta,Thomsen-friedenreich antigen,7-methylthioheptyldesulfoglucosinolate	kp1806_383.1423
 361.0128	257.22	0.03851445955986426	4.922818875308536		0.6577365759101532		
 407.2285	218.36	0.003147678931699687	-13.177271680626042	C19H34O9	-3.041990314486558	Kiwiionoside	kp2066_406.2211
 361.0784	374.72	0.04699463509746953	4.560224108415684		0.46409416433899153		
@@ -216,7 +216,7 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 477.2042	252.48	0.027293204563678997	-5.568409645457817	C21H32O12	-0.2593487607174225	Kanokoside A	kp2181_476.1893
 479.1985	252.48	0.02161156019138544	-6.046114770707363	C21H32O12	-0.27354442659700595	Kanokoside A	kp2181_476.1893
 482.3599	138.19	0.019929032956326052	-6.269316176779346	C24H52NO6P	-1.8477168852332042	1-O-Hexadecyl-sn-glycero-3-phosphocholine	kp2254_481.3527
-384.1145	303.75	0.0032578316165093628	-12.652696782260488	C14H17N5O8	-0.4546025676586396	Succinyladenosine,N6-Succinyl Adenosine	kp2036_383.1066
+384.1145	303.75	0.0032578316165093628	-12.652696782260488	C14H17N5O8	-0.4546025676586396	N6-Succinyl Adenosine,Succinyladenosine	kp2036_383.1066
 447.0672	365.92	0.017427655604421957	-6.619483608878464	C11H20N4O11P2	-0.5463877711336416	CDP-ethanolamine	kp2271_446.0599
 447.1974	367.63	0.009214332389426944	-8.38575592955998		-0.8669772174097261		
 385.1284	277.67	0.03228690651319213	-5.272534975067037	C17H19FN4O4	-0.7909621256932304	Marbofloxacin	kp2274_362.1396

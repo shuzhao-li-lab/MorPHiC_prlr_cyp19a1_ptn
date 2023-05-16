@@ -34,41 +34,41 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 195.0605	269.53	0.00248428195967727	19.249535036467247		0.9794328314132557		
 195.9312	364.2	0.04531385339386773	-4.959680498389759		-0.6535726076822002		
 196.0222	220.03	0.02563112736231188	6.3492968813267305		1.2712205880268996		
-160.0608	191.71	0.0008224203571208841	28.705141788893563	C6H11NO4	1.0278604761700088	Aminoadipic acid,(±)-2,2'-Iminobispropanoic acid,N-Acetylthreonine,N-methyl-L-glutamic Acid,3-Aminoadipic acid,Glutamic acid gamma-methyl ester,Acetylhomoserine,2-Aminoadipic acid,Carboxybetaine,hydroxybutyrylglycine	kp664_161.068
-197.0619	221.47	0.00248428195967727	18.953589778645583	C7H13NO4	2.9390191401353682	Glabrin A,hydroxyvalerylglycine,Calystegine B5,(S)-Dimethyl 2-aminopentanedioate,2-Aminoheptanedioic acid,2-(Carboxymethylamino)-3-methylbutanoic acid,Pegorgotein,Calystegine B2,N-Carboxyethyl-g-aminobutyric acid	kp625_175.0839
+160.0608	191.71	0.0008224203571208841	28.705141788893563	C6H11NO4	1.0278604761700088	3-Aminoadipic acid,N-methyl-L-glutamic Acid,(±)-2,2'-Iminobispropanoic acid,N-Acetylthreonine,Glutamic acid gamma-methyl ester,Aminoadipic acid,2-Aminoadipic acid,Carboxybetaine,hydroxybutyrylglycine,Acetylhomoserine	kp664_161.068
+197.0619	221.47	0.00248428195967727	18.953589778645583	C7H13NO4	2.9390191401353682	hydroxyvalerylglycine,(S)-Dimethyl 2-aminopentanedioate,Pegorgotein,Glabrin A,Calystegine B5,Calystegine B2,2-Aminoheptanedioic acid,N-Carboxyethyl-g-aminobutyric acid,2-(Carboxymethylamino)-3-methylbutanoic acid	kp625_175.0839
 186.0182	135.85	0.009386319767509012	-10.35383749025222		-1.6768697622663353		
 161.056	325.2	0.01348532634496744	-8.677889157865813		-2.1989549652181317		
-161.0641	191.84	0.04637251260468025	4.884675640941321	C6H11NO4	1.8077121865918109	Aminoadipic acid,(±)-2,2'-Iminobispropanoic acid,N-Acetylthreonine,N-methyl-L-glutamic Acid,3-Aminoadipic acid,Glutamic acid gamma-methyl ester,Acetylhomoserine,2-Aminoadipic acid,Carboxybetaine,hydroxybutyrylglycine	kp664_161.068
+161.0641	191.84	0.04637251260468025	4.884675640941321	C6H11NO4	1.8077121865918109	3-Aminoadipic acid,N-methyl-L-glutamic Acid,(±)-2,2'-Iminobispropanoic acid,N-Acetylthreonine,Glutamic acid gamma-methyl ester,Aminoadipic acid,2-Aminoadipic acid,Carboxybetaine,hydroxybutyrylglycine,Acetylhomoserine	kp664_161.068
 137.9857	163.67	0.013565038672728055	8.55436149692715		3.510865459510754		
-187.0009	201.48	0.02302827737736627	-6.646306376031736	C5H10O5	-0.2813991314300459	D-Ribulose,D-Ribose,L-Ribulose,2-Deoxyribonic acid,Arabinofuranose,D-Arabinose,D-Threo-3-Pentulose,D-Apiose,(2R,3R,4R)-2,3,4,5-Tetrahydroxypentanal,alpha-D-Arabinofuranose,L-Arabinose,2-Deoxypentonic acid,D-Arabinopyranose,alpha-L-arabinofuranose,L-Xylulose,D-Xylose,D-Xylulose	kp735_150.0523
+187.0009	201.48	0.02302827737736627	-6.646306376031736	C5H10O5	-0.2813991314300459	alpha-D-Arabinofuranose,2-Deoxyribonic acid,D-Ribose,D-Ribulose,D-Xylose,alpha-L-arabinofuranose,L-Arabinose,L-Xylulose,2-Deoxypentonic acid,D-Arabinose,L-Ribulose,Arabinofuranose,D-Apiose,D-Threo-3-Pentulose,D-Xylulose,D-Arabinopyranose,(2R,3R,4R)-2,3,4,5-Tetrahydroxypentanal	kp735_150.0523
 187.1334	34.82	0.027331507272891974	6.177123434427767		0.8165599403605519		
-188.9853	24.93	0.00019363542008467787	50.255391220211415	C6H6O5S	2.477191768889316	Resorcinol sulfate,Pyrocatechol sulfate,2,5-Dihydroxybenzenesulfonic Acid,Hydroquinone sulfate	kp801_189.9927
-189.0511	374.18	0.04637251260468025	-4.891219825408917	C7H9NO5	-0.9359167425643022	1-(Malonylamino)cyclopropanecarboxylic acid,(1R,4R,5S,6R)-4-Amino-2-oxabicyclo[3.1.0]hexane-4,6-dicarboxylic acid	kp698_187.0478
+188.9853	24.93	0.00019363542008467787	50.255391220211415	C6H6O5S	2.477191768889316	Resorcinol sulfate,Hydroquinone sulfate,Pyrocatechol sulfate,2,5-Dihydroxybenzenesulfonic Acid	kp801_189.9927
+189.0511	374.18	0.04637251260468025	-4.891219825408917	C7H9NO5	-0.9359167425643022	(1R,4R,5S,6R)-4-Amino-2-oxabicyclo[3.1.0]hexane-4,6-dicarboxylic acid,1-(Malonylamino)cyclopropanecarboxylic acid	kp698_187.0478
 166.0779	159.05	0.002986399587803713	17.632013934679385		1.627573546668014		
 219.0619	373.92	0.048629697589491476	-4.782274390293783		-3.356314089000417		
 219.5623	311.54	0.0001534649201805582	-56.32645950927183		-4.384856306538932		
 203.0016	26.39	0.007922589910698666	11.171085669138659		3.657529272192491		
-203.0016	30.59	0.046147277345875905	4.906900439892695	C7H8O5S,C7H8O5S	0.6127489202872773	O-methoxycatechol-O-sulphate,3-Methylcatechol 2-sulfate,Sulfuric acid 4-methoxyphenyl ester,4-Methylcatechol 1-sulfate,3-Methoxyphenol sulfate,3-Methylcatechol 1-sulfate,4-Methylcatechol 2-sulfate,O-methoxycatechol-O-sulphate,3-Methylcatechol 2-sulfate,Sulfuric acid 4-methoxyphenyl ester,4-Methylcatechol 1-sulfate,3-Methoxyphenol sulfate,3-Methylcatechol 1-sulfate,4-Methylcatechol 2-sulfate	kp947_204.0089
+203.0016	30.59	0.046147277345875905	4.906900439892695	C7H8O5S,C7H8O5S	0.6127489202872773	4-Methylcatechol 2-sulfate,3-Methylcatechol 2-sulfate,Sulfuric acid 4-methoxyphenyl ester,3-Methylcatechol 1-sulfate,O-methoxycatechol-O-sulphate,4-Methylcatechol 1-sulfate,3-Methoxyphenol sulfate,4-Methylcatechol 2-sulfate,3-Methylcatechol 2-sulfate,Sulfuric acid 4-methoxyphenyl ester,3-Methylcatechol 1-sulfate,O-methoxycatechol-O-sulphate,4-Methylcatechol 1-sulfate,3-Methoxyphenol sulfate	kp947_204.0089
 220.0643	311.41	0.0001534649201805582	-60.77580100475664		-4.379305870766707		
 203.0669	369.06	0.026833459631853303	-6.243508624239782		-1.2873575930617207		
 204.0855	156.16	0.0022874313068973052	20.52997062194457		1.556660740981215		
-221.0929	258.2	0.007922589910698666	-11.147931790529146	C11H14N2O3	-4.001173036910256	Phenylalanylglycine,Phenylalanyl-Glycine,Glycyl-Phenylalanine	kp995_222.1002
+221.0929	258.2	0.007922589910698666	-11.147931790529146	C11H14N2O3	-4.001173036910256	Phenylalanyl-Glycine,Glycyl-Phenylalanine,Phenylalanylglycine	kp995_222.1002
 221.8422	151.01	0.0275334888520315	-6.148838979175047		-0.466036622940738		
 205.0357	32.33	0.002227148499249352	-21.030954681889593		-1.36731366315923		
-205.0463	50.24	0.003223333961069845	16.776739856902623	C8H11NO3	6.224024233270654	Norepinephrine,Pyridoxine,5-Hydroxydopamine,6-Acetyl-2,3-dihydro-2-(hydroxymethyl)-4(1H)-pyridinone,6-Hydroxydopamine	kp975_169.0733
+205.0463	50.24	0.003223333961069845	16.776739856902623	C8H11NO3	6.224024233270654	5-Hydroxydopamine,6-Acetyl-2,3-dihydro-2-(hydroxymethyl)-4(1H)-pyridinone,Pyridoxine,6-Hydroxydopamine,Norepinephrine	kp975_169.0733
 193.0647	269.79	0.003157199842149357	17.182672514296534		1.1529204111895872		
-243.0622	160.23	0.03422581175905944	-5.63472896686735	C9H12N2O6	-0.6167807105057577	Uridine,Pseudouridine,1-[(2R,3R,4S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)oxolan-2-yl]oxypyrimidin-2-one,1-[(2R,3S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)oxolan-2-yl]pyrimidine-2,4-dione	kp1041_244.0695
+243.0622	160.23	0.03422581175905944	-5.63472896686735	C9H12N2O6	-0.6167807105057577	Pseudouridine,1-[(2R,3S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)oxolan-2-yl]pyrimidine-2,4-dione,Uridine,1-[(2R,3R,4S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)oxolan-2-yl]oxypyrimidin-2-one	kp1041_244.0695
 194.0681	269.79	0.0040282374330485446	15.097345844745776		1.1686070201182943		
 206.0726	345.55	0.01610929600035799	7.743159077155649		2.1248010884446806		
 244.0227	321.66	0.0040282374330485446	-15.093515058237156		-2.4184273330946375		
-244.0656	160.23	0.04475497053236754	-5.005916268469898	C9H12N2O6	-2.1953785118742744	Uridine,Pseudouridine,1-[(2R,3R,4S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)oxolan-2-yl]oxypyrimidin-2-one,1-[(2R,3S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)oxolan-2-yl]pyrimidine-2,4-dione	kp1041_244.0695
+244.0656	160.23	0.04475497053236754	-5.005916268469898	C9H12N2O6	-2.1953785118742744	Pseudouridine,1-[(2R,3S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)oxolan-2-yl]pyrimidine-2,4-dione,Uridine,1-[(2R,3R,4S,5R)-3,4-Dihydroxy-5-(hydroxymethyl)oxolan-2-yl]oxypyrimidin-2-one	kp1041_244.0695
 224.023	218.58	0.01348532634496744	8.631154626121358		0.1792479735232284		
-267.0731	132.96	0.004333920101754969	-14.421196159350052	C9H16O9,C10H12N4O5	-1.5278260339555416	3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,galactose lactate,Ara-HX,Allopurinol riboside,Inosine,Formycin b,Arabinosylhypoxanthine	kp1102_268.0806
-267.0731	134.93	0.0037317630376584453	-15.946635304505088	C9H16O9,C10H12N4O5	-1.304285801365463	3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,galactose lactate,Ara-HX,Allopurinol riboside,Inosine,Formycin b,Arabinosylhypoxanthine	kp1100_268.0805
-268.0769	133.22	0.020669139007757013	-6.973809984468192	C9H16O9,C10H12N4O5	-2.293241575077271	3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,galactose lactate,Ara-HX,Allopurinol riboside,Inosine,Formycin b,Arabinosylhypoxanthine	kp1102_268.0806
-268.0769	134.8	0.014309262350920903	-8.247978188922191	C9H16O9,C10H12N4O5	-1.4569092009794886	3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,galactose lactate,Ara-HX,Allopurinol riboside,Inosine,Formycin b,Arabinosylhypoxanthine	kp1100_268.0805
+267.0731	132.96	0.004333920101754969	-14.421196159350052	C9H16O9,C10H12N4O5	-1.5278260339555416	Fructose lactate,3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,galactose lactate,Inosine,Allopurinol riboside,Ara-HX,Arabinosylhypoxanthine,Formycin b	kp1102_268.0806
+267.0731	134.93	0.0037317630376584453	-15.946635304505088	C9H16O9,C10H12N4O5	-1.304285801365463	Fructose lactate,3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,galactose lactate,Inosine,Allopurinol riboside,Ara-HX,Arabinosylhypoxanthine,Formycin b	kp1100_268.0805
+268.0769	133.22	0.020669139007757013	-6.973809984468192	C9H16O9,C10H12N4O5	-2.293241575077271	Fructose lactate,3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,galactose lactate,Inosine,Allopurinol riboside,Ara-HX,Arabinosylhypoxanthine,Formycin b	kp1102_268.0806
+268.0769	134.8	0.014309262350920903	-8.247978188922191	C9H16O9,C10H12N4O5	-1.4569092009794886	Fructose lactate,3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,galactose lactate,Inosine,Allopurinol riboside,Ara-HX,Arabinosylhypoxanthine,Formycin b	kp1100_268.0805
 209.0598	301.83	0.008058729237651071	10.983529766125779	C14H10O2	0.6591667441195099	Benzil,Phenanthrene-3,4-diol	kp1165_210.067
-209.1543	31.54	0.009176207061943758	10.516150040291707	C13H22O2	0.44934822238214167	Propyl 2,4-decadienoate,alpha-Terpineol propanoate,Methyl (2E,6Z)-dodecadienoate,Citral propylene glycol acetal,Neryl propionate,Linalyl propionate,2-Propenyl cyclohexanebutanoate,Tsibulin 1,Isobornyl propionate,Octahydro-2,5,5,8a-tetramethyl-7H-1-benzopyran-7-one,Cepanone,2-Nonyl-1,4-dioxine,(+/-)-trans- and cis-4,8-Dimethyl-3,7-nonadien-2-yl acetate,Artemisyl propionate	kp1177_210.1616
+209.1543	31.54	0.009176207061943758	10.516150040291707	C13H22O2	0.44934822238214167	2-Nonyl-1,4-dioxine,Octahydro-2,5,5,8a-tetramethyl-7H-1-benzopyran-7-one,Isobornyl propionate,Linalyl propionate,Citral propylene glycol acetal,alpha-Terpineol propanoate,Artemisyl propionate,2-Propenyl cyclohexanebutanoate,Tsibulin 1,(+/-)-trans- and cis-4,8-Dimethyl-3,7-nonadien-2-yl acetate,Methyl (2E,6Z)-dodecadienoate,Cepanone,Propyl 2,4-decadienoate,Neryl propionate	kp1177_210.1616
 210.038	220.03	0.008058729237651071	11.004570744683834		1.1282821352565442		
 249.0396	321.79	0.039173392289522345	-5.257957882115221		-1.6278898063525098		
 249.1167	28.36	0.017567312841569295	-7.371984963948015		-1.0397375761865213		
@@ -76,18 +76,18 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 228.086	354.48	0.041145579870102665	5.151388054436772		1.0196980326056249		
 211.0414	220.16	0.009328369575370142	10.420446062569228		1.221607823727357		
 211.0755	253.45	0.048629697589491476	4.766593159582205		0.7058790706232045		
-271.2282	28.22	0.011385124155080929	9.504470848917505	C16H32O3	1.5111157055205133	(R)-3-Hydroxy-hexadecanoic acid,12-Hydroxyhexadecanoic acid,11-Hydroxyhexadecanoic acid,5-Hydroxyhexadecanoic acid,2-Hydroxyhexadecanoic acid,3-Hydroxyhexadecanoic acid,10-Hydroxyhexadecanoic acid,6-Hydroxyhexadecanoic acid,8-Hydroxyhexadecanoic acid,7-Hydroxyhexadecanoic acid,13-Hydroxyhexadecanoic acid,16-Hydroxyhexadecanoic acid,9-Hydroxyhexadecanoic acid	kp1267_272.2355
+271.2282	28.22	0.011385124155080929	9.504470848917505	C16H32O3	1.5111157055205133	5-Hydroxyhexadecanoic acid,(R)-3-Hydroxy-hexadecanoic acid,11-Hydroxyhexadecanoic acid,10-Hydroxyhexadecanoic acid,8-Hydroxyhexadecanoic acid,2-Hydroxyhexadecanoic acid,3-Hydroxyhexadecanoic acid,9-Hydroxyhexadecanoic acid,16-Hydroxyhexadecanoic acid,6-Hydroxyhexadecanoic acid,13-Hydroxyhexadecanoic acid,12-Hydroxyhexadecanoic acid,7-Hydroxyhexadecanoic acid	kp1267_272.2355
 252.0742	191.84	0.024113592389568186	6.481495426341486		1.2399184767493523		
 230.0121	210.31	0.03422581175905944	5.674281816727839		0.7811888919052592		
 253.0665	191.58	0.033365517235149994	5.753170069248291		1.3369809727022428		
-253.0864	301.7	0.009426968232292892	10.293505727507009	C16H14O3	0.6717494720257875	Ketoprofen,Fenbufen,Dexketoprofen,2,6-Dimethoxy-4-phenanthrenol,3,6-Dimethoxy-4-phenanthrenol	kp1361_254.0938
-254.0901	301.7	0.007035621592118813	11.684230432981229	C16H14O3	0.6867667520930638	Ketoprofen,Fenbufen,Dexketoprofen,2,6-Dimethoxy-4-phenanthrenol,3,6-Dimethoxy-4-phenanthrenol	kp1361_254.0938
+253.0864	301.7	0.009426968232292892	10.293505727507009	C16H14O3	0.6717494720257875	Fenbufen,2,6-Dimethoxy-4-phenanthrenol,3,6-Dimethoxy-4-phenanthrenol,Ketoprofen,Dexketoprofen	kp1361_254.0938
+254.0901	301.7	0.007035621592118813	11.684230432981229	C16H14O3	0.6867667520930638	Fenbufen,2,6-Dimethoxy-4-phenanthrenol,3,6-Dimethoxy-4-phenanthrenol,Ketoprofen,Dexketoprofen	kp1361_254.0938
 213.9845	239.39	0.035868108995573814	5.473455293168684		2.500483360778201		
 254.8266	151.01	0.022350756356474426	-6.718500106959417		-0.5728046686187334		
 214.0482	202.4	0.023637936107908018	6.544758067973018		1.3061200773249908		
 254.8944	364.33	0.02563112736231188	-6.3482914596908175		-0.7904321290177556		
 233.0777	369.06	0.041020520699185326	-5.166099122262074		-1.570517443372168		
-233.0865	198.17	0.03115406711725025	5.9331264655545	C9H12N2O5,C9H12N2O5	0.5482918798016385	1-((2S,4S,5R)-4-Hydroxy-5-(hydroxymethyl)tetrahydrofuran-2-yl)pyrimidine-2,4(1H,3H)-dione,Deoxyuridine,Dioxolane-THYMINE,1-[(2R,4R,5R)-3,4-Dihydroxy-5-(hydroxymethyl)-2-oxolanyl]-2-pyrimidinone,1-((2S,4S,5R)-4-Hydroxy-5-(hydroxymethyl)tetrahydrofuran-2-yl)pyrimidine-2,4(1H,3H)-dione,Deoxyuridine,Dioxolane-THYMINE,1-[(2R,4R,5R)-3,4-Dihydroxy-5-(hydroxymethyl)-2-oxolanyl]-2-pyrimidinone	kp1187_228.0738
+233.0865	198.17	0.03115406711725025	5.9331264655545	C9H12N2O5,C9H12N2O5	0.5482918798016385	Deoxyuridine,Dioxolane-THYMINE,1-((2S,4S,5R)-4-Hydroxy-5-(hydroxymethyl)tetrahydrofuran-2-yl)pyrimidine-2,4(1H,3H)-dione,1-[(2R,4R,5R)-3,4-Dihydroxy-5-(hydroxymethyl)-2-oxolanyl]-2-pyrimidinone,Deoxyuridine,Dioxolane-THYMINE,1-((2S,4S,5R)-4-Hydroxy-5-(hydroxymethyl)tetrahydrofuran-2-yl)pyrimidine-2,4(1H,3H)-dione,1-[(2R,4R,5R)-3,4-Dihydroxy-5-(hydroxymethyl)-2-oxolanyl]-2-pyrimidinone	kp1187_228.0738
 255.0823	301.7	0.010365348747363626	9.86398117040424		0.7359229811411581		
 215.0017	33.9	0.037938895155389556	-5.341640585344206	C8H8O5S	-2.6566284863670724	3- Acetylphenol sulfate	kp1435_216.0086
 215.0671	234.5	0.013013480290470059	8.91180459247995		2.7110744273727683		
@@ -99,9 +99,9 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 278.0625	220.82	0.014188453011470217	8.33207707203289		3.1253226391112925		
 236.8835	364.2	0.01395186446528203	-8.463477123682857		-0.8277398607707838		
 256.9908	258.6	0.0004872500219008984	36.66126839115952		4.62448748333534		
-279.0569	36.4	0.03422581175905944	5.643878394804843	C11H12N4O3S	0.6664007164201777	Sulfamethoxypyridazine,Sulfametopyrazine,Sulfamonomethoxine,Sulfameter	kp1506_280.0642
-217.0827	340.83	0.017138948843316987	-7.491253002322362	C8H14N2O5	-2.8313181962527203	N-gamma-L-Glutamyl-D-alanine,Serylhydroxyproline,Hydroxyprolyl-Serine,Alanylglutamic acid,gamma-Glutamylalanine,Glutamylalanine	kp1548_218.09
-281.2488	26.91	0.004913393012945178	13.461997845738901	C18H34O2	3.2233179720694913	Elaidic acid,Octadecenoic acid,7-Octadecenoic acid,trans-14-Octadecenoic acid,Oleic acid,trans-8-Elaidic acid,cis-Vaccenic acid,trans-10-Octadecenoic acid,Octadec-5-enoic acid,Ethyl 9-hexadecenoate,trans-16-Octadecenoic acid,trans-15-Octadecenoic acid,7Z-octadecenoic acid,cis-15-Octadecenoic acid,Vaccenic acid,11-Aoctadecenoic acid,(Z)-13-Octadecenoic acid,cis-12-Octadecenoic acid,trans-4-Octadecenoic acid,trans-12-Octadecenoic acid,Octadec-9-enoic Acid,6-Octadecenoic acid,Petroselinic acid	kp1575_282.2561
+279.0569	36.4	0.03422581175905944	5.643878394804843	C11H12N4O3S	0.6664007164201777	Sulfameter,Sulfametopyrazine,Sulfamethoxypyridazine,Sulfamonomethoxine	kp1506_280.0642
+217.0827	340.83	0.017138948843316987	-7.491253002322362	C8H14N2O5	-2.8313181962527203	Hydroxyprolyl-Serine,Glutamylalanine,N-gamma-L-Glutamyl-D-alanine,Serylhydroxyproline,gamma-Glutamylalanine,Alanylglutamic acid	kp1548_218.09
+281.2488	26.91	0.004913393012945178	13.461997845738901	C18H34O2	3.2233179720694913	trans-12-Octadecenoic acid,trans-4-Octadecenoic acid,11-Aoctadecenoic acid,Ethyl 9-hexadecenoate,trans-16-Octadecenoic acid,cis-12-Octadecenoic acid,trans-10-Octadecenoic acid,7Z-octadecenoic acid,Petroselinic acid,Oleic acid,trans-14-Octadecenoic acid,cis-15-Octadecenoic acid,Vaccenic acid,6-Octadecenoic acid,cis-Vaccenic acid,Octadecenoic acid,7-Octadecenoic acid,trans-8-Elaidic acid,Octadec-9-enoic Acid,(Z)-13-Octadecenoic acid,Octadec-5-enoic acid,Elaidic acid,trans-15-Octadecenoic acid	kp1575_282.2561
 238.8916	373.39	0.048629697589491476	-4.77064199820532	H3O9P3	-0.8955020898941903	Trimetaphosphoric acid	kp3582_239.899
 282.0834	167.9	0.01610929600035799	-7.76117635025774	C17H13NO4	-3.638077435202547	Piperolactam D	kp3583_295.0837
 283.0015	23.48	0.023632979293407692	6.5595262382777415		1.7688476741746086		
@@ -115,7 +115,7 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 261.8913	151.27	0.03422581175905944	-5.652185832131619		-0.5436573924892087		
 241.181	28.22	0.019192603211313195	7.147821382537838		1.082209100439794		
 286.0893	155.47	0.0164124047758403	7.663339713549385		0.7169457533713945		
-286.0893	157.08	0.00654848003423464	12.187520927626949	C13H16N2O4	0.6848784943364059	Acetyl-N-formyl-5-methoxykynurenamine,di-Hydroxymelatonin,N(2)-phenylacetyl-L-glutaminate,Phenylacetylglutamine,Phenylacetyl glutaminate	kp1671_264.1109
+286.0893	157.08	0.00654848003423464	12.187520927626949	C13H16N2O4	0.6848784943364059	Acetyl-N-formyl-5-methoxykynurenamine,Phenylacetylglutamine,di-Hydroxymelatonin,N(2)-phenylacetyl-L-glutaminate,Phenylacetyl glutaminate	kp1671_264.1109
 263.0974	197.78	0.009931223125897096	10.062877151084413		0.6897428379557233		
 297.823	151.79	0.048629697589491476	-4.780617986687511		-1.17019107109153		
 264.1008	198.04	0.014870492009427071	7.997194789134422		0.6344478468347496		
@@ -136,7 +136,7 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 292.0418	219.9	0.00248428195967727	18.943612565173307		1.2945110835200175		
 347.0914	209.92	0.020507679207538734	7.005320980206633		1.0717073900642546		
 292.8654	151.79	0.041020520699185326	-5.1643905103697		-1.5279295588108255		
-303.0504	134.93	0.006524095993588174	-12.27636825599892	C9H16O9,C10H12N4O5	-1.4066890804823196	3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,Fructose lactate,galactose lactate,Ara-HX,Allopurinol riboside,Inosine,Formycin b,Arabinosylhypoxanthine	kp1100_268.0805
+303.0504	134.93	0.006524095993588174	-12.27636825599892	C9H16O9,C10H12N4O5	-1.4066890804823196	Fructose lactate,3-Deoxy-D-glycero-D-galacto-2-nonulosonic acid,galactose lactate,Inosine,Allopurinol riboside,Ara-HX,Arabinosylhypoxanthine,Formycin b	kp1100_268.0805
 324.9913	362.1	0.03422581175905944	5.595144597550606		0.5222536284220709		
 348.9352	297.76	0.021436814173767277	-6.857127230707978		-1.4001327042075324		
 351.0144	321.26	0.006837704434055866	-11.841544922699892	C18H8O8	-0.8142337773658568	Thelephoric acid	kp1901_352.0217
@@ -160,27 +160,27 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 367.0307	269.79	0.003223333961069845	16.720808183471632		0.9983648085997601		
 368.0311	269.66	0.011790018101330412	9.195601346041803		1.0421323210720317		
 345.0517	210.05	0.04895751060514643	4.743565043316817		0.8950846783141131		
-369.1224	36.66	0.02369936521774815	6.5259402232787656	C17H20N2O5S,C17H20N2O5S	0.8059285852754883	Pheneticillin,N-Hydroxy-2-(N-isopropoxybiphenyl-4-ylsulfonamido)acetamide,Bumetanide,Pheneticillin,N-Hydroxy-2-(N-isopropoxybiphenyl-4-ylsulfonamido)acetamide,Bumetanide	kp2365_364.1105
+369.1224	36.66	0.02369936521774815	6.5259402232787656	C17H20N2O5S,C17H20N2O5S	0.8059285852754883	Bumetanide,Pheneticillin,N-Hydroxy-2-(N-isopropoxybiphenyl-4-ylsulfonamido)acetamide,Bumetanide,Pheneticillin,N-Hydroxy-2-(N-isopropoxybiphenyl-4-ylsulfonamido)acetamide	kp2365_364.1105
 419.0471	159.57	0.03422581175905944	5.603881792575471		1.8165343381224126		
 456.0479	215.56	0.0027269858974184108	18.265107749314033		1.6880134417762207		
 456.0479	220.03	0.0007458249641472054	30.524949516835164	C12H19N4O11P2	1.1965209517209416	CDP-N-methylethanolamine	kp2683_457.0553
 499.1679	241.75	0.04761284470617779	4.82622636028689		0.41198125795633445		
-460.1676	264.9	0.005333102578948812	13.094592986434687	C21H27N5O5S	2.1879385154154463	4-trans-Hydroxyglipizide,3-cis-Hydroxyglipizide	kp2755_461.1748
+460.1676	264.9	0.005333102578948812	13.094592986434687	C21H27N5O5S	2.1879385154154463	3-cis-Hydroxyglipizide,4-trans-Hydroxyglipizide	kp2755_461.1748
 460.1676	269.66	0.033730028440799226	5.7136768392449016		3.693080869543312		
 425.9571	363.02	0.03265954965338852	5.798460945588659		3.5484931279257097		
-462.1149	311.54	0.014188453011470217	-8.318066224505122	C19H19N7O6,C19H27N3O5S2,C19H19N7O6	-4.134367008810752	Folcidin,Folic acid,7,8-dihydrofolate,Dofetilide,Folcidin,Folic acid,7,8-dihydrofolate	kp2772_441.1392
+462.1149	311.54	0.014188453011470217	-8.318066224505122	C19H19N7O6,C19H27N3O5S2,C19H19N7O6	-4.134367008810752	Folcidin,7,8-dihydrofolate,Folic acid,Dofetilide,Folcidin,7,8-dihydrofolate,Folic acid	kp2772_441.1392
 427.136	347.26	0.0005588050361581679	-34.25739978277869	C18H24N2O10	-5.287537855843009	Lacosamide-glucuronide	kp2779_428.1428
 428.0528	220.82	0.01653436623191364	7.627885791333856		3.272443517472084		
 429.1546	156.16	0.0011550369427296384	25.78862641583791	C21H28O8	2.2315086666443626	3-O-Methylniveusin A	kp2716_408.1799
-431.1344	191.71	0.03422581175905944	5.620936161055024	C22H24O9	1.5618346669470569	3-Methoxynobiletin,Pinostrobin 5-glucoside,Trichocarposide,(-)-medicarpin-3-O-glucoside,Medicocarpin,4'-O-Methylglucoliquiritigenin	kp2835_432.1415
+431.1344	191.71	0.03422581175905944	5.620936161055024	C22H24O9	1.5618346669470569	Trichocarposide,3-Methoxynobiletin,Pinostrobin 5-glucoside,Medicocarpin,4'-O-Methylglucoliquiritigenin,(-)-medicarpin-3-O-glucoside	kp2835_432.1415
 470.0329	218.45	0.014239771119353426	8.284166258822301		0.1541189712393738		
 471.0343	218.45	0.04530654931142833	4.97231802459956		0.11773038899201893		
 524.0719	220.82	0.01751068016067341	7.415651492551645		2.932992655343778		
-606.0755	220.68	0.019192603211313195	7.1475137877285295	C17H27N3O17P2	2.9873862951677665	UDP-N-acetyl-D-mannosamine,Uridine diphosphate-N-acetylgalactosamine,Uridine diphosphate-N-acetylglucosamine,UDP-N-acetyl-alpha-D-galactosamine	kp2966_607.0825
+606.0755	220.68	0.019192603211313195	7.1475137877285295	C17H27N3O17P2	2.9873862951677665	UDP-N-acetyl-D-mannosamine,Uridine diphosphate-N-acetylglucosamine,UDP-N-acetyl-alpha-D-galactosamine,Uridine diphosphate-N-acetylgalactosamine	kp2966_607.0825
 442.0687	220.82	0.0164124047758403	7.681144497731447		3.0024363605138937		
 442.1045	36.0	0.03345968130728727	5.7374790806159615		0.8853140868674352		
-442.1384	311.41	0.0016628587835807332	-23.06226871673587	C19H19N7O6,C19H27N3O5S2,C19H19N7O6	-4.004221296240807	Folcidin,Folic acid,7,8-dihydrofolate,Dofetilide,Folcidin,Folic acid,7,8-dihydrofolate	kp2772_441.1392
-443.1409	311.54	0.00248428195967727	-19.28045234446743	C19H19N7O6,C19H27N3O5S2,C19H19N7O6	-4.362917837066291	Folcidin,Folic acid,7,8-dihydrofolate,Dofetilide,Folcidin,Folic acid,7,8-dihydrofolate	kp2772_441.1392
+442.1384	311.41	0.0016628587835807332	-23.06226871673587	C19H19N7O6,C19H27N3O5S2,C19H19N7O6	-4.004221296240807	Folcidin,7,8-dihydrofolate,Folic acid,Dofetilide,Folcidin,7,8-dihydrofolate,Folic acid	kp2772_441.1392
+443.1409	311.54	0.00248428195967727	-19.28045234446743	C19H19N7O6,C19H27N3O5S2,C19H19N7O6	-4.362917837066291	Folcidin,7,8-dihydrofolate,Folic acid,Dofetilide,Folcidin,7,8-dihydrofolate,Folic acid	kp2772_441.1392
 620.0543	215.3	0.03901627747780973	5.272820679355016		1.8466785186890036		
 620.0543	220.03	0.02302827737736627	6.634839671946898		1.577295837932347		
 445.1835	362.36	0.034306368345856	5.572738300766054		0.3689846215808039		

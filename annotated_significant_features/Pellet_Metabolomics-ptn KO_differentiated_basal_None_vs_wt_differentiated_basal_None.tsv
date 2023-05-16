@@ -1,5 +1,5 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 215.8765	153.45	0.009428693991331373	21.230592023161996		0.43303358804296366		
-243.1794	34.46	0.0010038263397473975	41.51414888564811	C11H22O3	1.4901133059641722	3-hydroxyundecanoic acid,2-Hydroxyundecanoate,2-Hydroxypropyl octanoate,3-Hydroxynonyl acetate	kp2409_202.1567
-225.0991	363.64	0.04291620897052002	-13.45322883316833	C9H14N4O3	-1.2761056038786371	beta-Alanyl-L-histidine,Alanyl-Histidine,Histidylalanine,Alanylhistidine,Carnosine,Nimorazole,Histidinyl-Alanine	kp1527_226.1064
+243.1794	34.46	0.0010038263397473975	41.51414888564811	C11H22O3	1.4901133059641722	3-hydroxyundecanoic acid,3-Hydroxynonyl acetate,2-Hydroxypropyl octanoate,2-Hydroxyundecanoate	kp2409_202.1567
+225.0991	363.64	0.04291620897052002	-13.45322883316833	C9H14N4O3	-1.2761056038786371	beta-Alanyl-L-histidine,Alanyl-Histidine,Histidinyl-Alanine,Alanylhistidine,Carnosine,Nimorazole,Histidylalanine	kp1527_226.1064
 189.0591	300.81	0.0010038263397473975	41.24365953705905		2.215106172372476		

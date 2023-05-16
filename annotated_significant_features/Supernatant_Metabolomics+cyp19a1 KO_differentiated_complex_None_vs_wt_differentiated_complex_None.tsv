@@ -1,4 +1,4 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
-134.0813	41.57	0.04889174840562189	-15.110832630788465	C5H11NO3	-0.6810930201885803	Amyl nitrate,L-2-Amino-5-hydroxypentanoic acid,3-Hydroxynorvaline,N-Lactoyl ethanolamine,1,4-Dideoxy-1,4-imino-D-ribitol	kp72_133.0739
+134.0813	41.57	0.04889174840562189	-15.110832630788465	C5H11NO3	-0.6810930201885803	L-2-Amino-5-hydroxypentanoic acid,N-Lactoyl ethanolamine,3-Hydroxynorvaline,1,4-Dideoxy-1,4-imino-D-ribitol,Amyl nitrate	kp72_133.0739
 324.0223	198.47	0.008704349469488523	30.783991177986124		3.2153573035096787		
-284.099	167.71	0.02892811839662846	-19.118941838978206	C10H13N5O5	-1.2855376871646307	Guanosine,1-[(2R,5R)-4-Azidooxy-5-(hydroxymethyl)oxolan-2-yl]-5-methylpyrimidine-2,4-dione,hydroxydeoxyguanosine,8-Hydroxy-2-desoxyguanosine,9-beta-d-Arabinofuranosylguanine,2-Amino-9-[(2R,4S,5R)-5-(hydroperoxymethyl)-4-hydroxyoxolan-2-yl]-1H-purin-6-one,8-Hydroxy-deoxyguanosine	kp1173_283.0919
+284.099	167.71	0.02892811839662846	-19.118941838978206	C10H13N5O5	-1.2855376871646307	2-Amino-9-[(2R,4S,5R)-5-(hydroperoxymethyl)-4-hydroxyoxolan-2-yl]-1H-purin-6-one,8-Hydroxy-2-desoxyguanosine,8-Hydroxy-deoxyguanosine,1-[(2R,5R)-4-Azidooxy-5-(hydroxymethyl)oxolan-2-yl]-5-methylpyrimidine-2,4-dione,hydroxydeoxyguanosine,Guanosine,9-beta-d-Arabinofuranosylguanine	kp1173_283.0919

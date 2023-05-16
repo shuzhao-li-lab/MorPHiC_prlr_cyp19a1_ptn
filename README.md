@@ -43,10 +43,17 @@ Analyze DnHZ and DnCl data.
 
 POTENTIAL ISSUES:
 
-Currently, differential abundance analysis is done on the feature level, meaning that the isotopologues and adducts of a compound are treated as separate features. This may inflate statistical significance.
+
 
 The 80% cutoff rule may eliminate features that are only in a subset of samples but also does a great job eliminating noise. It is a trade off, but some form of group filtering may be better suited for finding significant metabolites.
 
 A bonferroni-esque correction on the omnibus p-values is probably over correcting. Similarly, the term level analysis with the linear model will exaggerate differences. This can be good or bad depending on what the goal of the analysis is. For example, the presence of separation with the omnibus clustermap says that there is strong variance correlated with differentiation. The ability to separate some genotypes with the term clustermap but not media suggests that there is signal that separates the genotypes but separating on media type is difficult. 
 
 Missing feature count for outlier detection sometimes does not pickout things that I would subjectively consider to be an outlier. Manually adding new things to the drop list may be defendable but gets really shady real fast. I like the safer approach. 
+
+RESOLVED ISSUES: 
+
+- Currently, differential abundance analysis is done on the feature level, meaning that the isotopologues and adducts of a compound are treated as separate features. This may inflate statistical significance.
+
+Solution: only one feature per empirical compound is used for differential abundance analysis. The feature to be used is selected as follows. The feature with the highest SNR ratio in a given empCpd is selected as pressumably it should be the best quantified. If no feature has an associated SNR in the feature table, the feature with the lowest mz is selected on the assumption that it is a monoisotopic peak that should have the higest intesnity and a good snr. This does greatly reduce the number of features we are considering but more accurately reflects that features do not represent unique compounds.
+

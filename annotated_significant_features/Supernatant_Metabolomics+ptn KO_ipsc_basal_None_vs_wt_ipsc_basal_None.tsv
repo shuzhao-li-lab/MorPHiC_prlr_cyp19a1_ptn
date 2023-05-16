@@ -1,15 +1,15 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
 220.03	204.67	0.03332954174402013	11.99223876037969		0.6234115312985544		
-150.0775	198.21	0.0029979982787198775	-29.536429309365538	C6H7N5	-0.8251694452052405	1-Methyladenine,6-Methyladenine,3-Methyladenine,7-Methyladenine,9-Methyladenine	kp461_149.0702
+150.0775	198.21	0.0029979982787198775	-29.536429309365538	C6H7N5	-0.8251694452052405	9-Methyladenine,3-Methyladenine,6-Methyladenine,7-Methyladenine,1-Methyladenine	kp461_149.0702
 238.0452	294.25	0.0029979982787198775	-26.85778166005483		-2.854501639532515		
 198.0876	251.39	0.024527395988077596	-14.518808292450414		-2.8658137212539074		
-258.1103	314.37	0.024527395988077596	-14.59300938746236	C8H20NO6P	-2.317431014968527	Glycerylphosphorylcholine,Glycerophosphocholine	kp972_257.1029
-259.1135	314.37	0.03332954174402013	-12.74793408778265	C8H20NO6P	-2.380691937863606	Glycerylphosphorylcholine,Glycerophosphocholine	kp972_257.1029
+258.1103	314.37	0.024527395988077596	-14.59300938746236	C8H20NO6P	-2.317431014968527	Glycerophosphocholine,Glycerylphosphorylcholine	kp972_257.1029
+259.1135	314.37	0.03332954174402013	-12.74793408778265	C8H20NO6P	-2.380691937863606	Glycerophosphocholine,Glycerylphosphorylcholine	kp972_257.1029
 260.0272	294.38	5.423102396996049e-06	-164.1250805409051		-4.782315114622705		
 260.1138	314.37	5.423102396996049e-06	-172.8173408670406		-5.812868386247235		
-306.0809	167.71	0.03332954174402013	-11.562491141979223	C10H13N5O5	-1.9320128280533986	Guanosine,1-[(2R,5R)-4-Azidooxy-5-(hydroxymethyl)oxolan-2-yl]-5-methylpyrimidine-2,4-dione,hydroxydeoxyguanosine,8-Hydroxy-2-desoxyguanosine,9-beta-d-Arabinofuranosylguanine,2-Amino-9-[(2R,4S,5R)-5-(hydroperoxymethyl)-4-hydroxyoxolan-2-yl]-1H-purin-6-one,8-Hydroxy-deoxyguanosine	kp1173_283.0919
-216.0633	294.12	0.0029979982787198775	-27.7490932431702	C7H12N2O3	-2.8316507907938444	Prolylglycine,Glycylproline,Glycyl-D-proline	kp1094_172.0844
-282.1195	198.07	0.03332954174402013	-11.465707845434915	C11H15N5O4,C10H19NO8	-0.7281198565611078	N6-Methyladenosine,1-Methyladenosin,2'-O-Methyladenosine,1-Methyladenosine,O(6)-Methyl-2'-deoxyguanosine,3'-O-Methyladenosine,N-(1-Deoxy-1-fructosyl)threonine	kp1396_281.112
-284.099	167.71	0.03332954174402013	-11.887152659428272	C10H13N5O5	-1.8224813561240651	Guanosine,1-[(2R,5R)-4-Azidooxy-5-(hydroxymethyl)oxolan-2-yl]-5-methylpyrimidine-2,4-dione,hydroxydeoxyguanosine,8-Hydroxy-2-desoxyguanosine,9-beta-d-Arabinofuranosylguanine,2-Amino-9-[(2R,4S,5R)-5-(hydroperoxymethyl)-4-hydroxyoxolan-2-yl]-1H-purin-6-one,8-Hydroxy-deoxyguanosine	kp1173_283.0919
-298.0968	34.58	0.04434557068055667	-10.45361438798127	C11H15N5O3S	-0.9849777871044445	(2R,5S)-2-(6-Aminopurin-9-yl)-5-(methylsulfanylmethyl)oxolane-3,4-diol,5'-Methylthioadenosine	kp1857_297.0897
+306.0809	167.71	0.03332954174402013	-11.562491141979223	C10H13N5O5	-1.9320128280533986	2-Amino-9-[(2R,4S,5R)-5-(hydroperoxymethyl)-4-hydroxyoxolan-2-yl]-1H-purin-6-one,8-Hydroxy-2-desoxyguanosine,8-Hydroxy-deoxyguanosine,1-[(2R,5R)-4-Azidooxy-5-(hydroxymethyl)oxolan-2-yl]-5-methylpyrimidine-2,4-dione,hydroxydeoxyguanosine,Guanosine,9-beta-d-Arabinofuranosylguanine	kp1173_283.0919
+216.0633	294.12	0.0029979982787198775	-27.7490932431702	C7H12N2O3	-2.8316507907938444	Glycyl-D-proline,Glycylproline,Prolylglycine	kp1094_172.0844
+282.1195	198.07	0.03332954174402013	-11.465707845434915	C11H15N5O4,C10H19NO8	-0.7281198565611078	O(6)-Methyl-2'-deoxyguanosine,1-Methyladenosine,1-Methyladenosin,2'-O-Methyladenosine,3'-O-Methyladenosine,N6-Methyladenosine,N-(1-Deoxy-1-fructosyl)threonine	kp1396_281.112
+284.099	167.71	0.03332954174402013	-11.887152659428272	C10H13N5O5	-1.8224813561240651	2-Amino-9-[(2R,4S,5R)-5-(hydroperoxymethyl)-4-hydroxyoxolan-2-yl]-1H-purin-6-one,8-Hydroxy-2-desoxyguanosine,8-Hydroxy-deoxyguanosine,1-[(2R,5R)-4-Azidooxy-5-(hydroxymethyl)oxolan-2-yl]-5-methylpyrimidine-2,4-dione,hydroxydeoxyguanosine,Guanosine,9-beta-d-Arabinofuranosylguanine	kp1173_283.0919
+298.0968	34.58	0.04434557068055667	-10.45361438798127	C11H15N5O3S	-0.9849777871044445	5'-Methylthioadenosine,(2R,5S)-2-(6-Aminopurin-9-yl)-5-(methylsulfanylmethyl)oxolane-3,4-diol	kp1857_297.0897
 769.5003	34.84	0.03332954174402013	12.154270345912463	C38H72NO12P	0.7300670820912529	PS(14:0/18:1(12Z)-2OH(9,10)),PS(18:1(12Z)-2OH(9,10)/14:0)	kp3315_765.4811

@@ -3,7 +3,7 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
 130.0654	24.99	0.04894477946605764	-7.439468802823423		-2.027897382196887				
 188.0707	24.59	0.004830250181965712	-22.421655704050284		-3.8857459768047526				
 190.0863	24.86	0.015275751566991071	-11.937410926189923		-1.3091139339014397				
-300.2897	129.68	0.033139328925080244	-8.412468796506088	C18H37NO2	-1.174882084783178	2-amino-octadecanoic acid,(8Z,d18:1) sphingosine,Palmitoyl-EA,12-amino-octadecanoic acid,Sphingosine,3-ketosphinganine,5-hydroxy,3E-sphingosine	kp911_299.2824	{'Fatty Acyls [FA]', 'Sphingolipids [SP]'}	{'Sphingoid bases [SP01]', 'Fatty Acids and Conjugates [FA01]', 'Fatty amides [FA08]'}
+300.2897	129.68	0.033139328925080244	-8.412468796506088	C18H37NO2	-1.174882084783178	2-amino-octadecanoic acid,Palmitoyl-EA,3-ketosphinganine,Sphingosine,12-amino-octadecanoic acid,5-hydroxy,3E-sphingosine,(8Z,d18:1) sphingosine	kp911_299.2824	{'Fatty Acyls [FA]', 'Sphingolipids [SP]'}	{'Fatty amides [FA08]', 'Sphingoid bases [SP01]', 'Fatty Acids and Conjugates [FA01]'}
 243.183	20.65	0.026673178922276435	-9.257677260148212		-0.9940136171096334				
 146.0601	24.59	0.019410990565274268	-10.601085575592483		-1.6664639062201054				
 205.0972	24.33	0.004830250181965712	-21.479597578354813		-3.865205417100764				
@@ -30,8 +30,8 @@ m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
 432.1818	200.72	0.0043706173292213345	-25.53747208110471		-3.9293981055843297				
 433.1021	28.4	0.00022325351624377112	79.87292932413848		7.3066695004439275				
 399.1569	43.27	0.0043706173292213345	-25.33436478545278		-2.643270491798283				
-473.3989	317.6	0.004830250181965712	21.628784004731646	C31H52O3	4.775745988415263	Theonellasterol D,1alpha-butyl-1beta,25-dihydroxyvitamin D3,1beta-butyl-1alpha,25-dihydroxyvitamin D3 / 1beta-butyl-1alpha,25-dihydroxycholecalciferol,Galaxaurol D,26,27-diethyl-1alpha,25-dihydroxyvitamin D3 / 26,27-diethyl-1alpha,25-dihydroxycholecalciferol,1alpha,25-dihydroxy-26,27-dimethyl-24a,24b-dihomovitamin D3	kp2570_472.3922	{'Sterol Lipids [ST]'}	{'Sterols [ST01]', 'Secosteroids [ST03]'}
-474.4025	317.86	0.010799466347934435	14.151575175900332	C31H52O3	5.120627979265787	Theonellasterol D,1alpha-butyl-1beta,25-dihydroxyvitamin D3,1beta-butyl-1alpha,25-dihydroxyvitamin D3 / 1beta-butyl-1alpha,25-dihydroxycholecalciferol,Galaxaurol D,26,27-diethyl-1alpha,25-dihydroxyvitamin D3 / 26,27-diethyl-1alpha,25-dihydroxycholecalciferol,1alpha,25-dihydroxy-26,27-dimethyl-24a,24b-dihomovitamin D3	kp2570_472.3922	{'Sterol Lipids [ST]'}	{'Sterols [ST01]', 'Secosteroids [ST03]'}
+473.3989	317.6	0.004830250181965712	21.628784004731646	C31H52O3	4.775745988415263	Galaxaurol D,1alpha,25-dihydroxy-26,27-dimethyl-24a,24b-dihomovitamin D3,26,27-diethyl-1alpha,25-dihydroxyvitamin D3 / 26,27-diethyl-1alpha,25-dihydroxycholecalciferol,1beta-butyl-1alpha,25-dihydroxyvitamin D3 / 1beta-butyl-1alpha,25-dihydroxycholecalciferol,1alpha-butyl-1beta,25-dihydroxyvitamin D3,Theonellasterol D	kp2570_472.3922	{'Sterol Lipids [ST]'}	{'Secosteroids [ST03]', 'Sterols [ST01]'}
+474.4025	317.86	0.010799466347934435	14.151575175900332	C31H52O3	5.120627979265787	Galaxaurol D,1alpha,25-dihydroxy-26,27-dimethyl-24a,24b-dihomovitamin D3,26,27-diethyl-1alpha,25-dihydroxyvitamin D3 / 26,27-diethyl-1alpha,25-dihydroxycholecalciferol,1beta-butyl-1alpha,25-dihydroxyvitamin D3 / 1beta-butyl-1alpha,25-dihydroxycholecalciferol,1alpha-butyl-1beta,25-dihydroxyvitamin D3,Theonellasterol D	kp2570_472.3922	{'Sterol Lipids [ST]'}	{'Secosteroids [ST03]', 'Sterols [ST01]'}
 437.2585	193.85	0.01720173831535866	-11.017392773208133		-2.3987929184509866				
 438.2618	193.98	0.010108072631755822	-15.05801465599118		-2.3969113910268547				
 481.3308	193.33	0.009706109230370671	-15.70421108757053		-2.560253881193482				
