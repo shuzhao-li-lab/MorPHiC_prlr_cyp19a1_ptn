@@ -94,20 +94,6 @@ python3 ../PythonCentricPipelineForMetabolomics/src/main.py feature_QCQA ./Featu
 # 2, 54, and 9 are missing feature outliers
 skip
 
-### ANNOTATION ###
-# Lipidomics
-python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Pellet_RP_Pos/experiment.json
-python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Pellet_RP_Pos/experiment.json --table=default --new_table_moniker=LMSD_annotated_default ./LMSD.json
-python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Pellet_RP_Neg/experiment.json
-python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Pellet_RP_Neg/experiment.json --table=default --new_table_moniker=LMSD_annotated_default ./LMSD.json
-
-# Metabolomics
-python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Pellet_HILIC_Neg/experiment.json
-python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Pellet_HILIC_Neg/experiment.json --table=default --new_table_moniker=HMDB_annotated_default ./HMDB.json
-python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Pellet_HILIC_pos/experiment.json
-python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Pellet_HILIC_pos/experiment.json --table=default --new_table_moniker=HMDB_annotated_default ./HMDB.json
-
-
 
 ### SUPERNATANT PROCESSING###
 
@@ -167,19 +153,33 @@ python3 ../PythonCentricPipelineForMetabolomics/src/main.py preprocess_features 
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py feature_QCQA ./FeatureTables/Media_Hilic_Neg/experiment.json --table=processed_preferred --all --interactive
 # Meia_6_HILICneg is an outlier in missing features, maybe an outlier in PCA
 
+
 ### ANNOTATION ###
-# Lipidomics
+# Pellet Lipidomics
+python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Pellet_RP_Pos/experiment.json
+python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Pellet_RP_Pos/experiment.json --table=default --new_table_moniker=LMSD_annotated_default ./LMSD.json
+python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Pellet_RP_Neg/experiment.json
+python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Pellet_RP_Neg/experiment.json --table=default --new_table_moniker=LMSD_annotated_default ./LMSD.json
+
+# Pellet Metabolomics
+python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Pellet_HILIC_Neg/experiment.json
+python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Pellet_HILIC_Neg/experiment.json --table=default --new_table_moniker=HMDB_annotated_default ./HMDB.json
+python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Pellet_HILIC_pos/experiment.json
+python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Pellet_HILIC_pos/experiment.json --table=default --new_table_moniker=HMDB_annotated_default ./HMDB.json
+
+
+### ANNOTATION ###
+# Supernatant Lipidomics
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Media_RP_Pos/experiment.json
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Media_RP_Pos/experiment.json --table=default --new_table_moniker=LMSD_annotated_default ./LMSD.json
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Media_RP_Neg/experiment.json
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Media_RP_Neg/experiment.json --table=default --new_table_moniker=LMSD_annotated_default ./LMSD.json
 
-# Metabolomics
+# Supernatant Metabolomics
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Media_Hilic_Pos/experiment.json
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Media_Hilic_Pos/experiment.json --table=default --new_table_moniker=HMDB_annotated_default ./HMDB.json
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py build_empCpds ./FeatureTables/Media_Hilic_Neg/experiment.json
 python3 ../PythonCentricPipelineForMetabolomics/src/main.py MS1_annotate ./FeatureTables/Media_Hilic_Neg/experiment.json --table=default --new_table_moniker=HMDB_annotated_default ./HMDB.json
-
 
 
 ### STATISTICAL ANALYSIS ###
