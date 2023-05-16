@@ -61,7 +61,25 @@ feature_id_to_cpd_name = {}
 feature_id_to_category = {}
 feature_id_to_class = {}
 feature_id_to_emp_id = {}
+best_features = set()
 for emp_id, emp_cpd in empCpds.items():
+    best_peak = (-np.inf, None)
+    for peak in emp_cpd["MS1_pseudo_Spectra"]:
+        f_id = peak['id_number']
+        snr = feature_table[feature_table['id_number'] == f_id]['snr'].values
+        if snr.size > 0:
+            snr = snr[0]
+            if snr > best_peak[0]:
+                best_peak = (snr, f_id)
+    if best_peak[1] is None:
+        best_peak = (np.inf, None)
+        for peak in emp_cpd["MS1_pseudo_Spectra"]:
+            f_id = peak['id_number']
+            mz = peak['mz']
+            if mz < best_peak[0]:
+                best_peak = (mz, f_id)
+
+    best_features.add(best_peak[1])
     for peak in emp_cpd["MS1_pseudo_Spectra"]:
         formulas = []
         names = []
@@ -83,10 +101,15 @@ for emp_id, emp_cpd in empCpds.items():
             feature_id_to_emp_id[peak['id_number']] = emp_id
         #feature_id_to_emp_cpd_id_map[peak['id_number']] = ','.join([x[0].split("_")[0] for x in emp_cpd["list_matches"]]) if "list_matches" in emp_cpd else emp_cpd["neutral_formula_mass"]
         #feature_id_to_cpd_name[peak['id_number']] = ','.join([','.join(formula_name_map[x[0].split("_")[0]]) for x in emp_cpd["list_matches"]]) if "list_matches" in emp_cpd else emp_cpd["neutral_formula_mass"]
-
 feature_table['annot'] = feature_table['id_number'].map(feature_id_to_emp_cpd_id_map)
 feature_table['annot_names'] = feature_table['id_number'].map(feature_id_to_cpd_name)
 feature_table['emp_id'] = feature_table['id_number'].map(feature_id_to_emp_id)
+feature_map = {x: x in best_features for x in feature_table['id_number']}
+feature_table['best_peak'] = feature_table['id_number'].map(feature_map)
+
+
+
+
 print(feature_table['emp_id'].values)
 if category_class_annots:
     feature_table['categories'] = feature_table['id_number'].map(feature_id_to_category)
@@ -196,7 +219,7 @@ for column in range(num_features):
         new_vals.append(np.log2(x))
     merged["for_anova"] = new_vals
     model = ols(model_string, data=merged).fit()
-    if model.f_pvalue < .05 / (num_features * 7):
+    if model.f_pvalue < .05 / num_features:
         omnibus_features.append(column)
     for index, pvalue in zip(model.pvalues.index[1:], model.pvalues.values[1:]):
         if index not in significant_features:
@@ -270,6 +293,10 @@ groups = [
     [("ptn KO", "ipsc", "basal", "None"), ("wt", "ipsc", "basal", "None")],
     [("ptn KO", "differentiated", "basal", "None"), ("wt", "differentiated", "basal", "None")],
     [("ptn KO", "differentiated", "complex", "None"), ("wt", "differentiated", "complex", "None")],
+
+    #wt comparisons
+    [("wt", "ipsc", "basal", "None"), ("wt", "differentiated", "basal", "None")],
+    [("wt", "ipsc", "basal", "None"), ("wt", "differentiated", "complex", "None")]
 ]    
 def ttest(row, indices_a, indices_b):
     #_, p = stats.ttest_ind(row[indices_a], row[indices_b])
@@ -360,21 +387,24 @@ for group_A_params, group_B_params in groups:
         new_table['log2fc'] = table['log2fc'] 
         new_table['name'] = table['annot_names']
         new_table['emp_ID'] = table['emp_id']
+        new_table['best_peak'] = table['best_peak']
         if category_class_annots:
             new_table['categories'] = table['categories']
             new_table['classes'] = table['classes']
         if category_class_annots:
             fold_change_results = []
+            observed_lipids = set()
             fc_counts = {}
             total_counts = {}
             total_lipids = 0
             total_up = 0
             total_down = 0
-            for fc, category_set in zip(new_table['log2fc'], new_table['categories']):
-                if type(category_set) is set and len(category_set) == 1:
+            for fc, category_set, name, best_peak in zip(new_table['log2fc'], new_table['categories'], new_table['custom_id'], new_table['best_peak']):
+                if type(category_set) is set and len(category_set) == 1 and name not in observed_lipids and best_peak:
+                    observed_lipids.add(name)
                     category = list(category_set)[0]
                     if category not in fc_counts:
-                        fc_counts[category] = {'up': 0, 'down': 0}
+                        fc_counts[category] = {'category': category, 'significant': '', 'up': 0, 'down': 0}
                         total_counts[category] = 0
                     total_counts[category] += 1
                     if fc > 0:
@@ -390,35 +420,27 @@ for group_A_params, group_B_params in groups:
             all_pvals = []
             results = []
             for category, up_downs in fc_counts.items():
-
-                observed_up = up_downs['up']
-                observed_down = up_downs['down']
-
                 expected_up = total_counts[category] * up_percent
                 expected_down = total_counts[category] * down_percent
                 fc_counts[category]['expected_up'] = expected_up
                 fc_counts[category]['expected_down'] = expected_down
-                hpd_down = stats.hypergeom(total_lipids, total_down, observed_up + observed_down)
-                hpd_up = stats.hypergeom(total_lipids, total_up, observed_up + observed_down)
-                p_val_down = hpd_down.pmf(observed_down)
-                p_val_up = hpd_up.pmf(observed_up)
-                all_pvals.append(p_val_down)
-                all_pvals.append(p_val_up)
-                df2 = {'Category': category, 
-                       'Expected_Up': expected_up, 
-                       'Observed_Up': observed_up, 
-                       'Expected_Down': expected_down, 
-                       'Observed_Down': observed_down,
-                       'pval_up_raw': p_val_up,
-                       'pval_down_raw': p_val_down}
-                results.append(df2)
-            sig, corr_pvals = multitest.fdrcorrection(all_pvals, 0.05)    
-            for i, pval in enumerate(corr_pvals):
-                r_index = int(i//2)
-                if i % 2 == 0:
-                    results[r_index]['pval_down_corr'] = pval
-                else:
-                    results[r_index]['pval_up_corr'] = pval
-                    fold_change_results.append(results[r_index])
-            fold_change_results = pd.DataFrame(fold_change_results)
-            fold_change_results.to_csv("./lipidomics_differential_abundance_analysis/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".txt", sep="\t", index=False)
+            for category, up_downs in fc_counts.items():
+                cont_table = [[up_downs['up'], up_downs['expected_up']], [up_downs['down'], up_downs['expected_down']]]
+                res = stats.fisher_exact(cont_table, alternative='two-sided')
+                up_downs['raw_p_value'] = res.pvalue
+            _, fdr_pvalues = multitest.fdrcorrection([fc_counts[x]['raw_p_value'] for x in sorted(fc_counts)])
+            sorted_keys = list(sorted(fc_counts))
+            for fdr_pval, key in zip(fdr_pvalues, sorted_keys):
+                fc_counts[key]['corr_p_value'] = fdr_pval
+                if fdr_pval < .05:
+                    fc_counts[key]['significant'] += "*"
+                if fdr_pval < .005:
+                    fc_counts[key]['significant'] += "*"
+                if fdr_pval < .0005:
+                    fc_counts[key]['significant'] += "*"
+
+            for category, dict in fc_counts.items():
+                print(categories, dict)
+
+            fold_change_results = pd.DataFrame(fc_counts.values())
+            fold_change_results.to_csv("./lipidomics_differential_abundance_analysis/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".tsv", sep="\t", index=False)
