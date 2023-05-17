@@ -1,3 +1,3 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
-252.0742	188.66	0.0075640452977092	-13.215779709583371		-1.5463447903996048		
-357.0442	34.03	0.024738642371188967	9.9777886926493		4.929710001526994		
+252.0742	188.66	0.0075640452977092	-13.215779709583371	C9H11N5O4,C8H15N3O4,C11H12N2O5,C11H12N2O5	-1.5463447903996048	Neopterin,Hydroxysepiapterin,Dioxolane guanosine,Novuridine,D-erythro-Eritadenine,Umanopterin,L-Threoneopterin,3'-AZIDO-2',3'-DIDEOXYURIDINE,Glutaminylalanine,N-alpha-Acetyl-L-citrulline,2-(2-Aminopropanylamino)-4-carbamoylbutyric acid,Alanylglutamine,Alanyl-Gamma-glutamate,5-Hydroxy-N-formylkynurenine,5-Ethynyl-2'-deoxyuridine,N5-(3,4-Dioxo-1,5-cyclohexadien-1-yl)-L-glutamine,N-[1-(Hydroxymethyl)-2-(4-nitrophenyl)-2-oxoethyl]acetamide,5-Hydroxy-N-formylkynurenine,5-Ethynyl-2'-deoxyuridine,N5-(3,4-Dioxo-1,5-cyclohexadien-1-yl)-L-glutamine,N-[1-(Hydroxymethyl)-2-(4-nitrophenyl)-2-oxoethyl]acetamide	20202
+357.0442	34.03	0.024738642371188967	9.9777886926493	C13H14N4O4S,C16H11N3O5S	4.929710001526994	N-[4-[(6-Methoxypyrimidin-4-yl)sulfamoyl]phenyl]acetamide,Droxicam	30729

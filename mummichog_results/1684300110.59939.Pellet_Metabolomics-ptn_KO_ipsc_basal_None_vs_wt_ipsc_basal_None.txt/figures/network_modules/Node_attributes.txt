@@ -1,0 +1,29 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C04076	L-2-Aminoadipate 6-semialdehyde; 2-Aminoadipate 6-semialdehyde	-6.45001161294103	row430	E95
+C00322	2-Oxoadipate	7.167388345778121	row26	E10
+C00643	5-Hydroxy-L-tryptophan	-6.043503636665202	row659	E137
+C05635	5-Hydroxyindoleacetate	-6.040233150459772	row540	E119
+C00322	2-Oxoadipate	8.685286738889001	row49	E10
+C00019	S-Adenosyl-L-methionine	-18.861672634181897	row2157	E306
+C05642	Formyl-N-acetyl-5-methoxykynurenamine	-5.652827625685122	row1420	E259
+C03239	6-Amino-2-oxohexanoate; 2-Oxo-6-aminocaproate	-7.452865114369884	row406	E95
+CE4890	N-methylsalsolinol	-9.067495134367208	row595	E130
+C00019	S-Adenosyl-L-methionine	-13.745170990754042	row2156	E306
+C00670	sn-Glycero-3-phosphocholine	-4.3528399182113375	row1091	E201
+CE5542	noradrenochrome o-semiquinone	8.878876446912457	row750	E27
+CE5860		-4.656943768666224	row1246	E230
+C03239	6-Amino-2-oxohexanoate; 2-Oxo-6-aminocaproate	-6.45001161294103	row430	E95
+C00019	S-Adenosyl-L-methionine	-10.748317287039663	row2170	E306
+CE2173		-10.509217104669533	row632	E136
+C00019	S-Adenosyl-L-methionine	-12.781739993947536	row2169	E306
+C00322	2-Oxoadipate	17.426944662901008	row25	E10
+C09640	(-)-Salsoline	-9.067495134367208	row595	E130
+C16586	2-Phenyl-1,3-propanediol monocarbamate	-10.509217104669533	row632	E136
+C00643	5-Hydroxy-L-tryptophan	-5.915488814395252	row644	E137
+C04148	alpha-N-Phenylacetyl-L-glutamine	-5.652827625685122	row1420	E259
+C00322	2-Oxoadipate	7.146089198927035	row50	E10
+C16596	5-Phenyl-1,3-oxazinane-2,4-dione	-6.040233150459772	row540	E119
+C04076	L-2-Aminoadipate 6-semialdehyde; 2-Aminoadipate 6-semialdehyde	-7.452865114369884	row406	E95
+C02946	4-Acetamidobutanoate	-7.452865114369884	row406	E95
+C01225	sn-glycero-3-Phospho-1-inositol; 1-(sn-glycero-3-Phospho)-1D-myo-inositol	-37.221137535384685	row1754	E286
+C02946	4-Acetamidobutanoate	-6.45001161294103	row430	E95

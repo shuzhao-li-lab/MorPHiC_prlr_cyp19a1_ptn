@@ -1,0 +1,120 @@
+pathway	overlap_size	pathway_size	p-value	overlap_EmpiricalCompounds (id)	overlap_features (id)	overlap_features (name)
+Xenobiotics metabolism	4	4	0.0009242920762961096	E279,E276,E275,E334	C14864/C14865,C00015,C00015,C00167	S-(2-Chloroacetyl)glutathione/2-(S-Glutathionyl)acetyl chloride$UDP$UDP$UDP-D-glucuronate
+Proteoglycan biosynthesis	4	5	0.0023527434669355514	E276,E334,E275,E336	C00015,C00167,C00015,C00029/C00052	UDP$UDP-D-glucuronate$UDP$UDPglucose/UDPgalactose
+Pentose and Glucuronate Interconversions	4	5	0.0023527434669355514	E276,E233,E275,E334	C00015,C00105/C01368,C00015,C00167	UDP$UMP/3'-UMP; Uridine 3'-monophosphate; Uridine 3'-phosphate$UDP$UDP-D-glucuronate
+Vitamin A (retinol) metabolism	3	3	0.0025207965717166624	E276,E334,E275	C00015,C00167,C00015	UDP$UDP-D-glucuronate$UDP
+Aminosugars metabolism	5	8	0.0031089824384505503	E282,E281,E276,E275,E344	mn/C00611,mn/C00611,C00015,C00015,C00128	beta-1,4-mannose-N-acetylglucosamine/N-Acetyllactosamine; beta-D-Galactosyl-1,4-N-acetyl-D-glucosamine; beta-D-Galactosyl-1,4-N-acetyl-beta-D-glucosamine$beta-1,4-mannose-N-acetylglucosamine/N-Acetyllactosamine; beta-D-Galactosyl-1,4-N-acetyl-D-glucosamine; beta-D-Galactosyl-1,4-N-acetyl-beta-D-glucosamine$UDP$UDP$CMP-N-acetylneuraminate
+Starch and Sucrose Metabolism	5	8	0.0031089824384505503	E233,E276,E334,E275,E336	C00105/C01368,C00015,C00167,C00015,C00029/C00052	UMP/3'-UMP; Uridine 3'-monophosphate; Uridine 3'-phosphate$UDP$UDP-D-glucuronate$UDP$UDPglucose/UDPgalactose
+Linoleate metabolism	4	6	0.006890177296025544	E181,E276,E334,E275	C00127,C00015,C00167,C00015	Oxidized glutathione$UDP$UDP-D-glucuronate$UDP
+Porphyrin metabolism	4	6	0.006890177296025544	E18,E276,E334,E275	C01165/C01157/C00430/C03440/C01110,C00015,C00167,C00015	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde/trans-4-Hydroxy-L-proline/5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid/cis-4-Hydroxy-D-proline/5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate$UDP$UDP-D-glucuronate$UDP
+Glycosphingolipid biosynthesis - ganglioseries	5	9	0.008402655239055541	E337,E276,E275,E344,E336	C00325,C00015,C00015,C00128,C00029/C00052	GDP-L-fucose$UDP$UDP$CMP-N-acetylneuraminate$UDPglucose/UDPgalactose
+Glycosphingolipid biosynthesis - lactoseries	5	9	0.008402655239055541	E337,E276,E275,E344,E336	C00325,C00015,C00015,C00128,C00029/C00052	GDP-L-fucose$UDP$UDP$CMP-N-acetylneuraminate$UDPglucose/UDPgalactose
+Blood Group Biosynthesis	5	9	0.008402655239055541	E337,E276,E275,E344,E336	C00325,C00015,C00015,C00128,C00029/C00052	GDP-L-fucose$UDP$UDP$CMP-N-acetylneuraminate$UDPglucose/UDPgalactose
+Glycosphingolipid biosynthesis - neolactoseries	5	9	0.008402655239055541	E337,E276,E275,E344,E336	C00325,C00015,C00015,C00128,C00029/C00052	GDP-L-fucose$UDP$UDP$CMP-N-acetylneuraminate$UDPglucose/UDPgalactose
+Hyaluronan Metabolism	3	4	0.01209982354423998	E276,E275,E334	C00015,C00015,C00167	UDP$UDP$UDP-D-glucuronate
+Keratan sulfate biosynthesis	4	7	0.016553230820939416	E276,E344,E275,E336	C00015,C00128,C00015,C00029/C00052	UDP$CMP-N-acetylneuraminate$UDP$UDPglucose/UDPgalactose
+O-Glycan biosynthesis	4	7	0.016553230820939416	E276,E344,E275,E336	C00015,C00128,C00015,C00029/C00052	UDP$CMP-N-acetylneuraminate$UDP$UDPglucose/UDPgalactose
+Pyruvate Metabolism	2	2	0.017897655659188303	E267,E268	C03451,C03451	(R)-S-Lactoylglutathione$(R)-S-Lactoylglutathione
+Biopterin metabolism	2	2	0.017897655659188303	E156,E255	C00268/C02953/C04244,C00272	6,7-Dihydrobiopterin/7,8-Dihydrobiopterin/6-Lactoyl-5,6,7,8-tetrahydropterin$Tetrahydrobiopterin
+N-Glycan biosynthesis	6	14	0.02436770019326107	E233,E337,E276,E275,E344,E336	C00105/C01368,C00325,C00015,C00015,C00128,C00029/C00052	UMP/3'-UMP; Uridine 3'-monophosphate; Uridine 3'-phosphate$GDP-L-fucose$UDP$UDP$CMP-N-acetylneuraminate$UDPglucose/UDPgalactose
+Galactose metabolism	5	11	0.02579615158390051	E282,E281,E276,E275,E336	mn/C00611,mn/C00611,C00015,C00015,C00029/C00052	beta-1,4-mannose-N-acetylglucosamine/N-Acetyllactosamine; beta-D-Galactosyl-1,4-N-acetyl-D-glucosamine; beta-D-Galactosyl-1,4-N-acetyl-beta-D-glucosamine$beta-1,4-mannose-N-acetylglucosamine/N-Acetyllactosamine; beta-D-Galactosyl-1,4-N-acetyl-D-glucosamine; beta-D-Galactosyl-1,4-N-acetyl-beta-D-glucosamine$UDP$UDP$UDPglucose/UDPgalactose
+Glycosphingolipid biosynthesis - globoseries	5	11	0.02579615158390051	E337,E276,E275,E344,E336	C00325,C00015,C00015,C00128,C00029/C00052	GDP-L-fucose$UDP$UDP$CMP-N-acetylneuraminate$UDPglucose/UDPgalactose
+Pyrimidine metabolism	5	11	0.02579615158390051	E223,E233,E276,E275,E336	C00364,C00105/C01368,C00015,C00015,C00029/C00052	dTMP$UMP/3'-UMP; Uridine 3'-monophosphate; Uridine 3'-phosphate$UDP$UDP$UDPglucose/UDPgalactose
+Androgen and estrogen biosynthesis and metabolism	3	5	0.026300310898243844	E276,E275,E334	C00015,C00015,C00167	UDP$UDP$UDP-D-glucuronate
+Glutathione Metabolism	3	5	0.026300310898243844	E74,E181,E211	C03740,C00127,C00669	5-L-Glutamyl-L-alanine$Oxidized glutathione$gamma-L-Glutamyl-L-cysteine
+Glutamate metabolism	2	3	0.04562641794807159	E181,E211	C00127,C00669	Oxidized glutathione$gamma-L-Glutamyl-L-cysteine
+C21-steroid hormone biosynthesis and metabolism	3	6	0.045878497605243256	E276,E275,E334	C00015,C00015,C00167	UDP$UDP$UDP-D-glucuronate
+Glycosphingolipid metabolism	5	14	0.07402739265607933	E337,E276,E275,E344,E336	C00325,C00015,C00015,C00128,C00029/C00052	GDP-L-fucose$UDP$UDP$CMP-N-acetylneuraminate$UDPglucose/UDPgalactose
+Drug metabolism - cytochrome P450	2	4	0.1023443408116965	E55,E157	,	$
+Nucleotide Sugar Metabolism	1	1	0.10486513738341316	E334	C00167	UDP-D-glucuronate
+Selenoamino acid metabolism	1	1	0.10486513738341316	E197		
+Aspartate and asparagine metabolism	6	19	0.11486429711788926	E15,E18,E120,E211,E74,E181	,C01165/C01157/C00430/C03440/C01110,,C00669,C03740,C00127	$L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde/trans-4-Hydroxy-L-proline/5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid/cis-4-Hydroxy-D-proline/5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate$$gamma-L-Glutamyl-L-cysteine$5-L-Glutamyl-L-alanine$Oxidized glutathione
+Methionine and cysteine metabolism	2	5	0.1498193429123603	E181,E133	C00127,	Oxidized glutathione$
+Tyrosine metabolism	6	21	0.15502898916057475	E156,E276,E255,E334,E275,E181	C00268/C02953/C04244,C00015,C00272,C00167,C00015,C00127	6,7-Dihydrobiopterin/7,8-Dihydrobiopterin/6-Lactoyl-5,6,7,8-tetrahydropterin$UDP$Tetrahydrobiopterin$UDP-D-glucuronate$UDP$Oxidized glutathione
+Tryptophan metabolism	4	13	0.16032266196117972	E153,E156,E255,E35	,C00268/C02953/C04244,C00272,	$6,7-Dihydrobiopterin/7,8-Dihydrobiopterin/6-Lactoyl-5,6,7,8-tetrahydropterin$Tetrahydrobiopterin$
+C5-Branched dibasic acid metabolism	1	2	0.19611797327955635	E12		
+Squalene and cholesterol biosynthesis	1	2	0.19611797327955635	E306		
+Bile acid biosynthesis	1	2	0.19611797327955635	E133		
+Ascorbate (Vitamin C) and Aldarate Metabolism	1	2	0.19611797327955635	E181	C00127	Oxidized glutathione
+Keratan sulfate degradation	2	6	0.19855474329888245	E276,E275	C00015,C00015	UDP$UDP
+N-Glycan Degradation	2	7	0.23813124947483405	E282,E281	mn/C00611,mn/C00611	beta-1,4-mannose-N-acetylglucosamine/N-Acetyllactosamine; beta-D-Galactosyl-1,4-N-acetyl-D-glucosamine; beta-D-Galactosyl-1,4-N-acetyl-beta-D-glucosamine$beta-1,4-mannose-N-acetylglucosamine/N-Acetyllactosamine; beta-D-Galactosyl-1,4-N-acetyl-D-glucosamine; beta-D-Galactosyl-1,4-N-acetyl-beta-D-glucosamine
+Glycine, serine, alanine and threonine metabolism	3	12	0.2549365599529451	E18,E267,E268	C01165/C01157/C00430/C03440/C01110,C03451,C03451	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde/trans-4-Hydroxy-L-proline/5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid/cis-4-Hydroxy-D-proline/5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate$(R)-S-Lactoylglutathione$(R)-S-Lactoylglutathione
+Prostaglandin formation from arachidonate	1	3	0.2582135954961768	E319		
+Phosphatidylinositol phosphate metabolism	2	8	0.27737164944122344	E276,E275	C00015,C00015	UDP$UDP
+Arginine and Proline Metabolism	2	9	0.3054365179396689	E18,E15	C01165/C01157/C00430/C03440/C01110,	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde/trans-4-Hydroxy-L-proline/5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid/cis-4-Hydroxy-D-proline/5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate$
+Carnitine shuttle	1	4	0.3076212083018234	E328		
+Arachidonic acid metabolism	1	4	0.3076212083018234	E181	C00127	Oxidized glutathione
+Sialic acid metabolism	1	5	0.3473657675825561	E344	C00128	CMP-N-acetylneuraminate
+Pentose phosphate pathway	1	6	0.3729938660616755	E198		
+Valine, leucine and isoleucine degradation	1	7	0.39005125619695824	E14		
+Glycerophospholipid metabolism	2	14	0.3982018317788421	E26,E56	,	$
+Purine metabolism	1	11	0.4157633812284682	E33		
+Urea cycle/amino group metabolism	2	18	0.41609948743803044	E18,E33	C01165/C01157/C00430/C03440/C01110,	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde/trans-4-Hydroxy-L-proline/5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid/cis-4-Hydroxy-D-proline/5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate$
+Fructose and mannose metabolism	1	12	0.41769599193345097	E337	C00325	GDP-L-fucose
+Vitamin D3 (cholecalciferol) metabolism	0	1	0.42139316023863543			
+Glycolysis and Gluconeogenesis	0	6	0.42139316023863543			
+R Group Synthesis	0	1	0.42139316023863543			
+Chondroitin sulfate degradation	0	0	0.42139316023863543			
+Di-unsaturated fatty acid beta-oxidation	0	1	0.42139316023863543			
+Putative anti-Inflammatory metabolites formation from EPA	0	1	0.42139316023863543			
+Hexose phosphorylation	0	4	0.42139316023863543			
+Vitamin B2 (riboflavin) metabolism	0	1	0.42139316023863543			
+Glycerolipid metabolism	0	0	0.42139316023863543			
+3-oxo-10R-octadecatrienoate beta-oxidation	0	0	0.42139316023863543			
+Alkaloid biosynthesis II	0	0	0.42139316023863543			
+Vitamin B1 (thiamin) metabolism	0	1	0.42139316023863543			
+Histidine metabolism	0	4	0.42139316023863543			
+Vitamin B5 - CoA biosynthesis from pantothenate	0	3	0.42139316023863543			
+Glycosylphosphatidylinositol(GPI)-anchor biosynthesis	0	0	0.42139316023863543			
+Parathio degradation	0	0	0.42139316023863543			
+Propanoate metabolism	0	1	0.42139316023863543			
+Electron transport chain	0	0	0.42139316023863543			
+Vitamin H (biotin) metabolism	0	1	0.42139316023863543			
+Vitamin E metabolism	0	1	0.42139316023863543			
+Caffeine metabolism	0	0	0.42139316023863543			
+Lipoate metabolism	0	0	0.42139316023863543			
+Heparan sulfate biosynthesis	0	0	0.42139316023863543			
+Vitamin B9 (folate) metabolism	0	3	0.42139316023863543			
+Glyoxylate and Dicarboxylate Metabolism	0	0	0.42139316023863543			
+De novo fatty acid biosynthesis	0	0	0.42139316023863543			
+Fatty Acid Metabolism	0	0	0.42139316023863543			
+Glycosaminoglycan degradation	0	0	0.42139316023863543			
+Fatty acid oxidation	0	1	0.42139316023863543			
+ROS Detoxification	0	0	0.42139316023863543			
+Saturated fatty acids beta-oxidation	0	1	0.42139316023863543			
+CoA Catabolism	0	3	0.42139316023863543			
+Omega-3 fatty acid metabolism	0	1	0.42139316023863543			
+Butanoate metabolism	0	5	0.42139316023863543			
+Mono-unsaturated fatty acid beta-oxidation	0	1	0.42139316023863543			
+Vitamin B3 (nicotinate and nicotinamide) metabolism	0	3	0.42139316023863543			
+Geraniol degradation	0	0	0.42139316023863543			
+D4&E4-neuroprostanes formation	0	0	0.42139316023863543			
+Vitamin D	0	0	0.42139316023863543			
+Dynorphin metabolism	0	0	0.42139316023863543			
+Heparan sulfate degradation	0	0	0.42139316023863543			
+Fatty acid oxidation, peroxisome	0	0	0.42139316023863543			
+Polyunsaturated fatty acid biosynthesis	0	0	0.42139316023863543			
+Alanine and Aspartate Metabolism	0	1	0.42139316023863543			
+TCA cycle	0	2	0.42139316023863543			
+3-Chloroacrylic acid degradation	0	0	0.42139316023863543			
+Sphingolipid metabolism	0	0	0.42139316023863543			
+Limonene and pinene degradation	0	0	0.42139316023863543			
+Vitamin K metabolism	0	0	0.42139316023863543			
+Benzoate degradation via CoA ligation	0	0	0.42139316023863543			
+Dimethyl-branched-chain fatty acid mitochondrial beta-oxidation	0	1	0.42139316023863543			
+Vitamin B6 (pyridoxine) metabolism	0	2	0.42139316023863543			
+Atrazine degradation	0	0	0.42139316023863543			
+Leukotriene metabolism	0	2	0.42139316023863543			
+Vitamin B12 (cyanocobalamin) metabolism	0	1	0.42139316023863543			
+Fatty acid activation	0	1	0.42139316023863543			
+Carbon fixation	0	1	0.42139316023863543			
+Ubiquinone Biosynthesis	0	1	0.42139316023863543			
+1- and 2-Methylnaphthalene degradation	0	0	0.42139316023863543			
+Nitrogen metabolism	0	0	0.42139316023863543			
+Drug metabolism - other enzymes	0	1	0.42139316023863543			
+Beta-Alanine metabolism	0	5	0.42139316023863543			
+Prostaglandin formation from dihomo gama-linoleic acid	0	0	0.42139316023863543			
+Trihydroxycoprostanoyl-CoA beta-oxidation	0	0	0.42139316023863543			
+Omega-6 fatty acid metabolism	0	0	0.42139316023863543			
+Phytanic acid peroxisomal oxidation	0	0	0.42139316023863543			
+Lysine metabolism	0	7	0.42139316023863543			

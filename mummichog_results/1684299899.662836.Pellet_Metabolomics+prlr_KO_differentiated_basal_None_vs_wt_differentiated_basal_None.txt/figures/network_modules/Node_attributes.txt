@@ -1,0 +1,31 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C02953	7,8-Dihydrobiopterin	-13.630060578177966	row492	E114
+C02505	2-Phenylacetamide	-4.3662095495233055	row83	E21
+CE2173		-4.022638433915492	row424	E103
+C09642	(-)-Salsolinol; 6,7-Isoquinolinediol, 1,2,3,4-tetrahydro-1-methyl-, (S)-; Salsolinol	-4.338524417149933	row169	E49
+C03838	N1-(5-Phospho-D-ribosyl)glycinamide	3.696280711624362	row622	E143
+C05578	5,6-Dihydroxyindole; DHI	-4.600448082677076	row208	E64
+C00167	UDP-D-glucuronate	4.027743412207377	row1733	E227
+C00062	L-Arginine	-4.7984279380818275	row451	E109
+C00016	Flavin adenine dinucleotide oxidized	-3.776073834780263	row1718	E232
+C00437	N2-Acetyl-L-ornithine	-4.980227511896883	row111	E29
+C04244	6-Lactoyl-5,6,7,8-tetrahydropterin	-13.630060578177966	row492	E114
+C01239	N-Acetyl-beta-D-glucosaminylamine	-3.8141625579781993	row565	E68
+C02714	N-Acetylputrescine	-10.946868765243199	row45	E12
+C07086	Phenylacetic acid; Benzylformic acid; Phenylacetate; Benzeneacetiic acid	-4.634100870432308	row93	E22
+CE5588	deoxyhypusine	-5.825361558562771	row545	E130
+C16586	2-Phenyl-1,3-propanediol monocarbamate	-4.022638433915492	row424	E103
+C03440	cis-4-Hydroxy-D-proline	4.434329677513751	row51	E14
+C03765	4-Hydroxyphenylacetaldehyde	-4.634100870432308	row93	E22
+C01239	N-Acetyl-beta-D-glucosaminylamine	-6.566181553384098	row226	E69
+CE4888	dopaminochrome	-4.600448082677076	row208	E64
+C00430	5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid	4.434329677513751	row51	E14
+C00792	D-Arginine; D-2-Amino-5-guanidinovaleric acid	-4.7984279380818275	row451	E109
+C00016	Flavin adenine dinucleotide oxidized	-5.621243655922519	row1669	E232
+C03740	5-L-Glutamyl-L-alanine	-6.595591362683099	row187	E58
+C01110	5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate	4.434329677513751	row51	E14
+C01157	trans-4-Hydroxy-L-proline	4.434329677513751	row51	E14
+C00268	6,7-Dihydrobiopterin	-13.630060578177966	row492	E114
+C01035	4-Guanidinobutanoate	-8.548731574106416	row170	E48
+C01165	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde	4.434329677513751	row51	E14
+C03740	5-L-Glutamyl-L-alanine	-4.612248728839418	row186	E57

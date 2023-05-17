@@ -1,0 +1,45 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00624	N-Acetyl-L-glutamate; N-Acetyl-L-glutamic acid	21.227081446665228	row12	E6
+C01879	5-Oxoproline	23.54209016864769	row100	E22
+C04076	L-2-Aminoadipate 6-semialdehyde; 2-Aminoadipate 6-semialdehyde	32.00060685048581	row425	E99
+C03406	N-(L-Arginino)succinate; 2-(Nomega-L-Arginino)succinate; L-Argininosuccinate; L-Argininosuccinic acid; L-Arginosuccinic acid	18.695615471864258	row1636	E263
+C00310	D-Xylulose	14.12251525881018	row509	E112
+C01250	N-Acetyl-L-glutamate 5-semialdehyde; 2-Acetamido-5-oxopentanoate	14.057328394154046	row137	E41
+C00143	5,10-Methylenetetrahydrofolate	27.435071934854317	row2879	E362
+CE1665	gama-glutamylglutathione	25.215901540971124	row2621	E179
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	13.847242669968182	row115	E21
+C02946	4-Acetamidobutanoate	27.946886993039392	row452	E99
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	795.6782993070082	row116	E22
+C03406	N-(L-Arginino)succinate; 2-(Nomega-L-Arginino)succinate; L-Argininosuccinate; L-Argininosuccinic acid; L-Arginosuccinic acid	15.220880967804549	row1526	E263
+C02946	4-Acetamidobutanoate	32.00060685048581	row425	E99
+C00143	5,10-Methylenetetrahydrofolate	13.498317687136046	row2901	E362
+C01165	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde	14.72991522124012	row139	E45
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	15.74174510494996	row99	E21
+C01110	5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate	14.72991522124012	row139	E45
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	23.54209016864769	row100	E22
+C03440	cis-4-Hydroxy-D-proline	14.72991522124012	row139	E45
+C01157	trans-4-Hydroxy-L-proline	14.72991522124012	row139	E45
+C00430	5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid	14.72991522124012	row139	E45
+C00019	S-Adenosyl-L-methionine	19.680027605701845	row2474	E340
+C00645	N-Acetyl-D-mannosamine; 2-Acetamido-2-deoxy-D-mannose	-14.792532262252868	row695	E143
+C03239	6-Amino-2-oxohexanoate; 2-Oxo-6-aminocaproate	27.946886993039392	row452	E99
+C00019	S-Adenosyl-L-methionine	16.578274437106632	row2475	E340
+C00140	N-Acetyl-D-glucosamine	-14.792532262252868	row695	E143
+C03239	6-Amino-2-oxohexanoate; 2-Oxo-6-aminocaproate	32.00060685048581	row425	E99
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate	13.847242669968182	row115	E21
+C00181	D-Xylose	14.12251525881018	row509	E112
+C00669	gamma-L-Glutamyl-L-cysteine	99.36202990809683	row966	E183
+C00019	S-Adenosyl-L-methionine	14.602337577954112	row2473	E340
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate	795.6782993070082	row116	E22
+C00669	gamma-L-Glutamyl-L-cysteine	67.51298140658831	row1014	E183
+C01879	5-Oxoproline	13.847242669968182	row115	E21
+C00259	L-Arabinose	14.12251525881018	row509	E112
+C00121	D-Ribose	14.12251525881018	row509	E112
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate	15.74174510494996	row99	E21
+C01879	5-Oxoproline	795.6782993070082	row116	E22
+C00309	D-Ribulose; D-erythro-2-Pentulose; D-Arabinoketose; D-Arabinulose; D-Riboketose	14.12251525881018	row509	E112
+C01074	N-Acetylgalactosamine; N-Acetylchondrosamine; 2-Acetamido-2-deoxygalactose; GalNAc	-14.792532262252868	row695	E143
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate	23.54209016864769	row100	E22
+C04076	L-2-Aminoadipate 6-semialdehyde; 2-Aminoadipate 6-semialdehyde	27.946886993039392	row452	E99
+C01879	5-Oxoproline	15.74174510494996	row99	E21
+C00312	L-Xylulose	14.12251525881018	row509	E112

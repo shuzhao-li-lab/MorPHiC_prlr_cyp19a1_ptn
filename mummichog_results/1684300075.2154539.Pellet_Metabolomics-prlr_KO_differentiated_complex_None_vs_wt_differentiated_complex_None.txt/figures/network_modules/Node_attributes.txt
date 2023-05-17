@@ -1,0 +1,20 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C01516	Morphine	-6.64391684864765	row881	E143
+C16596	5-Phenyl-1,3-oxazinane-2,4-dione	6.443054174654715	row397	E73
+C04148	alpha-N-Phenylacetyl-L-glutamine	-5.113486952555295	row1032	E159
+C00322	2-Oxoadipate	4.44422874559333	row23	E7
+CE5932	13,14-epoxy-retinol	-14.535067288135094	row783	E123
+CE5860		-7.093529610467389	row895	E131
+C06428	(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoic acid; Eicosapentaenoic acid; 5,8,11,14,17-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoate	-14.535067288135094	row783	E123
+C05635	5-Hydroxyindoleacetate	6.443054174654715	row397	E73
+C16586	2-Phenyl-1,3-propanediol monocarbamate	-7.485425409717404	row477	E87
+C15493	9-cis-Retinoic acid	-5.768857068801073	row706	E117
+C00777	Retinoate	-5.768857068801073	row706	E117
+C00643	5-Hydroxy-L-tryptophan	-7.863664526972832	row487	E88
+C00322	2-Oxoadipate	5.919249800955467	row24	E7
+C00643	5-Hydroxy-L-tryptophan	-7.672964641973762	row498	E88
+CE2173		-7.485425409717404	row477	E87
+C16576	Norcodeine; N-Desmethylcodeine	-6.64391684864765	row881	E143
+C05642	Formyl-N-acetyl-5-methoxykynurenamine	-5.113486952555295	row1032	E159
+C02075	Retinyl ester; all-trans-Retinyl ester	-14.535067288135094	row783	E123
+CE5013		-14.535067288135094	row783	E123

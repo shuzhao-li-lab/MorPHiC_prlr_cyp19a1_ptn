@@ -1,0 +1,11 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C05463	Taurodeoxycholate	33.282180498663415	row2015	E237
+C15516	Taurohyocholate; N-(3alpha,6alpha,7alpha-Trihydroxy-5beta-cholan-24-oyl)taurine	5.075825318839154	row2251	E248
+C05465	Taurochenodeoxycholate; Chenodeoxycholoyltaurine	-7.858462559246464	row2010	E237
+C05465	Taurochenodeoxycholate; Chenodeoxycholoyltaurine	33.282180498663415	row2015	E237
+C05465	Taurochenodeoxycholate; Chenodeoxycholoyltaurine	4.890149288502658	row2140	E237
+C05122	taurocholic acid	5.075825318839154	row2251	E248
+C05463	Taurodeoxycholate	4.890149288502658	row2140	E237
+C05463	Taurodeoxycholate	-7.858462559246464	row2010	E237
+C01921	glycocholate	11.509745021669277	row1768	E224
+C00695	Cholate	22.383115616074356	row1517	E169

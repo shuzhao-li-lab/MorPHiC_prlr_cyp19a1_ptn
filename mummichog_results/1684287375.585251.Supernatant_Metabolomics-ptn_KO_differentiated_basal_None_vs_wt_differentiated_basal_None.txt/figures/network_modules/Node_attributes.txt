@@ -1,9 +1,0 @@
-CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
-C11736	5-Fluorodeoxyuridine; Floxuridine	45.52492500225973	row595	E99
-C00780	Serotonin	63.51465571078431	row181	E47
-C01074	N-Acetylgalactosamine; N-Acetylchondrosamine; 2-Acetamido-2-deoxygalactose; GalNAc	112.26979024967922	row512	E89
-C00643	5-Hydroxy-L-tryptophan	112.26979024967922	row512	E86
-C00645	N-Acetyl-D-mannosamine; 2-Acetamido-2-deoxy-D-mannose	112.26979024967922	row512	E89
-C12739	5'-Deoxy-5-fluorouridine; Doxifluridine	45.52492500225973	row595	E99
-C00455	NMN	68.24616347979897	row1227	E162
-C00140	N-Acetyl-D-glucosamine	112.26979024967922	row512	E89

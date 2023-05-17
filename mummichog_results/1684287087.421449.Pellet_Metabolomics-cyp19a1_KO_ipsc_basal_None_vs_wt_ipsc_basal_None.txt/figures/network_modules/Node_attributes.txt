@@ -1,5 +1,0 @@
-CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
-C00669	gamma-L-Glutamyl-L-cysteine	14.12006024244313	row1023	E181
-C00322	2-Oxoadipate	10.156743092950663	row34	E9
-C00438	N-Carbamoyl-L-aspartate	19.021018165068046	row235	E57
-C01250	N-Acetyl-L-glutamate 5-semialdehyde; 2-Acetamido-5-oxopentanoate	8.460512966020879	row156	E40

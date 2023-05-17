@@ -1,0 +1,10 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C14762	13(S)-HODE; (13S)-Hydroxyoctadecadienoic acid; (9Z, 11E)-(13S)-13-Hydroxyoctadeca-9,11-dienoic acid	4.39053474966714	row1211	E184
+C05527	3-Sulfinopyruvate	-4.316514965553209	row184	E43
+C14825	9(10)-EpOME; (9R,10S)-(12Z)-9,10-Epoxyoctadecenoic acid	4.39053474966714	row1211	E184
+C05708	Selenomethionine Se-oxide	4.459880479969895	row908	E153
+C05653	N-Formylanthranilate	-4.339149016509103	row489	E94
+C00170	5-Methylthioadenosine	4.053500437233725	row1233	E189
+C14826	12(13)-EpOME; (12R,13S)-(9Z)-12,13-Epoxyoctadecenoic acid	4.39053474966714	row1211	E184
+C00455	NMN	9.9777886926493	row1535	E220
+CE5538	noradrenochrome	-4.339149016509103	row489	E94

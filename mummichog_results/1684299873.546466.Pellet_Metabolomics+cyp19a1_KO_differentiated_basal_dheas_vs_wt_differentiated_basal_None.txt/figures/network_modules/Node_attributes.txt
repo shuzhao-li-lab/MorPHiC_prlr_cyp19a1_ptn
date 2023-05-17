@@ -1,0 +1,31 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00669	gamma-L-Glutamyl-L-cysteine	6.77490760003015	row967	E199
+CE2053	20-oxo-leukotriene B4	4.871348355612606	row1520	E260
+C02714	N-Acetylputrescine	-7.400067870395546	row59	E14
+C00127	Oxidized glutathione	3.8714364351144166	row2655	E171
+CE7113	15-epi-lipoxin B5	4.871348355612606	row1520	E260
+C01165	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde	6.356525131626432	row66	E17
+C00430	5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid	6.356525131626432	row66	E17
+C03440	cis-4-Hydroxy-D-proline	6.356525131626432	row66	E17
+C01165	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde	6.0906755270779005	row64	E16
+C00430	5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid	6.0906755270779005	row64	E16
+C03440	cis-4-Hydroxy-D-proline	6.0906755270779005	row64	E16
+C01110	5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate	6.356525131626432	row66	E17
+CE7088	PGH3	4.871348355612606	row1520	E260
+C00792	D-Arginine; D-2-Amino-5-guanidinovaleric acid	-5.223381191360541	row567	E137
+C01157	trans-4-Hydroxy-L-proline	6.356525131626432	row66	E17
+C01110	5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate	6.0906755270779005	row64	E16
+CE5661	15-oxo-lipoxin A4	4.871348355612606	row1520	E260
+C01157	trans-4-Hydroxy-L-proline	6.0906755270779005	row64	E16
+CE7114		4.871348355612606	row1520	E260
+C03451	(R)-S-Lactoylglutathione	61.49426390620462	row1500	E255
+C03564	1-Pyrroline-2-carboxylate; 1-Pyrroline-2-carboxylic acid; delta1-Pyrroline 2-carboxylate	4.979290897287958	row339	E98
+C00127	Oxidized glutathione	3.511352635366228	row2651	E171
+CE5138	12-oxo-20-hydroxy-leukotriene B4	4.871348355612606	row1520	E260
+CE5976	12-oxo-10,11-dihydro-20-COOH-LTB4	-3.7618668906929638	row275	E74
+CE7115	20-hydroxy-leukotriene B5	4.871348355612606	row1520	E260
+C00062	L-Arginine	-5.223381191360541	row567	E137
+CE7112	15-epi-lipoxin A5	4.871348355612606	row1520	E260
+C03451	(R)-S-Lactoylglutathione	8.759377689269076	row1689	E255
+CE2054	20-carboxy-leukotriene-B4	-3.7618668906929638	row275	E74
+C03451	(R)-S-Lactoylglutathione	15.157866326677775	row1690	E256

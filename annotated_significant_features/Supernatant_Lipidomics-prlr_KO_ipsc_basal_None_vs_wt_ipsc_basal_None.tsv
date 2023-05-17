@@ -1,18 +1,18 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
-183.1385	36.4	0.0040433882557849524	26.314071153023406		2.8358274317641943				
-281.2487	194.95	0.03584667824797712	-12.674355169717982	C18H34O2	-0.28918759293379637	13Z-octadecenoic acid,10Z-Hexadecenyl acetate,2-methyl-16-heptadecenoic acid,4-octadecylenic acid,trans-8-elaidic acid,cis-10-oleic acid,9E-Hexadecenyl acetate,16E-octadecenoic acid,3-octadecylenic acid,12Z-Hexadecenyl acetate,Thalictric acid,Cyclopentanetridecanoic acid,8E-Hexadecenyl acetate,cis-vaccenic acid,6E-Hexadecenyl acetate,Ethyl 9-hexadecenoate,15Z-octadecenoic acid,7-Hexadecenyl acetate,7E-octadecenoic acid,17:1(12)(7Me),Isooctadecenoic acid,4Z-octadecenoic acid,18:1(14Z),17:1(4)(15Me),10E-octadecenoic acid,10-Octadecenoic acid,5Z-Hexadecenyl acetate,3Z-Hexadecenyl acetate,cis-12-oleic acid,7Z-Hexadecenyl acetate,ethyl 9Z-hexadecenoate,18:1(14E),ethyl 7Z-hexadecenoate,Petroselaidic acid,11-Cycloheptylundecanoic acid,Methyl 14-methyl-8E-hexadecenoate,trans-2-oleic acid,3Z-octadecenoic acid,trans-vaccenic acid,11Z-Hexadecenyl acetate,15E-octadecenoic acid,Methyl 14-methyl-8Z-hexadecenoate,18:1(13E),2Z-octadecenoic acid,Petroselinic acid,16Z-octadecenoic acid,5E-Hexadecenyl acetate,9-elaidic acid,trans-12-elaidic acid,18-Octadecanolide,Dihydromalvalic acid,Oleic acid,5Z-octadecenoic acid,7Z-octadecenoic acid,9Z-Hexadecenyl acetate,17:1(4)(16Me),cis-8-oleic acid,17-octadecenoic acid,17:1(6)(9Me),11E-Hexadecenyl acetate	kp624_282.2561	{'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]', 'Fatty esters [FA07]'}
-410.315	225.94	0.0040433882557849524	25.44835586439859	C28H42O2	1.6814306917553026	beta-tocotrienol,calicoferol D,gamma-tocotrienol,28:7(n-6)	kp675_410.3189	{'Sterol Lipids [ST]', 'Prenol Lipids [PR]', 'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]', 'Sterols [ST01]', 'Secosteroids [ST03]', 'Quinones and hydroquinones [PR02]'}
-417.0778	189.56	0.0186748409876104	15.770037460266362		2.7829106222018822				
-508.1462	31.39	0.005133401834700426	23.3397223707717		2.595467840211775				
-508.1462	35.2	0.03785927295049617	12.3068302088438		1.963710150610929				
-561.0369	278.24	0.030352638025521562	13.442668806559388		3.0200930666900767				
-575.4324	289.29	0.00900055764998467	19.781756816624505	C35H60O6	2.708899472567655	beta-Sitosterol 3-O-beta-D-galactopyranoside,Sitosteryl glucoside,glucoclionasterol	kp1195_576.4396	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
-583.326	184.41	0.010190579620762622	18.75553803600887		1.4435844171369148				
-591.4273	305.37	0.0016259969576324737	42.126309411278996		2.206332152750683				
-621.4379	288.9	0.000555827306379939	61.00061377006625		3.867867817131522				
-609.438	308.41	0.00010507345332233537	110.0495028676097		1.810668673386715				
-611.4086	289.95	0.0018620122988415022	37.88845640376539	C35H60O6	6.776666507477776	beta-Sitosterol 3-O-beta-D-galactopyranoside,Sitosteryl glucoside,glucoclionasterol	kp1195_576.4396	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
-711.2909	212.23	0.030352638025521562	13.506429732129394		2.4095322688303114				
-719.4673	345.31	0.0040433882557849524	25.669599019225366		4.1820321445358335				
-546.0836	30.06	0.003491307521681374	29.23419990267624		2.53543149810206				
-811.0366	225.25	0.003491307521681374	29.329925242259684		3.575575350518079				
+183.1385	36.4	0.0040433882557849524	26.314071153023406		2.8358274317641943	None			
+281.2487	194.95	0.03584667824797712	-12.674355169717982	C18H34O2	-0.28918759293379637	15E-octadecenoic acid,3Z-octadecenoic acid,trans-12-elaidic acid,4Z-octadecenoic acid,cis-12-oleic acid,17:1(4)(15Me),Oleic acid,cis-vaccenic acid,10Z-Hexadecenyl acetate,11-Cycloheptylundecanoic acid,7Z-Hexadecenyl acetate,17:1(4)(16Me),ethyl 9Z-hexadecenoate,Ethyl 9-hexadecenoate,6E-Hexadecenyl acetate,18:1(13E),18:1(14E),10E-octadecenoic acid,15Z-octadecenoic acid,13Z-octadecenoic acid,3-octadecylenic acid,16E-octadecenoic acid,Isooctadecenoic acid,trans-vaccenic acid,18-Octadecanolide,7Z-octadecenoic acid,cis-8-oleic acid,10-Octadecenoic acid,11Z-Hexadecenyl acetate,Methyl 14-methyl-8Z-hexadecenoate,7-Hexadecenyl acetate,Petroselaidic acid,5E-Hexadecenyl acetate,18:1(14Z),ethyl 7Z-hexadecenoate,7E-octadecenoic acid,17:1(12)(7Me),4-octadecylenic acid,16Z-octadecenoic acid,Cyclopentanetridecanoic acid,9-elaidic acid,Petroselinic acid,Thalictric acid,5Z-octadecenoic acid,11E-Hexadecenyl acetate,8E-Hexadecenyl acetate,12Z-Hexadecenyl acetate,9Z-Hexadecenyl acetate,17:1(6)(9Me),Dihydromalvalic acid,17-octadecenoic acid,2-methyl-16-heptadecenoic acid,2Z-octadecenoic acid,9E-Hexadecenyl acetate,3Z-Hexadecenyl acetate,trans-2-oleic acid,trans-8-elaidic acid,5Z-Hexadecenyl acetate,cis-10-oleic acid,Methyl 14-methyl-8E-hexadecenoate	kp620_282.2561	{'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]', 'Fatty esters [FA07]'}
+410.315	225.94	0.0040433882557849524	25.44835586439859	C28H42O2	1.6814306917553026	gamma-tocotrienol,calicoferol D,beta-tocotrienol,28:7(n-6)	kp671_410.3189	{'Prenol Lipids [PR]', 'Sterol Lipids [ST]', 'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]', 'Quinones and hydroquinones [PR02]', 'Secosteroids [ST03]', 'Sterols [ST01]'}
+417.0778	189.56	0.0186748409876104	15.770037460266362		2.7829106222018822	417.0778_M-H-			
+508.1462	31.39	0.005133401834700426	23.3397223707717		2.595467840211775	None			
+508.1462	35.2	0.03785927295049617	12.3068302088438		1.963710150610929	None			
+561.0369	278.24	0.030352638025521562	13.442668806559388		3.0200930666900767	None			
+575.4324	289.29	0.00900055764998467	19.781756816624505	C35H60O6	2.708899472567655	Sitosteryl glucoside,glucoclionasterol,beta-Sitosterol 3-O-beta-D-galactopyranoside	kp1190_576.4396	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
+583.326	184.41	0.010190579620762622	18.75553803600887		1.4435844171369148	None			
+591.4273	305.37	0.0016259969576324737	42.126309411278996		2.206332152750683	591.4273_M-H-			
+621.4379	288.9	0.000555827306379939	61.00061377006625		3.867867817131522	None			
+609.438	308.41	0.00010507345332233537	110.0495028676097		1.810668673386715	None			
+611.4086	289.95	0.0018620122988415022	37.88845640376539	C35H60O6	6.776666507477776	Sitosteryl glucoside,glucoclionasterol,beta-Sitosterol 3-O-beta-D-galactopyranoside	kp1190_576.4396	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
+711.2909	212.23	0.030352638025521562	13.506429732129394		2.4095322688303114	None			
+719.4673	345.31	0.0040433882557849524	25.669599019225366		4.1820321445358335	None			
+546.0836	30.06	0.003491307521681374	29.23419990267624		2.53543149810206	546.0836_HCl, 2x charged			
+811.0366	225.25	0.003491307521681374	29.329925242259684		3.575575350518079	811.0366_M-H-			

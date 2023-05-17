@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+        <html xmlns="http://www.w3.org/1999/xhtml"> 
+        <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <title>Mummichog Report</title> 
+
+        <style type="text/css"> 
+        body {width: 960px; padding: 10px; }
+        
+        div.colorbar {margin-bottom: 7px}
+        div.networkvisual { margin: auto; height: 600px; width: 960px; overflow: auto !important;}
+        div.svg2 { margin: auto; height: 600px; width: 960px; overflow: auto !important;}
+
+        div.stats {margin-top: 10; font-size:0.7em; color:#888;}
+
+        div.moduleline{font-size: 0.9em; font-weight: bold;
+        }
+        div.metabolites {
+            font-size: 0.7em;
+            padding-left: 15px; padding-bottom: 7px;
+        }
+        
+        footer { margin-top: 30px;    padding: 10px 0;    border-top: 1px solid #582E2E;    font-size:0.7em;    color:#888;}
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+            font-weight: bold;
+        }
+        
+        h1 { font-size: 1.4em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1em; }
+        h4 { font-size: 0.9em;     padding-left: 15px; padding-bottom: 2px; margin-bottom:0px;}
+        th {
+            background: #DAFDCF;
+            font-size:0.9em;
+            text-align: left;
+            padding:5px;
+        }
+        
+        tr:nth-child(even) {background-color: #f2f2f2}
+        tr:hover {background-color: #f5f5f5}
+        
+        td {
+            font-family: Verdana, Arial, sans-serif;
+            color: black;
+            font-size:0.7em;
+            margin:10px;
+            margin-top:0px;
+            padding: 5px;
+        }
+        
+        .node {
+          stroke: #fff;
+          stroke-width: 1.5px;
+        }
+        
+        .link {
+          stroke: #999;
+          stroke-opacity: .6;
+        }
+        div.network_selection {float: left; margin-top: 6; margin-bottom: 10; font-size:0.8em;}
+        </style> 
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://shuzhao-li.github.io/mummichog.org/download/cytoscape.min.js" charset="utf-8"></script>
+        <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-spread/1.0.9/cytoscape-spread.js"></script> 
+        <script src="js/plotly-latest.min.js"></script>
+        <script src="js/plotly-graphs.js"></script>
+        <script src="js/result.js"></script>
+        </head> 
+        <body> 
+        <h1>Mummichog Report: Supernatant_Metabolomics+prlr_KO_ipsc_basal_None_vs_wt_ipsc_basal_None.txt</h1>
+<div id="colorbar" class="colorbar"></div>
+<div class="stats">mummichog version: 2.6.1, using metabolic model MFN_1.10.4.<br></div>
+<h2>User input data</h2>
+<p>User supplied 3366 features as reference list.We are using 749 features (p < 0.677839) as significant list. The feature level data are shown in the Manhattan plots below.</p>
+<div id="mz_user_input"></div>
+<div id="retention_time_input"></div>
+<h2>Top pathways</h2>
+<p>The reference feature list is mapped to 94 EmpiricalCompounds, significant features to 29 EmpiricalCompounds. In the table below, pathway_size is number of detected EmpiricalCompounds for each pathway; overlap_size is number of significant EmpiricalCompounds.                                Empirical p-values are estimated by permutation test. Details on EmpiricalCompounds are in 'tables/ListOfEmpiricalCompounds.tsv'.</p>
+<div class="pathwaystablly"><table><tr><th>Pathways</th>                    <th>overlap_size</th><th>pathway_size</th><th>p-value</th>                    <th>overlap_EmpiricalCompounds</th></tr><tr> <td>Glycine, serine, alanine and threonine metabolism</td> <td>3</td><td>4</td><td>0.00815</td><td>E235,E105,E3</td></tr><tr> <td>Drug metabolism - cytochrome P450</td> <td>3</td><td>4</td><td>0.00815</td><td>E116,E111,E75</td></tr><tr> <td>Glycerophospholipid metabolism</td> <td>3</td><td>4</td><td>0.00815</td><td>E72,E213,E121</td></tr><tr> <td>Fructose and mannose metabolism</td> <td>2</td><td>2</td><td>0.00907</td><td>E123,E52</td></tr><tr> <td>Valine, leucine and isoleucine degradation</td> <td>3</td><td>5</td><td>0.01891</td><td>E235,E93,E145</td></tr><tr> <td>Pentose phosphate pathway</td> <td>2</td><td>3</td><td>0.02941</td><td>E54,E7</td></tr></table></div>
+<div id="pathwayBarPlot"></div>
+<h2>Top modules</h2>
+<p>Network modules may capture concerted metabolite activities that are missed by predefined pathways.         Use pull-down menus to visualize modules and the activity network, which tries to combine the results of         pathway/module analyses. The visualization requires interenet connection.</p>
+<div id="network_selection" class="network_selection">Showing
+        <select id="nmodule_select" onchange="updateDrawing();">
+          <option>Activity network</option>
+                   </select>
+                    Node size <select id="nsize_select"  onchange="updateDrawing();">
+                      <option value=16>Medium</option>
+                      <option value=8>Small</option>
+                      <option value=32>Large</option>
+                    </select>
+                    Visual style <select id="vstyle_select"  onchange="updateDrawing();">
+                      <option value=0>Drag</option>
+                      <option value=1>Force</option>
+                    </select>
+                    </div>
+<div id="networkvisual" class="networkvisual"></div>
+<div class="modulestablly">
+</div>
+<h2>EmpiricalCompounds favored by above analyses</h2>
+<p>An EmpiricalCompound is a computational unit for a tentative metabolite. It can group multiple ions,                     and be any of the isobaric/isomeric species. This table contains EmpiricalCompounds prioritized by pathway/module analysis.</p>
+<div class="metabolitestablly"><table><tr><th>EmpiricalCompound</th><th>Input m/z</th>                    <th>Retention time</th><th>ion</th><th>mz_diff</th><th>Statistic</th>                    <th>Significant</th></tr><tr > <td>E93</td> <td colspan="2">Best guess: C00141, 3-Methyl-2-oxobutanoate</td><td colspan="4">C00141</td></tr><tr> <td> </td> <td>117.055</td> <td>25.87</td><td>M+H[1+]</td><td>0.0004</td><td>2.07</td><td>yes</td></tr><tr > <td>E72</td> <td colspan="2">Best guess: C01233, sn-Glycero-3-phosphoethanolamine</td><td colspan="4">C01233</td></tr><tr> <td> </td> <td>238.0452</td> <td>294.25</td><td>M+Na[1+]</td><td>0.0</td><td>-9.95</td><td>yes</td></tr><tr> <td> </td> <td>216.0633</td> <td>294.12</td><td>M+H[1+]</td><td>0.0001</td><td>-10.0</td><td>yes</td></tr><tr > <td>E145</td> <td colspan="2">Best guess: C03465, 3-Methyl-2-oxopentanoate</td><td colspan="4">C00233, C06102, C03465</td></tr><tr> <td> </td> <td>131.0705</td> <td>27.05</td><td>M+H[1+]</td><td>0.0002</td><td>3.51</td><td>yes</td></tr><tr > <td>E75</td> <td colspan="2">Best guess: C16587, 3-Carbamoyl-2-phenylpropionaldehyde</td><td colspan="4">C16595, C16587</td></tr><tr> <td> </td> <td>216.0633</td> <td>294.12</td><td>M+Na[1+]</td><td>0.0001</td><td>-10.0</td><td>yes</td></tr><tr > <td>E121</td> <td colspan="2">Best guess: C04874, Dihydroneopterin</td><td colspan="4">C03150, C04874</td></tr><tr> <td> </td> <td>256.1045</td> <td>301.24</td><td>M+H[1+]</td><td>0.0004</td><td>-2.4</td><td>yes</td></tr><tr> <td> </td> <td>278.0865</td> <td>283.55</td><td>M+Na[1+]</td><td>0.0004</td><td>-1.27</td><td>no</td></tr><tr> <td> </td> <td>278.0865</td> <td>300.98</td><td>M+Na[1+]</td><td>0.0004</td><td>-2.1</td><td>yes</td></tr><tr > <td>E105</td> <td colspan="2">Best guess: gudac, Guanidinoacetate</td><td colspan="4">C00581, gudac</td></tr><tr> <td> </td> <td>118.0615</td> <td>253.1</td><td>M+H[1+]</td><td>0.0004</td><td>7.31</td><td>yes</td></tr><tr> <td> </td> <td>119.0647</td> <td>253.36</td><td>M(C13)+H[1+]</td><td>0.0002</td><td>5.86</td><td>yes</td></tr><tr > <td>E235</td> <td colspan="2">Best guess: C01033, 2-Methylbutanoyl-CoA</td><td colspan="4">C15980, C02939, C01033</td></tr><tr> <td> </td> <td>874.1629</td> <td>149.23</td><td>M+Na[1+]</td><td>0.0009</td><td>1.95</td><td>yes</td></tr><tr> <td> </td> <td>874.1629</td> <td>151.36</td><td>M+Na[1+]</td><td>0.0009</td><td>2.0</td><td>yes</td></tr><tr > <td>E52</td> <td colspan="2">Best guess: C01019, 6-Deoxy-L-galactose</td><td colspan="4">C01019</td></tr><tr> <td> </td> <td>187.0578</td> <td>191.12</td><td>M+Na[1+]</td><td>0.0</td><td>1.0</td><td>no</td></tr><tr> <td> </td> <td>233.0632</td> <td>190.85</td><td>M+HCOONa[1+]</td><td>0.0</td><td>-5.09</td><td>yes</td></tr><tr > <td>E213</td> <td colspan="2">Best guess: C00307, CDPcholine</td><td colspan="4">C00307</td></tr><tr> <td> </td> <td>489.1149</td> <td>385.38</td><td>M+H[1+]</td><td>0.0003</td><td>-2.14</td><td>yes</td></tr><tr > <td>E123</td> <td colspan="2">Best guess: C01697, Galactitol</td><td colspan="4">C01507, C00794, C01697</td></tr><tr> <td> </td> <td>205.0683</td> <td>191.12</td><td>M+Na[1+]</td><td>0.0</td><td>-2.98</td><td>yes</td></tr><tr > <td>E54</td> <td colspan="2">Best guess: C02076, sedoheptulose</td><td colspan="4">C02076</td></tr><tr> <td> </td> <td>233.0632</td> <td>190.85</td><td>M+Na[1+]</td><td>-0.0001</td><td>-5.09</td><td>yes</td></tr><tr > <td>E3</td> <td colspan="2">Best guess: C00300, Creatine</td><td colspan="4">C00300</td></tr><tr> <td> </td> <td>133.0801</td> <td>252.83</td><td>M(C13)+H[1+]</td><td>-0.0001</td><td>1.99</td><td>yes</td></tr><tr> <td> </td> <td>132.0769</td> <td>252.96</td><td>M+H[1+]</td><td>0.0001</td><td>7.29</td><td>yes</td></tr><tr > <td>E111</td> <td colspan="2">Best guess: C07496, Carbamazepine-10,11-epoxide</td><td colspan="4">C16602, C16601, C07496</td></tr><tr> <td> </td> <td>253.0964</td> <td>358.17</td><td>M+H[1+]</td><td>-0.0008</td><td>2.94</td><td>yes</td></tr><tr> <td> </td> <td>253.0964</td> <td>360.53</td><td>M+H[1+]</td><td>-0.0008</td><td>0.48</td><td>no</td></tr><tr > <td>E7</td> <td colspan="2">Best guess: C00800, L-Gulonate</td><td colspan="4">C00257, C00800</td></tr><tr> <td> </td> <td>219.0476</td> <td>192.56</td><td>M+Na[1+]</td><td>0.0</td><td>2.69</td><td>yes</td></tr><tr > <td>E116</td> <td colspan="2">Best guess: C16584, p-Hydroxyfelbamate</td><td colspan="4">C16582, C16584</td></tr><tr> <td> </td> <td>255.0977</td> <td>207.2</td><td>M+H[1+]</td><td>0.0001</td><td>6.68</td><td>yes</td></tr></table></div>
+<h2>More data</h2>
+<p class="moreinformation">Full data tables from pathway analysis, module analysis and activity network are stored in the 'tables/' directory. 
+            The tsv files can be imported into a spreadsheet program, e.g. MS Excel.
+            Under the 'figures/network_modules/' directory are files intended for Cytoscape (cytoscape.org) visualization. Please refer to Cytoscape's guides for details.
+            Details of this run are recorded in file mummichog.log.txt.
+            </p>
+<footer>Mummichog algorithms are described in Li et al. Predicting Network Activity from High Throughput Metabolomics. PLoS Computational Biology (2013); doi:10.1371/journal.pcbi.1003123.        This software is provided as is, without warranty of any kind. Visit <a href="http://mummichog.org">http://mummichog.org</a> for updates.
+        </footer>
+
+        <script type="text/javascript" charset="utf-8">
+        var nodes = [ [{name:"(R)-glycerol 1-acetate", group:10}, {name:"3,4-Dihydroxyphenylethyleneglycol", group:10}, {name:"CTP", group:10}, {name:"Purine", group:10}, {name:"Adenosine", group:10}, {name:"1-alkyl-2-acyl-sn-glycerol", group:10}, {name:"5-Phenyl-1,3-oxazinane-2,4-dione", group:10}, {name:"cis-3-Chloro-2-propene-1-ol", group:10}, {name:"Inosine", group:10}, {name:"Chloral hydrate", group:10}, {name:"Uracil", group:10}, {name:"de-Fuc form of PA6", group:10}, {name:"alpha-D-Fucoside", group:10}, {name:"CE6330", group:10}, {name:"Dihydroneopterin", group:7}, {name:"PA6", group:10}, {name:"3,4-Dihydroxymandelaldehyde", group:10}, {name:"2-Naphthaldehyde", group:10}, {name:"Tetrahydropteridine", group:10}, {name:"Acetaldehyde", group:10}, {name:"Plasmenylcholine", group:10}, {name:"6-Deoxy-L-galactose", group:4}, {name:"keratan sulfate I", group:10}, {name:"Guanosine", group:10}, {name:"Cytidine", group:10}, {name:"1-Naphthaldehyde", group:10}, {name:"Digalactosyl-diacylglycerol", group:10}, {name:"Choline", group:10}, {name:"D-Gal alpha 1->6D-Gal alpha 1->6D-Glucose", group:10}, {name:"Neohancoside D", group:10}, {name:"Epimelibiose", group:10}, {name:"Retinol", group:10}, {name:"sorbitol 3-phosphate", group:10}, {name:"R total", group:10}, {name:"D-Sorbitol", group:7}, {name:"trans-3-Chloro-2-propene-1-ol", group:10}, {name:"Raffinose", group:10}, {name:"Purine", group:10}, {name:"dTMP", group:10}, {name:"alpha-D-Ribose 1-phosphate", group:10}, {name:"3-Carbamoyl-2-phenylpropionic acid", group:10}, {name:"Digalactosylceramide", group:10}, {name:"alpha-D-Ribose 1-phosphate", group:10}, {name:"Deoxycytidine", group:10}, {name:"2-Phenyl-1,3-propanediol monocarbamate", group:10}, {name:"Choline phosphate", group:10}, {name:"2-Acyl-sn-glycero-3-phosphocholine", group:10}, {name:"4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", group:-1}, {name:"trihexosyl ceramide ", group:10}, {name:"Uridine", group:10}, {name:"5'-Ribonucleotide", group:10}, {name:"Thymidine", group:10}, {name:"Ketone", group:10}, {name:"Xanthine", group:10}, {name:"Retinal", group:10}, {name:"1-Alkyl-sn-glycerol 3-phosphate", group:10}, {name:"CMP", group:10}, {name:"Phosphatidylcholine", group:10}, {name:"3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al", group:10}, {name:"Melibiose", group:10}, {name:"alkylglycerol", group:10}, {name:"D-Galactose", group:10}, {name:"ITP", group:10}, {name:"Deoxyadenosine", group:10}, {name:"Deoxyuridine", group:10}, {name:"Globotriaosylceramide", group:10}, {name:"IMP", group:10}, {name:"(2-Naphthyl)methanol", group:10}, {name:"Glycerol", group:10}, {name:"myo-Inositol", group:10}, {name:"2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate", group:10}, {name:"Sorbitol 6-phosphate", group:10}, {name:"NMN", group:10}, {name:"Galactinol", group:10}, {name:"Sucrose", group:10}, {name:"Nicotinate", group:10}, {name:"D-Glyceraldehyde", group:10}, {name:"keratan sulfate I, degradation product 1", group:10}, {name:"1-Acyl-sn-glycero-3-phosphoethanolamine", group:10}, {name:"galactocerebroside ", group:10}, {name:"CDPcholine", group:7}, {name:"diacylglycerol (phospholipids)", group:10}, {name:"Adenine", group:10}, {name:"Platelet-activating factor", group:10}, {name:"Nebularine", group:10}, {name:"Ribonucleoside", group:10}, {name:"Alcophosphamide", group:10}, {name:"1-Alkyl-2-lyso-sn-glycero-3-phosphocholine", group:10}, {name:"Ethanol", group:10}, {name:"Primary alcohol", group:10}, {name:"Galactitol", group:7}, {name:"Carboxylate", group:10}, {name:"Stachyose", group:10}, {name:"Hypoxanthine", group:10}, {name:"Lysophosphatidylcholine", group:10}, {name:"alpha-D-Glucose", group:10}, {name:"Nicotinate D-ribonucleotide", group:10}, {name:"Deoxyguanosine", group:10}, {name:"Xanthosine", group:10}, {name:"Manninotriose", group:10}, {name:"Nicotinamide", group:10}, {name:"Aldophosphamide", group:10}, {name:"alk-1-enyl-acylglycerol", group:10}, {name:"Melibiose", group:10}, {name:"N-D-Ribosylpurine", group:10}, {name:"Secondary alcohol", group:10}, {name:"Aldehyde", group:10}, {name:"Betaine aldehyde", group:10}, {name:"3-Chloroallyl aldehyde", group:10}, {name:"D-Glucose", group:10}, {name:"Epimelibiose", group:10}, {name:"Galactosylceramide", group:10}, {name:"Trichloroethanol", group:10}, {name:"L-Fucose 1-phosphate", group:10}, {name:"1-alpha-D-Galactosyl-myo-inositol", group:10}, {name:"Nicotinate D-ribonucleoside", group:10}, {name:"dADP", group:10}, {name:"Glycerol 3-phosphate", group:10}, {name:"dAMP", group:10}, {name:"Melibiitol", group:10}, {name:"D-Mannose", group:10}, {name:"sn-Glycero-3-phosphoethanolamine", group:0}, {name:"AMP", group:10}, {name:"1-Hydroxymethylnaphthalene", group:10}, {name:"Ga2-Cer", group:10}, {name:"dATP", group:10}, {name:"fatty aldehyde", group:10}, {name:"dGMP", group:10}, {name:"UMP", group:10}, {name:"Xanthosine 5'-phosphate", group:10}, {name:"cis-3-Chloroallyl aldehyde", group:10}, {name:"dCMP", group:10}, {name:"Raffinose", group:10}, {name:"Deoxyinosine", group:10}, {name:"CMP", group:10}, {name:"Alcohol", group:10}, {name:"Guanine", group:10}, {name:"3-beta-D-Galactosyl-sn-glycerol", group:10}, {name:"3alpha,7alpha,26-Trihydroxy-5beta-cholestane", group:10}, {name:"N-Ribosylnicotinamide", group:7}, {name:"2-Deoxy-D-ribose 1-phosphate", group:10}, {name:"galactosyl glucosyl ceramide", group:10}, {name:"GMP", group:10}, {name:"2-Acyl-sn-glycero-3-phosphoethanolamine", group:10}, {name:"1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol", group:10}, {name:"Lactosylceramide", group:10}, {name:"Ethanolamine", group:10}, {name:"IDP", group:10}, {name:"sn-Glycero-3-phosphocholine", group:10}, {name:"3-Carbamoyl-2-phenylpropionaldehyde", group:-1}, {name:"2-Acetyl-1-alkyl-sn-glycerol", group:10}, {name:"D-Fructose", group:10}, {name:"Stachyose", group:10}, ], ];
+
+        var links = [[{source:0, target:14}, {source:1, target:47}, {source:1, target:149}, {source:2, target:80}, {source:3, target:139}, {source:4, target:139}, {source:5, target:80}, {source:6, target:47}, {source:6, target:149}, {source:7, target:47}, {source:7, target:149}, {source:8, target:139}, {source:9, target:47}, {source:9, target:149}, {source:10, target:139}, {source:11, target:21}, {source:12, target:21}, {source:13, target:80}, {source:14, target:18}, {source:14, target:55}, {source:14, target:60}, {source:14, target:68}, {source:14, target:70}, {source:14, target:87}, {source:14, target:117}, {source:14, target:126}, {source:14, target:148}, {source:14, target:150}, {source:15, target:21}, {source:16, target:47}, {source:16, target:149}, {source:17, target:47}, {source:17, target:149}, {source:19, target:47}, {source:19, target:149}, {source:20, target:80}, {source:21, target:22}, {source:21, target:77}, {source:21, target:113}, {source:21, target:135}, {source:23, target:139}, {source:24, target:139}, {source:25, target:47}, {source:25, target:149}, {source:26, target:34}, {source:27, target:47}, {source:27, target:149}, {source:28, target:34}, {source:29, target:34}, {source:30, target:34}, {source:31, target:47}, {source:31, target:149}, {source:32, target:34}, {source:33, target:121}, {source:34, target:36}, {source:34, target:41}, {source:34, target:48}, {source:34, target:59}, {source:34, target:61}, {source:34, target:62}, {source:34, target:65}, {source:34, target:68}, {source:34, target:69}, {source:34, target:71}, {source:34, target:73}, {source:34, target:74}, {source:34, target:79}, {source:34, target:92}, {source:34, target:95}, {source:34, target:99}, {source:34, target:103}, {source:34, target:109}, {source:34, target:110}, {source:34, target:111}, {source:34, target:114}, {source:34, target:116}, {source:34, target:119}, {source:34, target:120}, {source:34, target:124}, {source:34, target:125}, {source:34, target:132}, {source:34, target:137}, {source:34, target:141}, {source:34, target:144}, {source:34, target:145}, {source:34, target:147}, {source:34, target:151}, {source:34, target:152}, {source:35, target:47}, {source:35, target:149}, {source:37, target:139}, {source:38, target:139}, {source:39, target:139}, {source:40, target:149}, {source:42, target:139}, {source:43, target:139}, {source:44, target:47}, {source:44, target:149}, {source:45, target:80}, {source:46, target:121}, {source:47, target:52}, {source:47, target:54}, {source:47, target:58}, {source:47, target:67}, {source:47, target:68}, {source:47, target:76}, {source:47, target:86}, {source:47, target:88}, {source:47, target:89}, {source:47, target:101}, {source:47, target:105}, {source:47, target:106}, {source:47, target:107}, {source:47, target:108}, {source:47, target:112}, {source:47, target:123}, {source:47, target:130}, {source:47, target:135}, {source:47, target:138}, {source:47, target:149}, {source:49, target:139}, {source:50, target:139}, {source:51, target:139}, {source:52, target:149}, {source:53, target:139}, {source:54, target:149}, {source:56, target:80}, {source:56, target:139}, {source:57, target:80}, {source:57, target:121}, {source:58, target:149}, {source:61, target:90}, {source:63, target:139}, {source:64, target:139}, {source:66, target:139}, {source:67, target:149}, {source:68, target:149}, {source:72, target:139}, {source:75, target:139}, {source:76, target:149}, {source:78, target:121}, {source:80, target:81}, {source:80, target:83}, {source:80, target:102}, {source:80, target:150}, {source:82, target:139}, {source:84, target:139}, {source:85, target:139}, {source:86, target:149}, {source:88, target:149}, {source:89, target:149}, {source:91, target:121}, {source:93, target:139}, {source:94, target:121}, {source:96, target:139}, {source:97, target:139}, {source:98, target:139}, {source:100, target:139}, {source:101, target:149}, {source:104, target:139}, {source:105, target:149}, {source:106, target:149}, {source:107, target:149}, {source:108, target:149}, {source:112, target:149}, {source:115, target:139}, {source:117, target:121}, {source:118, target:139}, {source:121, target:143}, {source:121, target:146}, {source:121, target:148}, {source:122, target:139}, {source:123, target:149}, {source:127, target:139}, {source:128, target:139}, {source:129, target:139}, {source:130, target:149}, {source:131, target:139}, {source:133, target:139}, {source:134, target:139}, {source:135, target:149}, {source:136, target:139}, {source:138, target:149}, {source:139, target:140}, {source:139, target:142}, ], ];
+
+        var cytonodes = [ [{ data: {id:"(R)-glycerol 1-acetate", group:10} }, { data: {id:"3,4-Dihydroxyphenylethyleneglycol", group:10} }, { data: {id:"CTP", group:10} }, { data: {id:"Purine", group:10} }, { data: {id:"Adenosine", group:10} }, { data: {id:"1-alkyl-2-acyl-sn-glycerol", group:10} }, { data: {id:"5-Phenyl-1,3-oxazinane-2,4-dione", group:10} }, { data: {id:"cis-3-Chloro-2-propene-1-ol", group:10} }, { data: {id:"Inosine", group:10} }, { data: {id:"Chloral hydrate", group:10} }, { data: {id:"Uracil", group:10} }, { data: {id:"de-Fuc form of PA6", group:10} }, { data: {id:"alpha-D-Fucoside", group:10} }, { data: {id:"CE6330", group:10} }, { data: {id:"Dihydroneopterin", group:7} }, { data: {id:"PA6", group:10} }, { data: {id:"3,4-Dihydroxymandelaldehyde", group:10} }, { data: {id:"2-Naphthaldehyde", group:10} }, { data: {id:"Tetrahydropteridine", group:10} }, { data: {id:"Acetaldehyde", group:10} }, { data: {id:"Plasmenylcholine", group:10} }, { data: {id:"6-Deoxy-L-galactose", group:4} }, { data: {id:"keratan sulfate I", group:10} }, { data: {id:"Guanosine", group:10} }, { data: {id:"Cytidine", group:10} }, { data: {id:"1-Naphthaldehyde", group:10} }, { data: {id:"Digalactosyl-diacylglycerol", group:10} }, { data: {id:"Choline", group:10} }, { data: {id:"D-Gal alpha 1->6D-Gal alpha 1->6D-Glucose", group:10} }, { data: {id:"Neohancoside D", group:10} }, { data: {id:"Epimelibiose", group:10} }, { data: {id:"Retinol", group:10} }, { data: {id:"sorbitol 3-phosphate", group:10} }, { data: {id:"R total", group:10} }, { data: {id:"D-Sorbitol", group:7} }, { data: {id:"trans-3-Chloro-2-propene-1-ol", group:10} }, { data: {id:"Raffinose", group:10} }, { data: {id:"Purine", group:10} }, { data: {id:"dTMP", group:10} }, { data: {id:"alpha-D-Ribose 1-phosphate", group:10} }, { data: {id:"3-Carbamoyl-2-phenylpropionic acid", group:10} }, { data: {id:"Digalactosylceramide", group:10} }, { data: {id:"alpha-D-Ribose 1-phosphate", group:10} }, { data: {id:"Deoxycytidine", group:10} }, { data: {id:"2-Phenyl-1,3-propanediol monocarbamate", group:10} }, { data: {id:"Choline phosphate", group:10} }, { data: {id:"2-Acyl-sn-glycero-3-phosphocholine", group:10} }, { data: {id:"4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", group:-1} }, { data: {id:"trihexosyl ceramide ", group:10} }, { data: {id:"Uridine", group:10} }, { data: {id:"5'-Ribonucleotide", group:10} }, { data: {id:"Thymidine", group:10} }, { data: {id:"Ketone", group:10} }, { data: {id:"Xanthine", group:10} }, { data: {id:"Retinal", group:10} }, { data: {id:"1-Alkyl-sn-glycerol 3-phosphate", group:10} }, { data: {id:"CMP", group:10} }, { data: {id:"Phosphatidylcholine", group:10} }, { data: {id:"3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al", group:10} }, { data: {id:"Melibiose", group:10} }, { data: {id:"alkylglycerol", group:10} }, { data: {id:"D-Galactose", group:10} }, { data: {id:"ITP", group:10} }, { data: {id:"Deoxyadenosine", group:10} }, { data: {id:"Deoxyuridine", group:10} }, { data: {id:"Globotriaosylceramide", group:10} }, { data: {id:"IMP", group:10} }, { data: {id:"(2-Naphthyl)methanol", group:10} }, { data: {id:"Glycerol", group:10} }, { data: {id:"myo-Inositol", group:10} }, { data: {id:"2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate", group:10} }, { data: {id:"Sorbitol 6-phosphate", group:10} }, { data: {id:"NMN", group:10} }, { data: {id:"Galactinol", group:10} }, { data: {id:"Sucrose", group:10} }, { data: {id:"Nicotinate", group:10} }, { data: {id:"D-Glyceraldehyde", group:10} }, { data: {id:"keratan sulfate I, degradation product 1", group:10} }, { data: {id:"1-Acyl-sn-glycero-3-phosphoethanolamine", group:10} }, { data: {id:"galactocerebroside ", group:10} }, { data: {id:"CDPcholine", group:7} }, { data: {id:"diacylglycerol (phospholipids)", group:10} }, { data: {id:"Adenine", group:10} }, { data: {id:"Platelet-activating factor", group:10} }, { data: {id:"Nebularine", group:10} }, { data: {id:"Ribonucleoside", group:10} }, { data: {id:"Alcophosphamide", group:10} }, { data: {id:"1-Alkyl-2-lyso-sn-glycero-3-phosphocholine", group:10} }, { data: {id:"Ethanol", group:10} }, { data: {id:"Primary alcohol", group:10} }, { data: {id:"Galactitol", group:7} }, { data: {id:"Carboxylate", group:10} }, { data: {id:"Stachyose", group:10} }, { data: {id:"Hypoxanthine", group:10} }, { data: {id:"Lysophosphatidylcholine", group:10} }, { data: {id:"alpha-D-Glucose", group:10} }, { data: {id:"Nicotinate D-ribonucleotide", group:10} }, { data: {id:"Deoxyguanosine", group:10} }, { data: {id:"Xanthosine", group:10} }, { data: {id:"Manninotriose", group:10} }, { data: {id:"Nicotinamide", group:10} }, { data: {id:"Aldophosphamide", group:10} }, { data: {id:"alk-1-enyl-acylglycerol", group:10} }, { data: {id:"Melibiose", group:10} }, { data: {id:"N-D-Ribosylpurine", group:10} }, { data: {id:"Secondary alcohol", group:10} }, { data: {id:"Aldehyde", group:10} }, { data: {id:"Betaine aldehyde", group:10} }, { data: {id:"3-Chloroallyl aldehyde", group:10} }, { data: {id:"D-Glucose", group:10} }, { data: {id:"Epimelibiose", group:10} }, { data: {id:"Galactosylceramide", group:10} }, { data: {id:"Trichloroethanol", group:10} }, { data: {id:"L-Fucose 1-phosphate", group:10} }, { data: {id:"1-alpha-D-Galactosyl-myo-inositol", group:10} }, { data: {id:"Nicotinate D-ribonucleoside", group:10} }, { data: {id:"dADP", group:10} }, { data: {id:"Glycerol 3-phosphate", group:10} }, { data: {id:"dAMP", group:10} }, { data: {id:"Melibiitol", group:10} }, { data: {id:"D-Mannose", group:10} }, { data: {id:"sn-Glycero-3-phosphoethanolamine", group:0} }, { data: {id:"AMP", group:10} }, { data: {id:"1-Hydroxymethylnaphthalene", group:10} }, { data: {id:"Ga2-Cer", group:10} }, { data: {id:"dATP", group:10} }, { data: {id:"fatty aldehyde", group:10} }, { data: {id:"dGMP", group:10} }, { data: {id:"UMP", group:10} }, { data: {id:"Xanthosine 5'-phosphate", group:10} }, { data: {id:"cis-3-Chloroallyl aldehyde", group:10} }, { data: {id:"dCMP", group:10} }, { data: {id:"Raffinose", group:10} }, { data: {id:"Deoxyinosine", group:10} }, { data: {id:"CMP", group:10} }, { data: {id:"Alcohol", group:10} }, { data: {id:"Guanine", group:10} }, { data: {id:"3-beta-D-Galactosyl-sn-glycerol", group:10} }, { data: {id:"3alpha,7alpha,26-Trihydroxy-5beta-cholestane", group:10} }, { data: {id:"N-Ribosylnicotinamide", group:7} }, { data: {id:"2-Deoxy-D-ribose 1-phosphate", group:10} }, { data: {id:"galactosyl glucosyl ceramide", group:10} }, { data: {id:"GMP", group:10} }, { data: {id:"2-Acyl-sn-glycero-3-phosphoethanolamine", group:10} }, { data: {id:"1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol", group:10} }, { data: {id:"Lactosylceramide", group:10} }, { data: {id:"Ethanolamine", group:10} }, { data: {id:"IDP", group:10} }, { data: {id:"sn-Glycero-3-phosphocholine", group:10} }, { data: {id:"3-Carbamoyl-2-phenylpropionaldehyde", group:-1} }, { data: {id:"2-Acetyl-1-alkyl-sn-glycerol", group:10} }, { data: {id:"D-Fructose", group:10} }, { data: {id:"Stachyose", group:10} }, ], ];
+
+        var cytoedges = [[{ data: { id: "CE0520-C04874", weight: 1, source: "(R)-glycerol 1-acetate", target: "Dihydroneopterin" } }, { data: { id: "C05576-C16595", weight: 1, source: "3,4-Dihydroxyphenylethyleneglycol", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C05576-C16587", weight: 1, source: "3,4-Dihydroxyphenylethyleneglycol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00063-C00307", weight: 1, source: "CTP", target: "CDPcholine" } }, { data: { id: "C15587-C03150", weight: 1, source: "Purine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00212-C03150", weight: 1, source: "Adenosine", target: "N-Ribosylnicotinamide" } }, { data: { id: "CE6326-C00307", weight: 1, source: "1-alkyl-2-acyl-sn-glycerol", target: "CDPcholine" } }, { data: { id: "C16596-C16595", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C16596-C16587", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C06612-C16595", weight: 1, source: "cis-3-Chloro-2-propene-1-ol", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C06612-C16587", weight: 1, source: "cis-3-Chloro-2-propene-1-ol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00294-C03150", weight: 1, source: "Inosine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C06899-C16595", weight: 1, source: "Chloral hydrate", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C06899-C16587", weight: 1, source: "Chloral hydrate", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00106-C03150", weight: 1, source: "Uracil", target: "N-Ribosylnicotinamide" } }, { data: { id: "s2l2n2m2masn-C01019", weight: 1, source: "de-Fuc form of PA6", target: "6-Deoxy-L-galactose" } }, { data: { id: "C02472-C01019", weight: 1, source: "alpha-D-Fucoside", target: "6-Deoxy-L-galactose" } }, { data: { id: "CE6330-C00307", weight: 1, source: "CE6330", target: "CDPcholine" } }, { data: { id: "C04874-C05650", weight: 1, source: "Dihydroneopterin", target: "Tetrahydropteridine" } }, { data: { id: "C04874-C03968", weight: 1, source: "Dihydroneopterin", target: "1-Alkyl-sn-glycerol 3-phosphate" } }, { data: { id: "C04874-CE6488", weight: 1, source: "Dihydroneopterin", target: "alkylglycerol" } }, { data: { id: "C04874-C00116", weight: 1, source: "Dihydroneopterin", target: "Glycerol" } }, { data: { id: "C04874-C04895", weight: 1, source: "Dihydroneopterin", target: "2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate" } }, { data: { id: "C04874-C04317", weight: 1, source: "Dihydroneopterin", target: "1-Alkyl-2-lyso-sn-glycero-3-phosphocholine" } }, { data: { id: "C04874-C00093", weight: 1, source: "Dihydroneopterin", target: "Glycerol 3-phosphate" } }, { data: { id: "C04874-CE6495", weight: 1, source: "Dihydroneopterin", target: "fatty aldehyde" } }, { data: { id: "C04874-C00670", weight: 1, source: "Dihydroneopterin", target: "sn-Glycero-3-phosphocholine" } }, { data: { id: "C04874-C03820", weight: 1, source: "Dihydroneopterin", target: "2-Acetyl-1-alkyl-sn-glycerol" } }, { data: { id: "s2l2fn2m2masn-C01019", weight: 1, source: "PA6", target: "6-Deoxy-L-galactose" } }, { data: { id: "C05577-C16595", weight: 1, source: "3,4-Dihydroxymandelaldehyde", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C05577-C16587", weight: 1, source: "3,4-Dihydroxymandelaldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C14099-C16595", weight: 1, source: "2-Naphthaldehyde", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C14099-C16587", weight: 1, source: "2-Naphthaldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00084-C16595", weight: 1, source: "Acetaldehyde", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C00084-C16587", weight: 1, source: "Acetaldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00958-C00307", weight: 1, source: "Plasmenylcholine", target: "CDPcholine" } }, { data: { id: "C01019-ksi", weight: 1, source: "6-Deoxy-L-galactose", target: "keratan sulfate I" } }, { data: { id: "C01019-ksi_deg1", weight: 1, source: "6-Deoxy-L-galactose", target: "keratan sulfate I, degradation product 1" } }, { data: { id: "C01019-C02985", weight: 1, source: "6-Deoxy-L-galactose", target: "L-Fucose 1-phosphate" } }, { data: { id: "C01019-C00069", weight: 1, source: "6-Deoxy-L-galactose", target: "Alcohol" } }, { data: { id: "C00387-C03150", weight: 1, source: "Guanosine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00475-C03150", weight: 1, source: "Cytidine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C14090-C16595", weight: 1, source: "1-Naphthaldehyde", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C14090-C16587", weight: 1, source: "1-Naphthaldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C06037-C00794", weight: 1, source: "Digalactosyl-diacylglycerol", target: "D-Sorbitol" } }, { data: { id: "C00114-C16595", weight: 1, source: "Choline", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C00114-C16587", weight: 1, source: "Choline", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C05404-C00794", weight: 1, source: "D-Gal alpha 1->6D-Gal alpha 1->6D-Glucose", target: "D-Sorbitol" } }, { data: { id: "G00370-C00794", weight: 1, source: "Neohancoside D", target: "D-Sorbitol" } }, { data: { id: "C05400-C00794", weight: 1, source: "Epimelibiose", target: "D-Sorbitol" } }, { data: { id: "C00473-C16595", weight: 1, source: "Retinol", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C00473-C16587", weight: 1, source: "Retinol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "CE3075-C00794", weight: 1, source: "sorbitol 3-phosphate", target: "D-Sorbitol" } }, { data: { id: "C00162-C01233", weight: 1, source: "R total", target: "sn-Glycero-3-phosphoethanolamine" } }, { data: { id: "C00794-C00492", weight: 1, source: "D-Sorbitol", target: "Raffinose" } }, { data: { id: "C00794-C06126", weight: 1, source: "D-Sorbitol", target: "Digalactosylceramide" } }, { data: { id: "C00794-C04737", weight: 1, source: "D-Sorbitol", target: "trihexosyl ceramide " } }, { data: { id: "C00794-C05402", weight: 1, source: "D-Sorbitol", target: "Melibiose" } }, { data: { id: "C00794-C00124", weight: 1, source: "D-Sorbitol", target: "D-Galactose" } }, { data: { id: "C00794-C00081", weight: 1, source: "D-Sorbitol", target: "ITP" } }, { data: { id: "C00794-G00093", weight: 1, source: "D-Sorbitol", target: "Globotriaosylceramide" } }, { data: { id: "C00794-C00116", weight: 1, source: "D-Sorbitol", target: "Glycerol" } }, { data: { id: "C00794-C00137", weight: 1, source: "D-Sorbitol", target: "myo-Inositol" } }, { data: { id: "C00794-C01096", weight: 1, source: "D-Sorbitol", target: "Sorbitol 6-phosphate" } }, { data: { id: "C00794-G10488", weight: 1, source: "D-Sorbitol", target: "Galactinol" } }, { data: { id: "C00794-C00089", weight: 1, source: "D-Sorbitol", target: "Sucrose" } }, { data: { id: "C00794-C02686", weight: 1, source: "D-Sorbitol", target: "galactocerebroside " } }, { data: { id: "C00794-C01613", weight: 1, source: "D-Sorbitol", target: "Stachyose" } }, { data: { id: "C00794-C00267", weight: 1, source: "D-Sorbitol", target: "alpha-D-Glucose" } }, { data: { id: "C00794-G00501", weight: 1, source: "D-Sorbitol", target: "Manninotriose" } }, { data: { id: "C00794-G01275", weight: 1, source: "D-Sorbitol", target: "Melibiose" } }, { data: { id: "C00794-C00031", weight: 1, source: "D-Sorbitol", target: "D-Glucose" } }, { data: { id: "C00794-G10529", weight: 1, source: "D-Sorbitol", target: "Epimelibiose" } }, { data: { id: "C00794-G11121", weight: 1, source: "D-Sorbitol", target: "Galactosylceramide" } }, { data: { id: "C00794-C01235", weight: 1, source: "D-Sorbitol", target: "1-alpha-D-Galactosyl-myo-inositol" } }, { data: { id: "C00794-C00206", weight: 1, source: "D-Sorbitol", target: "dADP" } }, { data: { id: "C00794-C05399", weight: 1, source: "D-Sorbitol", target: "Melibiitol" } }, { data: { id: "C00794-C00159", weight: 1, source: "D-Sorbitol", target: "D-Mannose" } }, { data: { id: "C00794-G00497", weight: 1, source: "D-Sorbitol", target: "Ga2-Cer" } }, { data: { id: "C00794-C00131", weight: 1, source: "D-Sorbitol", target: "dATP" } }, { data: { id: "C00794-G00249", weight: 1, source: "D-Sorbitol", target: "Raffinose" } }, { data: { id: "C00794-C05401", weight: 1, source: "D-Sorbitol", target: "3-beta-D-Galactosyl-sn-glycerol" } }, { data: { id: "C00794-C01290", weight: 1, source: "D-Sorbitol", target: "galactosyl glucosyl ceramide" } }, { data: { id: "C00794-C03692", weight: 1, source: "D-Sorbitol", target: "1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol" } }, { data: { id: "C00794-G00092", weight: 1, source: "D-Sorbitol", target: "Lactosylceramide" } }, { data: { id: "C00794-C00104", weight: 1, source: "D-Sorbitol", target: "IDP" } }, { data: { id: "C00794-C00095", weight: 1, source: "D-Sorbitol", target: "D-Fructose" } }, { data: { id: "C00794-G00278", weight: 1, source: "D-Sorbitol", target: "Stachyose" } }, { data: { id: "C06611-C16595", weight: 1, source: "trans-3-Chloro-2-propene-1-ol", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C06611-C16587", weight: 1, source: "trans-3-Chloro-2-propene-1-ol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00465-C03150", weight: 1, source: "Purine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00364-C03150", weight: 1, source: "dTMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00620-C03150", weight: 1, source: "alpha-D-Ribose 1-phosphate", target: "N-Ribosylnicotinamide" } }, { data: { id: "C16591-C16587", weight: 1, source: "3-Carbamoyl-2-phenylpropionic acid", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00442-C03150", weight: 1, source: "alpha-D-Ribose 1-phosphate", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00881-C03150", weight: 1, source: "Deoxycytidine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C16586-C16595", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C16586-C16587", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00588-C00307", weight: 1, source: "Choline phosphate", target: "CDPcholine" } }, { data: { id: "C04233-C01233", weight: 1, source: "2-Acyl-sn-glycero-3-phosphocholine", target: "sn-Glycero-3-phosphoethanolamine" } }, { data: { id: "C16595-C00709", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Ketone" } }, { data: { id: "C16595-C00376", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Retinal" } }, { data: { id: "C16595-C05445", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al" } }, { data: { id: "C16595-C02909", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "(2-Naphthyl)methanol" } }, { data: { id: "C16595-C00116", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Glycerol" } }, { data: { id: "C16595-C00577", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "D-Glyceraldehyde" } }, { data: { id: "C16595-C16551", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Alcophosphamide" } }, { data: { id: "C16595-C00469", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Ethanol" } }, { data: { id: "C16595-C00226", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Primary alcohol" } }, { data: { id: "C16595-C07645", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Aldophosphamide" } }, { data: { id: "C16595-C00432", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Secondary alcohol" } }, { data: { id: "C16595-C00071", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Aldehyde" } }, { data: { id: "C16595-C00576", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Betaine aldehyde" } }, { data: { id: "C16595-C06613", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "3-Chloroallyl aldehyde" } }, { data: { id: "C16595-C07490", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Trichloroethanol" } }, { data: { id: "C16595-C14089", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "1-Hydroxymethylnaphthalene" } }, { data: { id: "C16595-C16348", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "cis-3-Chloroallyl aldehyde" } }, { data: { id: "C16595-C00069", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "Alcohol" } }, { data: { id: "C16595-C05444", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "3alpha,7alpha,26-Trihydroxy-5beta-cholestane" } }, { data: { id: "C16595-C16587", weight: 1, source: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00299-C03150", weight: 1, source: "Uridine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C02520-C03150", weight: 1, source: "5'-Ribonucleotide", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00214-C03150", weight: 1, source: "Thymidine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00709-C16587", weight: 1, source: "Ketone", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00385-C03150", weight: 1, source: "Xanthine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00376-C16587", weight: 1, source: "Retinal", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00055-C00307", weight: 1, source: "CMP", target: "CDPcholine" } }, { data: { id: "C00055-C03150", weight: 1, source: "CMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00157-C00307", weight: 1, source: "Phosphatidylcholine", target: "CDPcholine" } }, { data: { id: "C00157-C01233", weight: 1, source: "Phosphatidylcholine", target: "sn-Glycero-3-phosphoethanolamine" } }, { data: { id: "C05445-C16587", weight: 1, source: "3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00124-C01697", weight: 1, source: "D-Galactose", target: "Galactitol" } }, { data: { id: "C00559-C03150", weight: 1, source: "Deoxyadenosine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00526-C03150", weight: 1, source: "Deoxyuridine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00130-C03150", weight: 1, source: "IMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C02909-C16587", weight: 1, source: "(2-Naphthyl)methanol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00116-C16587", weight: 1, source: "Glycerol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00455-C03150", weight: 1, source: "NMN", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00253-C03150", weight: 1, source: "Nicotinate", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00577-C16587", weight: 1, source: "D-Glyceraldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C04438-C01233", weight: 1, source: "1-Acyl-sn-glycero-3-phosphoethanolamine", target: "sn-Glycero-3-phosphoethanolamine" } }, { data: { id: "C00307-C00641", weight: 1, source: "CDPcholine", target: "diacylglycerol (phospholipids)" } }, { data: { id: "C00307-C04598", weight: 1, source: "CDPcholine", target: "Platelet-activating factor" } }, { data: { id: "C00307-CE6503", weight: 1, source: "CDPcholine", target: "alk-1-enyl-acylglycerol" } }, { data: { id: "C00307-C03820", weight: 1, source: "CDPcholine", target: "2-Acetyl-1-alkyl-sn-glycerol" } }, { data: { id: "C00147-C03150", weight: 1, source: "Adenine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C01736-C03150", weight: 1, source: "Nebularine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00911-C03150", weight: 1, source: "Ribonucleoside", target: "N-Ribosylnicotinamide" } }, { data: { id: "C16551-C16587", weight: 1, source: "Alcophosphamide", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00469-C16587", weight: 1, source: "Ethanol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00226-C16587", weight: 1, source: "Primary alcohol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00060-C01233", weight: 1, source: "Carboxylate", target: "sn-Glycero-3-phosphoethanolamine" } }, { data: { id: "C00262-C03150", weight: 1, source: "Hypoxanthine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C04230-C01233", weight: 1, source: "Lysophosphatidylcholine", target: "sn-Glycero-3-phosphoethanolamine" } }, { data: { id: "C01185-C03150", weight: 1, source: "Nicotinate D-ribonucleotide", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00330-C03150", weight: 1, source: "Deoxyguanosine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C01762-C03150", weight: 1, source: "Xanthosine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00153-C03150", weight: 1, source: "Nicotinamide", target: "N-Ribosylnicotinamide" } }, { data: { id: "C07645-C16587", weight: 1, source: "Aldophosphamide", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C15586-C03150", weight: 1, source: "N-D-Ribosylpurine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00432-C16587", weight: 1, source: "Secondary alcohol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00071-C16587", weight: 1, source: "Aldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00576-C16587", weight: 1, source: "Betaine aldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C06613-C16587", weight: 1, source: "3-Chloroallyl aldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C07490-C16587", weight: 1, source: "Trichloroethanol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C05841-C03150", weight: 1, source: "Nicotinate D-ribonucleoside", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00093-C01233", weight: 1, source: "Glycerol 3-phosphate", target: "sn-Glycero-3-phosphoethanolamine" } }, { data: { id: "C00360-C03150", weight: 1, source: "dAMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C01233-C05973", weight: 1, source: "sn-Glycero-3-phosphoethanolamine", target: "2-Acyl-sn-glycero-3-phosphoethanolamine" } }, { data: { id: "C01233-C00189", weight: 1, source: "sn-Glycero-3-phosphoethanolamine", target: "Ethanolamine" } }, { data: { id: "C01233-C00670", weight: 1, source: "sn-Glycero-3-phosphoethanolamine", target: "sn-Glycero-3-phosphocholine" } }, { data: { id: "C00020-C03150", weight: 1, source: "AMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C14089-C16587", weight: 1, source: "1-Hydroxymethylnaphthalene", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00362-C03150", weight: 1, source: "dGMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00105-C03150", weight: 1, source: "UMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00655-C03150", weight: 1, source: "Xanthosine 5'-phosphate", target: "N-Ribosylnicotinamide" } }, { data: { id: "C16348-C16587", weight: 1, source: "cis-3-Chloroallyl aldehyde", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00239-C03150", weight: 1, source: "dCMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C05512-C03150", weight: 1, source: "Deoxyinosine", target: "N-Ribosylnicotinamide" } }, { data: { id: "G10621-C03150", weight: 1, source: "CMP", target: "N-Ribosylnicotinamide" } }, { data: { id: "C00069-C16587", weight: 1, source: "Alcohol", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C00242-C03150", weight: 1, source: "Guanine", target: "N-Ribosylnicotinamide" } }, { data: { id: "C05444-C16587", weight: 1, source: "3alpha,7alpha,26-Trihydroxy-5beta-cholestane", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C03150-C00672", weight: 1, source: "N-Ribosylnicotinamide", target: "2-Deoxy-D-ribose 1-phosphate" } }, { data: { id: "C03150-C00144", weight: 1, source: "N-Ribosylnicotinamide", target: "GMP" } }, ], ];
+
+
+        var w = 960, h = 600;
+        var color = d3.scale.category20b();
+        var node_sizes = [16, 8, 32]
+        
+        var scalebar = d3.select("#colorbar").append("svg").attr("id", "svg_colorbar").attr("width", w).attr("height", 10);
+        var coloridx = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+        scalebar.selectAll("rect")
+           .data(coloridx)
+           .enter()
+           .append("rect")
+           .attr("x", function(d, i) {return i * 48;})
+           .attr("y", 0)
+           .attr("width", 48)
+           .attr("height", 10)
+           .attr("fill", function(d, i) { return color(i); });
+           
+        //user input plots
+        var data = JSON.parse(alldata);
+        makeMZUserInputPlot();
+        makeRetTimeUserInputPlot();
+
+        //Pathway Bar chart plot
+        makePathwayPlot()
+        
+        // initial draw
+        cyto_draw_figure(cytonodes[0], cytoedges[0], node_sizes[0]);
+    	var cy = $('#networkvisual').cytoscape('get');
+    	cy.panBy({ x: 0, y: -200 });
+    	
+        // support cytoscape.js  
+		function cyto_draw_figure(nodes, links, node_size) {  
+
+                    var svg = document.createElement('div');
+                    svg.setAttribute("id","svg2");
+                    svg.setAttribute("class","svg2");
+                    var nw = document.getElementById("networkvisual");
+                    nw.appendChild(svg);
+
+				$('#svg2').cytoscape({
+						style: cytoscape.stylesheet()
+						.selector('node')
+						  .css({
+							'content': 'data(id)',
+							'font-size': node_size,
+							'min-zoomed-font-size': 8,
+							'background-color': 'mapData(group, 0, 19, blue, red)'
+						  })
+						.selector('edge')
+						  .css({
+							'target-arrow-shape': 'triangle',
+							'width': 4,
+							'line-color': '#ddd',
+							'target-arrow-color': '#ddd'
+						  })
+						.selector('.highlighted')
+						  .css({
+							'background-color': '#61bffc',
+							'line-color': '#61bffc',
+							'target-arrow-color': '#61bffc',
+							'transition-property': 'background-color, line-color, target-arrow-color',
+							'transition-duration': '0.5s'
+						  }),
+  
+					  layout: {
+						name: 'spread',
+						minDist: 40,
+						directed: true,
+						padding: 10,
+						//fit: false,
+					  },
+					  
+					  elements: {
+						  nodes: nodes, 
+						  edges: links
+						},
+  
+					  zoom: 1,
+					  minZoom: 0.1,
+ 					  maxZoom: 5,
+
+				});
+	
+		}
+	
+
+        // support d3.js  
+        function d3_draw_figure(nodes, links, node_size) {
+
+            var svg = document.createElement('div');
+            svg.setAttribute("id","svg2");
+            svg.setAttribute("class","svg2");
+            var nw = document.getElementById("networkvisual");
+            nw.appendChild(svg);
+
+            var svg = d3.select("#svg2").append("svg").attr("id", "svg_networkvisual").attr("width", w).attr("height", h);
+            var force = d3.layout.force()
+                      .charge(-480)
+                      .linkDistance(80)
+                      .gravity(0.3)
+                      .size([w, h]);
+    
+            force.nodes(nodes)
+              .links(links)
+              .start();
+            
+            var link = svg.selectAll(".link")
+              .data(links)
+              .enter().append("line")
+              .attr("class", "link")
+              .style("stroke-width", 2);
+            
+            var node = svg.selectAll(".node")
+              .data(nodes)
+              .enter().append("circle")
+              .attr("class", "node")
+              .attr("r", node_size)
+              .style("fill", function(d) { return color(d.group); })
+              .style("fill-opacity", .6)
+              .call(force.drag);
+            
+            var text = svg.selectAll(".text")
+              .data(nodes)
+              .enter().append("text")
+              .attr("font-family", "sans-serif")
+              .attr("font-size", "9px")
+              .attr("text-anchor", "middle")
+              .text(function(d) { return d.name; });
+            
+            force.on("tick", function() {
+                link.attr("x1", function(d) { return d.source.x; })
+                    .attr("y1", function(d) { return d.source.y; })
+                    .attr("x2", function(d) { return d.target.x; })
+                    .attr("y2", function(d) { return d.target.y; });
+            
+                node.attr("cx", function(d) { return d.x; })
+                    .attr("cy", function(d) { return d.y; });
+            
+                text.attr("x", function(d) { return d.x; })
+                    .attr("y", function(d) { return d.y; });
+              });
+        }
+    
+    
+        function inv(i) {
+           if (i==0)
+              return 0
+           else if (i==1)
+              return 2
+           else
+              return 1
+}
+
+    	// added support of two styles
+        function updateDrawing() {
+            var idx = document.getElementById("nmodule_select").selectedIndex;
+            var ndx = document.getElementById("nsize_select").selectedIndex;
+            var vdx = document.getElementById("vstyle_select").selectedIndex;
+            
+            //d3.select("#svg_networkvisual").remove();
+            var svg = document.getElementById("svg2");
+	    svg.parentNode.removeChild(svg);
+
+            //var cy = $('#networkvisual').cytoscape('get');
+            //cy.remove( cy.elements() );
+            
+            // 0 for cytoscape style, drag; 1 for d3 style, force
+            if (vdx == 0) {
+            cyto_draw_figure(cytonodes[idx], cytoedges[idx], node_sizes[inv(ndx)]);
+            
+    		var cy = $('#networkvisual').cytoscape('get');
+    		cy.panBy({ x: 0, y: -200 });
+            
+            } else {
+            d3_draw_figure(nodes[idx], links[idx], node_sizes[ndx]);
+            }
+        }
+    
+    </script>
+    </body> </html> 

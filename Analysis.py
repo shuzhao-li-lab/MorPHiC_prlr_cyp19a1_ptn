@@ -32,6 +32,7 @@ empCpds = json.load(open(sys.argv[4]))
 annot_source = json.load(open(sys.argv[5]))
 interactive = False
 save_figs = True
+student_t_test = True
 
 inclusion_threshold = 0.8
 formula_name_map = {}
@@ -60,6 +61,7 @@ feature_id_to_cpd_name = {}
 feature_id_to_category = {}
 feature_id_to_class = {}
 feature_id_to_emp_id = {}
+feature_id_to_mz_adduct = {}
 best_features = set()
 for emp_id, emp_cpd in empCpds.items():
     best_peak = (-np.inf, None)
@@ -77,6 +79,13 @@ for emp_id, emp_cpd in empCpds.items():
             mz = peak['mz']
             if mz < best_peak[0]:
                 best_peak = (mz, f_id)
+
+    for peak in emp_cpd["MS1_pseudo_Spectra"]:
+        f_id = peak['id_number']
+        if 'modification' in peak:
+            feature_id_to_mz_adduct[f_id]= str(peak['mz']) + "_" + peak['modification']
+        else:
+            feature_id_to_mz_adduct[f_id]= str(peak['mz'])
 
     best_features.add(best_peak[1])
     for peak in emp_cpd["MS1_pseudo_Spectra"]:
@@ -101,7 +110,17 @@ for emp_id, emp_cpd in empCpds.items():
         #feature_id_to_emp_cpd_id_map[peak['id_number']] = ','.join([x[0].split("_")[0] for x in emp_cpd["list_matches"]]) if "list_matches" in emp_cpd else emp_cpd["neutral_formula_mass"]
         #feature_id_to_cpd_name[peak['id_number']] = ','.join([','.join(formula_name_map[x[0].split("_")[0]]) for x in emp_cpd["list_matches"]]) if "list_matches" in emp_cpd else emp_cpd["neutral_formula_mass"]
 feature_table['annot'] = feature_table['id_number'].map(feature_id_to_emp_cpd_id_map)
-feature_table['annot_names'] = feature_table['id_number'].map(feature_id_to_cpd_name)
+annot_list = []
+for f_id in feature_table['id_number']:
+    if f_id in feature_id_to_cpd_name:
+        annot_list.append(feature_id_to_cpd_name[f_id])
+    elif f_id in feature_id_to_mz_adduct:
+        annot_list.append(feature_id_to_mz_adduct[f_id])
+    else:
+        annot_list.append("None")
+feature_table["annot_names"] = annot_list
+
+#feature_table['annot_names'] = feature_table['id_number'].map(feature_id_to_cpd_name)
 feature_table['emp_id'] = feature_table['id_number'].map(feature_id_to_emp_id)
 feature_map = {x: x in best_features for x in feature_table['id_number']}
 feature_table['best_peak'] = feature_table['id_number'].map(feature_map)
@@ -308,25 +327,23 @@ def ttest(row, indices_a, indices_b):
     #_, p = stats.ttest_ind(row[indices_a], row[indices_b])
     values_A = np.log2([float(x+1) for x in row[indices_a] if not np.isnan(x)])
     values_B = np.log2([float(x+1) for x in row[indices_b] if not np.isnan(x)])
-    if len(values_A) + len(values_B) > 3 and list(values_A) and list(values_B):
-        t, p = stats.ttest_ind(values_A, values_B)
-        if np.isnan(p):
-            t, p = 0, 1
-        return p
-    else:
-        return 1
+    print(values_A)
+    print(values_B)
+    t, p = stats.ttest_ind(values_A, values_B, equal_var=student_t_test)
+    if np.isnan(p):
+        t, p = 0, 1
+    print("p=", p)
+    return p
+
 
 def ttest2(row, indices_a, indices_b):
     #_, p = stats.ttest_ind(row[indices_a], row[indices_b])
     values_A = np.log2([float(x+1) for x in row[indices_a] if not np.isnan(x)])
     values_B = np.log2([float(x+1) for x in row[indices_b] if not np.isnan(x)])
-    if len(values_A) + len(values_B) > 3 and list(values_A) and list(values_B):
-        t, p = stats.ttest_ind(values_A, values_B)
-        if np.isnan(p):
-            t, p = 0, 1
-        return t
-    else:
-        return 0
+    t, p = stats.ttest_ind(values_A, values_B, equal_var=student_t_test)
+    if np.isnan(p):
+        t, p = 0, 1
+    return t
     
 def log2fc(row, indices_a, indices_b):
     return np.median([np.log2(x) for x in row[indices_a]]) - np.median([np.log2(x) for x in row[indices_b]])
@@ -414,6 +431,11 @@ for group_A_params, group_B_params in groups:
             significant_features['categories'] = table[table['significant'] == True]['categories'] 
             significant_features['classes'] = table[table['significant'] == True]['classes'] 
         significant_features.to_csv("./annotated_significant_features/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".tsv", sep="\t", index=False)
+        #try:
+        #    sns.clustermap(np.log2(table[table['significant'] == True][group_A + group_B]), yticklabels=table[table['significant'] == True]['annot_names'])
+        #    plt.show()
+        #except:
+        #    pass
 
         new_table = pd.DataFrame()
         new_table['m/z'] = table['mz']

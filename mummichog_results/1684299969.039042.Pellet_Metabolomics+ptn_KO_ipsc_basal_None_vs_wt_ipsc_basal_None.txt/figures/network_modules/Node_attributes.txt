@@ -1,0 +1,27 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00093	Glycerol 3-phosphate	-10.735283378326528	row776	E44
+C00093	Glycerol 3-phosphate	-5.988650287945635	row171	E43
+C03740	5-L-Glutamyl-L-alanine	-6.362006757444073	row394	E103
+C03740	5-L-Glutamyl-L-alanine	7.111849699405718	row963	E104
+C05829		-6.04044863871351	row650	E66
+C01233	sn-Glycero-3-phosphoethanolamine	-11.093100723252473	row346	E82
+C05829		-6.904309590789159	row677	E66
+C05829		-5.144263425651913	row260	E66
+C02714	N-Acetylputrescine	-6.346150646161837	row87	E26
+C00669	gamma-L-Glutamyl-L-cysteine	-8.703695094206719	row1397	E276
+C01110	5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate	6.008026341591435	row81	E33
+C01157	trans-4-Hydroxy-L-proline	6.008026341591435	row81	E33
+C00670	sn-Glycero-3-phosphocholine	-5.493561918997857	row1202	E19
+C00430	5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid	6.008026341591435	row81	E33
+C02714	N-Acetylputrescine	-6.58744087055012	row68	E26
+C03440	cis-4-Hydroxy-D-proline	6.008026341591435	row81	E33
+C01165	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde	6.008026341591435	row81	E33
+C00093	Glycerol 3-phosphate	-12.680585416537483	row172	E44
+C01233	sn-Glycero-3-phosphoethanolamine	-12.010268484276494	row857	E82
+C01239	N-Acetyl-beta-D-glucosaminylamine	-43.05985954279132	row475	E128
+C03740	5-L-Glutamyl-L-alanine	-6.074160949049053	row395	E104
+C00437	N2-Acetyl-L-ornithine	-16.776608224183672	row240	E59
+C01233	sn-Glycero-3-phosphoethanolamine	-12.11003912017018	row329	E82
+C04230	Lysophosphatidylcholine	-8.369443496026616	row2711	E383
+C03740	5-L-Glutamyl-L-alanine	-9.048525935799997	row964	E105
+C05829		-5.062634437589908	row262	E66

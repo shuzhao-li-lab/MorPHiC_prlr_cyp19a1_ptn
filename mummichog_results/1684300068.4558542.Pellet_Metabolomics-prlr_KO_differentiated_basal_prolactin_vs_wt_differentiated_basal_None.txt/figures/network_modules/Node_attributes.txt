@@ -1,0 +1,8 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00019	S-Adenosyl-L-methionine	-6.638536823407145	row1222	E182
+CE5542	noradrenochrome o-semiquinone	-8.432112328008031	row508	E19
+C00281	Sedoheptulose 7-phosphate; altro-Heptulose 7-phosphate	-6.234318697165065	row888	E161
+C04225	(Z)-But-2-ene-1,2,3-tricarboxylate; cis-2-Methylaconitate	-8.432112328008031	row508	E102
+C06222	Sedoheptulose 1-phosphate; altro-Heptulose 1-phosphate	-6.234318697165065	row888	E161
+C05576	3,4-Dihydroxyphenylethyleneglycol	4.902942154107423	row169	E39
+C05130	Imidazole-4-acetaldehyde; Imidazole acetaldehyde	-5.81752197782615	row247	E58

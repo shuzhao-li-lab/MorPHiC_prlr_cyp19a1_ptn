@@ -1,0 +1,10 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00438	N-Carbamoyl-L-aspartate	47.05931511338131	row228	E56
+C01879	5-Oxoproline	7.863808588801089	row136	E21
+C00791		-11.397893491057545	row218	E54
+C01250	N-Acetyl-L-glutamate 5-semialdehyde; 2-Acetamido-5-oxopentanoate	14.200309971414832	row148	E37
+C00322	2-Oxoadipate	8.697880555623403	row35	E10
+C04282	1-Pyrroline-4-hydroxy-2-carboxylate	7.863808588801089	row136	E21
+C00669	gamma-L-Glutamyl-L-cysteine	10.31744273902024	row964	E181
+C04281	L-1-Pyrroline-3-hydroxy-5-carboxylate	7.863808588801089	row136	E21
+C01225	sn-glycero-3-Phospho-1-inositol; 1-(sn-glycero-3-Phospho)-1D-myo-inositol	-7.929206363108293	row1904	E292

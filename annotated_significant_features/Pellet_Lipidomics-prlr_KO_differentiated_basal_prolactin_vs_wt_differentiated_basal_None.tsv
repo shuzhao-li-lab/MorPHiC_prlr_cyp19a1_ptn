@@ -1,4 +1,4 @@
 m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
-181.063	23.07	0.0019028672835247646	37.497882859432465	C6H12O6	2.8162951839237103	Fuconic acid	kp44_180.0636	{'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]'}
-317.0387	23.33	0.00022573850678261957	76.05082505742608		2.902366866873539				
-329.999	24.25	0.026924675086240767	17.39544463763976		1.5131383411803228				
+181.063	23.07	0.0019028672835247646	37.497882859432465	C7H14O3	2.8162951839237103	delta-hydroxy enanthoic acid,omega-hydroxy enanthoic acid,Methyl DL-Leucate,6-hydroxy-heptanoic acid,2-hydroxy enanthoic acid,6R-hydroxy-heptanoic acid,4-hydroxy enanthoic acid,(+/-)-Ethyl 2-hydroxy-2-methylbutyrate	10719	{'Fatty Acyls [FA]'}	{'Fatty esters [FA07]', 'Fatty Acids and Conjugates [FA01]'}
+317.0387	23.33	0.00022573850678261957	76.05082505742608		2.902366866873539	317.0387			
+329.999	24.25	0.026924675086240767	17.39544463763976		1.5131383411803228	329.999			
