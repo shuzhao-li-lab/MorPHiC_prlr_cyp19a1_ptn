@@ -1,0 +1,35 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C12739	5'-Deoxy-5-fluorouridine; Doxifluridine	13.637177739570252	row1749	E278
+C01762	Xanthosine	84.36033906055651	row1368	E82
+C11736	5-Fluorodeoxyuridine; Floxuridine	13.637177739570252	row1749	E278
+C00380	Cytosine	215.8415311025375	row398	E95
+C00705	dCDP	-12.940490703289298	row2095	E319
+C00299	Uridine	23.103524766646007	row749	E152
+C00072	L-Ascorbate	35.02905812499853	row215	E59
+C01250	N-Acetyl-L-glutamate 5-semialdehyde; 2-Acetamido-5-oxopentanoate	167.0898614970894	row334	E40
+C00526	Deoxyuridine	19.446486421386155	row935	E174
+C03239	6-Amino-2-oxohexanoate; 2-Oxo-6-aminocaproate	27.946886993039392	row452	E99
+C01250	N-Acetyl-L-glutamate 5-semialdehyde; 2-Acetamido-5-oxopentanoate	40.131898309252605	row1510	E40
+C01165	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde	14.72991522124012	row139	E45
+C00299	Uridine	100.26651977972304	row752	E154
+C00295	Orotate	25.255647305038014	row608	E130
+C01110	5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate	14.72991522124012	row139	E45
+C01157	trans-4-Hydroxy-L-proline	14.72991522124012	row139	E45
+C00624	N-Acetyl-L-glutamate; N-Acetyl-L-glutamic acid	20.399156155478895	row846	E6
+C04076	L-2-Aminoadipate 6-semialdehyde; 2-Aminoadipate 6-semialdehyde	27.946886993039392	row452	E99
+C02670	D-glucurono-6,3-lactone	35.02905812499853	row215	E59
+C03440	cis-4-Hydroxy-D-proline	14.72991522124012	row139	E45
+C01250	N-Acetyl-L-glutamate 5-semialdehyde; 2-Acetamido-5-oxopentanoate	14.800771875259123	row137	E41
+C03406	N-(L-Arginino)succinate; 2-(Nomega-L-Arginino)succinate; L-Argininosuccinate; L-Argininosuccinic acid; L-Arginosuccinic acid	18.695615471864258	row1636	E263
+C00705	dCDP	-14.633983363698725	row2834	E319
+C00624	N-Acetyl-L-glutamate; N-Acetyl-L-glutamic acid	21.227081446665228	row12	E6
+C00931	Porphobilinogen	200.46211288039436	row840	E167
+C02946	4-Acetamidobutanoate	27.946886993039392	row452	E99
+C00143	5,10-Methylenetetrahydrofolate	13.498317687136046	row2901	E362
+C00214	Thymidine	13.318681663877463	row719	E145
+C00430	5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid	14.72991522124012	row139	E45
+C00019	S-Adenosyl-L-methionine	14.851837399533377	row2455	E340
+C01250	N-Acetyl-L-glutamate 5-semialdehyde; 2-Acetamido-5-oxopentanoate	203.2469870515752	row335	E42
+C01449	Queuine; Base Q	18.40708436328677	row1002	E190
+C00143	5,10-Methylenetetrahydrofolate	27.435071934854317	row2879	E362
+glac	D-glucurono-6,3-lactone	35.02905812499853	row215	E59

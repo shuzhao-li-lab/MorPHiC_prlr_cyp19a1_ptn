@@ -1,0 +1,3 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C14847	3,4-Dihydro-3-hydroxy-4-S-glutathionyl bromobenzene	-5.563216466679207	row2048	E235
+C14848	2,3-Dihydro-2-S-glutathionyl-3-hydroxy bromobenzene	-5.563216466679207	row2048	E235

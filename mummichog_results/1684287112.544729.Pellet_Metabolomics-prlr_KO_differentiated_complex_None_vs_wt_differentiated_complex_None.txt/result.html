@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+        <html xmlns="http://www.w3.org/1999/xhtml"> 
+        <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <title>Mummichog Report</title> 
+
+        <style type="text/css"> 
+        body {width: 960px; padding: 10px; }
+        
+        div.colorbar {margin-bottom: 7px}
+        div.networkvisual { margin: auto; height: 600px; width: 960px; overflow: auto !important;}
+        div.svg2 { margin: auto; height: 600px; width: 960px; overflow: auto !important;}
+
+        div.stats {margin-top: 10; font-size:0.7em; color:#888;}
+
+        div.moduleline{font-size: 0.9em; font-weight: bold;
+        }
+        div.metabolites {
+            font-size: 0.7em;
+            padding-left: 15px; padding-bottom: 7px;
+        }
+        
+        footer { margin-top: 30px;    padding: 10px 0;    border-top: 1px solid #582E2E;    font-size:0.7em;    color:#888;}
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+            font-weight: bold;
+        }
+        
+        h1 { font-size: 1.4em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1em; }
+        h4 { font-size: 0.9em;     padding-left: 15px; padding-bottom: 2px; margin-bottom:0px;}
+        th {
+            background: #DAFDCF;
+            font-size:0.9em;
+            text-align: left;
+            padding:5px;
+        }
+        
+        tr:nth-child(even) {background-color: #f2f2f2}
+        tr:hover {background-color: #f5f5f5}
+        
+        td {
+            font-family: Verdana, Arial, sans-serif;
+            color: black;
+            font-size:0.7em;
+            margin:10px;
+            margin-top:0px;
+            padding: 5px;
+        }
+        
+        .node {
+          stroke: #fff;
+          stroke-width: 1.5px;
+        }
+        
+        .link {
+          stroke: #999;
+          stroke-opacity: .6;
+        }
+        div.network_selection {float: left; margin-top: 6; margin-bottom: 10; font-size:0.8em;}
+        </style> 
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://shuzhao-li.github.io/mummichog.org/download/cytoscape.min.js" charset="utf-8"></script>
+        <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-spread/1.0.9/cytoscape-spread.js"></script> 
+        <script src="js/plotly-latest.min.js"></script>
+        <script src="js/plotly-graphs.js"></script>
+        <script src="js/result.js"></script>
+        </head> 
+        <body> 
+        <h1>Mummichog Report: Pellet_Metabolomics-prlr_KO_differentiated_complex_None_vs_wt_differentiated_complex_None.txt</h1>
+<div id="colorbar" class="colorbar"></div>
+<div class="stats">mummichog version: 2.6.1, using metabolic model MFN_1.10.4.<br></div>
+<h2>User input data</h2>
+<p>User supplied 1851 features as reference list.We are using 429 features (p < 0.050000) as significant list. The feature level data are shown in the Manhattan plots below.</p>
+<div id="mz_user_input"></div>
+<div id="retention_time_input"></div>
+<h2>Top pathways</h2>
+<p>The reference feature list is mapped to 85 EmpiricalCompounds, significant features to 24 EmpiricalCompounds. In the table below, pathway_size is number of detected EmpiricalCompounds for each pathway; overlap_size is number of significant EmpiricalCompounds.                                Empirical p-values are estimated by permutation test. Details on EmpiricalCompounds are in 'tables/ListOfEmpiricalCompounds.tsv'.</p>
+<div class="pathwaystablly"><table><tr><th>Pathways</th>                    <th>overlap_size</th><th>pathway_size</th><th>p-value</th>                    <th>overlap_EmpiricalCompounds</th></tr><tr> <td>Drug metabolism - cytochrome P450</td> <td>3</td><td>4</td><td>0.00865</td><td>E73,E143,E87</td></tr><tr> <td>Tryptophan metabolism</td> <td>5</td><td>11</td><td>0.02647</td><td>E131,E73,E88,E159,E7</td></tr><tr> <td>Vitamin A (retinol) metabolism</td> <td>2</td><td>3</td><td>0.03109</td><td>E117,E123</td></tr><tr> <td>Hyaluronan Metabolism</td> <td>1</td><td>1</td><td>0.06562</td><td>E94</td></tr><tr> <td>Keratan sulfate degradation</td> <td>1</td><td>1</td><td>0.06562</td><td>E94</td></tr></table></div>
+<div id="pathwayBarPlot"></div>
+<h2>Top modules</h2>
+<p>Network modules may capture concerted metabolite activities that are missed by predefined pathways.         Use pull-down menus to visualize modules and the activity network, which tries to combine the results of         pathway/module analyses. The visualization requires interenet connection.</p>
+<div id="network_selection" class="network_selection">Showing
+        <select id="nmodule_select" onchange="updateDrawing();">
+          <option>Activity network</option>
+                   </select>
+                    Node size <select id="nsize_select"  onchange="updateDrawing();">
+                      <option value=16>Medium</option>
+                      <option value=8>Small</option>
+                      <option value=32>Large</option>
+                    </select>
+                    Visual style <select id="vstyle_select"  onchange="updateDrawing();">
+                      <option value=0>Drag</option>
+                      <option value=1>Force</option>
+                    </select>
+                    </div>
+<div id="networkvisual" class="networkvisual"></div>
+<div class="modulestablly">
+</div>
+<h2>EmpiricalCompounds favored by above analyses</h2>
+<p>An EmpiricalCompound is a computational unit for a tentative metabolite. It can group multiple ions,                     and be any of the isobaric/isomeric species. This table contains EmpiricalCompounds prioritized by pathway/module analysis.</p>
+<div class="metabolitestablly"><table><tr><th>EmpiricalCompound</th><th>Input m/z</th>                    <th>Retention time</th><th>ion</th><th>mz_diff</th><th>Statistic</th>                    <th>Significant</th></tr><tr > <td>E7</td> <td colspan="2">Best guess: C00322, 2-Oxoadipate</td><td colspan="4">C00322</td></tr><tr> <td> </td> <td>161.0449</td> <td>242.72</td><td>M+H[1+]</td><td>0.0004</td><td>4.44</td><td>yes</td></tr><tr> <td> </td> <td>161.0449</td> <td>245.47</td><td>M+H[1+]</td><td>0.0004</td><td>5.92</td><td>yes</td></tr><tr > <td>E159</td> <td colspan="2">Best guess: C05642, Formyl-N-acetyl-5-methoxykynurenamine</td><td colspan="4">C04148, C05642</td></tr><tr> <td> </td> <td>265.1195</td> <td>155.28</td><td>M+H[1+]</td><td>0.0012</td><td>-1.87</td><td>no</td></tr><tr> <td> </td> <td>266.1229</td> <td>155.15</td><td>M(C13)+H[1+]</td><td>0.0012</td><td>-5.11</td><td>yes</td></tr><tr > <td>E73</td> <td colspan="2">Best guess: C16596, 5-Phenyl-1,3-oxazinane-2,4-dione</td><td colspan="4">C05635, C16596</td></tr><tr> <td> </td> <td>214.0482</td> <td>298.98</td><td>M+Na[1+]</td><td>0.0007</td><td>6.44</td><td>yes</td></tr><tr > <td>E117</td> <td colspan="2">Best guess: C15493, 9-cis-Retinoic acid</td><td colspan="4">C00777, C15493</td></tr><tr> <td> </td> <td>301.2174</td> <td>27.23</td><td>M+H[1+]</td><td>0.0012</td><td>-5.77</td><td>yes</td></tr><tr > <td>E143</td> <td colspan="2">Best guess: C01516, Morphine</td><td colspan="4">C16576, C01516</td></tr><tr> <td> </td> <td>308.1254</td> <td>245.47</td><td>M+Na[1+]</td><td>-0.0004</td><td>-6.64</td><td>yes</td></tr><tr > <td>E123</td> <td colspan="2">Best guess: CE5013, </td><td colspan="4">CE5932, C02075, C06428, CE5013</td></tr><tr> <td> </td> <td>303.233</td> <td>26.97</td><td>M+H[1+]</td><td>0.0011</td><td>-14.54</td><td>yes</td></tr><tr > <td>E131</td> <td colspan="2">Best guess: CE5860, </td><td colspan="4">CE5860</td></tr><tr> <td> </td> <td>259.1048</td> <td>335.38</td><td>M+Na[1+]</td><td>-0.0006</td><td>-7.09</td><td>yes</td></tr><tr > <td>E87</td> <td colspan="2">Best guess: CE2173, </td><td colspan="4">C16586, CE2173</td></tr><tr> <td> </td> <td>218.0779</td> <td>334.07</td><td>M+Na[1+]</td><td>-0.0009</td><td>-7.49</td><td>yes</td></tr><tr > <td>E88</td> <td colspan="2">Best guess: C00643, 5-Hydroxy-L-tryptophan</td><td colspan="4">C00643</td></tr><tr> <td> </td> <td>221.0928</td> <td>173.6</td><td>M+H[1+]</td><td>0.0007</td><td>-7.86</td><td>yes</td></tr><tr> <td> </td> <td>222.0962</td> <td>173.6</td><td>M(C13)+H[1+]</td><td>0.0007</td><td>-7.67</td><td>yes</td></tr></table></div>
+<h2>More data</h2>
+<p class="moreinformation">Full data tables from pathway analysis, module analysis and activity network are stored in the 'tables/' directory. 
+            The tsv files can be imported into a spreadsheet program, e.g. MS Excel.
+            Under the 'figures/network_modules/' directory are files intended for Cytoscape (cytoscape.org) visualization. Please refer to Cytoscape's guides for details.
+            Details of this run are recorded in file mummichog.log.txt.
+            </p>
+<footer>Mummichog algorithms are described in Li et al. Predicting Network Activity from High Throughput Metabolomics. PLoS Computational Biology (2013); doi:10.1371/journal.pcbi.1003123.        This software is provided as is, without warranty of any kind. Visit <a href="http://mummichog.org">http://mummichog.org</a> for updates.
+        </footer>
+
+        <script type="text/javascript" charset="utf-8">
+        var nodes = [ [{name:"[Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine", group:10}, {name:"Ketone", group:10}, {name:"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", group:-1}, {name:"Melatonin", group:10}, {name:"retinoyl glucuronide", group:10}, {name:"L-2-Aminoadipate", group:10}, {name:"5-Phenyl-1,3-oxazinane-2,4-dione", group:13}, {name:"trans-3-Chloro-2-propene-1-ol", group:10}, {name:"2-Oxoglutarate", group:10}, {name:"Retinol", group:10}, {name:"(9Z)-Octadecenoic acid", group:10}, {name:"D-Glyceraldehyde", group:10}, {name:"Formyl-5-hydroxykynurenamine", group:10}, {name:"Acetaldehyde", group:10}, {name:"Alcophosphamide", group:10}, {name:"linoleic acid (all cis C18:2) n-6", group:10}, {name:"2-Phenyl-1,3-propanediol monocarbamate", group:4}, {name:"4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", group:10}, {name:"2-Aminomuconate", group:10}, {name:"CE5860", group:5}, {name:"Coenzyme A", group:10}, {name:"NH4+", group:10}, {name:"Aldophosphamide", group:10}, {name:"Icosanoic acid", group:10}, {name:"Lipoamide", group:10}, {name:"Aldehyde", group:10}, {name:"Trichloroethanol", group:10}, {name:"C20:4-CoA", group:10}, {name:"L-Formylkynurenine", group:10}, {name:"dihomo-gamma-linolenyl coenzyme A", group:10}, {name:"5-Hydroxyindoleacetate", group:13}, {name:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", group:10}, {name:"cis-3-Chloroallyl aldehyde", group:10}, {name:"6,7-Dihydrobiopterin", group:10}, {name:"D-Tryptophan", group:10}, {name:"Eicosanoyl-CoA", group:10}, {name:"Choline", group:10}, {name:"Glutaryl-CoA", group:10}, {name:"UDP-D-glucuronate", group:10}, {name:"alpha-Linolenoyl-CoA", group:10}, {name:"1-Naphthaldehyde", group:10}, {name:"[Dihydrolipoyllysine-residue succinyltransferase] S-glutaryldihydrolipoyllysine", group:10}, {name:"arachidonic acid", group:10}, {name:"Tetrahydrobiopterin", group:10}, {name:"Palmitoyl-CoA (n-C16:0CoA)", group:10}, {name:"Enzyme N6-(dihydrolipoyl)lysine", group:10}, {name:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA", group:10}, {name:"Chloral hydrate", group:10}, {name:"(6Z,9Z,12Z)-Octadecatrienoic acid", group:10}, {name:"9-cis-retinoate", group:10}, {name:"Hexadecanoate (n-C16:0)", group:10}, {name:"L-Glutamine", group:10}, {name:"Formate", group:10}, {name:"Retinoate", group:6}, {name:"Thiamine diphosphate", group:10}, {name:"Tetrahydrobiopterin-4a-carbinolamine", group:10}, {name:"5-Hydroxy-L-tryptophan", group:4}, {name:"Retinal", group:10}, {name:"cis-3-Chloro-2-propene-1-ol", group:10}, {name:"Betaine aldehyde", group:10}, {name:"alpha-N-Phenylacetyl-L-glutamine", group:6}, {name:"3,4-Dihydroxyphenylethyleneglycol", group:10}, {name:"5-Methoxyindoleacetate", group:10}, {name:"all-trans-5,6-Epoxyretinoic acid", group:10}, {name:"Phenylacetyl-CoA", group:10}, {name:"Hydrogen peroxide", group:10}, {name:"5-Hydroxy-N-formylkynurenine", group:10}, {name:"2-Oxoadipate", group:12}, {name:"13-cis-retinal", group:10}, {name:"all-trans-4-Hydroxyretinoic acid", group:10}, {name:"Alcohol", group:10}, {name:"AMP", group:10}, {name:"5-Hydroxyindoleacetaldehyde", group:10}, {name:"2-Naphthaldehyde", group:10}, {name:"S-Adenosyl-L-homocysteine", group:10}, {name:"3-Chloroallyl aldehyde", group:10}, {name:"all-trans-18-Hydroxyretinoic acid", group:10}, {name:"L-Tryptophan", group:10}, {name:"Succinyl-CoA", group:10}, {name:"Serotonin", group:10}, {name:"S-Adenosyl-L-methionine", group:10}, {name:"Secondary alcohol", group:10}, {name:"UDP", group:10}, {name:"Ethanol", group:10}, {name:"3,4-Dihydroxymandelaldehyde", group:10}, {name:"3-Carboxy-1-hydroxypropyl-ThPP", group:10}, {name:"Superoxide anion", group:10}, {name:"13-cis-retinoate", group:10}, {name:"gamma-linolenoyl-CoA", group:10}, {name:"3-Carbamoyl-2-phenylpropionaldehyde", group:10}, {name:"Primary alcohol", group:10}, {name:"Glycerol", group:10}, {name:"(8Z,11Z,14Z)-Icosatrienoic acid", group:10}, {name:"3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al", group:10}, {name:"timnodonyl coenzyme A", group:10}, {name:"Enzyme N6-(lipoyl)lysine", group:10}, {name:"Stearoyl-CoA (n-C18:0CoA)", group:10}, {name:"retinoyl glucuronide", group:10}, {name:"Tetrahydrobiopterin-4a-carbinolamine", group:10}, {name:"L-Glutamate", group:10}, {name:"(9Z,12Z,15Z)-Octadecatrienoic acid", group:10}, {name:"R total Coenzyme A", group:10}, {name:"Formyl-N-acetyl-5-methoxykynurenamine", group:6}, {name:"N-Formyl-D-kynurenine", group:10}, {name:"Octadecenoyl-CoA (n-C18:1CoA)", group:10}, {name:"3alpha,7alpha,26-Trihydroxy-5beta-cholestane", group:10}, {name:"Retinyl ester", group:-1}, {name:"1-Hydroxymethylnaphthalene", group:10}, {name:"(2-Naphthyl)methanol", group:10}, {name:"linoleic coenzyme A", group:10}, {name:"octadecanoate (n-C18:0)", group:10}, ], ];
+
+        var links = [[{source:0, target:67}, {source:1, target:6}, {source:1, target:16}, {source:2, target:10}, {source:2, target:15}, {source:2, target:20}, {source:2, target:23}, {source:2, target:27}, {source:2, target:29}, {source:2, target:31}, {source:2, target:35}, {source:2, target:39}, {source:2, target:42}, {source:2, target:44}, {source:2, target:46}, {source:2, target:48}, {source:2, target:50}, {source:2, target:88}, {source:2, target:92}, {source:2, target:94}, {source:2, target:96}, {source:2, target:100}, {source:2, target:104}, {source:2, target:109}, {source:2, target:110}, {source:3, target:56}, {source:3, target:102}, {source:4, target:53}, {source:5, target:67}, {source:6, target:7}, {source:6, target:9}, {source:6, target:11}, {source:6, target:13}, {source:6, target:14}, {source:6, target:16}, {source:6, target:17}, {source:6, target:22}, {source:6, target:25}, {source:6, target:26}, {source:6, target:32}, {source:6, target:36}, {source:6, target:40}, {source:6, target:47}, {source:6, target:57}, {source:6, target:58}, {source:6, target:59}, {source:6, target:61}, {source:6, target:70}, {source:6, target:73}, {source:6, target:75}, {source:6, target:81}, {source:6, target:83}, {source:6, target:84}, {source:6, target:89}, {source:6, target:90}, {source:6, target:91}, {source:6, target:93}, {source:6, target:105}, {source:6, target:107}, {source:6, target:108}, {source:7, target:16}, {source:8, target:67}, {source:9, target:16}, {source:9, target:106}, {source:11, target:16}, {source:12, target:56}, {source:12, target:102}, {source:13, target:16}, {source:14, target:16}, {source:16, target:17}, {source:16, target:22}, {source:16, target:25}, {source:16, target:26}, {source:16, target:32}, {source:16, target:36}, {source:16, target:40}, {source:16, target:47}, {source:16, target:57}, {source:16, target:58}, {source:16, target:59}, {source:16, target:61}, {source:16, target:70}, {source:16, target:73}, {source:16, target:75}, {source:16, target:81}, {source:16, target:83}, {source:16, target:84}, {source:16, target:89}, {source:16, target:90}, {source:16, target:91}, {source:16, target:93}, {source:16, target:105}, {source:16, target:107}, {source:16, target:108}, {source:18, target:67}, {source:19, target:52}, {source:19, target:65}, {source:19, target:102}, {source:20, target:53}, {source:20, target:60}, {source:20, target:67}, {source:20, target:106}, {source:21, target:67}, {source:24, target:67}, {source:28, target:56}, {source:28, target:102}, {source:30, target:62}, {source:30, target:65}, {source:30, target:72}, {source:30, target:74}, {source:30, target:80}, {source:33, target:56}, {source:34, target:56}, {source:34, target:102}, {source:37, target:67}, {source:38, target:53}, {source:41, target:67}, {source:43, target:56}, {source:45, target:67}, {source:49, target:53}, {source:51, target:60}, {source:52, target:102}, {source:53, target:57}, {source:53, target:63}, {source:53, target:65}, {source:53, target:68}, {source:53, target:69}, {source:53, target:71}, {source:53, target:76}, {source:53, target:82}, {source:53, target:87}, {source:53, target:97}, {source:54, target:67}, {source:55, target:56}, {source:56, target:66}, {source:56, target:77}, {source:56, target:79}, {source:56, target:98}, {source:56, target:102}, {source:56, target:103}, {source:60, target:64}, {source:65, target:102}, {source:66, target:102}, {source:67, target:78}, {source:67, target:85}, {source:67, target:95}, {source:67, target:99}, {source:77, target:102}, {source:79, target:102}, {source:86, target:102}, {source:101, target:106}, {source:102, target:103}, ], ];
+
+        var cytonodes = [ [{ data: {id:"[Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine", group:10} }, { data: {id:"Ketone", group:10} }, { data: {id:"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", group:-1} }, { data: {id:"Melatonin", group:10} }, { data: {id:"retinoyl glucuronide", group:10} }, { data: {id:"L-2-Aminoadipate", group:10} }, { data: {id:"5-Phenyl-1,3-oxazinane-2,4-dione", group:13} }, { data: {id:"trans-3-Chloro-2-propene-1-ol", group:10} }, { data: {id:"2-Oxoglutarate", group:10} }, { data: {id:"Retinol", group:10} }, { data: {id:"(9Z)-Octadecenoic acid", group:10} }, { data: {id:"D-Glyceraldehyde", group:10} }, { data: {id:"Formyl-5-hydroxykynurenamine", group:10} }, { data: {id:"Acetaldehyde", group:10} }, { data: {id:"Alcophosphamide", group:10} }, { data: {id:"linoleic acid (all cis C18:2) n-6", group:10} }, { data: {id:"2-Phenyl-1,3-propanediol monocarbamate", group:4} }, { data: {id:"4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one", group:10} }, { data: {id:"2-Aminomuconate", group:10} }, { data: {id:"CE5860", group:5} }, { data: {id:"Coenzyme A", group:10} }, { data: {id:"NH4+", group:10} }, { data: {id:"Aldophosphamide", group:10} }, { data: {id:"Icosanoic acid", group:10} }, { data: {id:"Lipoamide", group:10} }, { data: {id:"Aldehyde", group:10} }, { data: {id:"Trichloroethanol", group:10} }, { data: {id:"C20:4-CoA", group:10} }, { data: {id:"L-Formylkynurenine", group:10} }, { data: {id:"dihomo-gamma-linolenyl coenzyme A", group:10} }, { data: {id:"5-Hydroxyindoleacetate", group:13} }, { data: {id:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid", group:10} }, { data: {id:"cis-3-Chloroallyl aldehyde", group:10} }, { data: {id:"6,7-Dihydrobiopterin", group:10} }, { data: {id:"D-Tryptophan", group:10} }, { data: {id:"Eicosanoyl-CoA", group:10} }, { data: {id:"Choline", group:10} }, { data: {id:"Glutaryl-CoA", group:10} }, { data: {id:"UDP-D-glucuronate", group:10} }, { data: {id:"alpha-Linolenoyl-CoA", group:10} }, { data: {id:"1-Naphthaldehyde", group:10} }, { data: {id:"[Dihydrolipoyllysine-residue succinyltransferase] S-glutaryldihydrolipoyllysine", group:10} }, { data: {id:"arachidonic acid", group:10} }, { data: {id:"Tetrahydrobiopterin", group:10} }, { data: {id:"Palmitoyl-CoA (n-C16:0CoA)", group:10} }, { data: {id:"Enzyme N6-(dihydrolipoyl)lysine", group:10} }, { data: {id:"(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA", group:10} }, { data: {id:"Chloral hydrate", group:10} }, { data: {id:"(6Z,9Z,12Z)-Octadecatrienoic acid", group:10} }, { data: {id:"9-cis-retinoate", group:10} }, { data: {id:"Hexadecanoate (n-C16:0)", group:10} }, { data: {id:"L-Glutamine", group:10} }, { data: {id:"Formate", group:10} }, { data: {id:"Retinoate", group:6} }, { data: {id:"Thiamine diphosphate", group:10} }, { data: {id:"Tetrahydrobiopterin-4a-carbinolamine", group:10} }, { data: {id:"5-Hydroxy-L-tryptophan", group:4} }, { data: {id:"Retinal", group:10} }, { data: {id:"cis-3-Chloro-2-propene-1-ol", group:10} }, { data: {id:"Betaine aldehyde", group:10} }, { data: {id:"alpha-N-Phenylacetyl-L-glutamine", group:6} }, { data: {id:"3,4-Dihydroxyphenylethyleneglycol", group:10} }, { data: {id:"5-Methoxyindoleacetate", group:10} }, { data: {id:"all-trans-5,6-Epoxyretinoic acid", group:10} }, { data: {id:"Phenylacetyl-CoA", group:10} }, { data: {id:"Hydrogen peroxide", group:10} }, { data: {id:"5-Hydroxy-N-formylkynurenine", group:10} }, { data: {id:"2-Oxoadipate", group:12} }, { data: {id:"13-cis-retinal", group:10} }, { data: {id:"all-trans-4-Hydroxyretinoic acid", group:10} }, { data: {id:"Alcohol", group:10} }, { data: {id:"AMP", group:10} }, { data: {id:"5-Hydroxyindoleacetaldehyde", group:10} }, { data: {id:"2-Naphthaldehyde", group:10} }, { data: {id:"S-Adenosyl-L-homocysteine", group:10} }, { data: {id:"3-Chloroallyl aldehyde", group:10} }, { data: {id:"all-trans-18-Hydroxyretinoic acid", group:10} }, { data: {id:"L-Tryptophan", group:10} }, { data: {id:"Succinyl-CoA", group:10} }, { data: {id:"Serotonin", group:10} }, { data: {id:"S-Adenosyl-L-methionine", group:10} }, { data: {id:"Secondary alcohol", group:10} }, { data: {id:"UDP", group:10} }, { data: {id:"Ethanol", group:10} }, { data: {id:"3,4-Dihydroxymandelaldehyde", group:10} }, { data: {id:"3-Carboxy-1-hydroxypropyl-ThPP", group:10} }, { data: {id:"Superoxide anion", group:10} }, { data: {id:"13-cis-retinoate", group:10} }, { data: {id:"gamma-linolenoyl-CoA", group:10} }, { data: {id:"3-Carbamoyl-2-phenylpropionaldehyde", group:10} }, { data: {id:"Primary alcohol", group:10} }, { data: {id:"Glycerol", group:10} }, { data: {id:"(8Z,11Z,14Z)-Icosatrienoic acid", group:10} }, { data: {id:"3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al", group:10} }, { data: {id:"timnodonyl coenzyme A", group:10} }, { data: {id:"Enzyme N6-(lipoyl)lysine", group:10} }, { data: {id:"Stearoyl-CoA (n-C18:0CoA)", group:10} }, { data: {id:"retinoyl glucuronide", group:10} }, { data: {id:"Tetrahydrobiopterin-4a-carbinolamine", group:10} }, { data: {id:"L-Glutamate", group:10} }, { data: {id:"(9Z,12Z,15Z)-Octadecatrienoic acid", group:10} }, { data: {id:"R total Coenzyme A", group:10} }, { data: {id:"Formyl-N-acetyl-5-methoxykynurenamine", group:6} }, { data: {id:"N-Formyl-D-kynurenine", group:10} }, { data: {id:"Octadecenoyl-CoA (n-C18:1CoA)", group:10} }, { data: {id:"3alpha,7alpha,26-Trihydroxy-5beta-cholestane", group:10} }, { data: {id:"Retinyl ester", group:-1} }, { data: {id:"1-Hydroxymethylnaphthalene", group:10} }, { data: {id:"(2-Naphthyl)methanol", group:10} }, { data: {id:"linoleic coenzyme A", group:10} }, { data: {id:"octadecanoate (n-C18:0)", group:10} }, ], ];
+
+        var cytoedges = [[{ data: { id: "C16254-C00322", weight: 1, source: "[Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine", target: "2-Oxoadipate" } }, { data: { id: "C00709-C16596", weight: 1, source: "Ketone", target: "5-Phenyl-1,3-oxazinane-2,4-dione" } }, { data: { id: "C00709-C16586", weight: 1, source: "Ketone", target: "2-Phenyl-1,3-propanediol monocarbamate" } }, { data: { id: "C06428-C00712", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "(9Z)-Octadecenoic acid" } }, { data: { id: "C06428-C01595", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C06428-C00010", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "Coenzyme A" } }, { data: { id: "C06428-C06425", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "Icosanoic acid" } }, { data: { id: "C06428-C02249", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "C20:4-CoA" } }, { data: { id: "C06428-C03595", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "dihomo-gamma-linolenyl coenzyme A" } }, { data: { id: "C06428-C06429", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoic acid" } }, { data: { id: "C06428-C02041", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "Eicosanoyl-CoA" } }, { data: { id: "C06428-C16162", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "alpha-Linolenoyl-CoA" } }, { data: { id: "C06428-C00219", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "arachidonic acid" } }, { data: { id: "C06428-C00154", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "Palmitoyl-CoA (n-C16:0CoA)" } }, { data: { id: "C06428-C16169", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "(4Z,7Z,10Z,13Z,16Z,19Z)-Docosahexaenoyl-CoA" } }, { data: { id: "C06428-C06426", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "(6Z,9Z,12Z)-Octadecatrienoic acid" } }, { data: { id: "C06428-C00249", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "Hexadecanoate (n-C16:0)" } }, { data: { id: "C06428-C03035", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "gamma-linolenoyl-CoA" } }, { data: { id: "C06428-C03242", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "(8Z,11Z,14Z)-Icosatrienoic acid" } }, { data: { id: "C06428-C16165", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "timnodonyl coenzyme A" } }, { data: { id: "C06428-C00412", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "Stearoyl-CoA (n-C18:0CoA)" } }, { data: { id: "C06428-C06427", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "(9Z,12Z,15Z)-Octadecatrienoic acid" } }, { data: { id: "C06428-C00510", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "Octadecenoyl-CoA (n-C18:1CoA)" } }, { data: { id: "C06428-C02050", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "linoleic coenzyme A" } }, { data: { id: "C06428-C01530", weight: 1, source: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", target: "octadecanoate (n-C18:0)" } }, { data: { id: "C01598-C00643", weight: 1, source: "Melatonin", target: "5-Hydroxy-L-tryptophan" } }, { data: { id: "C01598-C05642", weight: 1, source: "Melatonin", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "retnglc-C00777", weight: 1, source: "retinoyl glucuronide", target: "Retinoate" } }, { data: { id: "C00956-C00322", weight: 1, source: "L-2-Aminoadipate", target: "2-Oxoadipate" } }, { data: { id: "C16596-C06611", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "trans-3-Chloro-2-propene-1-ol" } }, { data: { id: "C16596-C00473", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Retinol" } }, { data: { id: "C16596-C00577", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "D-Glyceraldehyde" } }, { data: { id: "C16596-C00084", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Acetaldehyde" } }, { data: { id: "C16596-C16551", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Alcophosphamide" } }, { data: { id: "C16596-C16586", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "2-Phenyl-1,3-propanediol monocarbamate" } }, { data: { id: "C16596-C16595", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C16596-C07645", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Aldophosphamide" } }, { data: { id: "C16596-C00071", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Aldehyde" } }, { data: { id: "C16596-C07490", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Trichloroethanol" } }, { data: { id: "C16596-C16348", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "cis-3-Chloroallyl aldehyde" } }, { data: { id: "C16596-C00114", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Choline" } }, { data: { id: "C16596-C14090", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "1-Naphthaldehyde" } }, { data: { id: "C16596-C06899", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Chloral hydrate" } }, { data: { id: "C16596-C00376", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Retinal" } }, { data: { id: "C16596-C06612", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "cis-3-Chloro-2-propene-1-ol" } }, { data: { id: "C16596-C00576", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Betaine aldehyde" } }, { data: { id: "C16596-C05576", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "3,4-Dihydroxyphenylethyleneglycol" } }, { data: { id: "C16596-C00069", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Alcohol" } }, { data: { id: "C16596-C14099", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "2-Naphthaldehyde" } }, { data: { id: "C16596-C06613", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "3-Chloroallyl aldehyde" } }, { data: { id: "C16596-C00432", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Secondary alcohol" } }, { data: { id: "C16596-C00469", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Ethanol" } }, { data: { id: "C16596-C05577", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "3,4-Dihydroxymandelaldehyde" } }, { data: { id: "C16596-C16587", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C16596-C00226", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Primary alcohol" } }, { data: { id: "C16596-C00116", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "Glycerol" } }, { data: { id: "C16596-C05445", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al" } }, { data: { id: "C16596-C05444", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "3alpha,7alpha,26-Trihydroxy-5beta-cholestane" } }, { data: { id: "C16596-C14089", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "1-Hydroxymethylnaphthalene" } }, { data: { id: "C16596-C02909", weight: 1, source: "5-Phenyl-1,3-oxazinane-2,4-dione", target: "(2-Naphthyl)methanol" } }, { data: { id: "C06611-C16586", weight: 1, source: "trans-3-Chloro-2-propene-1-ol", target: "2-Phenyl-1,3-propanediol monocarbamate" } }, { data: { id: "C00026-C00322", weight: 1, source: "2-Oxoglutarate", target: "2-Oxoadipate" } }, { data: { id: "C00473-C16586", weight: 1, source: "Retinol", target: "2-Phenyl-1,3-propanediol monocarbamate" } }, { data: { id: "C00473-C02075", weight: 1, source: "Retinol", target: "Retinyl ester" } }, { data: { id: "C00577-C16586", weight: 1, source: "D-Glyceraldehyde", target: "2-Phenyl-1,3-propanediol monocarbamate" } }, { data: { id: "C05647-C00643", weight: 1, source: "Formyl-5-hydroxykynurenamine", target: "5-Hydroxy-L-tryptophan" } }, { data: { id: "C05647-C05642", weight: 1, source: "Formyl-5-hydroxykynurenamine", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00084-C16586", weight: 1, source: "Acetaldehyde", target: "2-Phenyl-1,3-propanediol monocarbamate" } }, { data: { id: "C16551-C16586", weight: 1, source: "Alcophosphamide", target: "2-Phenyl-1,3-propanediol monocarbamate" } }, { data: { id: "C16586-C16595", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "4-Hydroxy-5-phenyltetrahydro-1,3-oxazin-2-one" } }, { data: { id: "C16586-C07645", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Aldophosphamide" } }, { data: { id: "C16586-C00071", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Aldehyde" } }, { data: { id: "C16586-C07490", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Trichloroethanol" } }, { data: { id: "C16586-C16348", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "cis-3-Chloroallyl aldehyde" } }, { data: { id: "C16586-C00114", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Choline" } }, { data: { id: "C16586-C14090", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "1-Naphthaldehyde" } }, { data: { id: "C16586-C06899", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Chloral hydrate" } }, { data: { id: "C16586-C00376", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Retinal" } }, { data: { id: "C16586-C06612", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "cis-3-Chloro-2-propene-1-ol" } }, { data: { id: "C16586-C00576", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Betaine aldehyde" } }, { data: { id: "C16586-C05576", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "3,4-Dihydroxyphenylethyleneglycol" } }, { data: { id: "C16586-C00069", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Alcohol" } }, { data: { id: "C16586-C14099", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "2-Naphthaldehyde" } }, { data: { id: "C16586-C06613", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "3-Chloroallyl aldehyde" } }, { data: { id: "C16586-C00432", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Secondary alcohol" } }, { data: { id: "C16586-C00469", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Ethanol" } }, { data: { id: "C16586-C05577", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "3,4-Dihydroxymandelaldehyde" } }, { data: { id: "C16586-C16587", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "3-Carbamoyl-2-phenylpropionaldehyde" } }, { data: { id: "C16586-C00226", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Primary alcohol" } }, { data: { id: "C16586-C00116", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "Glycerol" } }, { data: { id: "C16586-C05445", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "3alpha,7alpha-Dihydroxy-5beta-cholestan-26-al" } }, { data: { id: "C16586-C05444", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "3alpha,7alpha,26-Trihydroxy-5beta-cholestane" } }, { data: { id: "C16586-C14089", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "1-Hydroxymethylnaphthalene" } }, { data: { id: "C16586-C02909", weight: 1, source: "2-Phenyl-1,3-propanediol monocarbamate", target: "(2-Naphthyl)methanol" } }, { data: { id: "C02220-C00322", weight: 1, source: "2-Aminomuconate", target: "2-Oxoadipate" } }, { data: { id: "CE5860-C00058", weight: 1, source: "CE5860", target: "Formate" } }, { data: { id: "CE5860-C00027", weight: 1, source: "CE5860", target: "Hydrogen peroxide" } }, { data: { id: "CE5860-C05642", weight: 1, source: "CE5860", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00010-C00777", weight: 1, source: "Coenzyme A", target: "Retinoate" } }, { data: { id: "C00010-C04148", weight: 1, source: "Coenzyme A", target: "alpha-N-Phenylacetyl-L-glutamine" } }, { data: { id: "C00010-C00322", weight: 1, source: "Coenzyme A", target: "2-Oxoadipate" } }, { data: { id: "C00010-C02075", weight: 1, source: "Coenzyme A", target: "Retinyl ester" } }, { data: { id: "C01342-C00322", weight: 1, source: "NH4+", target: "2-Oxoadipate" } }, { data: { id: "C00248-C00322", weight: 1, source: "Lipoamide", target: "2-Oxoadipate" } }, { data: { id: "C02700-C00643", weight: 1, source: "L-Formylkynurenine", target: "5-Hydroxy-L-tryptophan" } }, { data: { id: "C02700-C05642", weight: 1, source: "L-Formylkynurenine", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C05635-C05660", weight: 1, source: "5-Hydroxyindoleacetate", target: "5-Methoxyindoleacetate" } }, { data: { id: "C05635-C00027", weight: 1, source: "5-Hydroxyindoleacetate", target: "Hydrogen peroxide" } }, { data: { id: "C05635-C05634", weight: 1, source: "5-Hydroxyindoleacetate", target: "5-Hydroxyindoleacetaldehyde" } }, { data: { id: "C05635-C00021", weight: 1, source: "5-Hydroxyindoleacetate", target: "S-Adenosyl-L-homocysteine" } }, { data: { id: "C05635-C00019", weight: 1, source: "5-Hydroxyindoleacetate", target: "S-Adenosyl-L-methionine" } }, { data: { id: "C00268-C00643", weight: 1, source: "6,7-Dihydrobiopterin", target: "5-Hydroxy-L-tryptophan" } }, { data: { id: "C00525-C00643", weight: 1, source: "D-Tryptophan", target: "5-Hydroxy-L-tryptophan" } }, { data: { id: "C00525-C05642", weight: 1, source: "D-Tryptophan", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00527-C00322", weight: 1, source: "Glutaryl-CoA", target: "2-Oxoadipate" } }, { data: { id: "C00167-C00777", weight: 1, source: "UDP-D-glucuronate", target: "Retinoate" } }, { data: { id: "C06157-C00322", weight: 1, source: "[Dihydrolipoyllysine-residue succinyltransferase] S-glutaryldihydrolipoyllysine", target: "2-Oxoadipate" } }, { data: { id: "C00272-C00643", weight: 1, source: "Tetrahydrobiopterin", target: "5-Hydroxy-L-tryptophan" } }, { data: { id: "C15973-C00322", weight: 1, source: "Enzyme N6-(dihydrolipoyl)lysine", target: "2-Oxoadipate" } }, { data: { id: "CE1617-C00777", weight: 1, source: "9-cis-retinoate", target: "Retinoate" } }, { data: { id: "C00064-C04148", weight: 1, source: "L-Glutamine", target: "alpha-N-Phenylacetyl-L-glutamine" } }, { data: { id: "C00058-C05642", weight: 1, source: "Formate", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00777-C00376", weight: 1, source: "Retinoate", target: "Retinal" } }, { data: { id: "C00777-C16680", weight: 1, source: "Retinoate", target: "all-trans-5,6-Epoxyretinoic acid" } }, { data: { id: "C00777-C00027", weight: 1, source: "Retinoate", target: "Hydrogen peroxide" } }, { data: { id: "C00777-CE5589", weight: 1, source: "Retinoate", target: "13-cis-retinal" } }, { data: { id: "C00777-C16677", weight: 1, source: "Retinoate", target: "all-trans-4-Hydroxyretinoic acid" } }, { data: { id: "C00777-C00020", weight: 1, source: "Retinoate", target: "AMP" } }, { data: { id: "C00777-C16679", weight: 1, source: "Retinoate", target: "all-trans-18-Hydroxyretinoic acid" } }, { data: { id: "C00777-C00015", weight: 1, source: "Retinoate", target: "UDP" } }, { data: { id: "C00777-CE2952", weight: 1, source: "Retinoate", target: "13-cis-retinoate" } }, { data: { id: "C00777-C11061", weight: 1, source: "Retinoate", target: "retinoyl glucuronide" } }, { data: { id: "C00068-C00322", weight: 1, source: "Thiamine diphosphate", target: "2-Oxoadipate" } }, { data: { id: "C15522-C00643", weight: 1, source: "Tetrahydrobiopterin-4a-carbinolamine", target: "5-Hydroxy-L-tryptophan" } }, { data: { id: "C00643-C05648", weight: 1, source: "5-Hydroxy-L-tryptophan", target: "5-Hydroxy-N-formylkynurenine" } }, { data: { id: "C00643-C00078", weight: 1, source: "5-Hydroxy-L-tryptophan", target: "L-Tryptophan" } }, { data: { id: "C00643-C00780", weight: 1, source: "5-Hydroxy-L-tryptophan", target: "Serotonin" } }, { data: { id: "C00643-thbpt4acam", weight: 1, source: "5-Hydroxy-L-tryptophan", target: "Tetrahydrobiopterin-4a-carbinolamine" } }, { data: { id: "C00643-C05642", weight: 1, source: "5-Hydroxy-L-tryptophan", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00643-C15605", weight: 1, source: "5-Hydroxy-L-tryptophan", target: "N-Formyl-D-kynurenine" } }, { data: { id: "C04148-C00582", weight: 1, source: "alpha-N-Phenylacetyl-L-glutamine", target: "Phenylacetyl-CoA" } }, { data: { id: "C00027-C05642", weight: 1, source: "Hydrogen peroxide", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C05648-C05642", weight: 1, source: "5-Hydroxy-N-formylkynurenine", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00322-C00091", weight: 1, source: "2-Oxoadipate", target: "Succinyl-CoA" } }, { data: { id: "C00322-C05381", weight: 1, source: "2-Oxoadipate", target: "3-Carboxy-1-hydroxypropyl-ThPP" } }, { data: { id: "C00322-C15972", weight: 1, source: "2-Oxoadipate", target: "Enzyme N6-(lipoyl)lysine" } }, { data: { id: "C00322-C00025", weight: 1, source: "2-Oxoadipate", target: "L-Glutamate" } }, { data: { id: "C00078-C05642", weight: 1, source: "L-Tryptophan", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00780-C05642", weight: 1, source: "Serotonin", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00704-C05642", weight: 1, source: "Superoxide anion", target: "Formyl-N-acetyl-5-methoxykynurenamine" } }, { data: { id: "C00040-C02075", weight: 1, source: "R total Coenzyme A", target: "Retinyl ester" } }, { data: { id: "C05642-C15605", weight: 1, source: "Formyl-N-acetyl-5-methoxykynurenamine", target: "N-Formyl-D-kynurenine" } }, ], ];
+
+
+        var w = 960, h = 600;
+        var color = d3.scale.category20b();
+        var node_sizes = [16, 8, 32]
+        
+        var scalebar = d3.select("#colorbar").append("svg").attr("id", "svg_colorbar").attr("width", w).attr("height", 10);
+        var coloridx = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+        scalebar.selectAll("rect")
+           .data(coloridx)
+           .enter()
+           .append("rect")
+           .attr("x", function(d, i) {return i * 48;})
+           .attr("y", 0)
+           .attr("width", 48)
+           .attr("height", 10)
+           .attr("fill", function(d, i) { return color(i); });
+           
+        //user input plots
+        var data = JSON.parse(alldata);
+        makeMZUserInputPlot();
+        makeRetTimeUserInputPlot();
+
+        //Pathway Bar chart plot
+        makePathwayPlot()
+        
+        // initial draw
+        cyto_draw_figure(cytonodes[0], cytoedges[0], node_sizes[0]);
+    	var cy = $('#networkvisual').cytoscape('get');
+    	cy.panBy({ x: 0, y: -200 });
+    	
+        // support cytoscape.js  
+		function cyto_draw_figure(nodes, links, node_size) {  
+
+                    var svg = document.createElement('div');
+                    svg.setAttribute("id","svg2");
+                    svg.setAttribute("class","svg2");
+                    var nw = document.getElementById("networkvisual");
+                    nw.appendChild(svg);
+
+				$('#svg2').cytoscape({
+						style: cytoscape.stylesheet()
+						.selector('node')
+						  .css({
+							'content': 'data(id)',
+							'font-size': node_size,
+							'min-zoomed-font-size': 8,
+							'background-color': 'mapData(group, 0, 19, blue, red)'
+						  })
+						.selector('edge')
+						  .css({
+							'target-arrow-shape': 'triangle',
+							'width': 4,
+							'line-color': '#ddd',
+							'target-arrow-color': '#ddd'
+						  })
+						.selector('.highlighted')
+						  .css({
+							'background-color': '#61bffc',
+							'line-color': '#61bffc',
+							'target-arrow-color': '#61bffc',
+							'transition-property': 'background-color, line-color, target-arrow-color',
+							'transition-duration': '0.5s'
+						  }),
+  
+					  layout: {
+						name: 'spread',
+						minDist: 40,
+						directed: true,
+						padding: 10,
+						//fit: false,
+					  },
+					  
+					  elements: {
+						  nodes: nodes, 
+						  edges: links
+						},
+  
+					  zoom: 1,
+					  minZoom: 0.1,
+ 					  maxZoom: 5,
+
+				});
+	
+		}
+	
+
+        // support d3.js  
+        function d3_draw_figure(nodes, links, node_size) {
+
+            var svg = document.createElement('div');
+            svg.setAttribute("id","svg2");
+            svg.setAttribute("class","svg2");
+            var nw = document.getElementById("networkvisual");
+            nw.appendChild(svg);
+
+            var svg = d3.select("#svg2").append("svg").attr("id", "svg_networkvisual").attr("width", w).attr("height", h);
+            var force = d3.layout.force()
+                      .charge(-480)
+                      .linkDistance(80)
+                      .gravity(0.3)
+                      .size([w, h]);
+    
+            force.nodes(nodes)
+              .links(links)
+              .start();
+            
+            var link = svg.selectAll(".link")
+              .data(links)
+              .enter().append("line")
+              .attr("class", "link")
+              .style("stroke-width", 2);
+            
+            var node = svg.selectAll(".node")
+              .data(nodes)
+              .enter().append("circle")
+              .attr("class", "node")
+              .attr("r", node_size)
+              .style("fill", function(d) { return color(d.group); })
+              .style("fill-opacity", .6)
+              .call(force.drag);
+            
+            var text = svg.selectAll(".text")
+              .data(nodes)
+              .enter().append("text")
+              .attr("font-family", "sans-serif")
+              .attr("font-size", "9px")
+              .attr("text-anchor", "middle")
+              .text(function(d) { return d.name; });
+            
+            force.on("tick", function() {
+                link.attr("x1", function(d) { return d.source.x; })
+                    .attr("y1", function(d) { return d.source.y; })
+                    .attr("x2", function(d) { return d.target.x; })
+                    .attr("y2", function(d) { return d.target.y; });
+            
+                node.attr("cx", function(d) { return d.x; })
+                    .attr("cy", function(d) { return d.y; });
+            
+                text.attr("x", function(d) { return d.x; })
+                    .attr("y", function(d) { return d.y; });
+              });
+        }
+    
+    
+        function inv(i) {
+           if (i==0)
+              return 0
+           else if (i==1)
+              return 2
+           else
+              return 1
+}
+
+    	// added support of two styles
+        function updateDrawing() {
+            var idx = document.getElementById("nmodule_select").selectedIndex;
+            var ndx = document.getElementById("nsize_select").selectedIndex;
+            var vdx = document.getElementById("vstyle_select").selectedIndex;
+            
+            //d3.select("#svg_networkvisual").remove();
+            var svg = document.getElementById("svg2");
+	    svg.parentNode.removeChild(svg);
+
+            //var cy = $('#networkvisual').cytoscape('get');
+            //cy.remove( cy.elements() );
+            
+            // 0 for cytoscape style, drag; 1 for d3 style, force
+            if (vdx == 0) {
+            cyto_draw_figure(cytonodes[idx], cytoedges[idx], node_sizes[inv(ndx)]);
+            
+    		var cy = $('#networkvisual').cytoscape('get');
+    		cy.panBy({ x: 0, y: -200 });
+            
+            } else {
+            d3_draw_figure(nodes[idx], links[idx], node_sizes[ndx]);
+            }
+        }
+    
+    </script>
+    </body> </html> 

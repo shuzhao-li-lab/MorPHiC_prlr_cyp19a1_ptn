@@ -1,0 +1,3 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C03451	(R)-S-Lactoylglutathione	33.35590327849827	row915	E168
+C00956	L-2-Aminoadipate; L-alpha-Aminoadipate; L-alpha-Aminoadipic acid; L-2-Aminoadipic acid; L-2-Aminohexanedioate	-6.788334703659774	row279	E78

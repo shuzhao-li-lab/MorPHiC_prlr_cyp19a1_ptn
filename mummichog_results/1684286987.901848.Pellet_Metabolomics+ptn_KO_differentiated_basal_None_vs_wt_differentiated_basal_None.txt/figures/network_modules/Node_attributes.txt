@@ -1,0 +1,4 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00882	Dephospho-CoA	-6.018871286423406	row2290	E281
+C00882	Dephospho-CoA	-6.002963981906854	row2171	E281
+C00864	(R)-Pantothenate	4.308953753210051	row252	E74

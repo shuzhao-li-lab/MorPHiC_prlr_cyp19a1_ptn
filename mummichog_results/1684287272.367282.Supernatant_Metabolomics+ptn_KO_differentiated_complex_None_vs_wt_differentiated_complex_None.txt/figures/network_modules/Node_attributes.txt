@@ -1,0 +1,44 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00242	Guanine	-10.96903907873916	row347	E65
+C05465	Taurochenodeoxycholate; Chenodeoxycholoyltaurine	6.29599812792025	row1958	E219
+C00637	Indole-3-acetaldehyde	13.45626034898461	row491	E86
+C00637	Indole-3-acetaldehyde	6.670665820279717	row522	E85
+C00330	Deoxyguanosine	28.29395431145816	row825	E151
+C05639	4,6-Dihydroxyquinoline; Quinoline-4,6-diol	10.72443948823036	row541	E96
+C05466		6.086879468795884	row1654	E204
+C02693	Indole-3-acetamide	6.358577252400953	row856	E155
+C00788	L-Adrenaline; (R)-(-)-Adrenaline; (R)-(-)-Epinephrine; (R)-(-)-Epirenamine; (R)-(-)-Adnephrine; 4-[(1R)-1-Hydroxy-2-(methylamino)ethyl]-1,2-benzenediol	5.076210971139944	row191	E37
+C05589	L-Normetanephrine	5.076210971139944	row191	E37
+tetpent3crn	tetracosapentaenoyl carnitine	28.033761054907778	row1977	E224
+C05466		4.939510686963942	row1557	E204
+C05463	Taurodeoxycholate	79.89317359423619	row1823	E219
+C05828	3-Methylimidazoleacetic acid	4.739936202564132	row570	E102
+C05462	Chenodeoxyglycocholate	6.086879468795884	row1654	E204
+C00387	Guanosine	-20.244759582523617	row857	E159
+C05462	Chenodeoxyglycocholate	4.939510686963942	row1557	E204
+tetpent6crn	tetracosapentaenoyl carnitine	28.033761054907778	row1977	E224
+C05465	Taurochenodeoxycholate; Chenodeoxycholoyltaurine	79.89317359423619	row1823	E219
+C00475	Cytidine	-7.363842532385207	row787	E148
+C00242	Guanine	-6.765828327910866	row817	E65
+dcsptn1crn	docosa-4,7,10,13,16-pentaenoyl carnitine	16.716917705512646	row1797	E218
+C00643	5-Hydroxy-L-tryptophan	12.091967893488098	row79	E18
+C00637	Indole-3-acetaldehyde	5.481940167444814	row490	E85
+C00601	Phenylacetaldehyde; alpha-Tolualdehyde	11.878365360871301	row606	E109
+C00387	Guanosine	-36.62221440312662	row1234	E159
+c226crn	cervonyl carnitine	7.0771852588532	row1787	E217
+C00242	Guanine	-13.880899145331913	row332	E65
+CE3087	beta-carboline	4.9708618037060575	row723	E128
+C05639	4,6-Dihydroxyquinoline; Quinoline-4,6-diol	6.16078748897796	row542	E96
+C05466		7.480584708967525	row1566	E204
+clpndcrn	clupanodonyl carnitine	16.716917705512646	row1797	E218
+C16633	5-Fluorouridine	9.384636980138255	row760	E140
+C00212	Adenosine	28.29395431145816	row825	E151
+C00643	5-Hydroxy-L-tryptophan	12.475973942024892	row98	E18
+C00785	Urocanate	6.176451703201545	row136	E31
+C00294	Inosine	-13.322322043899268	row834	E156
+C01921	glycocholate	13.504388354129578	row1705	E214
+C05463	Taurodeoxycholate	6.29599812792025	row1958	E219
+C05462	Chenodeoxyglycocholate	7.480584708967525	row1566	E204
+C00785	Urocanate	7.485248533457894	row518	E32
+C00788	L-Adrenaline; (R)-(-)-Adrenaline; (R)-(-)-Epinephrine; (R)-(-)-Epirenamine; (R)-(-)-Adnephrine; 4-[(1R)-1-Hydroxy-2-(methylamino)ethyl]-1,2-benzenediol	8.283747985261488	row192	E38
+C05589	L-Normetanephrine	8.283747985261488	row192	E38

@@ -1,0 +1,4 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+CE3086	4-(2-amino-3-hydroxyphenyl)-4-oxobutanoic acid O-glucoside	13.342672720495251	row2043	E295
+CE3086	4-(2-amino-3-hydroxyphenyl)-4-oxobutanoic acid O-glucoside	72.41080523848314	row2044	E295
+C15658	6-(alpha-D-Glucosaminyl)-1D-myo-inositol	8.193478941870572	row1862	E283

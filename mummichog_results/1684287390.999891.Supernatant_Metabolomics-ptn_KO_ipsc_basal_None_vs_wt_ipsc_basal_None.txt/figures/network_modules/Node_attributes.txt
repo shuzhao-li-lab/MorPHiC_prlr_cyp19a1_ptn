@@ -1,0 +1,21 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C04299	D-myo-Inositol 1,2-cyclic phosphate; 1D-myo-Inositol 1,2-cyclic phosphate	27.974432194098103	row457	E84
+C02985	L-Fucose 1-phosphate; 6-Deoxy-L-galactose 1-phosphate; beta-L-Fucose 1-phosphate	-20.688918778643316	row494	E90
+C00267	alpha-D-Glucose	-22.94333683026439	row215	E49
+C07480		-22.94333683026439	row215	E49
+C00984	alpha-D-Galactose	-22.94333683026439	row215	E49
+C00159	D-Mannose	-22.94333683026439	row215	E49
+C00795	D-Tagatose; lyxo-Hexulose	-22.94333683026439	row215	E49
+C00221	beta-D-Glucose	-22.94333683026439	row215	E49
+C02336	beta-D-Fructose; beta-Fruit sugar; beta-D-arabino-Hexulose; beta-Levulose; Fructose	-22.94333683026439	row215	E49
+CE4970	2-methylbutyrylglycine	-22.94333683026439	row215	E50
+C05635	5-Hydroxyindoleacetate	-24.93933179305787	row650	E76
+C00962	beta-D-Galactose	-22.94333683026439	row215	E49
+C00031	D-Glucose	-22.94333683026439	row215	E49
+CE4968	isovalerylglycine	-22.94333683026439	row215	E50
+C13747	1,7-Dimethylxanthine; Paraxanthine	-22.94333683026439	row215	E49
+C06196	2'-Deoxyinosine 5'-phosphate; dIMP	-16.76835888409517	row1091	E148
+C16596	5-Phenyl-1,3-oxazinane-2,4-dione	-24.93933179305787	row650	E76
+C01260	P1,P4-Bis(5'-adenosyl) tetraphosphate; AppppA	16.03807944365372	row1670	E182
+C00137	myo-Inositol	-22.94333683026439	row215	E49
+C00439	N-Formimidoyl-L-glutamate	-12.875093367106837	row122	E33

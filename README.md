@@ -62,3 +62,7 @@ Solution: better to overcorrect than undercorrect here, I will leave this.
 - the term level analysis with the linear model will exaggerate differences between groups. 
 
 Solution: the omnibus results are provided in case someone takes issue with this; however, these differences are real, especially with the aggressive bonferroni-esque correction. So we may be leaving less significant things out but that is fine. 
+
+- Khipu is using the default mass search grid, this includes isotopologues that are highly unlikely. We can probably restrict the isotopologue search grid to the m, m+13C1, m+13C2 and maybe the m+13C3 isotopologues in the future.
+
+Solution: restricted Khipu to use only the m, m+13C1, and m+13C3 isotopologues and charges z=1,2,3 or z=-1,-2,-3. Default adducts were still allowed. This had a fairly major impact on the results but not sure why...

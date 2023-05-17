@@ -1,0 +1,17 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00795	D-Tagatose; lyxo-Hexulose	-5.145632606573505	row234	E53
+C00031	D-Glucose	-5.145632606573505	row234	E53
+C01119	Oxidized dithiothreitol	6.066215211175147	row122	E32
+C13747	1,7-Dimethylxanthine; Paraxanthine	-5.145632606573505	row234	E53
+C00159	D-Mannose	-5.145632606573505	row234	E53
+C00267	alpha-D-Glucose	-5.145632606573505	row234	E53
+CE4970	2-methylbutyrylglycine	-5.145632606573505	row234	E55
+C00221	beta-D-Glucose	-5.145632606573505	row234	E53
+CE4968	isovalerylglycine	-5.145632606573505	row234	E55
+C02336	beta-D-Fructose; beta-Fruit sugar; beta-D-arabino-Hexulose; beta-Levulose; Fructose	-5.145632606573505	row234	E53
+C00962	beta-D-Galactose	-5.145632606573505	row234	E53
+C00137	myo-Inositol	-5.145632606573505	row234	E53
+C00984	alpha-D-Galactose	-5.145632606573505	row234	E53
+C06196	2'-Deoxyinosine 5'-phosphate; dIMP	-5.006360560949183	row1059	E158
+C01119	Oxidized dithiothreitol	41.91474149790647	row121	E32
+C07480		-5.145632606573505	row234	E53

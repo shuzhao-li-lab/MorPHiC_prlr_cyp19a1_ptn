@@ -1,0 +1,11 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C04874	Dihydroneopterin	14.917632429810519	row1025	E114
+C16255	[Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine; S-Acetyldihydrolipoamide-E	13.720091017349853	row498	E96
+C00835	Sepiapterin	14.924401420299711	row671	E130
+C01081	Thiamin monophosphate; Thiamine monophosphate; Thiamin phosphate; Thiamine phosphate; TMP	29.37646166218637	row1606	E197
+C03150	N-Ribosylnicotinamide	14.917632429810519	row1025	E114
+C01368	3'-UMP; Uridine 3'-monophosphate; Uridine 3'-phosphate	-19.32281731592562	row1105	E174
+C00105	UMP	-19.32281731592562	row1105	E174
+C01136	S-Acetyldihydrolipoamide; 6-S-Acetyldihydrolipoamide	13.720091017349853	row498	E96
+C03684	6-Pyruvoyl-5,6,7,8-tetrahydropterin	14.924401420299711	row671	E130
+C00760	Cellulose; (1,4-beta-D-Glucosyl)n; (1,4-beta-D-Glucosyl)n+1; (1,4-beta-D-Glucosyl)n-1; 1,4-beta-D-Glucan; Microcrystalline cellulose	63.13220825753345	row2190	E218

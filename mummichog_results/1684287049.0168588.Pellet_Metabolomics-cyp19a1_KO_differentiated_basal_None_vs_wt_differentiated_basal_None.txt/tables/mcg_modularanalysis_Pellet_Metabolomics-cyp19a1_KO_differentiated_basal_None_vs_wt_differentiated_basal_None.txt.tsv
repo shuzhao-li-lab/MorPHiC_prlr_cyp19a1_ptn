@@ -1,0 +1,2 @@
+MODULE	p-value	size	members (name)	members (id)	This module overlaps with
+module_1	0.029484029484029485	6	Formylkynurenine$2-keto-4-methylthiobutyrate$5-Hydroxy-L-tryptophan$D-Tryptophan$L-Formylkynurenine$L-Tryptophan	C02406,C01180,C00643,C00525,C02700,C00078	(5, 'Tryptophan metabolism');(1, 'Methionine and cysteine metabolism')

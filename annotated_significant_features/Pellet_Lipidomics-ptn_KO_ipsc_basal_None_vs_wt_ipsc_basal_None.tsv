@@ -1,0 +1,71 @@
+m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
+113.9879	21.75	0.015777073996079104	-11.857380327350478		-0.6217862138545094				
+281.2486	193.95	0.04275814355478247	-7.746060477412155	C18H34O2	-1.208372060979773	17-octadecenoic acid,9-elaidic acid,5Z-octadecenoic acid,Dihydromalvalic acid,17:1(6)(9Me),17:1(12)(7Me),Methyl 14-methyl-8E-hexadecenoate,ethyl 9Z-hexadecenoate,trans-2-oleic acid,trans-12-elaidic acid,11-Cycloheptylundecanoic acid,8E-Hexadecenyl acetate,16E-octadecenoic acid,Thalictric acid,7Z-octadecenoic acid,trans-8-elaidic acid,3Z-Hexadecenyl acetate,Petroselaidic acid,12Z-Hexadecenyl acetate,16Z-octadecenoic acid,4-octadecylenic acid,9Z-Hexadecenyl acetate,cis-8-oleic acid,cis-vaccenic acid,13Z-octadecenoic acid,3Z-octadecenoic acid,18-Octadecanolide,Methyl 14-methyl-8Z-hexadecenoate,7Z-Hexadecenyl acetate,cis-10-oleic acid,15E-octadecenoic acid,18:1(13E),18:1(14Z),4Z-octadecenoic acid,10-Octadecenoic acid,11E-Hexadecenyl acetate,Cyclopentanetridecanoic acid,7-Hexadecenyl acetate,2-methyl-16-heptadecenoic acid,Oleic acid,Isooctadecenoic acid,trans-vaccenic acid,11Z-Hexadecenyl acetate,2Z-octadecenoic acid,15Z-octadecenoic acid,ethyl 7Z-hexadecenoate,18:1(14E),10Z-Hexadecenyl acetate,3-octadecylenic acid,Petroselinic acid,cis-12-oleic acid,7E-octadecenoic acid,17:1(4)(15Me),6E-Hexadecenyl acetate,Ethyl 9-hexadecenoate,9E-Hexadecenyl acetate,5E-Hexadecenyl acetate,10E-octadecenoic acid,17:1(4)(16Me),5Z-Hexadecenyl acetate	kp93_282.2559	{'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]', 'Fatty esters [FA07]'}
+282.0846	21.89	0.015353001956552726	-12.037690750798076		-0.9855821512348903				
+282.2521	194.08	0.022206680217396482	-10.006545253236684	C18H34O2	-1.173219756278094	17-octadecenoic acid,9-elaidic acid,5Z-octadecenoic acid,Dihydromalvalic acid,17:1(6)(9Me),17:1(12)(7Me),Methyl 14-methyl-8E-hexadecenoate,ethyl 9Z-hexadecenoate,trans-2-oleic acid,trans-12-elaidic acid,11-Cycloheptylundecanoic acid,8E-Hexadecenyl acetate,16E-octadecenoic acid,Thalictric acid,7Z-octadecenoic acid,trans-8-elaidic acid,3Z-Hexadecenyl acetate,Petroselaidic acid,12Z-Hexadecenyl acetate,16Z-octadecenoic acid,4-octadecylenic acid,9Z-Hexadecenyl acetate,cis-8-oleic acid,cis-vaccenic acid,13Z-octadecenoic acid,3Z-octadecenoic acid,18-Octadecanolide,Methyl 14-methyl-8Z-hexadecenoate,7Z-Hexadecenyl acetate,cis-10-oleic acid,15E-octadecenoic acid,18:1(13E),18:1(14Z),4Z-octadecenoic acid,10-Octadecenoic acid,11E-Hexadecenyl acetate,Cyclopentanetridecanoic acid,7-Hexadecenyl acetate,2-methyl-16-heptadecenoic acid,Oleic acid,Isooctadecenoic acid,trans-vaccenic acid,11Z-Hexadecenyl acetate,2Z-octadecenoic acid,15Z-octadecenoic acid,ethyl 7Z-hexadecenoate,18:1(14E),10Z-Hexadecenyl acetate,3-octadecylenic acid,Petroselinic acid,cis-12-oleic acid,7E-octadecenoic acid,17:1(4)(15Me),6E-Hexadecenyl acetate,Ethyl 9-hexadecenoate,9E-Hexadecenyl acetate,5E-Hexadecenyl acetate,10E-octadecenoic acid,17:1(4)(16Me),5Z-Hexadecenyl acetate	kp93_282.2559	{'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]', 'Fatty esters [FA07]'}
+181.9758	21.62	0.009613508155461428	-15.348258961197336		-0.7934548872106681				
+134.0462	22.94	0.0408519859873954	-7.908869287862466	C4H9NO4	-0.807284066492798	(+)-threo-2-Amino-3,4-dihydroxybutanoic acid	kp140_135.0534	{'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]'}
+240.9135	25.04	0.006120629379629749	19.768412034216446		1.1146393874199028				
+305.2487	186.07	0.032105922516637325	-8.55021132442585	C20H34O2	-1.8368961941930593	2-Cyclopentene-1-pentadecenoic acid,18-methyl-8Z,11Z,14Z-nonadecatrienoic acid,8Z,12E,14Z-eicosatrienoic acid,ETrE(5Z, 8Z, 11Z),5Z,9Z,12Z-Eicosatrienoic acid,9Z,11Z,14Z-Eicosatrienoic acid,Bishomocolumbinic acid,3Z,6Z,9Z-Eicosatrienoic acid,(E,E)-3,7,11-Trimethyl-2,6,10-dodecatrienyl pentanoate,7E,13E,17Z-Eicosatrienoic acid,7Z,10Z,13Z-eicosatrienoic acid,Bishomopinolenic acid,5,8,11-eicosatrienoic acid,20:3(5Z,13Z,16Z),eicosa-5Z,8Z,14Z-trienoic acid,7,11,14-Eicosatrienoic acid,(E,E)-3,7,11-Trimethyl-2,6,10-dodecatrienyl 3-methylbutanoate,7,10,13-Eicosatrienoic acid,plaunotol,bishomo-gamma-linolenic acid,Dihomo-alpha-linolenic acid,2E,4E,8Z-eicosatrienoic acid,5E,11Z,14Z-Eicosatrienoic acid,3Z,6Z,9Z-Octadecatrienyl acetate,2-Cyclopentene-1-pentadec-9c-enoic acid,11,14,17-eicosatrienoic acid,Sciadonic acid,Oncobic acid,(5Z,9E,14Z)-icosa-5,9,14-trienoic acid,9Z,12Z,15Z-Octadecatrienyl acetate	kp212_306.256	{'Prenol Lipids [PR]', 'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]', 'Fatty esters [FA07]', 'Isoprenoids [PR01]'}
+309.28	222.54	0.029815599107089124	-8.854698595403697	C20H38O2	-1.6506383216095273	6Z-Eicosenoic acid,(E)-3,7-Dimethyl-6-octenyl 3,7-dimethyl-2,6-octadienoate,20:1(7Z),16Z-eicosenoic acid,Pentyl pentadec-11-enoate,13-eicosenoic acid,20-Eicosanolide,13E-Octadecenyl acetate,15-eicosenoic acid,Gadelaidic acid,trans-gondoic acid,2Z-Phytenoic Acid,6-methyl-9-heptadecenoic acid,14Z-eicosenoic acid,cis-gondoic acid,13-Cycloheptyltridecanoic acid,cis-Gadoleic acid,15Z-eicosenoic acid,5E-eicosenoic acid,5Z-eicosenoic acid,2E-Phytenic acid,13Z-Octadecenyl acetate,8Z-eicosenoic acid,Ethyl oleate,3E-Eicosenoic acid,17Z-octadecenoic acid,Paullinic acid,11Z-Octadecenyl acetate,9Z-Octadecenyl acetate,2E-Phytenoic acid,2E-Octadecenyl acetate,Prostanoic acid skeleton,9-Octadecenyl acetate,10Z-Eicosenoic acid,16-methyl-9E-nonadecenoic acid	kp230_310.2873	{'Prenol Lipids [PR]', 'Fatty Acyls [FA]'}	{'Eicosanoids [FA03]', 'Fatty Acids and Conjugates [FA01]', 'Fatty esters [FA07]', 'Isoprenoids [PR01]'}
+248.9604	21.36	0.03611578741287514	-8.243408320259189		-0.7228640762742202				
+249.9639	21.36	0.028119706933329103	-9.144045220177743		-0.6845667834121052				
+250.9648	21.36	0.009613508155461428	-14.983866467340274		-0.6899984644405492				
+256.9029	22.8	0.0075466035303138335	18.149170845802193		1.7781383271343358				
+333.2801	209.26	0.013271594068114151	-13.067608989175366	C22H38O2	-1.7691834443712189	Adipostatin D,10,10-dimethyl-5Z,8Z,11Z-eicosatrienoic acid,9E,15E,19Z-docosatrienoic acid,3E,13Z,16Z-Docosatrienoic acid,Adipostatin E,5Z,11Z,17Z-docosatrienoic acid,11Z,14Z,17Z-Eicosatrienyl acetate,Dihomo Mead's acid,2-methyl-5-pentadecyl resorcinol,Dihomopinolenic acid,3Z,9Z,15Z-docosatrienoic acid,8,11,14-docosatrienoic acid,(E,E)-3,7,11-Trimethyl-2,6,10-dodecatrienyl heptanoate,Adipostatin C,Eranthic acid,DTrE,10,13,16-Docosatrienoic acid,7,7-dimethyl-5Z,8Z,11Z-eicosatrienoic acid,22:3(7Z,13Z,16Z),Adipostatin F,7,10,13-docosatrienoic acid,13,16,19-docosatrienoic acid	kp326_334.2874	{'Fatty Acyls [FA]', 'Polyketides [PK]'}	{'Fatty esters [FA07]', 'Phenolic lipids [PK15]', 'Fatty Acids and Conjugates [FA01]', 'Docosanoids [FA04]'}
+335.2958	228.62	0.04803616792894962	-7.298269488214376		-1.4233290747874534				
+215.1649	36.4	0.019813997957572806	-10.70179441428325		-0.4183116488821135				
+453.1795	186.07	0.029815599107089124	-8.833369377569923		-1.5905805574593543				
+455.195	203.98	0.013608384873228468	-12.76411807227586		-1.1944192995462224				
+457.2107	221.88	0.009613508155461428	-14.476589040069017		-1.2280549145781627				
+520.2139	208.99	0.010005996418993496	-14.182320085613837		-1.7194388198071877				
+466.3308	178.03	0.013608384873228468	-12.627735197075415	C28H42O3	-1.9907396495426184	Stoloniferone O,25-hydroxy-1alpha-hydroxymethyl-23,23,24,24-tetradehydrovitamin D3 / 25-hydroxy-1alpha-hydroxymethyl-23,23,24,24-tetradehydrocholecalciferol,Subergorgiaol L,Stoloniferone B,9,11-dehydroergosterol peroxide,(22E,24E)-1alpha,25-dihydroxy-22,23,24,24a-tetradehydro-24a-homovitamin D3 / (22E,24E)-1alpha,25-dihydroxy-22,23,24,24a-tetradehydro-24a-homocholecalciferol,Stoloniferone P,Subergorgiaol K,Yalongsterol A,Stoloniferone A,25-hydroxy-1beta-hydroxymethyl-23,23,24,24-tetradehydro-3-epivitamin D3 / 25-hydroxy-1beta-hydroxymethyl-23,23,24,24-tetradehydro-3-epicholecalciferol	kp609_426.313	{'Sterol Lipids [ST]'}	{'Sterols [ST01]', 'Secosteroids [ST03]', 'Bile acids and derivatives [ST04]'}
+524.2079	208.86	0.049123336838558136	-7.2163664994853916		-1.3255659880632642				
+366.8748	22.15	0.009613508155461428	14.716365076677492		4.424594027232507				
+525.2113	208.73	0.032105922516637325	-8.540783808512971		-1.3000815210209389				
+431.1745	193.16	0.025816279159407388	-9.514093208518746		-0.8656236043339725				
+536.3087	103.97	0.025464967409832426	-9.602447620727144	C26H49O9P	-1.05615931611705	PG(20:2(11Z,14Z)/0:0)	kp668_536.312	{'Glycerophospholipids [GP]'}	{'Glycerophosphoglycerols [GP04]'}
+479.2103	209.12	0.006120629379629749	-19.787690888848026		-1.3293127571718237				
+481.2108	208.73	0.007580200356077837	-17.318938744829584		-1.244691087720895				
+441.3375	212.41	0.04803616792894962	-7.322109035542234	C29H46O3	-1.2767913723812292	1alpha,25-dihydroxy-22,23-didehydro-24a,24b-dihomovitamin D3 /1alpha,25-dihydroxy-22,23-didehydro-24a,24b-dihomocholecalciferol,25-Hydroxy[26,27-methyl]vitamin D3 3beta-(1,2-epoxypropyl)ether,18-acetoxy-vitamin D3,(22E)-1alpha,25-dihydroxy-26,27-dimethyl-22,23-didehydrovitamin D3 / (22E)-1alpha,25-dihydroxy-26,27-dimethyl-22,23-didehydrocholecalciferol,Subergorgiaol F,Nebrosteroid I,1alpha,25-dihydroxy-26,27-ethanovitamin D3,(24aE)-1alpha,25-dihydroxy-24a,24b-didehydro-24a,24b-dihomovitamin D3 /(24aE)-1alpha,25-dihydroxy-24a,24b-didehydro-24a,24b-dihomocholecalciferol,(24E)-1alpha,25-dihydroxy-24,24a-didehydro-24a,24b-dihomovitamin D3 /(24E)-1alpha,25-dihydroxy-24,24a-didehydro-24a,24b-dihomocholecalciferol,1alpha,25-dihydroxy-11alpha-vinylvitamin D3,Subergorgiaol G,4beta-methyl-zymosterol-4alpha-carboxylic acid,1alpha,25-dihydroxy-24-methylvitamin D2	kp801_442.3446	{'Sterol Lipids [ST]'}	{'Sterols [ST01]', 'Secosteroids [ST03]'}
+451.1792	185.39	0.028119706933329103	-9.178941810408505		-1.988354220198822				
+452.2785	94.63	0.009613508155461428	-14.65194589706604	C21H44NO7P	-1.4748398067756838	PE(0:0/16:0),1-(2-methoxy-13-methyl-6Z-tetradecenyl)-sn-glycero-3-phosphoethanolamine,1-(2-methoxy-6Z-pentadecenyl)-sn-glycero-3-phosphoethanolamine,PC(13:0/0:0),PE(16:0/0:0)	kp937_453.2858	{'Glycerophospholipids [GP]'}	{'Glycerophosphoethanolamines [GP02]', 'Glycerophosphocholines [GP01]'}
+568.8401	21.89	0.0011698805458725666	38.621322349310056		4.2019761562146805				
+492.3463	212.14	0.0165199648490821	-11.452580981149213	C25H52NO6P	-2.680086636548456	PC(P-17:0/0:0),PE(P-20:0/0:0)	kp955_493.3536	{'Glycerophospholipids [GP]'}	{'Glycerophosphoethanolamines [GP02]', 'Glycerophosphocholines [GP01]'}
+552.4636	273.28	0.032105922516637325	-8.550472336933993	C33H63NO5	-0.6236295778580327	Topostin B553	kp1003_553.4707	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+556.875	22.41	0.021717086952012837	10.1969462264389		2.5669530576567574				
+502.2947	89.75	0.021717086952012837	-10.185883276038068	C25H46NO7P	-0.974488869205743	PE(0:0/20:3(5Z,8Z,11Z)),PE(0:0/20:3(11Z,14Z,17Z)),PE(20:3(11Z,14Z,17Z)/0:0),PE(0:0/20:3(8Z,11Z,14Z)),PE(20:3(5Z,8Z,11Z)/0:0),PE(20:3(8Z,11Z,14Z)/0:0)	kp1163_503.3018	{'Glycerophospholipids [GP]'}	{'Glycerophosphoethanolamines [GP02]'}
+559.3045	108.96	0.013608384873228468	-12.650823561454098	C28H49O9P	-1.7166306827747988	PG(22:4(7Z,10Z,13Z,16Z)/0:0)	kp1170_560.3116	{'Glycerophospholipids [GP]'}	{'Glycerophosphoglycerols [GP04]'}
+560.3725	208.07	0.017401869174244692	-11.21948921459723		-1.8617898812027072				
+503.2977	90.01	0.04540238083205489	-7.528155608464056	C25H46NO7P	-0.9005763455779174	PE(0:0/20:3(5Z,8Z,11Z)),PE(0:0/20:3(11Z,14Z,17Z)),PE(20:3(11Z,14Z,17Z)/0:0),PE(0:0/20:3(8Z,11Z,14Z)),PE(20:3(5Z,8Z,11Z)/0:0),PE(20:3(8Z,11Z,14Z)/0:0)	kp1163_503.3018	{'Glycerophospholipids [GP]'}	{'Glycerophosphoethanolamines [GP02]'}
+586.2602	212.41	0.020265908095554497	-10.500312439561563		-1.2387926498914261				
+564.2011	222.15	0.015339385322269087	-12.141790541788234		-1.1544739771994053				
+592.1959	208.86	0.0462235259238872	-7.461834895465125		-1.2903268108869987				
+699.3819	84.34	0.01648650221341759	-11.632599887217346		-1.4988853412280818				
+776.5001	263.01	0.04402852420306195	-7.621232935366058		-1.186705774195726				
+777.5034	263.01	0.04364555039560397	-7.671191693294292		-1.2088699718231268				
+778.5042	263.01	0.028119706933329103	-9.106123776727724		-1.1641999252483757				
+792.4917	256.42	0.020265908095554497	-10.56404139971085		-2.038149522905151				
+794.5071	285.91	0.007771735944064549	-16.753422000888627	C40H77NO12S	-1.7137202962732907	(3'-sulfo)Galbeta-Cer(d18:1/16:0(2OH))	kp1945_795.5141	{'Sphingolipids [SP]'}	{'Acidic glycosphingolipids [SP06]'}
+848.4685	305.38	0.003087024506587791	24.702107270659578		3.6874535956817986				
+1037.4777	296.3	0.001306085572458764	33.93939515504423		3.558529873810384				
+1037.4777	298.67	0.009613508155461428	14.514300850470459		4.924883358890302				
+1037.4777	299.98	0.0005169027801070808	56.36697975291512		4.659966883211357				
+1039.5094	438.88	0.03771333376659354	8.113217791565761		1.2540390263749934				
+822.452	298.8	0.019813997957572806	10.748575849909784		1.8334798894641153				
+1059.5723	482.35	0.049123336838558136	7.199332018367555		3.2025386772138127				
+1059.5723	487.36	0.0019123992851108505	29.16253423268651		2.6359708536322284				
+985.5698	439.01	0.022206680217396482	10.019397951569614		3.082581640059608				
+887.5064	274.34	0.029028984018130605	-8.98465162035313		-1.2043650184822248				
+888.5094	274.2	0.04803616792894962	-7.304542730149396		-1.3137586264206433				
+989.4922	338.16	0.00046226792066707566	68.94241552069325		3.0859596995017284				
+989.4922	339.74	0.0019123992851108505	28.695780560785508		2.770094999133967				
+989.4922	341.71	0.007771735944064549	16.673802959058328		2.141410278714055				
+989.4922	344.46	0.0075466035303138335	17.64335649676459		4.020043433525437				
+996.5778	313.53	0.028119706933329103	9.137962695757206		3.382985838574232				
+1001.5386	311.96	0.04116354499267835	7.858211181932295		2.7041396897618313				
+1004.5393	421.88	0.0075466035303138335	17.661251427988578		3.469475126452636				
+1004.5393	423.85	0.0011698805458725666	39.67476824803112		1.9381285614588109				
+1004.5393	426.24	0.001306085572458764	34.736545814345526		2.8291409355888497				
+1004.5393	432.68	0.009613508155461428	14.746745747545324		3.818658286947363				
+1516.1595	440.98	0.0165199648490821	11.456700399622614		1.2898682503572108				

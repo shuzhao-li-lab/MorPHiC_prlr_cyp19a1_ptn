@@ -1,0 +1,4 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C03451	(R)-S-Lactoylglutathione	26.375586916117122	row1216	E202
+C01732	Mesaconate; 2-Methylfumarate; Mesaconic acid; Methylfumaric acid	72.75777832845688	row28	E8
+C00490	Itaconate; Itaconic acid; Methylenesuccinic acid	72.75777832845688	row28	E8

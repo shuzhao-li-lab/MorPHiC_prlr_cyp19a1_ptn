@@ -1,0 +1,182 @@
+m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
+293.8683	22.27	0.02621806864138201	7.685585546383444		3.6655790538481288				
+121.0649	65.25	0.031134145545683996	-7.115868305410922	C8H8O	-0.7229789438215519	Lentialexin	kp94_120.0578	{'Fatty Acyls [FA]'}	{'Fatty alcohols [FA05]'}
+298.2737	36.91	0.011023161207562013	-11.16958411409355	C18H35NO2	-2.7856706109126996	(4E,8E,d18:2) sphingosine,4E,14Z-Sphingadiene,3-ketosphingosine,Lepadin D,(4E,8Z,d18:2) sphingosine,Palmitoleoyl-EA	kp118_297.2666	{'Sphingolipids [SP]', 'Fatty Acyls [FA]'}	{'Sphingoid bases [SP01]', 'Fatty amides [FA08]'}
+298.2737	48.78	0.008762594318995828	-12.151965083515458	C18H35NO2	-2.9008787007169303	(4E,8E,d18:2) sphingosine,4E,14Z-Sphingadiene,3-ketosphingosine,Lepadin D,(4E,8Z,d18:2) sphingosine,Palmitoleoyl-EA	kp119_297.2664	{'Sphingolipids [SP]', 'Fatty Acyls [FA]'}	{'Sphingoid bases [SP01]', 'Fatty amides [FA08]'}
+298.31	92.25	0.004052881050622939	-18.507381463677948		-3.499238988108253				
+189.0732	22.14	0.026537785502350003	7.629474865600634		0.26844023101277514				
+309.1459	25.97	0.03776925082383663	-6.659928866310529		-2.8562473351465254				
+312.2032	36.26	0.023333857247246605	-8.227127254600138	C21H26O2	-3.438918527729477	Cannabinol	kp298_310.1926	{'Polyketides [PK]'}	{'Aromatic polyketides [PK13]'}
+314.305	79.87	0.008762594318995828	-12.151559414826679		-3.089329446543889				
+315.1739	79.21	0.01030670923221455	-11.504282000736461		-3.240844226703839				
+254.2476	36.52	0.043981863871674284	-6.200295159682522	C16H31NO	-1.7628374266920162	Obscuraminol B,Palmitoleamide,Obscuraminol C	kp441_253.2402	{'Sphingolipids [SP]', 'Fatty Acyls [FA]'}	{'Sphingoid bases [SP01]', 'Fatty amides [FA08]'}
+254.2476	44.03	0.04896989963769899	-5.946175446259373	C16H31NO	-1.4280824937676613	Obscuraminol B,Palmitoleamide,Obscuraminol C	kp442_253.2402	{'Sphingolipids [SP]', 'Fatty Acyls [FA]'}	{'Sphingoid bases [SP01]', 'Fatty amides [FA08]'}
+138.9064	22.41	0.004052881050622939	18.676903516932043		3.368887229919565				
+140.0679	194.66	0.049943406120567774	-5.87859754392309		-2.7909934965671273				
+334.2945	36.78	0.00699305582366517	13.754804228913716		3.586023735884311				
+334.2945	49.96	0.018887134237322988	8.929124988553738		2.0980919242972114				
+206.007	2.76	0.041044343797519596	6.466867317398743		5.147147333444838				
+262.9066	1.58	0.011869474180076889	10.653661139854737		5.592770583431591				
+207.1169	66.19	0.027684950053709086	7.444664334009329		0.5428199096627502				
+207.1169	91.6	0.011023161207562013	-11.153524392241136		-1.2709951973840319				
+209.0725	21.88	0.029707221823666828	7.218715633245688		2.1519330435407475				
+343.1322	41.27	0.011023161207562013	-11.059543676164155		-0.6452418354453293				
+344.1358	41.01	0.011178778210747285	-10.962776672277244		-0.643102032566329				
+346.2161	92.12	0.008762594318995828	-12.47770464844062		-1.8322631102215468				
+346.2161	95.97	0.01030670923221455	-11.474667156641306		-1.9810926012814818				
+353.3199	152.38	0.002022226702399943	31.38331034905201		4.135698067574367				
+361.9489	256.2	0.026578993262271925	7.565039505833711		3.874783712765023				
+363.3042	167.66	0.006079372620646727	15.084009383545595		5.571837812319377				
+363.3042	188.1	0.005950449802170117	15.263924673421847		5.675417623427089				
+363.3042	192.3	0.01601989892509142	9.431676634428955		4.111345040749988				
+280.2632	36.91	0.014354449986630444	-9.840408666982665	C18H33NO	-2.976734511137753	Linoleamide	kp1020_279.2559	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+280.2632	48.78	0.011023161207562013	-11.081168597819195	C18H33NO	-2.903960119222461	Linoleamide	kp1021_279.2559	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+368.2639	68.16	0.027684950053709086	-7.429126029424902		-3.0892734732407074				
+369.3917	256.2	0.019340600893353162	8.771931927989954		2.045760085370315				
+369.3917	267.15	2.9873587946044847e-05	121.34524253120863		6.770535493772362				
+281.2665	36.91	0.014354449986630444	-9.857600498689298	C18H33NO	-3.3246584992783426	Linoleamide	kp1020_279.2559	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+281.2665	48.78	0.013144999089824052	-10.288050879597302	C18H33NO	-3.148884578200768	Linoleamide	kp1021_279.2559	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+371.3304	151.72	0.005311780677635652	15.920489255861327	C26H42O	2.7324847619968438	19-norcholestenone	kp1103_370.3232	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
+372.3339	151.99	0.002022226702399943	31.558591037991867	C26H42O	4.0195382562293815	19-norcholestenone	kp1103_370.3232	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
+284.2945	77.64	0.014387622322153584	-9.806475645377805	C18H37NO	-1.4993103758346429	Bacillamidin G,Stearamide	kp1142_283.2872	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+285.2979	77.24	0.02621806864138201	-7.696104944554047	C18H37NO	-1.874667636772454	Bacillamidin G,Stearamide	kp1142_283.2872	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+379.2991	217.85	0.026578993262271925	-7.588591343293204		-2.0645652598081554				
+380.2083	193.87	0.02621806864138201	-7.766162907444299		-1.6894202183208336				
+381.3147	243.82	0.025570672968022286	7.92336410009808	C27H40O	2.8506652735926075	Pentalinonsterol,Sibogol F	kp1244_380.3075	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
+382.3182	243.95	0.024065223321580807	8.06913925952705	C27H40O	2.77449351516227	Pentalinonsterol,Sibogol F	kp1244_380.3075	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
+383.125	41.01	0.006749562279511207	-14.012776527232438		-0.8105380370584108				
+383.2787	64.99	0.025993919020086916	-7.8713878417403205	C22H38O5	-0.8288970818249837	unoprostone,ent-10-epi-17-F2t-dihomo-IsoP,7-F2c-dihomo-IsoP,14,7-diepi-14-F2c-dihomo-IsoP,10,13-diepi-10-F2c-dihomo-IsoP,14-F2-dihomo-IsoP,ent-14-epi-14-F2c-dihomo-IsoP,8-epi-10-F2t-dihomo-IsoP,ent-10-F2t-dihomo-IsoP,ent-10-epi-7-F2c-dihomo-IsoP,ent-10,13-diepi-10-F2t-dihomo-IsoP,14-epi-14-F2t-dihomo-IsoP,ent-14,7-diepi-14-F2c-dihomo-IsoP,ent-14,7-diepi-14-F2t-dihomo-IsoP,14-epi-14-F2c-dihomo-IsoP,ent-10-epi-7-F2t-dihomo-IsoP,5-epi-7-F2c-dihomo-IsoP,ent-8-epi-10-F2t-dihomo-IsoP,ent-17-F2c-dihomo-IsoP,17-F2t-dihomo-IsoP,7-F2t-dihomo-IsoP,ent-10,7-diepi-7-F2t-dihomo-IsoP,10,17-diepi-17-F2t-dihomo-IsoP,15-epi-17-F2t-dihomo-IsoP,ent-12-epi-14-F2t-dihomo-IsoP,ent-13-epi-10-F2c-dihomo-IsoP,ent-13-epi-10-F2t-dihomo-IsoP,13-epi-10-F2t-dihomo-IsoP,ent-12-epi-14-F2c-dihomo-IsoP,10,7-diepi-7-F2c-dihomo-IsoP,10-F2t-dihomo-IsoP,17-F2-dihomo-IsoP,8-epi-10-F2c-dihomo-IsoP,20-ethyl PGF2alpha,13-epi-10-F2c-dihomo-IsoP,12-epi-14-F2t-dihomo-IsoP,ent-14-F2c-dihomo-IsoP,14,7-diepi-14-F2t-dihomo-IsoP,16,16-dimethyl-PGE1,7-F2-dihomo-IsoP,ent-8-epi-10-F2c-dihomo-IsoP,ent-7-F2t-dihomo-IsoP,10-epi-7-F2t-dihomo-IsoP,10-F2c-dihomo-IsoP,12-epi-14-F2c-dihomo-IsoP,ent-10,17-diepi-17-F2c-dihomo-IsoP,10-epi-17-F2c-dihomo-IsoP,ent-10-epi-17-F2c-dihomo-IsoP,10,17-diepi-17-F2c-dihomo-IsoP,ent-14-F2t-dihomo-IsoP,ent-5-epi-7-F2t-dihomo-IsoP,10-epi-7-F2c-dihomo-IsoP,10,7-diepi-7-F2t-dihomo-IsoP,ent-5-epi-7-F2c-dihomo-IsoP,1a,1b-dihomo-PGF2alpha,14-F2c-dihomo-IsoP,14-F2t-dihomo-IsoP,ent-7-F2c-dihomo-IsoP,5-epi-7-F2t-dihomo-IsoP,17-F2c-dihomo-IsoP,15-methyl-15R-PGF2alpha methyl ester,ent-10,7-diepi-7-F2c-dihomo-IsoP,ent-10,13-diepi-10-F2c-dihomo-IsoP,ent-17-F2t-dihomo-IsoP,10,13-diepi-10-F2t-dihomo-IsoP,ent-15-epi-17-F2t-dihomo-IsoP,ent-15-epi-17-F2c-dihomo-IsoP,ent-10-F2c-dihomo-IsoP,ent-10,17-diepi-17-F2t-dihomo-IsoP,16,16-dimethyl-PGF2beta,1a,1b-dihomo-PGE1,ent-14-epi-14-F2t-dihomo-IsoP,15-epi-17-F2c-dihomo-IsoP	kp1263_382.2714	{'Fatty Acyls [FA]'}	{'Eicosanoids [FA03]'}
+384.3104	65.67	0.02621806864138201	-7.726013756924168	C22H41NO4	-0.7205970884111395	N-oleoyl threonine,N-(3-hydroxy-octadecanoyl)-homoserine lactone	kp1273_383.3031	{'Fatty Acyls [FA]'}	{'Fatty amides [FA08]'}
+385.1635	30.17	0.043981863871674284	-6.2180853231436535		-0.9359927049670667				
+385.2731	276.99	0.041722957550531466	-6.380588994887866		-2.832326946022654				
+386.2763	276.99	0.041722957550531466	-6.37262024400633		-2.8915739256691744				
+387.1796	30.87	0.004515105433876042	17.20950934856349	C22H26O6	1.3222664821957189	3,5-Di-O-methyl-8-prenylafzelechin-4beta-ol,4,5-Di-O-methyl-8-prenylafzelechin-4beta-ol	kp1305_386.172	{'Polyketides [PK]'}	{'Flavonoids [PK12]'}
+391.2837	201.52	0.02640921222384545	-7.6549886776771086	C24H38O4	-0.6971299599867145	alpha-carboxydimethyloctylhydroxychroman,7-oxolithocholic acid	kp1327_390.2764	{'Prenol Lipids [PR]', 'Sterol Lipids [ST]'}	{'Bile acids and derivatives [ST04]', 'Quinones and hydroquinones [PR02]'}
+392.2871	201.52	0.041722957550531466	-6.393479707486112	C24H38O4	-0.8251884140968286	alpha-carboxydimethyloctylhydroxychroman,7-oxolithocholic acid	kp1327_390.2764	{'Prenol Lipids [PR]', 'Sterol Lipids [ST]'}	{'Bile acids and derivatives [ST04]', 'Quinones and hydroquinones [PR02]'}
+410.2111	161.99	0.02621806864138201	-7.732154642861554		-2.1373708491605363				
+410.3149	159.63	0.031320716690350796	7.091378587757477		2.732000123616668				
+413.3408	159.63	0.008633961019666809	12.722973876050256	C28H44O2	3.552505602773426	(22E)-(25R)-25-hydroxy-26-methyl-22,23-didehydrovitamin D3 / (22E)-(25R)-25-hydroxy-26-methyl-22,23-didehydrocholecalciferol,24-epi-25-hydroxyvitamin D2 / 24-epi-25-hydroxyergocalciferol,(22E)-(25S)-25-hydroxy-26-methyl-22,23-didehydrovitamin D3,28:6(10Z,13Z,16Z,19Z,22Z,25Z),zymosterol intermediate 1b,25-hydroxyvitamin D2,25-hydroxy-24-methyl-23,24-didehydrovitamin D3 / 25-hydroxy-24-methyl-23,24-didehydrocholecalciferol,Subergosterone C,5,6-Epoxyergosterol,24-hydroxyvitamin D2,Subergosterone B,Doxercalciferol,1alpha-hydroxyvitamin D2,Sinulasterol A	kp1430_412.3335	{'Sterol Lipids [ST]', 'Fatty Acyls [FA]'}	{'Fatty Acids and Conjugates [FA01]', 'Sterols [ST01]', 'Secosteroids [ST03]'}
+398.9646	3.02	0.03223332825274969	7.01145727121033		1.3043101153029255				
+399.2499	62.1	0.011023161207562013	-11.044369134928317		-1.8133919594201444				
+417.3359	151.99	0.005037885490950534	16.247680585794843	C27H44O3	2.7898562128436772	7-OOH-5,8-dien-3beta-ol,Tigogenin,Pharaonoid B,Cholestenoic acid,(25R)-25,26-dihydroxyvitamin D3 / (25R)-25,26-dihydroxycholecalciferol,1alpha,25-dihydroxy-2-methylene-19-norvitamin D3,7alpha,24-dihydroxycholest-4-en-3-one,5alpha,6alpha-24S,25-diepoxy-cholesterol,paricalcitol,1beta,25-dihydroxy-3-epivitamin D3 / 1beta,25-dihydroxy-3-epicholecalciferol,(25S)-25,26-dihydroxyvitamin D3 / (25S)-25,26-dihydroxycholecalciferol,3beta,4beta-dihydroxycholest-7(8)-en-23-one,1alpha,25-dihydroxy-3-epivitamin D3 / 1alpha,25-dihydroxy-3-epicholecalciferol,(5E)-1alpha,25-dihydroxyvitamin D3 / (5E)-1alpha,25-dihydroxycholecalciferol,(23R)-23,25-dihydroxyvitamin D3 / (23R)-23,25-dihydroxycholecalciferol,EnP(5,8),(22R)-22,25-dihydroxyvitamin D3 / (22R)-22,25-dihydroxycholecalciferol,(24S)-24,25-dihydroxyvitamin D3 / (24S)-24,25-dihydroxycholecalciferol,(22S)-22,25-dihydroxyvitamin D3 / (22S)-22,25-dihydroxycholecalciferol,Verrucorosteroid F,1alpha,25-dihydroxyvitamin D3 / 1alpha,25-dihydroxycholecalciferol / calcitriol,7alpha,24S-dihydroxycholest-4-en-3-one,1alpha,25-dihydroxy-14-epiprevitamin D3 / 1alpha,25-dihydroxy-14-epiprecholecalciferol,(24R)-24,25-dihydroxyvitamin D3 / (24R)-24,25-dihydroxycholecalciferol,20S-Hydroxycholestane-3,16-dione,1alpha,18-dihydroxyvitamin D3 / 1alpha,18-dihydroxycholecalciferol,7alpha,(25R)26-Dihydroxycholest-4-en-3-one,3beta-OH-Delta7-dafachronic acid,Dormatinone,3beta,27-dihydroxy-5-cholesten-7-one,2,22,25-trideoxyecdysone,3beta,4beta-dihydroxycholesta-5-ene-23-one,Neotigogenin,Subergorgiaol A,(24R)-1alpha,24-dihydroxyvitamin D3 / (24R)-1alpha,24-dihydroxycholecalciferol,(25S)-cholestenoic acid,3alpha-OH-Delta7-dafachronic acid,DHCEO,1beta,25-dihydroxyvitamin D3 / 1beta,25-dihydroxycholecalciferol,(24S)-1alpha,24-dihydroxyvitamin D3 / (24S)-1alpha,24-dihydroxycholecalciferol,(6S)-6,19-epidioxy-6,19-dihydrovitamin D3,Dihydromarthasterone,(6R)-6,19-epidioxy-6,19-dihydrovitamin D3,(23S)-23,25-dihydroxyvitamin D3 / (23S)-23,25-dihydroxycholecalciferol,3beta,4beta-dihydroxycholest-8(9)-en-23-one,1alpha,25-dihydroxy-2-methylene-19-nor-20-epivitamin D3,7alpha,(25S)26-Dihydroxycholest-4-en-3-one,7alpha,26-dihydroxycholest-4-en-3-one,1alpha,25-dihydroxy-20-epivitamin D3 / 1alpha,25-dihydroxy-20-epicholecalciferol,1alpha,25-dihydroxy-14-epivitamin D3 / 1alpha,25-dihydroxy-14-epicholecalciferol,1alpha,25-Dihydroxy-previtamin D3,7alpha,25-dihydroxycholestenone,18,25-dihydroxyvitamin D3 / 18,25-dihydroxycholecalciferol,(25R)-5beta-spirostan-3beta-ol,Sarsasapogenenin,25-Hydroxy-7-oxocholesterol,(25S)-dafachronic acid	kp1520_416.3287	{'Sterol Lipids [ST]'}	{'Bile acids and derivatives [ST04]', 'Sterols [ST01]', 'Secosteroids [ST03]'}
+228.2685	58.39	0.00373703609062159	20.32440084568447		2.3131489689213893				
+418.3392	152.12	0.006119088087137276	14.935890726093355	C27H44O3	2.8458322293645537	7-OOH-5,8-dien-3beta-ol,Tigogenin,Pharaonoid B,Cholestenoic acid,(25R)-25,26-dihydroxyvitamin D3 / (25R)-25,26-dihydroxycholecalciferol,1alpha,25-dihydroxy-2-methylene-19-norvitamin D3,7alpha,24-dihydroxycholest-4-en-3-one,5alpha,6alpha-24S,25-diepoxy-cholesterol,paricalcitol,1beta,25-dihydroxy-3-epivitamin D3 / 1beta,25-dihydroxy-3-epicholecalciferol,(25S)-25,26-dihydroxyvitamin D3 / (25S)-25,26-dihydroxycholecalciferol,3beta,4beta-dihydroxycholest-7(8)-en-23-one,1alpha,25-dihydroxy-3-epivitamin D3 / 1alpha,25-dihydroxy-3-epicholecalciferol,(5E)-1alpha,25-dihydroxyvitamin D3 / (5E)-1alpha,25-dihydroxycholecalciferol,(23R)-23,25-dihydroxyvitamin D3 / (23R)-23,25-dihydroxycholecalciferol,EnP(5,8),(22R)-22,25-dihydroxyvitamin D3 / (22R)-22,25-dihydroxycholecalciferol,(24S)-24,25-dihydroxyvitamin D3 / (24S)-24,25-dihydroxycholecalciferol,(22S)-22,25-dihydroxyvitamin D3 / (22S)-22,25-dihydroxycholecalciferol,Verrucorosteroid F,1alpha,25-dihydroxyvitamin D3 / 1alpha,25-dihydroxycholecalciferol / calcitriol,7alpha,24S-dihydroxycholest-4-en-3-one,1alpha,25-dihydroxy-14-epiprevitamin D3 / 1alpha,25-dihydroxy-14-epiprecholecalciferol,(24R)-24,25-dihydroxyvitamin D3 / (24R)-24,25-dihydroxycholecalciferol,20S-Hydroxycholestane-3,16-dione,1alpha,18-dihydroxyvitamin D3 / 1alpha,18-dihydroxycholecalciferol,7alpha,(25R)26-Dihydroxycholest-4-en-3-one,3beta-OH-Delta7-dafachronic acid,Dormatinone,3beta,27-dihydroxy-5-cholesten-7-one,2,22,25-trideoxyecdysone,3beta,4beta-dihydroxycholesta-5-ene-23-one,Neotigogenin,Subergorgiaol A,(24R)-1alpha,24-dihydroxyvitamin D3 / (24R)-1alpha,24-dihydroxycholecalciferol,(25S)-cholestenoic acid,3alpha-OH-Delta7-dafachronic acid,DHCEO,1beta,25-dihydroxyvitamin D3 / 1beta,25-dihydroxycholecalciferol,(24S)-1alpha,24-dihydroxyvitamin D3 / (24S)-1alpha,24-dihydroxycholecalciferol,(6S)-6,19-epidioxy-6,19-dihydrovitamin D3,Dihydromarthasterone,(6R)-6,19-epidioxy-6,19-dihydrovitamin D3,(23S)-23,25-dihydroxyvitamin D3 / (23S)-23,25-dihydroxycholecalciferol,3beta,4beta-dihydroxycholest-8(9)-en-23-one,1alpha,25-dihydroxy-2-methylene-19-nor-20-epivitamin D3,7alpha,(25S)26-Dihydroxycholest-4-en-3-one,7alpha,26-dihydroxycholest-4-en-3-one,1alpha,25-dihydroxy-20-epivitamin D3 / 1alpha,25-dihydroxy-20-epicholecalciferol,1alpha,25-dihydroxy-14-epivitamin D3 / 1alpha,25-dihydroxy-14-epicholecalciferol,1alpha,25-Dihydroxy-previtamin D3,7alpha,25-dihydroxycholestenone,18,25-dihydroxyvitamin D3 / 18,25-dihydroxycholecalciferol,(25R)-5beta-spirostan-3beta-ol,Sarsasapogenenin,25-Hydroxy-7-oxocholesterol,(25S)-dafachronic acid	kp1520_416.3287	{'Sterol Lipids [ST]'}	{'Bile acids and derivatives [ST04]', 'Sterols [ST01]', 'Secosteroids [ST03]'}
+400.3053	65.12	0.019288949225854862	-8.807860958111792		-0.7457236235258442				
+400.8267	22.14	0.008762594318995828	12.420282857329248		1.7673209467941007				
+401.3087	64.85	0.040558844433565985	-6.51039605699205		-0.6594708045561752				
+402.8236	22.14	0.018887134237322988	8.917004483449157		2.2642826765805637				
+173.096	243.82	0.027684950053709086	7.39690124401012		3.305956261496462				
+424.8961	23.19	0.04957049426763382	-5.917274439143336		-2.1512077784077164				
+469.2921	126.01	0.020068848075238482	8.623501577593899	C27H42O5	1.5535184782678044	(23R)-1alpha,23,25-trihydroxy-24-oxovitamin D3 / (23R)-1alpha,23,25-trihydroxy-24-oxocholecalciferol,7alpha,12alpha-dihydroxy-3-oxocholest-4-en-27-oic acid,Asparacemosone A,(23S,25R)-1alpha,25-dihydroxyvitamin D3 26,23-lactol / (23S,25R)-1alpha,25-dihydroxycholecalciferol 26,23-lactol,7a,12a,25-Trihydroxycholest-4-en-3,24-dione,7alpha,12alpha-dihydroxy-3-oxo-4-cholestenoic acid,14-deoxydacryhainansterone,Karatavegenin C,Protometagenin,7alpha,24S-Dihydroxy-3-oxocholest-4-en-26-oic acid,Pinnasterol,(23S)-1alpha,23,25-trihydroxy-24-oxovitamin D3 / (23S)-1alpha,23,25-trihydroxy-24-oxocholecalciferol	kp1669_446.3027	{'Sterol Lipids [ST]'}	{'Bile acids and derivatives [ST04]', 'Sterols [ST01]', 'Secosteroids [ST03]'}
+469.3649	269.52	0.014739773713196683	-9.717806538682225	C29H50O3	-2.150971857428736	24-hydroperoxy-24-vinylcholesterol,13'hydroxy-alpha-tocopherol,(20S)-Stigmasta-5-ene-3beta,7alpha,20-triol,Nebrosteroid M	kp1677_446.3756	{'Prenol Lipids [PR]', 'Sterol Lipids [ST]'}	{'Quinones and hydroquinones [PR02]', 'Sterols [ST01]'}
+430.2739	110.42	0.0272950158921142	-7.497149178133262		-5.657267858058109				
+431.1781	200.74	0.008569264606606201	-12.868418666159256		-2.041064431232371				
+431.9163	21.09	0.043981863871674284	-6.21016290435032		-1.6821211872419148				
+432.1814	200.74	0.012803343146771402	-10.414558006709363		-2.1334278336511545				
+432.3549	159.23	0.038444253958448964	6.616558750549707		3.4147510472476093				
+434.3625	151.99	0.002022226702399943	31.50325385330149		3.287774454207959				
+439.3181	152.9	0.014878641661342892	9.66716177831293	C27H44O3	2.6113542700135675	7-OOH-5,8-dien-3beta-ol,Tigogenin,Pharaonoid B,Cholestenoic acid,(25R)-25,26-dihydroxyvitamin D3 / (25R)-25,26-dihydroxycholecalciferol,1alpha,25-dihydroxy-2-methylene-19-norvitamin D3,7alpha,24-dihydroxycholest-4-en-3-one,5alpha,6alpha-24S,25-diepoxy-cholesterol,paricalcitol,1beta,25-dihydroxy-3-epivitamin D3 / 1beta,25-dihydroxy-3-epicholecalciferol,(25S)-25,26-dihydroxyvitamin D3 / (25S)-25,26-dihydroxycholecalciferol,3beta,4beta-dihydroxycholest-7(8)-en-23-one,1alpha,25-dihydroxy-3-epivitamin D3 / 1alpha,25-dihydroxy-3-epicholecalciferol,(5E)-1alpha,25-dihydroxyvitamin D3 / (5E)-1alpha,25-dihydroxycholecalciferol,(23R)-23,25-dihydroxyvitamin D3 / (23R)-23,25-dihydroxycholecalciferol,EnP(5,8),(22R)-22,25-dihydroxyvitamin D3 / (22R)-22,25-dihydroxycholecalciferol,(24S)-24,25-dihydroxyvitamin D3 / (24S)-24,25-dihydroxycholecalciferol,(22S)-22,25-dihydroxyvitamin D3 / (22S)-22,25-dihydroxycholecalciferol,Verrucorosteroid F,1alpha,25-dihydroxyvitamin D3 / 1alpha,25-dihydroxycholecalciferol / calcitriol,7alpha,24S-dihydroxycholest-4-en-3-one,1alpha,25-dihydroxy-14-epiprevitamin D3 / 1alpha,25-dihydroxy-14-epiprecholecalciferol,(24R)-24,25-dihydroxyvitamin D3 / (24R)-24,25-dihydroxycholecalciferol,20S-Hydroxycholestane-3,16-dione,1alpha,18-dihydroxyvitamin D3 / 1alpha,18-dihydroxycholecalciferol,7alpha,(25R)26-Dihydroxycholest-4-en-3-one,3beta-OH-Delta7-dafachronic acid,Dormatinone,3beta,27-dihydroxy-5-cholesten-7-one,2,22,25-trideoxyecdysone,3beta,4beta-dihydroxycholesta-5-ene-23-one,Neotigogenin,Subergorgiaol A,(24R)-1alpha,24-dihydroxyvitamin D3 / (24R)-1alpha,24-dihydroxycholecalciferol,(25S)-cholestenoic acid,3alpha-OH-Delta7-dafachronic acid,DHCEO,1beta,25-dihydroxyvitamin D3 / 1beta,25-dihydroxycholecalciferol,(24S)-1alpha,24-dihydroxyvitamin D3 / (24S)-1alpha,24-dihydroxycholecalciferol,(6S)-6,19-epidioxy-6,19-dihydrovitamin D3,Dihydromarthasterone,(6R)-6,19-epidioxy-6,19-dihydrovitamin D3,(23S)-23,25-dihydroxyvitamin D3 / (23S)-23,25-dihydroxycholecalciferol,3beta,4beta-dihydroxycholest-8(9)-en-23-one,1alpha,25-dihydroxy-2-methylene-19-nor-20-epivitamin D3,7alpha,(25S)26-Dihydroxycholest-4-en-3-one,7alpha,26-dihydroxycholest-4-en-3-one,1alpha,25-dihydroxy-20-epivitamin D3 / 1alpha,25-dihydroxy-20-epicholecalciferol,1alpha,25-dihydroxy-14-epivitamin D3 / 1alpha,25-dihydroxy-14-epicholecalciferol,1alpha,25-Dihydroxy-previtamin D3,7alpha,25-dihydroxycholestenone,18,25-dihydroxyvitamin D3 / 18,25-dihydroxycholecalciferol,(25R)-5beta-spirostan-3beta-ol,Sarsasapogenenin,25-Hydroxy-7-oxocholesterol,(25S)-dafachronic acid	kp1520_416.3287	{'Sterol Lipids [ST]'}	{'Bile acids and derivatives [ST04]', 'Sterols [ST01]', 'Secosteroids [ST03]'}
+439.3391	182.03	0.01960104172129156	-8.719590574393068		-8.47570167251874				
+485.2793	218.24	0.02621806864138201	-7.760457818808594		-3.993240653040754				
+443.1568	27.28	0.024065223321580807	-8.123756396453903		-0.7181207270553855				
+443.3879	201.26	0.041722957550531466	-6.391886364345653	C30H50O2	-3.6878418820844097	Diepoxysqualene,6-hydroperoxy-squalene,30:5(12Z,15Z,18Z,21Z,24Z),7-hydroperoxy-squalene,thalianol epoxide,Perviridisinol C,5beta,6beta-epoxygorgosterol,22R-hydroxycycloartenol,30:5(15Z,18Z,21Z,24Z,27Z),Betulin,Fern-9(11)-ene-2alpha,2beta-diol,32-hydroxylanosterol,3-hydroperoxy-squalene,(+)-22(29)-Hopen-6alpha-21beta-diol,2-hydroperoxy-squalene,10-hydroperoxy-squalene,(8R)-3-oxo-8-hydroxypolypoda13E,17E,21-triene,11-hydroperoxy-squalene,Cycloarta-23-ene-3beta,25-diol,7alpha-Theonellasterol	kp1941_442.3802	{'Sterol Lipids [ST]', 'Prenol Lipids [PR]', 'Fatty Acyls [FA]'}	{'Isoprenoids [PR01]', 'Fatty Acids and Conjugates [FA01]', 'Sterols [ST01]'}
+444.3316	64.46	0.019288949225854862	-8.800190962976108		-0.5828083337937748				
+445.3349	64.85	0.04709693942103146	-6.056947051882126		-0.6966103825141268				
+490.4612	275.03	0.008762594318995828	-12.370901886246342		-4.333203729676104				
+491.4647	275.03	0.019812692247679772	-8.673706939398226		-4.425997335971935				
+527.2899	152.25	0.041173894518395066	-6.450173509726347		-1.8584781631997878				
+453.1666	36.39	0.027684950053709086	7.397851630850471	C24H30O6	1.66354409381141	19-oxodesacetylcinobufagin	kp1498_414.203	{'Sterol Lipids [ST]'}	{'Sterols [ST01]'}
+498.415	264.11	0.029352441249111128	-7.269147421373831		-0.8156543685109412				
+499.1913	153.69	0.003431988738525177	22.099364531733354		2.018863269534414				
+499.1913	161.2	0.004052881050622939	18.324275163347753		1.9164374702025455				
+455.2918	152.77	0.002034308867198801	27.645769499872724	C27H44O3	3.005099244640615	7-OOH-5,8-dien-3beta-ol,Tigogenin,Pharaonoid B,Cholestenoic acid,(25R)-25,26-dihydroxyvitamin D3 / (25R)-25,26-dihydroxycholecalciferol,1alpha,25-dihydroxy-2-methylene-19-norvitamin D3,7alpha,24-dihydroxycholest-4-en-3-one,5alpha,6alpha-24S,25-diepoxy-cholesterol,paricalcitol,1beta,25-dihydroxy-3-epivitamin D3 / 1beta,25-dihydroxy-3-epicholecalciferol,(25S)-25,26-dihydroxyvitamin D3 / (25S)-25,26-dihydroxycholecalciferol,3beta,4beta-dihydroxycholest-7(8)-en-23-one,1alpha,25-dihydroxy-3-epivitamin D3 / 1alpha,25-dihydroxy-3-epicholecalciferol,(5E)-1alpha,25-dihydroxyvitamin D3 / (5E)-1alpha,25-dihydroxycholecalciferol,(23R)-23,25-dihydroxyvitamin D3 / (23R)-23,25-dihydroxycholecalciferol,EnP(5,8),(22R)-22,25-dihydroxyvitamin D3 / (22R)-22,25-dihydroxycholecalciferol,(24S)-24,25-dihydroxyvitamin D3 / (24S)-24,25-dihydroxycholecalciferol,(22S)-22,25-dihydroxyvitamin D3 / (22S)-22,25-dihydroxycholecalciferol,Verrucorosteroid F,1alpha,25-dihydroxyvitamin D3 / 1alpha,25-dihydroxycholecalciferol / calcitriol,7alpha,24S-dihydroxycholest-4-en-3-one,1alpha,25-dihydroxy-14-epiprevitamin D3 / 1alpha,25-dihydroxy-14-epiprecholecalciferol,(24R)-24,25-dihydroxyvitamin D3 / (24R)-24,25-dihydroxycholecalciferol,20S-Hydroxycholestane-3,16-dione,1alpha,18-dihydroxyvitamin D3 / 1alpha,18-dihydroxycholecalciferol,7alpha,(25R)26-Dihydroxycholest-4-en-3-one,3beta-OH-Delta7-dafachronic acid,Dormatinone,3beta,27-dihydroxy-5-cholesten-7-one,2,22,25-trideoxyecdysone,3beta,4beta-dihydroxycholesta-5-ene-23-one,Neotigogenin,Subergorgiaol A,(24R)-1alpha,24-dihydroxyvitamin D3 / (24R)-1alpha,24-dihydroxycholecalciferol,(25S)-cholestenoic acid,3alpha-OH-Delta7-dafachronic acid,DHCEO,1beta,25-dihydroxyvitamin D3 / 1beta,25-dihydroxycholecalciferol,(24S)-1alpha,24-dihydroxyvitamin D3 / (24S)-1alpha,24-dihydroxycholecalciferol,(6S)-6,19-epidioxy-6,19-dihydrovitamin D3,Dihydromarthasterone,(6R)-6,19-epidioxy-6,19-dihydrovitamin D3,(23S)-23,25-dihydroxyvitamin D3 / (23S)-23,25-dihydroxycholecalciferol,3beta,4beta-dihydroxycholest-8(9)-en-23-one,1alpha,25-dihydroxy-2-methylene-19-nor-20-epivitamin D3,7alpha,(25S)26-Dihydroxycholest-4-en-3-one,7alpha,26-dihydroxycholest-4-en-3-one,1alpha,25-dihydroxy-20-epivitamin D3 / 1alpha,25-dihydroxy-20-epicholecalciferol,1alpha,25-dihydroxy-14-epivitamin D3 / 1alpha,25-dihydroxy-14-epicholecalciferol,1alpha,25-Dihydroxy-previtamin D3,7alpha,25-dihydroxycholestenone,18,25-dihydroxyvitamin D3 / 18,25-dihydroxycholecalciferol,(25R)-5beta-spirostan-3beta-ol,Sarsasapogenenin,25-Hydroxy-7-oxocholesterol,(25S)-dafachronic acid	kp1520_416.3287	{'Sterol Lipids [ST]'}	{'Bile acids and derivatives [ST04]', 'Sterols [ST01]', 'Secosteroids [ST03]'}
+500.2766	50.75	0.043981863871674284	-6.212134464148422	C25H42NO7P	-1.0352913653935119	PE(0:0/20:5(5Z,8Z,11Z,14Z,17Z)),PE(20:5(5Z,8Z,11Z,14Z,17Z)/0:0)	kp7552_499.2698	{'Glycerophospholipids [GP]'}	{'Glycerophosphoethanolamines [GP02]'}
+533.3947	220.35	0.013144999089824052	10.279277259715837		2.8700600450881524				
+533.4728	308.53	0.027684950053709086	-7.399161658023028	C32H63NO3	-2.481424230842009	Cer(d14:1/18:0),Cer(d18:1/14:0),N-myristoyl-3-oxosphinganine	kp2126_509.4802	{'Sphingolipids [SP]'}	{'Ceramides [SP02]'}
+534.3703	214.3	0.049943406120567774	5.878208128665229		0.5969013476448239				
+461.3735	151.72	0.002034308867198801	27.526181002065506		2.8068899905697577				
+462.3936	152.38	0.008762594318995828	12.501630244110798		2.9476928322854263				
+463.3972	152.38	0.004052881050622939	18.375900684646155		3.0025876191929477				
+506.4924	328.78	0.040914976631821504	-6.483680408214013		-2.784617142662455				
+507.3172	210.34	4.634488579411318e-06	229.95195606707412		8.062801644790715				
+508.4718	275.16	0.008762594318995828	-12.271819402546047	C32H61NO3	-4.278912555105897	Cer(d14:1/18:1),Cer(d18:2(4E,8E)/14:0),Cer(d18:2/14:0),Cer(d14:2(4E,6E)/18:0)	kp2076_507.4646	{'Sphingolipids [SP]'}	{'Ceramides [SP02]'}
+584.4177	171.76	0.008762594318995828	12.166863021474892	C40H54O3	2.2494607608808614	Diadinochrome A,Fritschiellaxanthin,Flexixanthin,1',2'-Dihydroxy-4-ketotorulene,4-Ketolutein F,4-Ketolutein D,2,3-Dihydroxy-4-keto-gamma-carotene,Diadinoxanthin B,Deinoxanthin,4-Ketolutein,7',8'-Didehydrodeepoxyneoxanthin,Pectenol A,7,8-Didehydrodeepoxysalmoxanthin,3',4-dihydroxy-epsilon-carotene-3-one,Diadinochrome,(2R,3S)-2,3-Dihydroxy-beta-carotene-4-one,1',2'-Dihydro-1',2'-dihydroxy-4-ketotoruelene/ (4-Ketophleixanthophyll),Diadinochrome B,Diatoxanthin 3,6-epoxide,Adonixanthin,Diadinoxanthin,2,3-Dihydroxyechinenone,Capsanthone,alpha-Doradexanthin/ (3S,3'S,6'R)-4-Ketolutein,1,1'-(OH)2-2-keto-3,4,3',4'-tetradehydrolycopene,Pectenol B,Anhydroprasinoxanthin	kp3803_582.4071	{'Prenol Lipids [PR]'}	{'Isoprenoids [PR01]'}
+584.4177	209.16	0.006735457492620265	14.106925688262985	C40H54O3	2.3326485698199875	Diadinochrome A,Fritschiellaxanthin,Flexixanthin,1',2'-Dihydroxy-4-ketotorulene,4-Ketolutein F,4-Ketolutein D,2,3-Dihydroxy-4-keto-gamma-carotene,Diadinoxanthin B,Deinoxanthin,4-Ketolutein,7',8'-Didehydrodeepoxyneoxanthin,Pectenol A,7,8-Didehydrodeepoxysalmoxanthin,3',4-dihydroxy-epsilon-carotene-3-one,Diadinochrome,(2R,3S)-2,3-Dihydroxy-beta-carotene-4-one,1',2'-Dihydro-1',2'-dihydroxy-4-ketotoruelene/ (4-Ketophleixanthophyll),Diadinochrome B,Diatoxanthin 3,6-epoxide,Adonixanthin,Diadinoxanthin,2,3-Dihydroxyechinenone,Capsanthone,alpha-Doradexanthin/ (3S,3'S,6'R)-4-Ketolutein,1,1'-(OH)2-2-keto-3,4,3',4'-tetradehydrolycopene,Pectenol B,Anhydroprasinoxanthin	kp3804_582.4071	{'Prenol Lipids [PR]'}	{'Isoprenoids [PR01]'}
+510.415	160.68	0.006543981985847187	14.288571468679011		4.21925574577563				
+586.207	76.59	0.003431988738525177	21.333036891227763		1.6730586733349249				
+656.2753	227.2	0.03456830431966515	-6.848125621887036		-0.4963269902095604				
+594.4483	276.99	0.0009147130383327515	46.581817919213776	C31H64NO7P	6.422480757390545	1-(2-methoxy-18Z-pentacosenyl)-sn-glycero-3-phosphoethanolamine	kp2631_593.4413	{'Glycerophospholipids [GP]'}	{'Glycerophosphoethanolamines [GP02]'}
+598.3675	186.13	0.007398011979713249	13.486766195013033		1.5194179454218961				
+598.3675	190.2	0.003707777402720232	20.629621525690315		1.30829518433654				
+523.2994	186.26	0.004052881050622939	-19.391247010181292		-3.1567202976534396				
+524.303	186.13	0.005037885490950534	-16.37079203441623		-3.1493705011466098				
+554.3414	193.74	0.015502803017401364	-9.53836281164902		-1.8947556667480825				
+672.4194	209.16	0.02621806864138201	-7.711204198473585		-2.6951099113139634				
+673.4228	209.03	0.043981863871674284	-6.22125262526504		-4.323131670943916				
+716.4633	276.86	0.026578993262271925	-7.578098051797966		-2.6420794711694384				
+678.6757	508.64	0.006438598304361221	-14.55154771375482	C44H87NO3	-4.386089174347909	Cer(d18:0/26:1(17Z)),Cer(d18:1/26:0)	kp3118_677.6682	{'Sphingolipids [SP]'}	{'Ceramides [SP02]'}
+568.3565	186.0	0.004052881050622939	-18.691684326032757		-2.677657891372178				
+568.4283	203.76	0.04803259731902271	-6.015044946742635		-2.9377848300222915				
+623.5026	276.07	0.041434701985448984	-6.428097795051808	C41H66O4	-2.3561496198574616	1-(6-[3]-ladderane-hexanoyl)-2-(8-[3]-ladderane-octanyl)-sn-glycerol	kp3338_622.4952	{'Glycerolipids [GL]'}	{'Diradylglycerols [GL02]'}
+569.3604	186.0	0.004052881050622939	-18.130996035068673		-2.9407231392121282				
+624.5058	275.81	0.04357023514138064	-6.266957200782607	C41H66O4	-2.423028602807534	1-(6-[3]-ladderane-hexanoyl)-2-(8-[3]-ladderane-octanyl)-sn-glycerol	kp3338_622.4952	{'Glycerolipids [GL]'}	{'Diradylglycerols [GL02]'}
+570.3185	66.85	0.004313295104050447	-17.549830683887695		-2.320619544190791				
+627.3612	209.16	0.005037885490950534	-16.264432211827646		-3.177278954532163				
+628.3649	209.16	0.026141114807547973	-7.824673609047525		-4.00490433206874				
+731.3086	177.43	0.011859513053103109	-10.690504787611228		-0.4639918876670741				
+731.4244	230.65	0.002034308867198801	-28.017114634245907		-3.0106791694915565				
+731.4811	292.93	0.02621806864138201	-7.723006979311313		-3.026815424973357				
+732.4277	230.65	0.006543981985847187	-14.36547284966686		-3.274994996001677				
+630.2011	161.33	0.026578993262271925	7.594583825677024		3.216326898529008				
+578.4553	200.87	0.01885965768603407	8.96742916553567		3.621088160616811				
+578.9569	200.74	0.002022226702399943	29.861478401366615		2.8964813759181354				
+696.6877	514.52	0.011413513029706028	10.831837935913468		2.828960370005177				
+638.4962	106.74	0.006119088087137276	14.87385252270932		7.966498737731888				
+702.3573	204.94	0.02960741056149573	-7.238760789373914		-1.5208982703613785				
+750.5056	283.99	0.04461278487389151	-6.166477273518223	C42H72NO8P	-2.9651308973106083	PE(17:1(9Z)/20:5(5Z,8Z,11Z,14Z,17Z)),PC(20:5(5Z,8Z,11Z,14Z,17Z)/14:1(9Z)),PC(12:0/22:6(4Z,7Z,10Z,13Z,16Z,19Z)),PE(20:5(5Z,8Z,11Z,14Z,17Z)/17:1(9Z)),PE(17:2(9Z,12Z)/20:4(5Z,8Z,11Z,14Z)),PE(20:4(5Z,8Z,11Z,14Z)/17:2(9Z,12Z)),PC(22:6(4Z,7Z,10Z,13Z,16Z,19Z)/12:0),PC(14:1(9Z)/20:5(5Z,8Z,11Z,14Z,17Z)),PE(22:6(4Z,7Z,10Z,13Z,16Z,19Z)/15:0),PE(15:0/22:6(4Z,7Z,10Z,13Z,16Z,19Z))	kp3993_749.4983	{'Glycerophospholipids [GP]'}	{'Glycerophosphocholines [GP01]', 'Glycerophosphoethanolamines [GP02]'}
+711.2431	76.46	0.04312270928092938	6.29492741208719		1.9129994238270243				
+860.6859	473.89	0.003431988738525177	21.323645457741954		4.27336556865372				
+712.4774	36.78	0.0331422576813258	-6.946934013335849		-4.724144405427314				
+794.6862	478.22	0.04896989963769899	5.951978186762227		4.897981066925485				
+795.5254	202.84	0.002022226702399943	30.31789359663318		2.783618737513059				
+758.1117	200.74	0.023333857247246605	8.210716747048147		1.9162199589261135				
+759.4391	156.21	0.0489032125832507	5.966883038120111		0.3355624838558917				
+865.496	276.07	0.013977950850200484	-10.055636174863498		-1.9760476340331934				
+935.4499	302.86	0.01419054722398609	9.956520883242977		2.0089025825714018				
+867.5117	286.6	0.024065223321580807	-8.07960415480225		-1.4722269618284969				
+762.4686	160.68	0.008710020260718926	-12.636299509992277		-5.38313891579128				
+806.4691	275.03	0.01419054722398609	-9.959306676112556		-1.8172068386419724				
+772.4876	285.04	0.02272111984847812	-8.307691115655702	C42H72NO8P	-3.893346907878275	PE(17:1(9Z)/20:5(5Z,8Z,11Z,14Z,17Z)),PC(20:5(5Z,8Z,11Z,14Z,17Z)/14:1(9Z)),PC(12:0/22:6(4Z,7Z,10Z,13Z,16Z,19Z)),PE(20:5(5Z,8Z,11Z,14Z,17Z)/17:1(9Z)),PE(17:2(9Z,12Z)/20:4(5Z,8Z,11Z,14Z)),PE(20:4(5Z,8Z,11Z,14Z)/17:2(9Z,12Z)),PC(22:6(4Z,7Z,10Z,13Z,16Z,19Z)/12:0),PC(14:1(9Z)/20:5(5Z,8Z,11Z,14Z,17Z)),PE(22:6(4Z,7Z,10Z,13Z,16Z,19Z)/15:0),PE(15:0/22:6(4Z,7Z,10Z,13Z,16Z,19Z))	kp3993_749.4983	{'Glycerophospholipids [GP]'}	{'Glycerophosphocholines [GP01]', 'Glycerophosphoethanolamines [GP02]'}
+776.4824	230.65	0.003431988738525177	-21.83536233949377		-2.4536287110656723				
+777.43	316.42	0.04803350794133569	6.005565030378052		1.3663380208997715				
+777.4857	230.52	0.004084504394217375	-17.941166468877572		-2.654436552510088				
+815.5379	290.96	0.011023161207562013	-11.039817383946097	C47H76NO8P	-4.098015243429401	PE(20:5(5Z,8Z,11Z,14Z,17Z)/22:4(7Z,10Z,13Z,16Z)),PE(22:6(4Z,7Z,10Z,13Z,16Z,19Z)/20:3(8Z,11Z,14Z)),PE(22:4(7Z,10Z,13Z,16Z)/20:5(5Z,8Z,11Z,14Z,17Z)),PE(20:3(8Z,11Z,14Z)/22:6(4Z,7Z,10Z,13Z,16Z,19Z))	kp4730_813.5283	{'Glycerophospholipids [GP]'}	{'Glycerophosphoethanolamines [GP02]'}
+963.4495	296.15	0.011413108420116825	10.867923767344402		1.6931074224515719				
+963.4495	297.86	0.008633961019666809	12.72601767498012		1.475163600625013				
+973.5662	464.96	0.006749562279511207	13.950841878637306		3.9873490441364936				
+973.5662	466.93	0.016105742922294955	9.393068698241652		3.2967036337381685				
+973.5662	468.63	0.008762594318995828	12.145646964475251		2.7088401511258873				
+979.445	455.24	0.019148157701867122	8.862181793314546		4.031908721788177				
+979.445	488.07	0.003886224797966161	19.878865330287933		2.8410876639580778				
+979.445	492.93	0.004659900963766092	16.940375944786492		4.118038589232558				
+979.445	498.56	0.006438598304361221	14.510536591343543		3.323914462539074				
+900.579	315.63	0.024065223321580807	8.082728018664426	C46H87NO13	2.7087243886738115	LacCer(d18:1/16:0)	kp4142_861.6161	{'Sphingolipids [SP]'}	{'Neutral glycosphingolipids [SP05]'}
+901.4287	449.72	0.005950449802170117	15.30996069430148		2.830220574788564				
+901.4287	452.09	0.009002587570104898	12.01502908702447		3.47046454364736				
+991.4803	297.2	0.03456830431966515	6.844358532597255		1.6763469949962655				
+1074.6899	346.24	0.004052881050622939	18.26113478647906		3.9298264159768657				
+1074.6899	347.03	0.022350865387587467	8.363682027303637	C54H101NO18	3.1804950896222053	Isoglobotriglycosylceramide(d18:1/18:0),Gb3(d18:1/18:0)	kp5137_1051.7005	{'Sphingolipids [SP]'}	{'Neutral glycosphingolipids [SP05]'}
+906.6607	314.84	0.035433382990630376	6.7870453381636615	C46H87NO13	2.658004337076072	LacCer(d18:1/16:0)	kp4142_861.6161	{'Sphingolipids [SP]'}	{'Neutral glycosphingolipids [SP05]'}
+1151.7039	260.69	0.0447854943890564	6.150199074226225		2.120771527706161				
+1155.7256	291.88	0.049943406120567774	5.891870032151694	C57H104N2O21	1.684112560560358	GM3(d18:1/16:0)	kp5641_1152.7107	{'Sphingolipids [SP]'}	{'Acidic glycosphingolipids [SP06]'}
+1156.7283	291.35	0.002898705396325829	24.14777656219207	C57H104N2O21	3.1217645292076774	GM3(d18:1/16:0)	kp5641_1152.7107	{'Sphingolipids [SP]'}	{'Acidic glycosphingolipids [SP06]'}
+1168.7379	308.0	0.026141114807547973	7.828790970907635		1.493896489255043				
+839.5249	202.57	0.01716227707421235	9.214601836984555		3.177327049614206				
+1176.704	291.75	0.014354449986630444	9.867681956866326	C57H104N2O21	1.8067327800432516	GM3(d18:1/16:0)	kp5641_1152.7107	{'Sphingolipids [SP]'}	{'Acidic glycosphingolipids [SP06]'}
+1198.6859	291.61	0.003431988738525177	21.911714457915398		1.693750989858561				
+1207.6342	291.22	0.0023086360640128564	26.088949755260185		3.2523711191656375				
+842.7966	584.08	0.04312270928092938	6.303932812960069		3.942508051312574				
+842.7966	586.45	0.007398011979713249	13.424476215686925		3.0945183398006417				
+846.5225	336.26	0.03223332825274969	7.013498119485026		1.475258608132016				
+848.5311	200.87	0.01341953785738692	10.193088586940066		5.794693978433637				
+1280.6673	301.81	0.009506510695518909	11.803258135765704		2.8568094330697953				

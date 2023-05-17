@@ -24,8 +24,6 @@ from matplotlib.legend_handler import HandlerBase
 from pca import pca
 import sys
 
-
-
 # read input data
 feature_table = pd.read_csv(sys.argv[1], index_col=0, sep="\t")
 table_name = sys.argv[2]
@@ -35,6 +33,7 @@ annot_source = json.load(open(sys.argv[5]))
 interactive = False
 save_figs = True
 
+inclusion_threshold = 0.8
 formula_name_map = {}
 formula_category_map = {}
 formula_class_map = {}
@@ -110,7 +109,6 @@ feature_table['best_peak'] = feature_table['id_number'].map(feature_map)
 
 
 
-print(feature_table['emp_id'].values)
 if category_class_annots:
     feature_table['categories'] = feature_table['id_number'].map(feature_id_to_category)
     feature_table['classes'] = feature_table['id_number'].map(feature_id_to_class)
@@ -130,9 +128,7 @@ def calc_interpolate_value(row, indices):
         return np.min(values) / 2
     else:
         return 0
-feature_table["feature_interpolate_value"] = feature_table.apply(calc_interpolate_value, axis=1, args=(sample_names,))
-for sample_name in sample_names:
-    feature_table[sample_name] = feature_table[[sample_name, "feature_interpolate_value"]].max(axis=1)
+
 
 
 # set up PCA config
@@ -162,8 +158,15 @@ additives_str = {
 
 # do PCA
 if interactive or save_figs:
+    
+    for_pca = feature_table[feature_table['percent_inclusion'] > inclusion_threshold].copy()
+    for_pca["feature_interpolate_value"] = for_pca.apply(calc_interpolate_value, axis=1, args=(sample_names,))
+    for sample_name in sample_names:
+        for_pca[sample_name] = for_pca[[sample_name, "feature_interpolate_value"]].max(axis=1)
+
+
     scaler = StandardScaler()
-    transformed = scaler.fit_transform(np.log2(feature_table[sample_names].T+1))
+    transformed = scaler.fit_transform(np.log2(for_pca[sample_names].T+1))
     model = PCA(n_components=2)
     pca_transformed = model.fit_transform(transformed)
     for x,y,name in zip([x[0] for x in pca_transformed], [x[1] for x in pca_transformed], sample_names):
@@ -182,7 +185,7 @@ if interactive or save_figs:
 
     # do TSNE 
     scaler = StandardScaler()
-    transformed = np.log2(feature_table[sample_names].T+1)
+    transformed = np.log2(for_pca[sample_names].T+1)
     model = TSNE(n_components=2)
     pca_transformed = model.fit_transform(transformed)
 
@@ -206,12 +209,15 @@ metadata["Genotype"] = metadata["Cell Line"]
 metadata["Combined_Media"] = metadata["Media"] + metadata["Additives"]
 fields_to_skip = set(feature_table.columns).union(set(metadata.columns))
 
-
-merged = pd.merge(feature_table.transpose(), metadata, right_on="Name", left_index=True)
-print(feature_table.shape)
+features_for_omni = feature_table[feature_table['percent_inclusion'] > inclusion_threshold].copy()
+features_for_omni["feature_interpolate_value"] = features_for_omni.apply(calc_interpolate_value, axis=1, args=(sample_names,))
+for sample_name in sample_names:
+    features_for_omni[sample_name] = features_for_omni[[sample_name, "feature_interpolate_value"]].max(axis=1)
+merged = pd.merge(features_for_omni.transpose(), metadata, right_on="Name", left_index=True)
+print(features_for_omni.shape)
 
 model_string = '''for_anova ~ C(Genotype) + C(Differentiation) + C(Combined_Media)'''
-num_features = feature_table.shape[0]
+num_features = features_for_omni.shape[0]
 for column in range(num_features):
     vals = merged.iloc[:,column].values
     new_vals = []
@@ -258,16 +264,16 @@ for name in sample_names:
 
 if interactive or save_figs:
     #g = sns.clustermap(new, xticklabels=new_names, yticklabels=master_table.loc[all_significant_features]["annot"], col_colors=[media_colors, genotype_colors, differentation_colors])
-    g = sns.clustermap(np.log2(feature_table.iloc[omnibus_features, :][sample_names]), cmap='vlag', xticklabels=new_names, yticklabels=feature_table.iloc[omnibus_features, :]['annot'], z_score=0, col_colors=[media_colors, genotype_colors, differentation_colors])
-    g.fig.suptitle(table_name + " all significant OMNIBUS features,\n p-adj(bonferroni) < .05")
+    g = sns.clustermap(np.log2(features_for_omni.iloc[omnibus_features, :][sample_names]), cmap='vlag', xticklabels=new_names, yticklabels=features_for_omni.iloc[omnibus_features, :]['annot'], z_score=0, col_colors=[media_colors, genotype_colors, differentation_colors])
+    g.fig.suptitle(table_name + " all significant OMNIBUS features,\n p-adj(bonferroni) < .05, inclusion threshold " + str(round(inclusion_threshold,2)))
     if save_figs:
         plt.savefig("./figures/" + table_name + "_OMNI_clustermap")
     if interactive:
         plt.show()
     plt.clf()
 
-    g = sns.clustermap(np.log2(feature_table.iloc[all_significant_features, :][sample_names]), cmap='vlag', xticklabels=new_names, yticklabels=feature_table.iloc[all_significant_features, :]['annot'], z_score=0, col_colors=[media_colors, genotype_colors, differentation_colors])
-    g.fig.suptitle(table_name + " all significant TERM features,\n p-adj(bonferroni) < .05")
+    g = sns.clustermap(np.log2(features_for_omni.iloc[all_significant_features, :][sample_names]), cmap='vlag', xticklabels=new_names, yticklabels=features_for_omni.iloc[all_significant_features, :]['annot'], z_score=0, col_colors=[media_colors, genotype_colors, differentation_colors])
+    g.fig.suptitle(table_name + " all significant TERM features,\n p-adj(bonferroni) < .05, inclusion threshold " + str(round(inclusion_threshold,2)))
     if save_figs:
         plt.savefig("./figures/" + table_name + "_TERM_clustermap")
     if interactive:
@@ -323,14 +329,35 @@ def ttest2(row, indices_a, indices_b):
         return 0
     
 def log2fc(row, indices_a, indices_b):
-    values_A = np.log2(np.mean(row[indices_a]))
-    values_B = np.log2(np.mean(row[indices_b]))
-    return values_A - values_B
+    return np.median([np.log2(x) for x in row[indices_a]]) - np.median([np.log2(x) for x in row[indices_b]])
+
+
+def group_filter(row, group_a, group_b):
+    group_a_values = row[group_a]
+    group_b_values = row[group_b]
+    ga_count = 0
+    for ga_val in group_a_values:
+        if ga_val > 0:
+            ga_count += 1
+    gb_count = 0
+    for gb_val in group_a_values:
+        if gb_val > 0:
+            gb_count += 1
+    if ga_count == len(group_a_values):
+        return True
+    if gb_count == len(group_b_values):
+        return True
+    if ga_count + gb_count > (len(group_a_values) + len(group_b_values))/2:
+        return True
+    return False
 
 for group_A_params, group_B_params in groups:
         genotype_A, differentiation_A, media_A, additive_A = group_A_params
         genotype_B, differentiation_B, media_B, additive_B = group_B_params
-        #output = open("./analysis/" + ','.join(group_A_params) + "_vs_" + ','.join(group_B_params), 'a+')
+        group_A_params = [x.replace(" ", "_") for x in group_A_params]
+        group_B_params = [x.replace(" ", "_") for x in group_B_params]
+
+
         table = feature_table.copy()
 
         group_A_names = metadata[
@@ -349,6 +376,16 @@ for group_A_params, group_B_params in groups:
         
         group_A = [name for name in group_A_names if name in table.columns]
         group_B = [name for name in group_B_names if name in table.columns]
+
+        table['include'] = table.apply(group_filter, axis=1, args=(group_A, group_B))
+        table = table[table['include'] == True]
+        print(table_name, group_A_params, group_B_params, table.shape)
+
+        table["feature_interpolate_value"] = table.apply(calc_interpolate_value, axis=1, args=(sample_names,))
+        for sample_name in sample_names:
+            table[sample_name] = table[[sample_name, "feature_interpolate_value"]].max(axis=1)
+
+
         names = [name for name in list(group_A_names) + list(group_B_names) if name in table.columns]
 
         table['p-val'] = table.apply(ttest, axis=1, args=(group_A, group_B))
@@ -388,6 +425,7 @@ for group_A_params, group_B_params in groups:
         new_table['name'] = table['annot_names']
         new_table['emp_ID'] = table['emp_id']
         new_table['best_peak'] = table['best_peak']
+        new_table['snr'] = table['snr']
         if category_class_annots:
             new_table['categories'] = table['categories']
             new_table['classes'] = table['classes']
@@ -399,48 +437,47 @@ for group_A_params, group_B_params in groups:
             total_lipids = 0
             total_up = 0
             total_down = 0
-            for fc, category_set, name, best_peak in zip(new_table['log2fc'], new_table['categories'], new_table['custom_id'], new_table['best_peak']):
-                if type(category_set) is set and len(category_set) == 1 and name not in observed_lipids and best_peak:
+            for fc, category_set, name, snr in sorted(list(zip(new_table['log2fc'], new_table['categories'], new_table['custom_id'], new_table['snr'])), key=lambda x: -1*x[-1]):
+                if type(category_set) is set and len(category_set) == 1 and name not in observed_lipids:
                     observed_lipids.add(name)
                     category = list(category_set)[0]
-                    if category not in fc_counts:
-                        fc_counts[category] = {'category': category, 'significant': '', 'up': 0, 'down': 0}
-                        total_counts[category] = 0
-                    total_counts[category] += 1
-                    if fc > 0:
-                        total_lipids += 1
-                        total_up += 1
-                        fc_counts[category]['up'] += 1
-                    else:
-                        total_lipids += 1
-                        total_down += 1
-                        fc_counts[category]['down'] += 1
-            up_percent = total_up / (total_down + total_up)
-            down_percent = 1 - up_percent
-            all_pvals = []
-            results = []
-            for category, up_downs in fc_counts.items():
-                expected_up = total_counts[category] * up_percent
-                expected_down = total_counts[category] * down_percent
-                fc_counts[category]['expected_up'] = expected_up
-                fc_counts[category]['expected_down'] = expected_down
-            for category, up_downs in fc_counts.items():
-                cont_table = [[up_downs['up'], up_downs['expected_up']], [up_downs['down'], up_downs['expected_down']]]
-                res = stats.fisher_exact(cont_table, alternative='two-sided')
-                up_downs['raw_p_value'] = res.pvalue
-            _, fdr_pvalues = multitest.fdrcorrection([fc_counts[x]['raw_p_value'] for x in sorted(fc_counts)])
-            sorted_keys = list(sorted(fc_counts))
-            for fdr_pval, key in zip(fdr_pvalues, sorted_keys):
-                fc_counts[key]['corr_p_value'] = fdr_pval
-                if fdr_pval < .05:
-                    fc_counts[key]['significant'] += "*"
-                if fdr_pval < .005:
-                    fc_counts[key]['significant'] += "*"
-                if fdr_pval < .0005:
-                    fc_counts[key]['significant'] += "*"
+                    if abs(fc) > 0:
+                        if category not in fc_counts:
+                            fc_counts[category] = {'category': category, 'significant': '', 'up': 0, 'down': 0}
+                            total_counts[category] = 0
+                        total_counts[category] += 1
+                        if fc > 0:
+                            total_lipids += 1
+                            total_up += 1
+                            fc_counts[category]['up'] += 1
+                        else:
+                            total_lipids += 1
+                            total_down += 1
+                            fc_counts[category]['down'] += 1
+            if total_down + total_up:
+                up_percent = total_up / (total_down + total_up)
+                down_percent = 1 - up_percent
+                all_pvals = []
+                results = []
+                for category, up_downs in fc_counts.items():
+                    expected_up = total_counts[category] * up_percent
+                    expected_down = total_counts[category] * down_percent
+                    fc_counts[category]['expected_up'] = expected_up
+                    fc_counts[category]['expected_down'] = expected_down
+                for category, up_downs in fc_counts.items():
+                    cont_table = [[up_downs['up'], up_downs['expected_up']], [up_downs['down'], up_downs['expected_down']]]
+                    res = stats.fisher_exact(cont_table, alternative='two-sided')
+                    up_downs['raw_p_value'] = res.pvalue
+                _, fdr_pvalues = multitest.fdrcorrection([fc_counts[x]['raw_p_value'] for x in sorted(fc_counts)])
+                sorted_keys = list(sorted(fc_counts))
+                for fdr_pval, key in zip(fdr_pvalues, sorted_keys):
+                    fc_counts[key]['corr_p_value'] = fdr_pval
+                    if fdr_pval < .05:
+                        fc_counts[key]['significant'] += "*"
+                    if fdr_pval < .005:
+                        fc_counts[key]['significant'] += "*"
+                    if fdr_pval < .0005:
+                        fc_counts[key]['significant'] += "*"
 
-            for category, dict in fc_counts.items():
-                print(categories, dict)
-
-            fold_change_results = pd.DataFrame(fc_counts.values())
-            fold_change_results.to_csv("./lipidomics_differential_abundance_analysis/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".tsv", sep="\t", index=False)
+                fold_change_results = pd.DataFrame(fc_counts.values())
+                fold_change_results.to_csv("./lipidomics_differential_abundance_analysis/" + table_name + "_".join(group_A_params) + "_vs_" + "_".join(group_B_params) + ".tsv", sep="\t", index=False)

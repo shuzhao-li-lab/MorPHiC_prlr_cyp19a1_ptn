@@ -1,0 +1,120 @@
+pathway	overlap_size	pathway_size	p-value	overlap_EmpiricalCompounds (id)	overlap_features (id)	overlap_features (name)
+Hyaluronan Metabolism	2	4	0.0006722124191244433	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+N-Glycan biosynthesis	3	14	0.0006722124191244433	E320,E402,E409	C00015,C00325,C00096	UDP$GDP-L-fucose$GDP-D-mannose
+Vitamin A (retinol) metabolism	2	4	0.0006722124191244433	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Xenobiotics metabolism	2	4	0.0006722124191244433	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Androgen and estrogen biosynthesis and metabolism	2	5	0.0008402655239055541	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Proteoglycan biosynthesis	2	5	0.0008402655239055541	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Pentose and Glucuronate Interconversions	2	5	0.0008402655239055541	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Linoleate metabolism	2	6	0.0017645576002016637	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Porphyrin metabolism	2	6	0.0017645576002016637	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+C21-steroid hormone biosynthesis and metabolism	2	6	0.0017645576002016637	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Glycosphingolipid biosynthesis - ganglioseries	2	9	0.006386017981682212	E320,E402	C00015,C00325	UDP$GDP-L-fucose
+Glycosphingolipid biosynthesis - lactoseries	2	9	0.006386017981682212	E320,E402	C00015,C00325	UDP$GDP-L-fucose
+Blood Group Biosynthesis	2	9	0.006386017981682212	E320,E402	C00015,C00325	UDP$GDP-L-fucose
+Glycosphingolipid biosynthesis - neolactoseries	2	9	0.006386017981682212	E320,E402	C00015,C00325	UDP$GDP-L-fucose
+Starch and Sucrose Metabolism	2	9	0.006386017981682212	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Nucleotide Sugar Metabolism	1	1	0.007814469372321654	E394	C00167	UDP-D-glucuronate
+Glycosphingolipid biosynthesis - globoseries	2	11	0.012519956306192757	E320,E402	C00015,C00325	UDP$GDP-L-fucose
+Fructose and mannose metabolism	2	12	0.01411646080161331	E402,E409	C00325,C00096	GDP-L-fucose$GDP-D-mannose
+C5-Branched dibasic acid metabolism	1	2	0.018401814973531636	E14	C01732/C00490	Mesaconate; 2-Methylfumarate; Mesaconic acid; Methylfumaric acid/Itaconate; Itaconic acid; Methylenesuccinic acid
+Glycosphingolipid metabolism	2	15	0.021174691202419965	E320,E402	C00015,C00325	UDP$GDP-L-fucose
+Tyrosine metabolism	2	20	0.03781194857574994	E320,E394	C00015,C00167	UDP$UDP-D-glucuronate
+Keratan sulfate degradation	1	6	0.05453323250147046	E320	C00015	UDP
+Keratan sulfate biosynthesis	1	7	0.061339383245105454	E320	C00015	UDP
+O-Glycan biosynthesis	1	7	0.061339383245105454	E320	C00015	UDP
+Phosphatidylinositol phosphate metabolism	1	8	0.0714225695319721	E320	C00015	UDP
+Aminosugars metabolism	1	8	0.0714225695319721	E320	C00015	UDP
+Galactose metabolism	1	10	0.0829342072094782	E320	C00015	UDP
+Glycine, serine, alanine and threonine metabolism	1	11	0.09016049071506596	E24		
+Pyrimidine metabolism	1	13	0.09797496008738761	E320	C00015	UDP
+Urea cycle/amino group metabolism	1	17	0.10814217292664483	E24		
+Vitamin D3 (cholecalciferol) metabolism	0	1	0.11511637677506092			
+Glycolysis and Gluconeogenesis	0	7	0.11511637677506092			
+R Group Synthesis	0	1	0.11511637677506092			
+Pyruvate Metabolism	0	0	0.11511637677506092			
+Sialic acid metabolism	0	5	0.11511637677506092			
+Chondroitin sulfate degradation	0	0	0.11511637677506092			
+Di-unsaturated fatty acid beta-oxidation	0	1	0.11511637677506092			
+Putative anti-Inflammatory metabolites formation from EPA	0	1	0.11511637677506092			
+Hexose phosphorylation	0	4	0.11511637677506092			
+Vitamin B2 (riboflavin) metabolism	0	1	0.11511637677506092			
+Squalene and cholesterol biosynthesis	0	3	0.11511637677506092			
+Glycerolipid metabolism	0	0	0.11511637677506092			
+Carnitine shuttle	0	5	0.11511637677506092			
+3-oxo-10R-octadecatrienoate beta-oxidation	0	0	0.11511637677506092			
+Alkaloid biosynthesis II	0	1	0.11511637677506092			
+Vitamin B1 (thiamin) metabolism	0	1	0.11511637677506092			
+Histidine metabolism	0	4	0.11511637677506092			
+Vitamin B5 - CoA biosynthesis from pantothenate	0	4	0.11511637677506092			
+Glycosylphosphatidylinositol(GPI)-anchor biosynthesis	0	0	0.11511637677506092			
+Bile acid biosynthesis	0	2	0.11511637677506092			
+Parathio degradation	0	0	0.11511637677506092			
+Propanoate metabolism	0	1	0.11511637677506092			
+Electron transport chain	0	0	0.11511637677506092			
+Vitamin H (biotin) metabolism	0	1	0.11511637677506092			
+Biopterin metabolism	0	3	0.11511637677506092			
+Vitamin E metabolism	0	1	0.11511637677506092			
+Caffeine metabolism	0	0	0.11511637677506092			
+Lipoate metabolism	0	1	0.11511637677506092			
+Heparan sulfate biosynthesis	0	0	0.11511637677506092			
+Drug metabolism - cytochrome P450	0	5	0.11511637677506092			
+Vitamin B9 (folate) metabolism	0	3	0.11511637677506092			
+Tryptophan metabolism	0	14	0.11511637677506092			
+Glyoxylate and Dicarboxylate Metabolism	0	0	0.11511637677506092			
+De novo fatty acid biosynthesis	0	0	0.11511637677506092			
+Valine, leucine and isoleucine degradation	0	6	0.11511637677506092			
+Fatty Acid Metabolism	0	1	0.11511637677506092			
+Glycosaminoglycan degradation	0	0	0.11511637677506092			
+Fatty acid oxidation	0	1	0.11511637677506092			
+ROS Detoxification	0	0	0.11511637677506092			
+Saturated fatty acids beta-oxidation	0	1	0.11511637677506092			
+CoA Catabolism	0	3	0.11511637677506092			
+Omega-3 fatty acid metabolism	0	1	0.11511637677506092			
+Butanoate metabolism	0	5	0.11511637677506092			
+Mono-unsaturated fatty acid beta-oxidation	0	1	0.11511637677506092			
+Vitamin B3 (nicotinate and nicotinamide) metabolism	0	3	0.11511637677506092			
+Ascorbate (Vitamin C) and Aldarate Metabolism	0	2	0.11511637677506092			
+Geraniol degradation	0	0	0.11511637677506092			
+D4&E4-neuroprostanes formation	0	1	0.11511637677506092			
+Vitamin D	0	0	0.11511637677506092			
+Dynorphin metabolism	0	0	0.11511637677506092			
+Heparan sulfate degradation	0	0	0.11511637677506092			
+Fatty acid oxidation, peroxisome	0	0	0.11511637677506092			
+Polyunsaturated fatty acid biosynthesis	0	0	0.11511637677506092			
+Purine metabolism	0	11	0.11511637677506092			
+Alanine and Aspartate Metabolism	0	1	0.11511637677506092			
+Glutathione Metabolism	0	5	0.11511637677506092			
+TCA cycle	0	4	0.11511637677506092			
+3-Chloroacrylic acid degradation	0	0	0.11511637677506092			
+Arachidonic acid metabolism	0	6	0.11511637677506092			
+Sphingolipid metabolism	0	0	0.11511637677506092			
+Limonene and pinene degradation	0	0	0.11511637677506092			
+Arginine and Proline Metabolism	0	9	0.11511637677506092			
+Vitamin K metabolism	0	0	0.11511637677506092			
+Glycerophospholipid metabolism	0	15	0.11511637677506092			
+Glutamate metabolism	0	3	0.11511637677506092			
+Benzoate degradation via CoA ligation	0	0	0.11511637677506092			
+Prostaglandin formation from arachidonate	0	5	0.11511637677506092			
+Dimethyl-branched-chain fatty acid mitochondrial beta-oxidation	0	1	0.11511637677506092			
+Vitamin B6 (pyridoxine) metabolism	0	2	0.11511637677506092			
+Atrazine degradation	0	0	0.11511637677506092			
+N-Glycan Degradation	0	7	0.11511637677506092			
+Leukotriene metabolism	0	7	0.11511637677506092			
+Vitamin B12 (cyanocobalamin) metabolism	0	1	0.11511637677506092			
+Fatty acid activation	0	1	0.11511637677506092			
+Carbon fixation	0	1	0.11511637677506092			
+Ubiquinone Biosynthesis	0	1	0.11511637677506092			
+1- and 2-Methylnaphthalene degradation	0	0	0.11511637677506092			
+Aspartate and asparagine metabolism	0	20	0.11511637677506092			
+Nitrogen metabolism	0	0	0.11511637677506092			
+Drug metabolism - other enzymes	0	1	0.11511637677506092			
+Beta-Alanine metabolism	0	5	0.11511637677506092			
+Prostaglandin formation from dihomo gama-linoleic acid	0	1	0.11511637677506092			
+Trihydroxycoprostanoyl-CoA beta-oxidation	0	0	0.11511637677506092			
+Omega-6 fatty acid metabolism	0	0	0.11511637677506092			
+Phytanic acid peroxisomal oxidation	0	0	0.11511637677506092			
+Pentose phosphate pathway	0	7	0.11511637677506092			
+Methionine and cysteine metabolism	0	5	0.11511637677506092			
+Lysine metabolism	0	9	0.11511637677506092			
+Selenoamino acid metabolism	0	1	0.11511637677506092			

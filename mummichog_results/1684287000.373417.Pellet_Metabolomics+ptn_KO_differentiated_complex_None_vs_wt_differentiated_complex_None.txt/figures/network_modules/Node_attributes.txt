@@ -1,0 +1,36 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00430	5-Aminolevulinate; 5-Amino-4-oxopentanoate; 5-Amino-4-oxovaleric acid	5.621953015827953	row52	E16
+C00203	UDP-N-acetyl-D-galactosamine	7.654807665825708	row2181	E273
+C00062	L-Arginine	-14.311781063605544	row498	E114
+C01170	UDP-N-acetyl-D-mannosamine	9.44308585025493	row2333	E273
+C01157	trans-4-Hydroxy-L-proline	5.621953015827953	row52	E16
+C00242	Guanine	-9.787444197846154	row261	E28
+gudac	Guanidinoacetate	5.691579359320661	row329	E91
+C01170	UDP-N-acetyl-D-mannosamine	7.911295809485029	row2169	E273
+C00029	UDPglucose	13.3321644490273	row1985	E267
+C00015	UDP	7.669370401756052	row1342	E216
+C01110	5-Amino-2-oxopentanoic acid; 5-Amino-2-oxopentanoate; 2-Oxo-5-amino-pentanoate; 2-Oxo-5-aminopentanoate; alpha-Keto-delta-aminopentanoate; 2-Oxo-5-aminovalerate	5.621953015827953	row52	E16
+C03440	cis-4-Hydroxy-D-proline	5.621953015827953	row52	E16
+C01165	L-Glutamate 5-semialdehyde; L-Glutamate gamma-semialdehyde	5.621953015827953	row52	E16
+C00611	N-Acetyllactosamine; beta-D-Galactosyl-1,4-N-acetyl-D-glucosamine; beta-D-Galactosyl-1,4-N-acetyl-beta-D-glucosamine	-6.525138536237901	row1358	E220
+C00242	Guanine	-10.388450579511808	row254	E28
+C00043	UDP-N-acetyl-D-glucosamine	9.44308585025493	row2333	E273
+C00052	UDPgalactose	13.3321644490273	row1985	E267
+C00043	UDP-N-acetyl-D-glucosamine	7.911295809485029	row2169	E273
+C00581	Guanidinoacetate; Guanidinoacetic acid; Glycocyamine; N-Amidinoglycine; Guanidoacetic acid	5.691579359320661	row329	E91
+C00203	UDP-N-acetyl-D-galactosamine	9.44308585025493	row2333	E273
+mn	beta-1,4-mannose-N-acetylglucosamine	-6.525138536237901	row1358	E220
+C00300	Creatine; alpha-Methylguanidino acetic acid; Methylglycocyamine	10.614815488842412	row62	E18
+C00203	UDP-N-acetyl-D-galactosamine	7.911295809485029	row2169	E273
+C01170	UDP-N-acetyl-D-mannosamine	7.654807665825708	row2181	E273
+C00437	N2-Acetyl-L-ornithine	-5.2457492661370635	row127	E32
+C00015	UDP	6.228024622599656	row1354	E216
+C00029	UDPglucose	50.66261322232836	row2323	E267
+C04555	3beta-Hydroxyandrost-5-en-17-one 3-sulfate; Dehydroepiandrosterone sulfate	-5.723478768508177	row1275	E206
+C00792	D-Arginine; D-2-Amino-5-guanidinovaleric acid	-14.311781063605544	row498	E114
+m2mn	(alpha-D-mannosyl)2-beta-D-mannosyl-N-acetylglucosamine	-8.650085077071209	row2139	E271
+C03451	(R)-S-Lactoylglutathione	10.27236634997286	row1456	E238
+C00052	UDPgalactose	50.66261322232836	row2323	E267
+C00437	N2-Acetyl-L-ornithine	-5.488536380446129	row117	E32
+C00043	UDP-N-acetyl-D-glucosamine	7.654807665825708	row2181	E273
+C00242	Guanine	-8.150092673220056	row102	E28

@@ -1,0 +1,7 @@
+CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
+C00096	GDP-D-mannose	18.093216206632597	row3621	E409
+C00015	UDP	6.597411631272469	row2005	E320
+C01732	Mesaconate; 2-Methylfumarate; Mesaconic acid; Methylfumaric acid	6.841224817069489	row44	E14
+C00490	Itaconate; Itaconic acid; Methylenesuccinic acid	6.841224817069489	row44	E14
+C00167	UDP-D-glucuronate	15.986896972326011	row3193	E394
+C00325	GDP-L-fucose	93.44209493879471	row3378	E402

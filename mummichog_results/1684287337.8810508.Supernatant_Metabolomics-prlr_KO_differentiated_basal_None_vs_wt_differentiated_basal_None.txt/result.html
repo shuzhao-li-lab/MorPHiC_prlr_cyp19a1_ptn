@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+        <html xmlns="http://www.w3.org/1999/xhtml"> 
+        <head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <title>Mummichog Report</title> 
+
+        <style type="text/css"> 
+        body {width: 960px; padding: 10px; }
+        
+        div.colorbar {margin-bottom: 7px}
+        div.networkvisual { margin: auto; height: 600px; width: 960px; overflow: auto !important;}
+        div.svg2 { margin: auto; height: 600px; width: 960px; overflow: auto !important;}
+
+        div.stats {margin-top: 10; font-size:0.7em; color:#888;}
+
+        div.moduleline{font-size: 0.9em; font-weight: bold;
+        }
+        div.metabolites {
+            font-size: 0.7em;
+            padding-left: 15px; padding-bottom: 7px;
+        }
+        
+        footer { margin-top: 30px;    padding: 10px 0;    border-top: 1px solid #582E2E;    font-size:0.7em;    color:#888;}
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+            font-weight: bold;
+        }
+        
+        h1 { font-size: 1.4em; }
+        h2 { font-size: 1.2em; }
+        h3 { font-size: 1em; }
+        h4 { font-size: 0.9em;     padding-left: 15px; padding-bottom: 2px; margin-bottom:0px;}
+        th {
+            background: #DAFDCF;
+            font-size:0.9em;
+            text-align: left;
+            padding:5px;
+        }
+        
+        tr:nth-child(even) {background-color: #f2f2f2}
+        tr:hover {background-color: #f5f5f5}
+        
+        td {
+            font-family: Verdana, Arial, sans-serif;
+            color: black;
+            font-size:0.7em;
+            margin:10px;
+            margin-top:0px;
+            padding: 5px;
+        }
+        
+        .node {
+          stroke: #fff;
+          stroke-width: 1.5px;
+        }
+        
+        .link {
+          stroke: #999;
+          stroke-opacity: .6;
+        }
+        div.network_selection {float: left; margin-top: 6; margin-bottom: 10; font-size:0.8em;}
+        </style> 
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://shuzhao-li.github.io/mummichog.org/download/cytoscape.min.js" charset="utf-8"></script>
+        <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-spread/1.0.9/cytoscape-spread.js"></script> 
+        <script src="js/plotly-latest.min.js"></script>
+        <script src="js/plotly-graphs.js"></script>
+        <script src="js/result.js"></script>
+        </head> 
+        <body> 
+        <h1>Mummichog Report: Supernatant_Metabolomics-prlr_KO_differentiated_basal_None_vs_wt_differentiated_basal_None.txt</h1>
+<div id="colorbar" class="colorbar"></div>
+<div class="stats">mummichog version: 2.6.1, using metabolic model MFN_1.10.4.<br></div>
+<h2>User input data</h2>
+<p>User supplied 2309 features as reference list.We are using 343 features (p < 0.005000) as significant list. The feature level data are shown in the Manhattan plots below.</p>
+<div id="mz_user_input"></div>
+<div id="retention_time_input"></div>
+<h2>Top pathways</h2>
+<p>The reference feature list is mapped to 107 EmpiricalCompounds, significant features to 35 EmpiricalCompounds. In the table below, pathway_size is number of detected EmpiricalCompounds for each pathway; overlap_size is number of significant EmpiricalCompounds.                                Empirical p-values are estimated by permutation test. Details on EmpiricalCompounds are in 'tables/ListOfEmpiricalCompounds.tsv'.</p>
+<div class="pathwaystablly"><table><tr><th>Pathways</th>                    <th>overlap_size</th><th>pathway_size</th><th>p-value</th>                    <th>overlap_EmpiricalCompounds</th></tr><tr> <td>Linoleate metabolism</td> <td>8</td><td>8</td><td>8e-05</td><td>E152,E210,E160,E224,E170,E223,E171,E211</td></tr><tr> <td>De novo fatty acid biosynthesis</td> <td>3</td><td>4</td><td>0.01008</td><td>E152,E189,E160</td></tr><tr> <td>Selenoamino acid metabolism</td> <td>3</td><td>4</td><td>0.01008</td><td>E258,E141,E14</td></tr><tr> <td>Vitamin A (retinol) metabolism</td> <td>3</td><td>5</td><td>0.04369</td><td>E242,E189,E185</td></tr><tr> <td>Arachidonic acid metabolism</td> <td>3</td><td>5</td><td>0.04369</td><td>E152,E236,E218</td></tr></table></div>
+<div id="pathwayBarPlot"></div>
+<h2>Top modules</h2>
+<p>Network modules may capture concerted metabolite activities that are missed by predefined pathways.         Use pull-down menus to visualize modules and the activity network, which tries to combine the results of         pathway/module analyses. The visualization requires interenet connection.</p>
+<div id="network_selection" class="network_selection">Showing
+        <select id="nmodule_select" onchange="updateDrawing();">
+        <option>Module 1</option>  <option>Activity network</option>
+                   </select>
+                    Node size <select id="nsize_select"  onchange="updateDrawing();">
+                      <option value=16>Medium</option>
+                      <option value=8>Small</option>
+                      <option value=32>Large</option>
+                    </select>
+                    Visual style <select id="vstyle_select"  onchange="updateDrawing();">
+                      <option value=0>Drag</option>
+                      <option value=1>Force</option>
+                    </select>
+                    </div>
+<div id="networkvisual" class="networkvisual"></div>
+<div class="modulestablly"><div class="moduleline">module_1, p=0.01538, 11 metabolites</div><div class="metabolites">(9Z,12Z,15Z)-Octadecatrienoic acid; alpha-Linolenic acid; 9,12,15-Octadecatrienoic acid; Linolenate; alpha-Linolenate, (6Z,9Z,12Z)-Octadecatrienoic acid; 6,9,12-Octadecatrienoic acid; gamma-Linolenic acid; Gamolenic acid, 12(13)-EpOME; (12R,13S)-(9Z)-12,13-Epoxyoctadecenoic acid, 9(S)-HPODE; 9(S)-HPOD; (10E,12Z)-(9S)-9-Hydroperoxyoctadeca-10,12-dienoic acid, Stearidonic acid; 6,9,12,15-Octadecatetraenoic acid; (6Z,9Z,12Z,15Z)-Octadecatetraenoic acid, (9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid; (9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoate; 13(S)-HPODE; 13S-Hydroperoxy-9Z,11E-octadecadienoic acid, , , linoleic acid (all cis C18:2) n-6, 9(10)-EpOME; (9R,10S)-(12Z)-9,10-Epoxyoctadecenoic acid, (5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoic acid; Eicosapentaenoic acid; 5,8,11,14,17-Icosapentaenoic acid; (5Z,8Z,11Z,14Z,17Z)-Eicosapentaenoate</div>
+</div>
+<h2>EmpiricalCompounds favored by above analyses</h2>
+<p>An EmpiricalCompound is a computational unit for a tentative metabolite. It can group multiple ions,                     and be any of the isobaric/isomeric species. This table contains EmpiricalCompounds prioritized by pathway/module analysis.</p>
+<div class="metabolitestablly"><table><tr><th>EmpiricalCompound</th><th>Input m/z</th>                    <th>Retention time</th><th>ion</th><th>mz_diff</th><th>Statistic</th>                    <th>Significant</th></tr><tr > <td>E189</td> <td colspan="2">Best guess: CE5013, </td><td colspan="4">CE5932, C02075, C06428, CE5013</td></tr><tr> <td> </td> <td>303.2332</td> <td>26.78</td><td>M+H[1+]</td><td>0.0013</td><td>9.44</td><td>yes</td></tr><tr > <td>E14</td> <td colspan="2">Best guess: C01119, Oxidized dithiothreitol</td><td colspan="4">C01119</td></tr><tr> <td> </td> <td>174.9865</td> <td>25.73</td><td>M+Na[1+]</td><td>0.0006</td><td>3.94</td><td>no</td></tr><tr> <td> </td> <td>174.9865</td> <td>27.57</td><td>M+Na[1+]</td><td>0.0006</td><td>6.35</td><td>yes</td></tr><tr > <td>E145</td> <td colspan="2">Best guess: C16300, Stearidonic acid</td><td colspan="4">C16300</td></tr><tr> <td> </td> <td>277.2174</td> <td>27.04</td><td>M+H[1+]</td><td>0.0012</td><td>47.77</td><td>yes</td></tr><tr > <td>E170</td> <td colspan="2">Best guess: C14765, 13-OxoODE</td><td colspan="4">CE5526, CE5527, C14765</td></tr><tr> <td> </td> <td>295.228</td> <td>28.22</td><td>M+H[1+]</td><td>0.0012</td><td>14.82</td><td>yes</td></tr><tr > <td>E171</td> <td colspan="2">Best guess: C14825, 9(10)-EpOME</td><td colspan="4">C14762, C14826, C14825</td></tr><tr> <td> </td> <td>297.2437</td> <td>27.96</td><td>M+H[1+]</td><td>0.0013</td><td>14.4</td><td>yes</td></tr><tr> <td> </td> <td>298.2471</td> <td>28.09</td><td>M(C13)+H[1+]</td><td>0.0013</td><td>13.02</td><td>yes</td></tr><tr > <td>E258</td> <td colspan="2">Best guess: C05692, Se-Adenosylselenohomocysteine</td><td colspan="4">C05692</td></tr><tr> <td> </td> <td>433.0746</td> <td>25.45</td><td>M+H[1+]</td><td>0.0013</td><td>9.24</td><td>yes</td></tr><tr > <td>E152</td> <td colspan="2">Best guess: C06427, (9Z,12Z,15Z)-Octadecatrienoic acid</td><td colspan="4">C06426, C06427</td></tr><tr> <td> </td> <td>279.2332</td> <td>27.04</td><td>M+H[1+]</td><td>0.0013</td><td>44.33</td><td>yes</td></tr><tr> <td> </td> <td>280.2365</td> <td>27.04</td><td>M(C13)+H[1+]</td><td>0.0012</td><td>6.6</td><td>yes</td></tr><tr > <td>E224</td> <td colspan="2">Best guess: C14827, 9(S)-HPODE</td><td colspan="4">C04717, C14827</td></tr><tr> <td> </td> <td>313.2388</td> <td>47.62</td><td>M+H[1+]</td><td>0.0014</td><td>10.64</td><td>yes</td></tr><tr> <td> </td> <td>314.2422</td> <td>47.36</td><td>M(C13)+H[1+]</td><td>0.0014</td><td>11.99</td><td>yes</td></tr><tr > <td>E242</td> <td colspan="2">Best guess: C16680, all-trans-5,6-Epoxyretinoic acid</td><td colspan="4">C16679, C16677, C16680</td></tr><tr> <td> </td> <td>317.2124</td> <td>28.36</td><td>M+H[1+]</td><td>0.0013</td><td>20.84</td><td>yes</td></tr><tr > <td>E223</td> <td colspan="2">Best guess: C14827, 9(S)-HPODE</td><td colspan="4">C04717, C14827</td></tr><tr> <td> </td> <td>313.2388</td> <td>34.82</td><td>M+H[1+]</td><td>0.0014</td><td>12.79</td><td>yes</td></tr><tr> <td> </td> <td>314.2422</td> <td>34.82</td><td>M(C13)+H[1+]</td><td>0.0014</td><td>37.11</td><td>yes</td></tr><tr > <td>E218</td> <td colspan="2">Best guess: C14781, 15H-11,12-EETA</td><td colspan="4">C05356, C00959, C04685, C04686, C05966, C05965, C14813, C02165, C04849, C14781</td></tr><tr> <td> </td> <td>359.2209</td> <td>28.36</td><td>M+Na[1+]</td><td>0.0015</td><td>3.38</td><td>no</td></tr><tr> <td> </td> <td>337.2389</td> <td>28.36</td><td>M+H[1+]</td><td>0.0015</td><td>25.41</td><td>yes</td></tr><tr> <td> </td> <td>338.2423</td> <td>28.36</td><td>M(C13)+H[1+]</td><td>0.0015</td><td>60.72</td><td>yes</td></tr><tr> <td> </td> <td>338.2423</td> <td>31.41</td><td>M(C13)+H[1+]</td><td>0.0015</td><td>20.08</td><td>yes</td></tr><tr > <td>E160</td> <td colspan="2">Best guess: C01595, linoleic acid (all cis C18:2) n-6</td><td colspan="4">C01595</td></tr><tr> <td> </td> <td>281.2488</td> <td>26.91</td><td>M+H[1+]</td><td>0.0013</td><td>19.88</td><td>yes</td></tr><tr> <td> </td> <td>282.2522</td> <td>26.91</td><td>M(C13)+H[1+]</td><td>0.0013</td><td>17.29</td><td>yes</td></tr><tr > <td>E211</td> <td colspan="2">Best guess: CE5528, </td><td colspan="4">CE5528</td></tr><tr> <td> </td> <td>311.2232</td> <td>51.19</td><td>M+H[1+]</td><td>0.0015</td><td>9.18</td><td>yes</td></tr><tr > <td>E210</td> <td colspan="2">Best guess: CE5528, </td><td colspan="4">CE5528</td></tr><tr> <td> </td> <td>311.2232</td> <td>28.22</td><td>M+H[1+]</td><td>0.0015</td><td>22.8</td><td>yes</td></tr><tr> <td> </td> <td>311.2232</td> <td>35.74</td><td>M+H[1+]</td><td>0.0015</td><td>9.74</td><td>yes</td></tr><tr> <td> </td> <td>312.2264</td> <td>35.74</td><td>M(C13)+H[1+]</td><td>0.0013</td><td>12.81</td><td>yes</td></tr><tr > <td>E236</td> <td colspan="2">Best guess: C14773, 8,9-DHET</td><td colspan="4">C14774, C14775, C14772, C14773</td></tr><tr> <td> </td> <td>339.2544</td> <td>34.69</td><td>M+H[1+]</td><td>0.0014</td><td>17.51</td><td>yes</td></tr><tr > <td>E141</td> <td colspan="2">Best guess: C05708, Selenomethionine Se-oxide</td><td colspan="4">C05708</td></tr><tr> <td> </td> <td>213.9978</td> <td>28.09</td><td>M+H[1+]</td><td>0.0001</td><td>10.59</td><td>yes</td></tr><tr> <td> </td> <td>215.0017</td> <td>24.8</td><td>M(C13)+H[1+]</td><td>0.0006</td><td>6.17</td><td>yes</td></tr><tr> <td> </td> <td>215.0017</td> <td>28.22</td><td>M(C13)+H[1+]</td><td>0.0006</td><td>1.07</td><td>no</td></tr><tr> <td> </td> <td>215.0017</td> <td>33.9</td><td>M(C13)+H[1+]</td><td>0.0006</td><td>9.13</td><td>yes</td></tr><tr > <td>E185</td> <td colspan="2">Best guess: C15493, 9-cis-Retinoic acid</td><td colspan="4">C00777, C15493</td></tr><tr> <td> </td> <td>301.2175</td> <td>27.04</td><td>M+H[1+]</td><td>0.0013</td><td>29.18</td><td>yes</td></tr></table></div>
+<h2>More data</h2>
+<p class="moreinformation">Full data tables from pathway analysis, module analysis and activity network are stored in the 'tables/' directory. 
+            The tsv files can be imported into a spreadsheet program, e.g. MS Excel.
+            Under the 'figures/network_modules/' directory are files intended for Cytoscape (cytoscape.org) visualization. Please refer to Cytoscape's guides for details.
+            Details of this run are recorded in file mummichog.log.txt.
+            </p>
+<footer>Mummichog algorithms are described in Li et al. Predicting Network Activity from High Throughput Metabolomics. PLoS Computational Biology (2013); doi:10.1371/journal.pcbi.1003123.        This software is provided as is, without warranty of any kind. Visit <a href="http://mummichog.org">http://mummichog.org</a> for updates.
+        </footer>
+
+        <script type="text/javascript" charset="utf-8">
+        var nodes = [ [{name:"(9Z,12Z,15Z)-Octadecatrienoic acid", group:18}, {name:"(6Z,9Z,12Z)-Octadecatrienoic acid", group:18}, {name:"12(13)-EpOME", group:11}, {name:"9(S)-HPODE", group:16}, {name:"Stearidonic acid", group:19}, {name:"(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", group:11}, {name:"CE5527", group:12}, {name:"CE5526", group:12}, {name:"linoleic acid (all cis C18:2) n-6", group:13}, {name:"9(10)-EpOME", group:11}, {name:"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", group:10}, ], [{name:"12(13)-EpOME", group:11}, {name:"(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", group:11}, {name:"(6Z,9Z,12Z)-Octadecatrienoic acid", group:18}, {name:"9(S)-HPODE", group:16}, {name:"(9Z,12Z,15Z)-Octadecatrienoic acid", group:18}, {name:"Stearidonic acid", group:19}, {name:"CE5527", group:12}, {name:"CE5526", group:12}, {name:"linoleic acid (all cis C18:2) n-6", group:13}, {name:"9(10)-EpOME", group:11}, {name:"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", group:10}, ], ];
+
+        var links = [[{source:0, target:1}, {source:0, target:4}, {source:0, target:8}, {source:0, target:10}, {source:1, target:8}, {source:1, target:10}, {source:2, target:8}, {source:3, target:8}, {source:5, target:7}, {source:5, target:8}, {source:6, target:7}, {source:8, target:9}, {source:8, target:10}, ], [{source:0, target:8}, {source:1, target:7}, {source:1, target:8}, {source:2, target:4}, {source:2, target:8}, {source:2, target:10}, {source:3, target:8}, {source:4, target:5}, {source:4, target:8}, {source:4, target:10}, {source:6, target:7}, {source:8, target:9}, {source:8, target:10}, ], ];
+
+        var cytonodes = [ [{ data: {id:"(9Z,12Z,15Z)-Octadecatrienoic acid", group:18} }, { data: {id:"(6Z,9Z,12Z)-Octadecatrienoic acid", group:18} }, { data: {id:"12(13)-EpOME", group:11} }, { data: {id:"9(S)-HPODE", group:16} }, { data: {id:"Stearidonic acid", group:19} }, { data: {id:"(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", group:11} }, { data: {id:"CE5527", group:12} }, { data: {id:"CE5526", group:12} }, { data: {id:"linoleic acid (all cis C18:2) n-6", group:13} }, { data: {id:"9(10)-EpOME", group:11} }, { data: {id:"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", group:10} }, ], [{ data: {id:"12(13)-EpOME", group:11} }, { data: {id:"(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", group:11} }, { data: {id:"(6Z,9Z,12Z)-Octadecatrienoic acid", group:18} }, { data: {id:"9(S)-HPODE", group:16} }, { data: {id:"(9Z,12Z,15Z)-Octadecatrienoic acid", group:18} }, { data: {id:"Stearidonic acid", group:19} }, { data: {id:"CE5527", group:12} }, { data: {id:"CE5526", group:12} }, { data: {id:"linoleic acid (all cis C18:2) n-6", group:13} }, { data: {id:"9(10)-EpOME", group:11} }, { data: {id:"(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid", group:10} }, ], ];
+
+        var cytoedges = [[{ data: { id: "C06427-C06426", weight: 1, source: "(9Z,12Z,15Z)-Octadecatrienoic acid", target: "(6Z,9Z,12Z)-Octadecatrienoic acid" } }, { data: { id: "C06427-C16300", weight: 1, source: "(9Z,12Z,15Z)-Octadecatrienoic acid", target: "Stearidonic acid" } }, { data: { id: "C06427-C01595", weight: 1, source: "(9Z,12Z,15Z)-Octadecatrienoic acid", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C06427-C06428", weight: 1, source: "(9Z,12Z,15Z)-Octadecatrienoic acid", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, { data: { id: "C06426-C01595", weight: 1, source: "(6Z,9Z,12Z)-Octadecatrienoic acid", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C06426-C06428", weight: 1, source: "(6Z,9Z,12Z)-Octadecatrienoic acid", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, { data: { id: "C14826-C01595", weight: 1, source: "12(13)-EpOME", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C14827-C01595", weight: 1, source: "9(S)-HPODE", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C04717-CE5526", weight: 1, source: "(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", target: "CE5526" } }, { data: { id: "C04717-C01595", weight: 1, source: "(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "CE5527-CE5526", weight: 1, source: "CE5527", target: "CE5526" } }, { data: { id: "C01595-C14825", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "9(10)-EpOME" } }, { data: { id: "C01595-C06428", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, ], [{ data: { id: "C14826-C01595", weight: 1, source: "12(13)-EpOME", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C04717-CE5526", weight: 1, source: "(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", target: "CE5526" } }, { data: { id: "C04717-C01595", weight: 1, source: "(9Z,11E)-(13S)-13-Hydroperoxyoctadeca-9,11-dienoic acid", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C06426-C06427", weight: 1, source: "(6Z,9Z,12Z)-Octadecatrienoic acid", target: "(9Z,12Z,15Z)-Octadecatrienoic acid" } }, { data: { id: "C06426-C01595", weight: 1, source: "(6Z,9Z,12Z)-Octadecatrienoic acid", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C06426-C06428", weight: 1, source: "(6Z,9Z,12Z)-Octadecatrienoic acid", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, { data: { id: "C14827-C01595", weight: 1, source: "9(S)-HPODE", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C06427-C16300", weight: 1, source: "(9Z,12Z,15Z)-Octadecatrienoic acid", target: "Stearidonic acid" } }, { data: { id: "C06427-C01595", weight: 1, source: "(9Z,12Z,15Z)-Octadecatrienoic acid", target: "linoleic acid (all cis C18:2) n-6" } }, { data: { id: "C06427-C06428", weight: 1, source: "(9Z,12Z,15Z)-Octadecatrienoic acid", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, { data: { id: "CE5527-CE5526", weight: 1, source: "CE5527", target: "CE5526" } }, { data: { id: "C01595-C14825", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "9(10)-EpOME" } }, { data: { id: "C01595-C06428", weight: 1, source: "linoleic acid (all cis C18:2) n-6", target: "(5Z,8Z,11Z,14Z,17Z)-Icosapentaenoic acid" } }, ], ];
+
+
+        var w = 960, h = 600;
+        var color = d3.scale.category20b();
+        var node_sizes = [16, 8, 32]
+        
+        var scalebar = d3.select("#colorbar").append("svg").attr("id", "svg_colorbar").attr("width", w).attr("height", 10);
+        var coloridx = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+        scalebar.selectAll("rect")
+           .data(coloridx)
+           .enter()
+           .append("rect")
+           .attr("x", function(d, i) {return i * 48;})
+           .attr("y", 0)
+           .attr("width", 48)
+           .attr("height", 10)
+           .attr("fill", function(d, i) { return color(i); });
+           
+        //user input plots
+        var data = JSON.parse(alldata);
+        makeMZUserInputPlot();
+        makeRetTimeUserInputPlot();
+
+        //Pathway Bar chart plot
+        makePathwayPlot()
+        
+        // initial draw
+        cyto_draw_figure(cytonodes[0], cytoedges[0], node_sizes[0]);
+    	var cy = $('#networkvisual').cytoscape('get');
+    	cy.panBy({ x: 0, y: -200 });
+    	
+        // support cytoscape.js  
+		function cyto_draw_figure(nodes, links, node_size) {  
+
+                    var svg = document.createElement('div');
+                    svg.setAttribute("id","svg2");
+                    svg.setAttribute("class","svg2");
+                    var nw = document.getElementById("networkvisual");
+                    nw.appendChild(svg);
+
+				$('#svg2').cytoscape({
+						style: cytoscape.stylesheet()
+						.selector('node')
+						  .css({
+							'content': 'data(id)',
+							'font-size': node_size,
+							'min-zoomed-font-size': 8,
+							'background-color': 'mapData(group, 0, 19, blue, red)'
+						  })
+						.selector('edge')
+						  .css({
+							'target-arrow-shape': 'triangle',
+							'width': 4,
+							'line-color': '#ddd',
+							'target-arrow-color': '#ddd'
+						  })
+						.selector('.highlighted')
+						  .css({
+							'background-color': '#61bffc',
+							'line-color': '#61bffc',
+							'target-arrow-color': '#61bffc',
+							'transition-property': 'background-color, line-color, target-arrow-color',
+							'transition-duration': '0.5s'
+						  }),
+  
+					  layout: {
+						name: 'spread',
+						minDist: 40,
+						directed: true,
+						padding: 10,
+						//fit: false,
+					  },
+					  
+					  elements: {
+						  nodes: nodes, 
+						  edges: links
+						},
+  
+					  zoom: 1,
+					  minZoom: 0.1,
+ 					  maxZoom: 5,
+
+				});
+	
+		}
+	
+
+        // support d3.js  
+        function d3_draw_figure(nodes, links, node_size) {
+
+            var svg = document.createElement('div');
+            svg.setAttribute("id","svg2");
+            svg.setAttribute("class","svg2");
+            var nw = document.getElementById("networkvisual");
+            nw.appendChild(svg);
+
+            var svg = d3.select("#svg2").append("svg").attr("id", "svg_networkvisual").attr("width", w).attr("height", h);
+            var force = d3.layout.force()
+                      .charge(-480)
+                      .linkDistance(80)
+                      .gravity(0.3)
+                      .size([w, h]);
+    
+            force.nodes(nodes)
+              .links(links)
+              .start();
+            
+            var link = svg.selectAll(".link")
+              .data(links)
+              .enter().append("line")
+              .attr("class", "link")
+              .style("stroke-width", 2);
+            
+            var node = svg.selectAll(".node")
+              .data(nodes)
+              .enter().append("circle")
+              .attr("class", "node")
+              .attr("r", node_size)
+              .style("fill", function(d) { return color(d.group); })
+              .style("fill-opacity", .6)
+              .call(force.drag);
+            
+            var text = svg.selectAll(".text")
+              .data(nodes)
+              .enter().append("text")
+              .attr("font-family", "sans-serif")
+              .attr("font-size", "9px")
+              .attr("text-anchor", "middle")
+              .text(function(d) { return d.name; });
+            
+            force.on("tick", function() {
+                link.attr("x1", function(d) { return d.source.x; })
+                    .attr("y1", function(d) { return d.source.y; })
+                    .attr("x2", function(d) { return d.target.x; })
+                    .attr("y2", function(d) { return d.target.y; });
+            
+                node.attr("cx", function(d) { return d.x; })
+                    .attr("cy", function(d) { return d.y; });
+            
+                text.attr("x", function(d) { return d.x; })
+                    .attr("y", function(d) { return d.y; });
+              });
+        }
+    
+    
+        function inv(i) {
+           if (i==0)
+              return 0
+           else if (i==1)
+              return 2
+           else
+              return 1
+}
+
+    	// added support of two styles
+        function updateDrawing() {
+            var idx = document.getElementById("nmodule_select").selectedIndex;
+            var ndx = document.getElementById("nsize_select").selectedIndex;
+            var vdx = document.getElementById("vstyle_select").selectedIndex;
+            
+            //d3.select("#svg_networkvisual").remove();
+            var svg = document.getElementById("svg2");
+	    svg.parentNode.removeChild(svg);
+
+            //var cy = $('#networkvisual').cytoscape('get');
+            //cy.remove( cy.elements() );
+            
+            // 0 for cytoscape style, drag; 1 for d3 style, force
+            if (vdx == 0) {
+            cyto_draw_figure(cytonodes[idx], cytoedges[idx], node_sizes[inv(ndx)]);
+            
+    		var cy = $('#networkvisual').cytoscape('get');
+    		cy.panBy({ x: 0, y: -200 });
+            
+            } else {
+            d3_draw_figure(nodes[idx], links[idx], node_sizes[ndx]);
+            }
+        }
+    
+    </script>
+    </body> </html> 
