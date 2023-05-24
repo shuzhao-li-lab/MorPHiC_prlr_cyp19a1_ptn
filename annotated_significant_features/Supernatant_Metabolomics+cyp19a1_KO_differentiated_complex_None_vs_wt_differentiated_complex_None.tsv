@@ -1,7 +1,0 @@
-m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
-134.0813	41.57	0.04996052590197962	-15.020902077170419	C5H11NO3	-0.7142639645986684	Amyl nitrate,3-Hydroxynorvaline,1,4-Dideoxy-1,4-imino-D-ribitol,N-Lactoyl ethanolamine,L-2-Amino-5-hydroxypentanoic acid	kp48_133.0739
-151.999	205.75	0.03861671733967497	18.142596350575708		2.9932828049502227	None	
-324.0223	198.47	0.03054027292648627	26.720364588781866		3.247529564210586	None	
-411.9907	36.81	0.04502703848604617	16.15125584972793		2.2264379272283534	411.9907_ACN	
-284.099	167.71	0.03861671733967497	-17.765741317100396	C10H13N5O5	-1.3055315998847128	hydroxydeoxyguanosine,1-[(2R,5R)-4-Azidooxy-5-(hydroxymethyl)oxolan-2-yl]-5-methylpyrimidine-2,4-dione,8-Hydroxy-2-desoxyguanosine,Guanosine,8-Hydroxy-deoxyguanosine,9-beta-d-Arabinofuranosylguanine,2-Amino-9-[(2R,4S,5R)-5-(hydroperoxymethyl)-4-hydroxyoxolan-2-yl]-1H-purin-6-one	kp791_283.0917
-421.9993	198.86	0.03861671733967497	18.461696460513654		2.94871376762657	None	

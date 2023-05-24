@@ -1,4 +1,0 @@
-MODULE	p-value	size	members (name)	members (id)	This module overlaps with
-module_1	0.018656716417910446	5	Indole-3-acetaldehyde$L-Normetanephrine$4,6-Dihydroxyquinoline; Quinoline-4,6-diol$Phenylacetaldehyde; alpha-Tolualdehyde$L-Adrenaline; (R)-(-)-Adrenaline; (R)-(-)-Epinephrine; (R)-(-)-Epirenamine; (R)-(-)-Adnephrine; 4-[(1R)-1-Hydroxy-2-(methylamino)ethyl]-1,2-benzenediol	C00637,C05589,C05639,C00601,C00788	(3, 'Tyrosine metabolism');(2, 'Tryptophan metabolism');(1, 'Vitamin E metabolism')
-module_2	0.026119402985074626	7	Inosine$Cytidine$5-Fluorouridine$Guanosine$Adenosine$Guanine$Deoxyguanosine	C00294,C00475,C16633,C00387,C00212,C00242,C00330	(5, 'Purine metabolism');(1, 'Urea cycle/amino group metabolism');(1, 'Selenoamino acid metabolism')
-module_3	0.048507462686567165	5	Inosine$Guanosine$Adenosine$Guanine$Deoxyguanosine	C00294,C00387,C00212,C00242,C00330	(5, 'Purine metabolism');(1, 'Urea cycle/amino group metabolism');(1, 'Selenoamino acid metabolism')

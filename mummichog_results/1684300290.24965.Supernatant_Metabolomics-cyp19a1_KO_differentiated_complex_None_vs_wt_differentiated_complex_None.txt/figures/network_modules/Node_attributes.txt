@@ -1,3 +1,0 @@
-CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
-C00073	L-Methionine	6.048430501622458	row67	E18
-C01169	S-Succinyldihydrolipoamide	4.558139705478444	row1326	E176

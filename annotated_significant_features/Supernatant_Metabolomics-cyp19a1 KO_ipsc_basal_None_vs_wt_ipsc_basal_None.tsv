@@ -1,7 +1,0 @@
-m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID
-172.9907	25.73	0.0019776913207507057	35.32494089391219	C6H6O4S,C6H6O4S	0.8871914744133491	O-Phenolsulfonic acid,Phenol sulphate,O-Phenolsulfonic acid,Phenol sulphate	kp70_173.9979
-173.994	25.59	0.04449119886179545	12.787067926829003	C6H6O4S,C6H6O4S	0.914966510336928	O-Phenolsulfonic acid,Phenol sulphate,O-Phenolsulfonic acid,Phenol sulphate	kp71_173.9979
-174.9865	25.73	0.0010949991637861005	48.73037154810787		0.9818450212203267		
-203.0016	30.59	0.04612537398247332	12.093429661616804	C7H8O5S,C7H8O5S	0.6461962581480982	3-Methylcatechol 1-sulfate,3-Methylcatechol 2-sulfate,4-Methylcatechol 1-sulfate,Sulfuric acid 4-methoxyphenyl ester,4-Methylcatechol 2-sulfate,O-methoxycatechol-O-sulphate,3-Methoxyphenol sulfate,3-Methylcatechol 1-sulfate,3-Methylcatechol 2-sulfate,4-Methylcatechol 1-sulfate,Sulfuric acid 4-methoxyphenyl ester,4-Methylcatechol 2-sulfate,O-methoxycatechol-O-sulphate,3-Methoxyphenol sulfate	kp411_204.0089
-286.0893	155.47	0.011533104382215078	-19.053414167326682		-4.176658518482906		
-286.0893	157.08	0.011533104382215078	-20.315513140771483	C13H16N2O4	-1.6226016933410747	Phenylacetylglutamine,Phenylacetyl glutaminate,di-Hydroxymelatonin,N(2)-phenylacetyl-L-glutaminate,Acetyl-N-formyl-5-methoxykynurenamine	kp791_264.1112

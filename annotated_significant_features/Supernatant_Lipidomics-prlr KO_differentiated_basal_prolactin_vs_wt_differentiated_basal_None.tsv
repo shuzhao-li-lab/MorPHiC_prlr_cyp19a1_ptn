@@ -1,4 +1,0 @@
-m/z	rtime	p-value	t-score	custom_id	log2fc	name	emp_ID	categories	classes
-249.0228	28.87	0.040763583574835	16.921045677660814		5.7313017378753806				
-429.0806	28.35	0.021368154008419692	26.26022029228954	C21H18O10	2.395772311294156	Derhamnosylmaysin,Coumestrol 3-O-glucoside,Chrysin 7-glucuronide	kp884_430.088	{'Polyketides [PK]'}	{'Flavonoids [PK12]'}
-430.0839	28.48	0.040763583574835	18.07588467984865	C21H18O10	3.0306195402591527	Derhamnosylmaysin,Coumestrol 3-O-glucoside,Chrysin 7-glucuronide	kp884_430.088	{'Polyketides [PK]'}	{'Flavonoids [PK12]'}

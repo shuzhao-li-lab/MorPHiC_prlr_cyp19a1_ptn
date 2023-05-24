@@ -1,3 +1,0 @@
-MODULE	p-value	size	members (name)	members (id)	This module overlaps with
-module_1	0.0056179775280898875	9	Deoxyguanosine$Adenosine$Inosine$5-Fluorouridine$Nicotinamide$N-Ribosylnicotinamide$Guanosine$Guanine$Cytidine	C00330,C00212,C00294,C16633,C00153,C03150,C00387,C00242,C00475	(5, 'Purine metabolism');(2, 'Vitamin B3 (nicotinate and nicotinamide) metabolism');(1, 'Urea cycle/amino group metabolism')
-module_2	0.0056179775280898875	7	Deoxyguanosine$Adenosine$Inosine$Nicotinamide$N-Ribosylnicotinamide$Guanosine$Guanine	C00330,C00212,C00294,C00153,C03150,C00387,C00242	(5, 'Purine metabolism');(2, 'Vitamin B3 (nicotinate and nicotinamide) metabolism');(1, 'Urea cycle/amino group metabolism')

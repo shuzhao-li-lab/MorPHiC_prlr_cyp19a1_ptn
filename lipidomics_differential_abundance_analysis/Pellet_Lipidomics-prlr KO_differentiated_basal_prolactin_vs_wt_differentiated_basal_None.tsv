@@ -1,6 +1,0 @@
-category	significant	up	down	expected_up	expected_down	raw_p_value	corr_p_value
-Polyketides [PK]		2	1	1.5	1.5	1.0	1.0
-Glycerophospholipids [GP]		3	9	6.0	6.0	0.40032305828509895	1.0
-Prenol Lipids [PR]		0	1	0.5	0.5	1.0	1.0
-Sphingolipids [SP]		5	0	2.5	2.5	0.16666666666666666	0.8333333333333333
-Sterol Lipids [ST]		1	0	0.5	0.5	1.0	1.0

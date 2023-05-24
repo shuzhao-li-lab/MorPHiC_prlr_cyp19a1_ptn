@@ -1,8 +1,0 @@
-category	significant	up	down	expected_up	expected_down	raw_p_value	corr_p_value
-Fatty Acyls [FA]		10	7	8.5	8.5	0.7318573310967607	1.0
-Prenol Lipids [PR]		3	0	1.5	1.5	0.4000000000000001	1.0
-Sterol Lipids [ST]		1	1	1.0	1.0	1.0	1.0
-Glycerophospholipids [GP]		14	14	14.0	14.0	1.0	1.0
-Sphingolipids [SP]		3	6	4.5	4.5	0.637186343068696	1.0
-Polyketides [PK]		0	1	0.5	0.5	1.0	1.0
-Glycerolipids [GL]		3	5	4.0	4.0	1.0	1.0

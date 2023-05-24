@@ -1,2 +1,0 @@
-CPD_ID	CPD_NAME	mz_row_Statistic	From_mz_row	From_EmpiricalCompound
-C00051	Reduced glutathione	8.070489885625788	row1097	E162
